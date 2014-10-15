@@ -3,10 +3,10 @@
 .source "URLCodec.java"
 
 # interfaces
-.implements Lorg/apache/commons/codec/BinaryEncoder;
 .implements Lorg/apache/commons/codec/BinaryDecoder;
-.implements Lorg/apache/commons/codec/StringEncoder;
+.implements Lorg/apache/commons/codec/BinaryEncoder;
 .implements Lorg/apache/commons/codec/StringDecoder;
+.implements Lorg/apache/commons/codec/StringEncoder;
 
 
 # static fields
@@ -119,7 +119,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "UTF-8"
 
@@ -131,7 +131,7 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "UTF-8"
 

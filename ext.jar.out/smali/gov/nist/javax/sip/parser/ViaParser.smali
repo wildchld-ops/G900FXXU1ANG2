@@ -30,7 +30,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v14, 0xfff
 
@@ -38,7 +38,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -46,13 +46,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v14, 0x2f
 
@@ -60,13 +60,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v14, 0xfff
 
@@ -74,13 +74,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -88,13 +88,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v14, 0x2f
 
@@ -102,13 +102,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v14, 0xfff
 
@@ -116,13 +116,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -130,7 +130,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -180,14 +180,14 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x0
 
@@ -201,7 +201,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -209,7 +209,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -243,7 +243,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v15, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v15}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -260,7 +260,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -269,7 +269,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x0
 
@@ -283,7 +283,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const-string v14, "charLexer"
 
@@ -291,7 +291,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -304,7 +304,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x0
 
@@ -318,7 +318,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -343,7 +343,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -357,7 +357,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -365,7 +365,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v13}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -379,7 +379,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -396,7 +396,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v13, v0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v14, 0x1
 
@@ -425,19 +425,19 @@
 
     :cond_0
     :try_start_0
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v8, 0xfff
 
     invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
     move-result-object v2
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->SPorHT()V
     :try_end_0
@@ -446,7 +446,7 @@
     const/4 v4, 0x0
 
     :try_start_1
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v8, 0x0
 
@@ -458,13 +458,13 @@
 
     if-ne v1, v7, :cond_5
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v8, 0x1
 
     invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->consume(I)V
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -482,7 +482,7 @@
 
     if-nez v7, :cond_3
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->byteStringNoSemicolon()Ljava/lang/String;
 
@@ -523,7 +523,7 @@
 
     :cond_3
     :try_start_2
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v8, 0x0
 
@@ -535,7 +535,7 @@
 
     if-ne v7, v8, :cond_4
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->quotedString()Ljava/lang/String;
 
@@ -546,13 +546,13 @@
     goto :goto_0
 
     :cond_4
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v8, 0xfff
 
     invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -653,23 +653,23 @@
 
     invoke-direct {v1}, Lgov/nist/javax/sip/header/ViaList;-><init>()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v3, 0x810
 
     invoke-virtual {v2, v3}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v3, 0x3a
 
     invoke-virtual {v2, v3}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -682,11 +682,11 @@
 
     invoke-virtual {v1, v0}, Lgov/nist/javax/sip/header/ViaList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v3, 0x0
 
@@ -698,18 +698,18 @@
 
     if-ne v2, v3, :cond_2
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Lgov/nist/core/LexerCore;->consume(I)V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     :cond_2
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v3, 0x0
 
@@ -719,7 +719,7 @@
 
     if-ne v2, v4, :cond_1
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/ViaParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v3, 0xa
 

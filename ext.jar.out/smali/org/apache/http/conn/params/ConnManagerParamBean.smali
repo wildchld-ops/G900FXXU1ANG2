@@ -17,7 +17,7 @@
 .method public setConnectionsPerRoute(Lorg/apache/http/conn/params/ConnPerRouteBean;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnManagerParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.conn-manager.max-per-route"
 
@@ -29,7 +29,7 @@
 .method public setMaxTotalConnections(I)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnManagerParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.conn-manager.max-total"
 
@@ -41,7 +41,7 @@
 .method public setTimeout(J)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnManagerParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.conn-manager.timeout"
 

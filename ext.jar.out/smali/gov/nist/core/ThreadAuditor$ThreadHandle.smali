@@ -30,7 +30,7 @@
 
     iput-object p1, p0, Lgov/nist/core/ThreadAuditor$ThreadHandle;->this$0:Lgov/nist/core/ThreadAuditor;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 

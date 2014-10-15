@@ -3,8 +3,8 @@
 .source "SIPTransaction.java"
 
 # interfaces
-.implements Ljavax/sip/Transaction;
 .implements Lgov/nist/javax/sip/TransactionExt;
+.implements Ljavax/sip/Transaction;
 
 
 # annotations

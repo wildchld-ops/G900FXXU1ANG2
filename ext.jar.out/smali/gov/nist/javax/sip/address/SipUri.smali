@@ -3,8 +3,8 @@
 .source "SipUri.java"
 
 # interfaces
-.implements Ljavax/sip/address/SipURI;
 .implements Lgov/nist/javax/sip/address/SipURIExt;
+.implements Ljavax/sip/address/SipURI;
 
 
 # static fields
@@ -29,7 +29,7 @@
 
     const-string v0, "sip"
 
-    iput-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iput-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     new-instance v0, Lgov/nist/core/NameValueList;
 
@@ -192,7 +192,7 @@
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -1301,7 +1301,7 @@
 .method public getScheme()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -2296,7 +2296,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iput-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     return-void
 .end method
@@ -2308,7 +2308,7 @@
 
     const-string v0, "sips"
 
-    iput-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iput-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     :goto_0
     return-void
@@ -2316,7 +2316,7 @@
     :cond_0
     const-string v0, "sip"
 
-    iput-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
+    iput-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->scheme:Ljava/lang/String;
 
     goto :goto_0
 .end method

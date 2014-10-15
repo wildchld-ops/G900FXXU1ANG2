@@ -48,11 +48,11 @@
     :try_start_0
     invoke-virtual {p0, v2}, Lgov/nist/javax/sip/parser/SubjectParser;->headerName(I)V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SubjectParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SubjectParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getRest()Ljava/lang/String;
 

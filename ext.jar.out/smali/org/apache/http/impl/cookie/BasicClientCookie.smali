@@ -3,9 +3,9 @@
 .source "BasicClientCookie.java"
 
 # interfaces
-.implements Lorg/apache/http/cookie/SetCookie;
-.implements Lorg/apache/http/cookie/ClientCookie;
 .implements Ljava/lang/Cloneable;
+.implements Lorg/apache/http/cookie/ClientCookie;
+.implements Lorg/apache/http/cookie/SetCookie;
 
 
 # instance fields
@@ -42,7 +42,7 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p1, :cond_0
 

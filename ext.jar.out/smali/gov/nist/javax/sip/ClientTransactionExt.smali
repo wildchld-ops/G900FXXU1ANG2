@@ -3,8 +3,8 @@
 .source "ClientTransactionExt.java"
 
 # interfaces
-.implements Ljavax/sip/ClientTransaction;
 .implements Lgov/nist/javax/sip/TransactionExt;
+.implements Ljavax/sip/ClientTransaction;
 
 
 # virtual methods

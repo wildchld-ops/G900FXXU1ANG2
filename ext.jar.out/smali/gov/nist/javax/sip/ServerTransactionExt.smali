@@ -3,8 +3,8 @@
 .source "ServerTransactionExt.java"
 
 # interfaces
-.implements Ljavax/sip/ServerTransaction;
 .implements Lgov/nist/javax/sip/TransactionExt;
+.implements Ljavax/sip/ServerTransaction;
 
 
 # virtual methods

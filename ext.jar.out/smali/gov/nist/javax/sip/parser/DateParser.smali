@@ -46,13 +46,13 @@
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/parser/DateParser;->wkday()I
 
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x2c
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
@@ -70,13 +70,13 @@
 
     invoke-virtual {p0, v0}, Lgov/nist/javax/sip/parser/DateParser;->time(Ljava/util/Calendar;)V
 
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v3}, Lgov/nist/core/LexerCore;->ttoken()Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 
     :cond_2
     :try_start_1
-    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0xa
 

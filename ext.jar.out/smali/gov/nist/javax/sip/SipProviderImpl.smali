@@ -3,10 +3,10 @@
 .source "SipProviderImpl.java"
 
 # interfaces
-.implements Ljavax/sip/SipProvider;
 .implements Lgov/nist/javax/sip/SipProviderExt;
-.implements Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 .implements Lgov/nist/javax/sip/stack/SIPDialogEventListener;
+.implements Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
+.implements Ljavax/sip/SipProvider;
 
 
 # instance fields
@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "0.0.0.0"
 
@@ -55,7 +55,7 @@
 .method protected constructor <init>(Lgov/nist/javax/sip/SipStackImpl;)V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "0.0.0.0"
 

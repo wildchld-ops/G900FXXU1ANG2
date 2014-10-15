@@ -26,7 +26,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/cookie/params/CookieSpecParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.cookie-datepatterns"
 
@@ -38,7 +38,7 @@
 .method public setSingleHeader(Z)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/cookie/params/CookieSpecParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.single-cookie-header"
 

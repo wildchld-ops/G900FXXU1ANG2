@@ -3,9 +3,9 @@
 .source "PathHeader.java"
 
 # interfaces
+.implements Ljavax/sip/header/Header;
 .implements Ljavax/sip/header/HeaderAddress;
 .implements Ljavax/sip/header/Parameters;
-.implements Ljavax/sip/header/Header;
 
 
 # static fields

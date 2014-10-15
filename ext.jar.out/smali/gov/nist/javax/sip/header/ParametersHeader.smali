@@ -3,8 +3,8 @@
 .source "ParametersHeader.java"
 
 # interfaces
-.implements Ljavax/sip/header/Parameters;
 .implements Ljava/io/Serializable;
+.implements Ljavax/sip/header/Parameters;
 
 
 # instance fields

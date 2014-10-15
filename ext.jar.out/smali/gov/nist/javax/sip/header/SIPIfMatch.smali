@@ -3,8 +3,8 @@
 .source "SIPIfMatch.java"
 
 # interfaces
-.implements Ljavax/sip/header/SIPIfMatchHeader;
 .implements Ljavax/sip/header/ExtensionHeader;
+.implements Ljavax/sip/header/SIPIfMatchHeader;
 
 
 # static fields

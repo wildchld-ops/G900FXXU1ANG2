@@ -3,8 +3,8 @@
 .source "SimpleLog.java"
 
 # interfaces
-.implements Lorg/apache/commons/logging/Log;
 .implements Ljava/io/Serializable;
+.implements Lorg/apache/commons/logging/Log;
 
 
 # static fields
@@ -187,7 +187,7 @@
 
     const/4 v4, 0x0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lorg/apache/commons/logging/impl/SimpleLog;->logName:Ljava/lang/String;
 

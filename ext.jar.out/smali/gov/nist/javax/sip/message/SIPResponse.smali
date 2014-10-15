@@ -3,8 +3,8 @@
 .source "SIPResponse.java"
 
 # interfaces
-.implements Ljavax/sip/message/Response;
 .implements Lgov/nist/javax/sip/message/ResponseExt;
+.implements Ljavax/sip/message/Response;
 
 
 # instance fields
@@ -781,7 +781,7 @@
 
     const-string v1, ""
 
-    iput-object v1, p0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iput-object v1, p0, Lgov/nist/javax/sip/message/SIPResponse;->stringRepresentation:Ljava/lang/String;
 
     const-class v1, Lgov/nist/javax/sip/message/SIPResponse;
 
@@ -814,7 +814,7 @@
 
     invoke-virtual {p0, v1}, Lgov/nist/javax/sip/message/SIPResponse;->sprint(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iget-object v1, p0, Lgov/nist/javax/sip/message/SIPResponse;->stringRepresentation:Ljava/lang/String;
 
     return-object v1
 .end method

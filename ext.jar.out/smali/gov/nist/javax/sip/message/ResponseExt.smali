@@ -3,5 +3,5 @@
 .source "ResponseExt.java"
 
 # interfaces
-.implements Ljavax/sip/message/Response;
 .implements Lgov/nist/javax/sip/message/MessageExt;
+.implements Ljavax/sip/message/Response;

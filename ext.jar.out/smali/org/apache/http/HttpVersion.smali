@@ -66,11 +66,11 @@
 
     const/4 v1, 0x1
 
-    iget v0, p0, Lorg/apache/http/ProtocolVersion;->major:I
+    iget v0, p0, Lorg/apache/http/HttpVersion;->major:I
 
     if-ne p1, v0, :cond_0
 
-    iget v0, p0, Lorg/apache/http/ProtocolVersion;->minor:I
+    iget v0, p0, Lorg/apache/http/HttpVersion;->minor:I
 
     if-ne p2, v0, :cond_0
 

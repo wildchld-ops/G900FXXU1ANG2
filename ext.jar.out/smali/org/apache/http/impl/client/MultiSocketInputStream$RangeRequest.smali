@@ -71,7 +71,7 @@
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean v3, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;->bHandover:Z
 

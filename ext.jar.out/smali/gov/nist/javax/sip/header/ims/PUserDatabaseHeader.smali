@@ -3,8 +3,8 @@
 .source "PUserDatabaseHeader.java"
 
 # interfaces
-.implements Ljavax/sip/header/Parameters;
 .implements Ljavax/sip/header/Header;
+.implements Ljavax/sip/header/Parameters;
 
 
 # static fields

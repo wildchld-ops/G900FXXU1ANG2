@@ -24,7 +24,7 @@
 .method public constructor <init>(Lorg/apache/http/ReasonPhraseCatalog;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p1, :cond_0
 

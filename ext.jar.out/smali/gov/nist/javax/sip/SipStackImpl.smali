@@ -3,8 +3,8 @@
 .source "SipStackImpl.java"
 
 # interfaces
-.implements Ljavax/sip/SipStack;
 .implements Lgov/nist/javax/sip/SipStackExt;
+.implements Ljavax/sip/SipStack;
 
 
 # static fields
@@ -360,11 +360,11 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverLogger:Lgov/nist/core/ServerLogger;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->serverLogger:Lgov/nist/core/ServerLogger;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverLogger:Lgov/nist/core/ServerLogger;
+    iget-object v0, v0, Lgov/nist/javax/sip/SipStackImpl;->serverLogger:Lgov/nist/core/ServerLogger;
 
     move-object/from16 v61, v0
 
@@ -376,7 +376,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverLogger:Lgov/nist/core/ServerLogger;
+    iget-object v0, v0, Lgov/nist/javax/sip/SipStackImpl;->serverLogger:Lgov/nist/core/ServerLogger;
 
     move-object/from16 v61, v0
 
@@ -403,13 +403,13 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->outboundProxy:Ljava/lang/String;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->outboundProxy:Ljava/lang/String;
 
     new-instance v61, Lgov/nist/javax/sip/stack/DefaultRouter;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->outboundProxy:Ljava/lang/String;
+    iget-object v0, v0, Lgov/nist/javax/sip/SipStackImpl;->outboundProxy:Ljava/lang/String;
 
     move-object/from16 v62, v0
 
@@ -425,7 +425,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->defaultRouter:Lgov/nist/javax/sip/stack/DefaultRouter;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->defaultRouter:Lgov/nist/javax/sip/stack/DefaultRouter;
 
     const-string v61, "javax.sip.ROUTER_PATH"
 
@@ -489,7 +489,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->outboundProxy:Ljava/lang/String;
+    iget-object v0, v0, Lgov/nist/javax/sip/SipStackImpl;->outboundProxy:Ljava/lang/String;
 
     move-object/from16 v62, v0
 
@@ -528,7 +528,7 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->useRouterForAll:Z
+    iput-boolean v0, v1, Lgov/nist/javax/sip/SipStackImpl;->useRouterForAll:Z
 
     if-eqz v60, :cond_5
 
@@ -546,7 +546,7 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->useRouterForAll:Z
+    iput-boolean v0, v1, Lgov/nist/javax/sip/SipStackImpl;->useRouterForAll:Z
 
     :cond_5
     const-string v61, "javax.sip.EXTENSION_METHODS"
@@ -1013,7 +1013,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->networkLayer:Lgov/nist/core/net/NetworkLayer;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->networkLayer:Lgov/nist/core/net/NetworkLayer;
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_7
 
@@ -1254,7 +1254,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->forkedEvents:Ljava/util/HashSet;
+    iget-object v0, v0, Lgov/nist/javax/sip/SipStackImpl;->forkedEvents:Ljava/util/HashSet;
 
     move-object/from16 v61, v0
 
@@ -1330,7 +1330,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->networkLayer:Lgov/nist/core/net/NetworkLayer;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->networkLayer:Lgov/nist/core/net/NetworkLayer;
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_8
 
@@ -1398,7 +1398,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->addressResolver:Lgov/nist/core/net/AddressResolver;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->addressResolver:Lgov/nist/core/net/AddressResolver;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_9
 
@@ -1432,7 +1432,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->maxConnections:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->maxConnections:I
     :try_end_7
     .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_a
 
@@ -1467,7 +1467,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->threadPoolSize:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->threadPoolSize:I
     :try_end_8
     .catch Ljava/lang/NumberFormatException; {:try_start_8 .. :try_end_8} :catch_b
 
@@ -1502,11 +1502,11 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverTransactionTableHighwaterMark:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->serverTransactionTableHighwaterMark:I
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverTransactionTableHighwaterMark:I
+    iget v0, v0, Lgov/nist/javax/sip/SipStackImpl;->serverTransactionTableHighwaterMark:I
 
     move/from16 v61, v0
 
@@ -1518,7 +1518,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverTransactionTableLowaterMark:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->serverTransactionTableLowaterMark:I
     :try_end_9
     .catch Ljava/lang/NumberFormatException; {:try_start_9 .. :try_end_9} :catch_c
 
@@ -1551,11 +1551,11 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->clientTransactionTableHiwaterMark:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->clientTransactionTableHiwaterMark:I
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->clientTransactionTableLowaterMark:I
+    iget v0, v0, Lgov/nist/javax/sip/SipStackImpl;->clientTransactionTableLowaterMark:I
 
     move/from16 v61, v0
 
@@ -1567,7 +1567,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->clientTransactionTableLowaterMark:I
+    iput v0, v1, Lgov/nist/javax/sip/SipStackImpl;->clientTransactionTableLowaterMark:I
     :try_end_a
     .catch Ljava/lang/NumberFormatException; {:try_start_a .. :try_end_a} :catch_d
 
@@ -1890,7 +1890,7 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->generateTimeStampHeader:Z
+    iput-boolean v0, v1, Lgov/nist/javax/sip/SipStackImpl;->generateTimeStampHeader:Z
 
     const-string v61, "gov.nist.javax.sip.LOG_FACTORY"
 
@@ -1943,7 +1943,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
     :try_end_e
     .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_11
 
@@ -2211,7 +2211,7 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->unlimitedServerTransactionTableSize:Z
+    iput-boolean v0, v1, Lgov/nist/javax/sip/SipStackImpl;->unlimitedServerTransactionTableSize:Z
 
     goto/16 :goto_5
 
@@ -2261,7 +2261,7 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->unlimitedClientTransactionTableSize:Z
+    iput-boolean v0, v1, Lgov/nist/javax/sip/SipStackImpl;->unlimitedClientTransactionTableSize:Z
 
     goto/16 :goto_6
 
@@ -2473,7 +2473,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
 
     goto/16 :goto_b
 
@@ -2486,7 +2486,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
+    iput-object v0, v1, Lgov/nist/javax/sip/SipStackImpl;->logRecordFactory:Lgov/nist/javax/sip/LogRecordFactory;
 
     goto/16 :goto_b
 
@@ -3138,7 +3138,7 @@
 
     const/4 v6, 0x0
 
-    iput-boolean v6, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->toExit:Z
+    iput-boolean v6, p0, Lgov/nist/javax/sip/SipStackImpl;->toExit:Z
 
     invoke-direct {p0}, Lgov/nist/javax/sip/SipStackImpl;->reInitialize()V
 
@@ -3628,7 +3628,7 @@
 .method public getStackName()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->stackName:Ljava/lang/String;
+    iget-object v0, p0, Lgov/nist/javax/sip/SipStackImpl;->stackName:Ljava/lang/String;
 
     return-object v0
 .end method

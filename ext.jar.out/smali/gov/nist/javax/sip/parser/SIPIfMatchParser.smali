@@ -48,17 +48,17 @@
     :try_start_0
     invoke-virtual {p0, v2}, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->headerName(I)V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v3, 0xfff
 
     invoke-virtual {v2, v3}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
 
@@ -70,11 +70,11 @@
 
     invoke-virtual {v0, v2}, Lgov/nist/javax/sip/header/SIPIfMatch;->setETag(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/javax/sip/parser/SIPIfMatchParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v3, 0xa
 

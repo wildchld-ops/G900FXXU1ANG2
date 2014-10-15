@@ -3,8 +3,8 @@
 .source "UnsupportedHeader.java"
 
 # interfaces
-.implements Ljavax/sip/header/OptionTag;
 .implements Ljavax/sip/header/Header;
+.implements Ljavax/sip/header/OptionTag;
 
 
 # static fields

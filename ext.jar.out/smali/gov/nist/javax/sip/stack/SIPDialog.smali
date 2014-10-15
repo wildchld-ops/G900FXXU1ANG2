@@ -3,8 +3,8 @@
 .source "SIPDialog.java"
 
 # interfaces
-.implements Ljavax/sip/Dialog;
 .implements Lgov/nist/javax/sip/DialogExt;
+.implements Ljavax/sip/Dialog;
 
 
 # annotations
@@ -189,7 +189,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide v4, p0, Lgov/nist/javax/sip/stack/SIPDialog;->auditTag:J
 
@@ -4004,7 +4004,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getMethod()Ljava/lang/String;
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->getMethod()Ljava/lang/String;
 
     move-result-object v3
 
@@ -7786,7 +7786,7 @@
 
     check-cast v10, Lgov/nist/javax/sip/stack/SIPClientTransaction;
 
-    iput-boolean v13, v10, Lgov/nist/javax/sip/stack/SIPTransaction;->isMapped:Z
+    iput-boolean v13, v10, Lgov/nist/javax/sip/stack/SIPClientTransaction;->isMapped:Z
 
     invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPRequest;->getFrom()Ljavax/sip/header/FromHeader;
 

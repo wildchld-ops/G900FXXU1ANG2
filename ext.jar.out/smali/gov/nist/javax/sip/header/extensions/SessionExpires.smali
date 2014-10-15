@@ -3,8 +3,8 @@
 .source "SessionExpires.java"
 
 # interfaces
-.implements Ljavax/sip/header/ExtensionHeader;
 .implements Lgov/nist/javax/sip/header/extensions/SessionExpiresHeader;
+.implements Ljavax/sip/header/ExtensionHeader;
 
 
 # static fields
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/extensions/SessionExpires;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v1}, Lgov/nist/core/NameValueList;->isEmpty()Z
 
@@ -63,7 +63,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/extensions/SessionExpires;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v2}, Lgov/nist/core/NameValueList;->encode()Ljava/lang/String;
 
@@ -92,7 +92,7 @@
 .method public getRefresher()Ljava/lang/String;
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/SessionExpires;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "refresher"
 
@@ -146,7 +146,7 @@
 .method public setRefresher(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/SessionExpires;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "refresher"
 

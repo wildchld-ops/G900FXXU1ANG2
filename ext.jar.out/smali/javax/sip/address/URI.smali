@@ -3,8 +3,8 @@
 .source "URI.java"
 
 # interfaces
-.implements Ljava/lang/Cloneable;
 .implements Ljava/io/Serializable;
+.implements Ljava/lang/Cloneable;
 
 
 # virtual methods

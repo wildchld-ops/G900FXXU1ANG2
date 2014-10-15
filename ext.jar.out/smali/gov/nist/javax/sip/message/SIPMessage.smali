@@ -3,8 +3,8 @@
 .source "SIPMessage.java"
 
 # interfaces
-.implements Ljavax/sip/message/Message;
 .implements Lgov/nist/javax/sip/message/MessageExt;
+.implements Ljavax/sip/message/Message;
 
 
 # static fields
@@ -1212,7 +1212,7 @@
 
     const-string v6, ""
 
-    iput-object v6, p0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iput-object v6, p0, Lgov/nist/javax/sip/message/SIPMessage;->stringRepresentation:Ljava/lang/String;
 
     const-string v6, "SIPMessage:"
 
@@ -1364,7 +1364,7 @@
 
     invoke-virtual {p0, v6}, Lgov/nist/javax/sip/message/SIPMessage;->sprint(Ljava/lang/String;)V
 
-    iget-object v6, p0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iget-object v6, p0, Lgov/nist/javax/sip/message/SIPMessage;->stringRepresentation:Ljava/lang/String;
 
     return-object v6
 .end method

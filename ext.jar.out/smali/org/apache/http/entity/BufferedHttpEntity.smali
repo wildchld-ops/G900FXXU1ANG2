@@ -76,7 +76,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/BufferedHttpEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->getContent()Ljava/io/InputStream;
 
@@ -102,7 +102,7 @@
     return-wide v0
 
     :cond_0
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/BufferedHttpEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->getContentLength()J
 
@@ -118,7 +118,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/BufferedHttpEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->isChunked()Z
 
@@ -152,7 +152,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/BufferedHttpEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->isStreaming()Z
 
@@ -202,7 +202,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/BufferedHttpEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0, p1}, Lorg/apache/http/HttpEntity;->writeTo(Ljava/io/OutputStream;)V
 

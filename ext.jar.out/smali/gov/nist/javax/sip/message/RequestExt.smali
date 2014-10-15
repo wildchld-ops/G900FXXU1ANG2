@@ -3,5 +3,5 @@
 .source "RequestExt.java"
 
 # interfaces
-.implements Ljavax/sip/message/Request;
 .implements Lgov/nist/javax/sip/message/MessageExt;
+.implements Ljavax/sip/message/Request;

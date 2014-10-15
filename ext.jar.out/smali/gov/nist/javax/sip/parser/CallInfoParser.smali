@@ -51,7 +51,7 @@
     invoke-virtual {p0, v4}, Lgov/nist/javax/sip/parser/CallInfoParser;->headerName(I)V
 
     :cond_1
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
@@ -71,11 +71,11 @@
 
     invoke-virtual {v0, v4}, Lgov/nist/javax/sip/header/CallInfo;->setHeaderName(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x3c
 
@@ -83,7 +83,7 @@
 
     new-instance v3, Lgov/nist/javax/sip/parser/URLParser;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     check-cast v4, Lgov/nist/javax/sip/parser/Lexer;
 
@@ -97,13 +97,13 @@
 
     invoke-virtual {v0, v2}, Lgov/nist/javax/sip/header/CallInfo;->setInfo(Ljavax/sip/address/URI;)V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x3e
 
     invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -112,7 +112,7 @@
     invoke-virtual {v1, v0}, Lgov/nist/javax/sip/header/CallInfoList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
 
     :goto_0
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
@@ -122,13 +122,13 @@
 
     if-ne v4, v6, :cond_1
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x2c
 
     invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -136,11 +136,11 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/CallInfo;-><init>()V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x3c
 
@@ -148,7 +148,7 @@
 
     new-instance v3, Lgov/nist/javax/sip/parser/URLParser;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     check-cast v4, Lgov/nist/javax/sip/parser/Lexer;
 
@@ -162,13 +162,13 @@
 
     invoke-virtual {v0, v2}, Lgov/nist/javax/sip/header/CallInfo;->setInfo(Ljavax/sip/address/URI;)V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x3e
 
     invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/CallInfoParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 

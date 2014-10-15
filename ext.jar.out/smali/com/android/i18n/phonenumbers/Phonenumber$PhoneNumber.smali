@@ -63,7 +63,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput v2, p0, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->countryCode_:I
 

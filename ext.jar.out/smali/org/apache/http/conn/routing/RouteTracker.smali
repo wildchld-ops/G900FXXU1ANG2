@@ -3,8 +3,8 @@
 .source "RouteTracker.java"
 
 # interfaces
-.implements Lorg/apache/http/conn/routing/RouteInfo;
 .implements Ljava/lang/Cloneable;
+.implements Lorg/apache/http/conn/routing/RouteInfo;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p1, :cond_0
 

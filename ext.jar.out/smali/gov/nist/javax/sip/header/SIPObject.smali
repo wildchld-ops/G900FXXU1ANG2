@@ -31,7 +31,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iput-object v0, v1, Lgov/nist/javax/sip/header/SIPObject;->stringRepresentation:Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -382,7 +382,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/core/GenericObject;->indentation:I
+    iget v0, v0, Lgov/nist/javax/sip/header/SIPObject;->indentation:I
 
     move/from16 v22, v0
 
@@ -440,7 +440,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/core/GenericObject;->indentation:I
+    iget v0, v0, Lgov/nist/javax/sip/header/SIPObject;->indentation:I
 
     move/from16 v22, v0
 
@@ -615,7 +615,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
+    iget-object v0, v0, Lgov/nist/javax/sip/header/SIPObject;->stringRepresentation:Ljava/lang/String;
 
     move-object/from16 v21, v0
 
@@ -625,15 +625,15 @@
 .method public debugDump(I)Ljava/lang/String;
     .locals 2
 
-    iget v1, p0, Lgov/nist/core/GenericObject;->indentation:I
+    iget v1, p0, Lgov/nist/javax/sip/header/SIPObject;->indentation:I
 
-    iput p1, p0, Lgov/nist/core/GenericObject;->indentation:I
+    iput p1, p0, Lgov/nist/javax/sip/header/SIPObject;->indentation:I
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/header/SIPObject;->debugDump()Ljava/lang/String;
 
     move-result-object v0
 
-    iput v1, p0, Lgov/nist/core/GenericObject;->indentation:I
+    iput v1, p0, Lgov/nist/javax/sip/header/SIPObject;->indentation:I
 
     return-object v0
 .end method

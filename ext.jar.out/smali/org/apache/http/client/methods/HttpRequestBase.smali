@@ -3,9 +3,9 @@
 .source "HttpRequestBase.java"
 
 # interfaces
-.implements Lorg/apache/http/client/methods/HttpUriRequest;
-.implements Lorg/apache/http/client/methods/AbortableHttpRequest;
 .implements Ljava/lang/Cloneable;
+.implements Lorg/apache/http/client/methods/AbortableHttpRequest;
+.implements Lorg/apache/http/client/methods/HttpUriRequest;
 
 
 # instance fields
@@ -134,7 +134,7 @@
 
     iput-object v2, v0, Lorg/apache/http/client/methods/HttpRequestBase;->connRequest:Lorg/apache/http/conn/ClientConnectionRequest;
 
-    iget-object v1, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iget-object v1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
     invoke-static {v1}, Lorg/apache/http/client/utils/CloneUtils;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,9 +142,9 @@
 
     check-cast v1, Lorg/apache/http/message/HeaderGroup;
 
-    iput-object v1, v0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iput-object v1, v0, Lorg/apache/http/client/methods/HttpRequestBase;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
-    iget-object v1, p0, Lorg/apache/http/message/AbstractHttpMessage;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->params:Lorg/apache/http/params/HttpParams;
 
     invoke-static {v1}, Lorg/apache/http/client/utils/CloneUtils;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +152,7 @@
 
     check-cast v1, Lorg/apache/http/params/HttpParams;
 
-    iput-object v1, v0, Lorg/apache/http/message/AbstractHttpMessage;->params:Lorg/apache/http/params/HttpParams;
+    iput-object v1, v0, Lorg/apache/http/client/methods/HttpRequestBase;->params:Lorg/apache/http/params/HttpParams;
 
     return-object v0
 .end method

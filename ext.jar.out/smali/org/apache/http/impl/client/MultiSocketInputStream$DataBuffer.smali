@@ -84,7 +84,7 @@
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v3, 0x0
 
@@ -183,7 +183,7 @@
     :cond_1
     new-instance v2, Ljava/lang/Object;
 
-    invoke-direct/range {v2 .. v2}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     monitor-enter v2
 

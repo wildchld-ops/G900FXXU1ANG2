@@ -3,8 +3,8 @@
 .source "MultiValueMap.java"
 
 # interfaces
-.implements Ljava/util/Map;
 .implements Ljava/io/Serializable;
+.implements Ljava/util/Map;
 
 
 # annotations

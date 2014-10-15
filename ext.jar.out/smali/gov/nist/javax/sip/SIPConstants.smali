@@ -3,9 +3,9 @@
 .source "SIPConstants.java"
 
 # interfaces
-.implements Lgov/nist/javax/sip/header/SIPHeaderNames;
 .implements Lgov/nist/javax/sip/address/ParameterNames;
 .implements Lgov/nist/javax/sip/header/ParameterNames;
+.implements Lgov/nist/javax/sip/header/SIPHeaderNames;
 
 
 # static fields

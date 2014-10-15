@@ -15,7 +15,7 @@
 .method public constructor <init>(II)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-gez p1, :cond_0
 

@@ -45,7 +45,7 @@
 .method protected constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-instance v0, Ljava/util/concurrent/Semaphore;
 

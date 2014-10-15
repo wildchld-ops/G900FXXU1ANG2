@@ -3,8 +3,8 @@
 .source "SIPDialog.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
 .implements Ljava/io/Serializable;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -34,7 +34,7 @@
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$ReInviteSender;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p2, p0, Lgov/nist/javax/sip/stack/SIPDialog$ReInviteSender;->ctx:Ljavax/sip/ClientTransaction;
 

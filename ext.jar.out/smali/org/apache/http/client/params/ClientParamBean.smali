@@ -17,7 +17,7 @@
 .method public setAllowCircularRedirects(Z)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.allow-circular-redirects"
 
@@ -29,7 +29,7 @@
 .method public setConnectionManagerFactory(Lorg/apache/http/conn/ClientConnectionManagerFactory;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.connection-manager.factory-object"
 
@@ -41,7 +41,7 @@
 .method public setConnectionManagerFactoryClassName(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.connection-manager.factory-class-name"
 
@@ -53,7 +53,7 @@
 .method public setCookiePolicy(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.cookie-policy"
 
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.default-headers"
 
@@ -86,7 +86,7 @@
 .method public setDefaultHost(Lorg/apache/http/HttpHost;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.default-host"
 
@@ -98,7 +98,7 @@
 .method public setHandleAuthentication(Z)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.handle-authentication"
 
@@ -110,7 +110,7 @@
 .method public setHandleRedirects(Z)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.handle-redirects"
 
@@ -122,7 +122,7 @@
 .method public setMaxRedirects(I)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.max-redirects"
 
@@ -134,7 +134,7 @@
 .method public setRejectRelativeRedirect(Z)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.protocol.reject-relative-redirect"
 
@@ -146,7 +146,7 @@
 .method public setVirtualHost(Lorg/apache/http/HttpHost;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/client/params/ClientParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.virtual-host"
 

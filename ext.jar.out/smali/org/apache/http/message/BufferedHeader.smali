@@ -3,8 +3,8 @@
 .source "BufferedHeader.java"
 
 # interfaces
-.implements Lorg/apache/http/FormattedHeader;
 .implements Ljava/lang/Cloneable;
+.implements Lorg/apache/http/FormattedHeader;
 
 
 # instance fields
@@ -24,7 +24,7 @@
         }
     .end annotation
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p1, :cond_0
 

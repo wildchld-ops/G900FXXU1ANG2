@@ -62,7 +62,7 @@
     invoke-virtual {v1, v4}, Lgov/nist/javax/sip/header/ims/PMediaAuthorization;->setHeaderName(Ljava/lang/String;)V
 
     :goto_0
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
@@ -74,13 +74,13 @@
 
     if-eq v4, v5, :cond_3
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0xfff
 
     invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->getNextToken()Lgov/nist/core/Token;
     :try_end_0
@@ -101,11 +101,11 @@
     :try_start_2
     invoke-virtual {v2, v1}, Lgov/nist/javax/sip/header/ims/PMediaAuthorizationList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
@@ -115,7 +115,7 @@
 
     if-ne v4, v6, :cond_1
 
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v5, 0x2c
 
@@ -126,7 +126,7 @@
     invoke-direct {v1}, Lgov/nist/javax/sip/header/ims/PMediaAuthorization;-><init>()V
 
     :cond_1
-    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/javax/sip/parser/ims/PMediaAuthorizationParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
     :try_end_2

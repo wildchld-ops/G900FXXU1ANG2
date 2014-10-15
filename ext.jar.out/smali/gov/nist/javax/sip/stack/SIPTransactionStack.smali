@@ -3,8 +3,8 @@
 .source "SIPTransactionStack.java"
 
 # interfaces
-.implements Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 .implements Lgov/nist/javax/sip/stack/SIPDialogEventListener;
+.implements Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 
 
 # annotations
@@ -305,7 +305,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean v1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->unlimitedServerTransactionTableSize:Z
 
@@ -2740,13 +2740,13 @@
 
     if-eqz v8, :cond_5
 
-    iget-object v8, v0, Lgov/nist/javax/sip/stack/SIPTransaction;->from:Lgov/nist/javax/sip/header/From;
+    iget-object v8, v0, Lgov/nist/javax/sip/stack/SIPClientTransaction;->from:Lgov/nist/javax/sip/header/From;
 
     invoke-virtual {v8}, Lgov/nist/javax/sip/header/From;->getTag()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, v0, Lgov/nist/javax/sip/stack/SIPTransaction;->event:Lgov/nist/javax/sip/header/Event;
+    iget-object v3, v0, Lgov/nist/javax/sip/stack/SIPClientTransaction;->event:Lgov/nist/javax/sip/header/Event;
 
     if-eqz v3, :cond_5
 
@@ -2869,7 +2869,7 @@
 
     move-result-object v8
 
-    iget-object v9, v0, Lgov/nist/javax/sip/stack/SIPTransaction;->callId:Lgov/nist/javax/sip/header/CallID;
+    iget-object v9, v0, Lgov/nist/javax/sip/stack/SIPClientTransaction;->callId:Lgov/nist/javax/sip/header/CallID;
 
     invoke-virtual {v9}, Lgov/nist/javax/sip/header/CallID;->getCallId()Ljava/lang/String;
 
@@ -4352,7 +4352,7 @@
 .method public mapTransaction(Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 1
 
-    iget-boolean v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->isMapped:Z
+    iget-boolean v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->isMapped:Z
 
     if-eqz v0, :cond_0
 
@@ -4364,7 +4364,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->isMapped:Z
+    iput-boolean v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->isMapped:Z
 
     goto :goto_0
 .end method
@@ -6195,7 +6195,7 @@
 
     const/4 v3, 0x0
 
-    iput v3, v2, Lgov/nist/javax/sip/stack/SIPTransaction;->collectionTime:I
+    iput v3, v2, Lgov/nist/javax/sip/stack/SIPServerTransaction;->collectionTime:I
 
     :cond_0
     invoke-virtual {v1}, Lgov/nist/javax/sip/stack/SIPTransaction;->disableTimeoutTimer()V

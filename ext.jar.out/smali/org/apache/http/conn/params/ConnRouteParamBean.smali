@@ -17,7 +17,7 @@
 .method public setDefaultProxy(Lorg/apache/http/HttpHost;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnRouteParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.route.default-proxy"
 
@@ -29,7 +29,7 @@
 .method public setForcedRoute(Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnRouteParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.route.forced-route"
 
@@ -41,7 +41,7 @@
 .method public setLocalAddress(Ljava/net/InetAddress;)V
     .locals 2
 
-    iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v0, p0, Lorg/apache/http/conn/params/ConnRouteParamBean;->params:Lorg/apache/http/params/HttpParams;
 
     const-string v1, "http.route.local-address"
 

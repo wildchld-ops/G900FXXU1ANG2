@@ -192,7 +192,7 @@
     if-ne v5, v6, :cond_1
 
     :try_start_0
-    iget v5, v4, Lgov/nist/javax/sip/stack/SIPTransaction;->T2:I
+    iget v5, v4, Lgov/nist/javax/sip/stack/SIPServerTransaction;->T2:I
 
     #calls: Lgov/nist/javax/sip/stack/SIPDialog;->toRetransmitFinalResponse(I)Z
     invoke-static {v0, v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$600(Lgov/nist/javax/sip/stack/SIPDialog;I)Z

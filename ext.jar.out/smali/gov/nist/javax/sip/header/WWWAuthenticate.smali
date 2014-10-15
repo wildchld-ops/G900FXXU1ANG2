@@ -3,8 +3,8 @@
 .source "WWWAuthenticate.java"
 
 # interfaces
-.implements Ljavax/sip/header/WWWAuthenticateHeader;
 .implements Lgov/nist/javax/sip/header/ims/WWWAuthenticateHeaderIms;
+.implements Ljavax/sip/header/WWWAuthenticateHeader;
 
 
 # static fields

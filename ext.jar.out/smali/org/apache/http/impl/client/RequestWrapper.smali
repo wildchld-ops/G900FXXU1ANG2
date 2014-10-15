@@ -292,7 +292,7 @@
 .method public resetHeaders()V
     .locals 1
 
-    iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iget-object v0, p0, Lorg/apache/http/impl/client/RequestWrapper;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
     invoke-virtual {v0}, Lorg/apache/http/message/HeaderGroup;->clear()V
 

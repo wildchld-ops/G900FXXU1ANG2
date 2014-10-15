@@ -3,8 +3,8 @@
 .source "SIPETag.java"
 
 # interfaces
-.implements Ljavax/sip/header/SIPETagHeader;
 .implements Ljavax/sip/header/ExtensionHeader;
+.implements Ljavax/sip/header/SIPETagHeader;
 
 
 # static fields

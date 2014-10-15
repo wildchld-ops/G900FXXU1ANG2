@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/GbaSSLSocketFactory$1;->this$0:Lorg/apache/http/impl/client/secgbaclient/GbaSSLSocketFactory;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

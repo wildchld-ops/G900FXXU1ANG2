@@ -123,11 +123,11 @@
 
     check-cast v0, Ljava/util/Hashtable;
 
-    iput-object v0, p0, Lgov/nist/core/LexerCore;->currentLexer:Ljava/util/Hashtable;
+    iput-object v0, p0, Lgov/nist/javax/sip/parser/Lexer;->currentLexer:Ljava/util/Hashtable;
 
-    iput-object p1, p0, Lgov/nist/core/LexerCore;->currentLexerName:Ljava/lang/String;
+    iput-object p1, p0, Lgov/nist/javax/sip/parser/Lexer;->currentLexerName:Ljava/lang/String;
 
-    iget-object v0, p0, Lgov/nist/core/LexerCore;->currentLexer:Ljava/util/Hashtable;
+    iget-object v0, p0, Lgov/nist/javax/sip/parser/Lexer;->currentLexer:Ljava/util/Hashtable;
 
     if-nez v0, :cond_0
 

@@ -117,7 +117,7 @@
 
     new-instance v0, Ljava/lang/Object;
 
-    invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Lorg/apache/http/impl/client/CustomHttpClient;->logFileLocker:Ljava/lang/Object;
 

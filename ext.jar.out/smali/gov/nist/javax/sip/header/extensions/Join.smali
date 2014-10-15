@@ -3,8 +3,8 @@
 .source "Join.java"
 
 # interfaces
-.implements Ljavax/sip/header/ExtensionHeader;
 .implements Lgov/nist/javax/sip/header/extensions/JoinHeader;
+.implements Ljavax/sip/header/ExtensionHeader;
 
 
 # static fields
@@ -69,7 +69,7 @@
     :cond_1
     iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/Join;->callId:Ljava/lang/String;
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v1}, Lgov/nist/core/NameValueList;->isEmpty()Z
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v2}, Lgov/nist/core/NameValueList;->encode()Ljava/lang/String;
 
@@ -127,7 +127,7 @@
 .method public getFromTag()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     if-nez v0, :cond_0
 
@@ -149,7 +149,7 @@
 .method public getToTag()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     if-nez v0, :cond_0
 
@@ -195,7 +195,7 @@
 .method public removeFromTag()V
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "from-tag"
 
@@ -207,7 +207,7 @@
 .method public removeToTag()V
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/extensions/Join;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "to-tag"
 

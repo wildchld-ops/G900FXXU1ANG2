@@ -3,8 +3,8 @@
 .source "TokenNames.java"
 
 # interfaces
-.implements Lgov/nist/javax/sip/header/ParameterNames;
 .implements Lgov/nist/javax/sip/address/ParameterNames;
+.implements Lgov/nist/javax/sip/header/ParameterNames;
 
 
 # static fields

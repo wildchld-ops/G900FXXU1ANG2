@@ -94,7 +94,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/conn/BasicManagedEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->consumeContent()V
 
@@ -167,7 +167,7 @@
 
     new-instance v0, Lorg/apache/http/conn/EofSensorInputStream;
 
-    iget-object v1, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v1, p0, Lorg/apache/http/conn/BasicManagedEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v1}, Lorg/apache/http/HttpEntity;->getContent()Ljava/io/InputStream;
 

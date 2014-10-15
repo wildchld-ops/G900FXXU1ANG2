@@ -52,7 +52,7 @@
     :try_start_0
     invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/ServerParser;->headerName(I)V
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
@@ -89,7 +89,7 @@
     :cond_2
     :goto_0
     :try_start_1
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
@@ -99,7 +99,7 @@
 
     if-eq v5, v7, :cond_5
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
@@ -109,7 +109,7 @@
 
     if-eqz v5, :cond_5
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
@@ -119,7 +119,7 @@
 
     if-ne v5, v8, :cond_3
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->comment()Ljava/lang/String;
 
@@ -159,13 +159,13 @@
     const/4 v2, 0x0
 
     :try_start_2
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->markInputPosition()I
 
     move-result v2
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x2f
 
@@ -201,11 +201,11 @@
     move-exception v1
 
     :try_start_3
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5, v2}, Lgov/nist/core/LexerCore;->rewindInputPosition(I)V
 
-    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/javax/sip/parser/ServerParser;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->getRest()Ljava/lang/String;
 

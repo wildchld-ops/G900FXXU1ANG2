@@ -3,8 +3,8 @@
 .source "ListeningPointImpl.java"
 
 # interfaces
-.implements Ljavax/sip/ListeningPoint;
 .implements Lgov/nist/javax/sip/ListeningPointExt;
+.implements Ljavax/sip/ListeningPoint;
 
 
 # instance fields
@@ -23,7 +23,7 @@
 .method protected constructor <init>(Ljavax/sip/SipStack;ILjava/lang/String;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     check-cast p1, Lgov/nist/javax/sip/SipStackImpl;
 

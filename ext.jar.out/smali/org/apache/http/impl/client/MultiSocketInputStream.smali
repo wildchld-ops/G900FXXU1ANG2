@@ -459,7 +459,7 @@
 
     new-instance v6, Ljava/lang/Object;
 
-    invoke-direct/range {v6 .. v6}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
 
     iput-object v6, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->sbUsedLocker:Ljava/lang/Object;
 

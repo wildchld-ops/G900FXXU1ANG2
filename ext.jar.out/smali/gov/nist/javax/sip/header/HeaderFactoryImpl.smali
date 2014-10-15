@@ -3,8 +3,8 @@
 .source "HeaderFactoryImpl.java"
 
 # interfaces
-.implements Ljavax/sip/header/HeaderFactory;
 .implements Lgov/nist/javax/sip/header/HeaderFactoryExt;
+.implements Ljavax/sip/header/HeaderFactory;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 

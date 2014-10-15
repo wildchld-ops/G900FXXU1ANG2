@@ -44,7 +44,7 @@
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-array v1, v3, [I
 

@@ -3,8 +3,8 @@
 .source "Authorization.java"
 
 # interfaces
-.implements Ljavax/sip/header/AuthorizationHeader;
 .implements Lgov/nist/javax/sip/header/ims/AuthorizationHeaderIms;
+.implements Ljavax/sip/header/AuthorizationHeader;
 
 
 # static fields

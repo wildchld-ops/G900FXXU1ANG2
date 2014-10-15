@@ -369,11 +369,11 @@
 
     check-cast v3, Lgov/nist/javax/sip/header/StatusLine;
 
-    iget-object v5, v3, Lgov/nist/core/GenericObject;->matchExpression:Lgov/nist/core/Match;
+    iget-object v5, v3, Lgov/nist/javax/sip/header/StatusLine;->matchExpression:Lgov/nist/core/Match;
 
     if-eqz v5, :cond_2
 
-    iget-object v4, v3, Lgov/nist/core/GenericObject;->matchExpression:Lgov/nist/core/Match;
+    iget-object v4, v3, Lgov/nist/javax/sip/header/StatusLine;->matchExpression:Lgov/nist/core/Match;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/header/StatusLine;->encode()Ljava/lang/String;
 

@@ -3,8 +3,8 @@
 .source "HttpRoute.java"
 
 # interfaces
-.implements Lorg/apache/http/conn/routing/RouteInfo;
 .implements Ljava/lang/Cloneable;
+.implements Lorg/apache/http/conn/routing/RouteInfo;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljava/net/InetAddress;Lorg/apache/http/HttpHost;[Lorg/apache/http/HttpHost;ZLorg/apache/http/conn/routing/RouteInfo$TunnelType;Lorg/apache/http/conn/routing/RouteInfo$LayerType;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p2, :cond_0
 

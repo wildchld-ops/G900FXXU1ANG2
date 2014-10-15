@@ -3,9 +3,9 @@
 .source "SIPHeader.java"
 
 # interfaces
+.implements Lgov/nist/javax/sip/header/HeaderExt;
 .implements Lgov/nist/javax/sip/header/SIPHeaderNames;
 .implements Ljavax/sip/header/Header;
-.implements Lgov/nist/javax/sip/header/HeaderExt;
 
 
 # instance fields

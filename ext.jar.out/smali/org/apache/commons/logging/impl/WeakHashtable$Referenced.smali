@@ -24,7 +24,7 @@
 .method private constructor <init>(Ljava/lang/Object;)V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 
@@ -44,7 +44,7 @@
 .method private constructor <init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-instance v0, Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;
 

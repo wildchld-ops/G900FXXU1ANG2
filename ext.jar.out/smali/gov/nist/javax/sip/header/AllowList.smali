@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/AllowList;-><init>()V
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/AllowList;->hlist:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lgov/nist/javax/sip/header/AllowList;->clonehlist(Ljava/util/List;)Lgov/nist/javax/sip/header/SIPHeaderList;
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v2}, Ljava/util/LinkedList;-><init>()V
 
-    iget-object v3, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
+    iget-object v3, p0, Lgov/nist/javax/sip/header/AllowList;->hlist:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

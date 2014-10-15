@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v3, v4}, Lorg/apache/http/message/ParserCursor;-><init>(II)V
 
-    iget-object v3, p0, Lorg/apache/http/impl/io/AbstractMessageParser;->lineParser:Lorg/apache/http/message/LineParser;
+    iget-object v3, p0, Lorg/apache/http/impl/io/HttpResponseParser;->lineParser:Lorg/apache/http/message/LineParser;
 
     iget-object v4, p0, Lorg/apache/http/impl/io/HttpResponseParser;->lineBuf:Lorg/apache/http/util/CharArrayBuffer;
 

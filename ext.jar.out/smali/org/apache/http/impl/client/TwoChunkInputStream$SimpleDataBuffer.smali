@@ -58,7 +58,7 @@
 
     iput-object p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->dis:Ljava/io/DataInputStream;
 
@@ -150,7 +150,7 @@
 
     new-instance v1, Ljava/lang/Object;
 
-    invoke-direct/range {v1 .. v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     monitor-enter v1
 

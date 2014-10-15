@@ -3,8 +3,8 @@
 .source "HopImpl.java"
 
 # interfaces
-.implements Ljavax/sip/address/Hop;
 .implements Ljava/io/Serializable;
+.implements Ljavax/sip/address/Hop;
 
 
 # instance fields
@@ -32,7 +32,7 @@
 
     const/4 v8, 0x0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-nez p1, :cond_0
 
@@ -293,7 +293,7 @@
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/HopImpl;->host:Ljava/lang/String;
 
