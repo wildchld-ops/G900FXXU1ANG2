@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/left_column_width" android:layout_height="fill_parent">
+        <com.google.android.finsky.layout.AccountSelectorView android:textSize="@dimen/content_generic_large_size" android:textColor="@color/play_primary_text" android:gravity="right|center" android:layout_gravity="bottom" android:id="@id/account_name" android:background="@drawable/highlight_overlay_light" android:visibility="gone" style="@style/AccountSelector" />
+        <FrameLayout android:id="@id/list_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.google.android.finsky.activities.myapps.DocumentView android:id="@id/details_content" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/document_view" />
+    </com.google.android.finsky.activities.myapps.DocumentView>
+</LinearLayout>

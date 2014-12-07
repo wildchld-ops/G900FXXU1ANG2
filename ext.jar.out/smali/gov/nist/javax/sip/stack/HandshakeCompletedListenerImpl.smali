@@ -15,6 +15,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/TLSMessageChannel;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/stack/TLSMessageChannel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,6 +38,7 @@
 
 .method public handshakeCompleted(Ljavax/net/ssl/HandshakeCompletedEvent;)V
     .locals 0
+    .param p1    # Ljavax/net/ssl/HandshakeCompletedEvent;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/HandshakeCompletedListenerImpl;->handshakeCompletedEvent:Ljavax/net/ssl/HandshakeCompletedEvent;
 

@@ -27,13 +27,15 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$TwToolBoxPointerEventListener;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager;Lcom/android/internal/policy/impl/PhoneWindowManager$1;)V
     .locals 0
+    .param p1    # Lcom/android/internal/policy/impl/PhoneWindowManager;
+    .param p2    # Lcom/android/internal/policy/impl/PhoneWindowManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindowManager$TwToolBoxPointerEventListener;-><init>(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
@@ -44,6 +46,7 @@
 # virtual methods
 .method public onPointerEvent(Landroid/view/MotionEvent;)V
     .locals 1
+    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$TwToolBoxPointerEventListener;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 

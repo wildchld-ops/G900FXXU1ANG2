@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DetailsPage_Button">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/play_action_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/standard_button_minwidth</item>
+        <item name="android:minHeight">@dimen/details_button_small_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SetupWizardStackedButtons">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WarmWelcomeButton">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/play_primary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/highlight_overlay_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DialogWhenLarge" parent="@style/FinskyDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+    </style>
+    <style name="DialogWithTitleWhenLarge" parent="@style/FinskyDialogTheme">
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+    </style>
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyDarkDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+    </style>
+</resources>

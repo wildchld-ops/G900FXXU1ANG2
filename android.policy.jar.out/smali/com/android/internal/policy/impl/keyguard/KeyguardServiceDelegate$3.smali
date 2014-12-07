@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate$3;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,6 +36,7 @@
 # virtual methods
 .method public onShown(Landroid/os/IBinder;)V
     .locals 2
+    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "KeyguardServiceDelegate"
 

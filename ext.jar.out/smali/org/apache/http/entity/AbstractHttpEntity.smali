@@ -78,6 +78,7 @@
 
 .method public setChunked(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/entity/AbstractHttpEntity;->chunked:Z
 
@@ -86,6 +87,7 @@
 
 .method public setContentEncoding(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -105,6 +107,7 @@
 
 .method public setContentEncoding(Lorg/apache/http/Header;)V
     .locals 0
+    .param p1    # Lorg/apache/http/Header;
 
     iput-object p1, p0, Lorg/apache/http/entity/AbstractHttpEntity;->contentEncoding:Lorg/apache/http/Header;
 
@@ -113,6 +116,7 @@
 
 .method public setContentType(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -132,6 +136,7 @@
 
 .method public setContentType(Lorg/apache/http/Header;)V
     .locals 0
+    .param p1    # Lorg/apache/http/Header;
 
     iput-object p1, p0, Lorg/apache/http/entity/AbstractHttpEntity;->contentType:Lorg/apache/http/Header;
 

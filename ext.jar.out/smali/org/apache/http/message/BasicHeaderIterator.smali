@@ -17,6 +17,8 @@
 # direct methods
 .method public constructor <init>([Lorg/apache/http/Header;Ljava/lang/String;)V
     .locals 2
+    .param p1    # [Lorg/apache/http/Header;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,6 +52,7 @@
 # virtual methods
 .method protected filterHeader(I)Z
     .locals 2
+    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/message/BasicHeaderIterator;->headerName:Ljava/lang/String;
 
@@ -85,6 +88,7 @@
 
 .method protected findNext(I)I
     .locals 4
+    .param p1    # I
 
     const/4 v2, -0x1
 

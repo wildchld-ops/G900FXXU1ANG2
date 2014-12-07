@@ -41,7 +41,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/address/NetObject;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -67,6 +67,7 @@
 
 .method public deleteParm(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->parameters:Lgov/nist/core/NameValueList;
 
@@ -95,6 +96,7 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
+    .param p1    # Ljava/lang/StringBuffer;
 
     iget-boolean v0, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->isglobal:Z
 
@@ -147,6 +149,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->parameters:Lgov/nist/core/NameValueList;
 
@@ -249,6 +252,7 @@
 
 .method public hasParm(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->parameters:Lgov/nist/core/NameValueList;
 
@@ -303,6 +307,7 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->parameters:Lgov/nist/core/NameValueList;
 
@@ -325,6 +330,7 @@
 
 .method public setGlobal(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->isglobal:Z
 
@@ -333,6 +339,7 @@
 
 .method public setIsdnSubaddress(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "isub"
 
@@ -343,6 +350,8 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -357,6 +366,7 @@
 
 .method public setParameters(Lgov/nist/core/NameValueList;)V
     .locals 0
+    .param p1    # Lgov/nist/core/NameValueList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->parameters:Lgov/nist/core/NameValueList;
 
@@ -365,6 +375,8 @@
 
 .method public setParm(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -379,6 +391,7 @@
 
 .method public setPhoneNumber(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/TelephoneNumber;->phoneNumber:Ljava/lang/String;
 
@@ -387,6 +400,7 @@
 
 .method public setPostDial(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lgov/nist/core/NameValue;
 

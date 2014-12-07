@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9$1;->this$1:Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #calls: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->SaveImage()Z
+    # invokes: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->SaveImage()Z
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     new-instance v1, Landroid/os/Bundle;
@@ -78,7 +78,7 @@
 
     iget-object v3, v3, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePath:Ljava/lang/String;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePath:Ljava/lang/String;
     invoke-static {v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/lang/String;
 
     move-result-object v3
@@ -97,7 +97,7 @@
 
     iget-object v3, v3, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePathForAnimation:Ljava/lang/String;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePathForAnimation:Ljava/lang/String;
     invoke-static {v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/lang/String;
 
     move-result-object v3
@@ -112,7 +112,7 @@
 
     iget-object v4, v4, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordXForIntent:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordXForIntent:I
     invoke-static {v4}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$6300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
 
     move-result v4
@@ -121,7 +121,7 @@
 
     iget-object v5, v5, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordYForIntent:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordYForIntent:I
     invoke-static {v5}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$6500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
 
     move-result v5
@@ -130,7 +130,7 @@
 
     iget-object v6, v6, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordXForIntent:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordXForIntent:I
     invoke-static {v6}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$6200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
 
     move-result v6
@@ -139,7 +139,7 @@
 
     iget-object v7, v7, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordYForIntent:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordYForIntent:I
     invoke-static {v7}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$6400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
 
     move-result v7
@@ -154,7 +154,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     move-result v2
@@ -165,7 +165,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Context;
 
     move-result-object v2
@@ -176,14 +176,14 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
     invoke-static {v2, v8}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9$1;->this$1:Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurveForDrawing:Landroid/graphics/Path;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurveForDrawing:Landroid/graphics/Path;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
 
     move-result-object v2
@@ -194,7 +194,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurve:Landroid/graphics/Path;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurve:Landroid/graphics/Path;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$3500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
 
     move-result-object v2
@@ -205,7 +205,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondPathOfCurve:Landroid/graphics/Path;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondPathOfCurve:Landroid/graphics/Path;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$4100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
 
     move-result-object v2
@@ -217,7 +217,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/os/Handler;
 
     move-result-object v2
@@ -228,7 +228,7 @@
 
     iget-object v2, v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$9;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropHandler:Landroid/os/Handler;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$7600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/os/Handler;
 
     move-result-object v2
@@ -249,7 +249,7 @@
 
     const/4 v3, 0x0
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsLiveCropThread:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsLiveCropThread:Z
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$902(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
 
     return-void

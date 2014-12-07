@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="btn_hover_dark">@drawable/btn_hover</item>
+    <item type="drawable" name="btn_hover_light">@drawable/btn_hover</item>
+    <item type="drawable" name="highlight_overlay_action_button">@drawable/highlight_overlay_dark</item>
+    <item type="drawable" name="overlay_pressed_dark">@drawable/overlay_pressed_blue</item>
+    <item type="drawable" name="overlay_pressed_light">@drawable/overlay_pressed_blue</item>
+</resources>

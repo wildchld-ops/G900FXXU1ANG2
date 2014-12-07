@@ -57,7 +57,7 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lgov/nist/javax/sip/address/NetObject;->stringRepresentation:Ljava/lang/String;
+    iput-object v0, v1, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -71,7 +71,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     const-string v21, "{"
 
@@ -79,7 +79,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     invoke-virtual/range {v19 .. v19}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
@@ -171,7 +171,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     :try_start_0
     invoke-virtual {v10}, Ljava/lang/Class;->isPrimitive()Z
@@ -208,7 +208,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     const-string v21, "int"
 
@@ -228,7 +228,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Lgov/nist/javax/sip/address/NetObject;->sprint(I)V
+    invoke-virtual {v0, v15}, Lgov/nist/core/GenericObject;->sprint(I)V
 
     goto :goto_1
 
@@ -258,7 +258,7 @@
 
     move/from16 v1, v20
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(S)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(S)V
 
     goto/16 :goto_1
 
@@ -281,7 +281,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Lgov/nist/javax/sip/address/NetObject;->sprint(C)V
+    invoke-virtual {v0, v4}, Lgov/nist/core/GenericObject;->sprint(C)V
 
     goto/16 :goto_1
 
@@ -306,7 +306,7 @@
 
     move-wide/from16 v1, v16
 
-    invoke-virtual {v0, v1, v2}, Lgov/nist/javax/sip/address/NetObject;->sprint(J)V
+    invoke-virtual {v0, v1, v2}, Lgov/nist/core/GenericObject;->sprint(J)V
 
     goto/16 :goto_1
 
@@ -329,7 +329,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Lgov/nist/javax/sip/address/NetObject;->sprint(Z)V
+    invoke-virtual {v0, v3}, Lgov/nist/core/GenericObject;->sprint(Z)V
 
     goto/16 :goto_1
 
@@ -352,7 +352,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5, v6}, Lgov/nist/javax/sip/address/NetObject;->sprint(D)V
+    invoke-virtual {v0, v5, v6}, Lgov/nist/core/GenericObject;->sprint(D)V
 
     goto/16 :goto_1
 
@@ -375,7 +375,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lgov/nist/javax/sip/address/NetObject;->sprint(F)V
+    invoke-virtual {v0, v12}, Lgov/nist/core/GenericObject;->sprint(F)V
 
     goto/16 :goto_1
 
@@ -408,7 +408,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/javax/sip/address/NetObject;->indentation:I
+    iget v0, v0, Lgov/nist/core/GenericObject;->indentation:I
 
     move/from16 v22, v0
 
@@ -422,7 +422,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -433,7 +433,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -466,7 +466,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lgov/nist/javax/sip/address/NetObject;->indentation:I
+    iget v0, v0, Lgov/nist/core/GenericObject;->indentation:I
 
     move/from16 v22, v0
 
@@ -480,7 +480,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -491,7 +491,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -540,7 +540,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     :goto_2
     const-string v21, "{"
@@ -549,7 +549,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -573,7 +573,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     :goto_3
     const-string v21, "}"
@@ -582,7 +582,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -613,7 +613,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -624,7 +624,7 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -637,11 +637,11 @@
 
     move-object/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/address/NetObject;->sprint(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lgov/nist/core/GenericObject;->sprint(Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lgov/nist/javax/sip/address/NetObject;->stringRepresentation:Ljava/lang/String;
+    iget-object v0, v0, Lgov/nist/core/GenericObject;->stringRepresentation:Ljava/lang/String;
 
     move-object/from16 v21, v0
 
@@ -650,22 +650,24 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
-    iget v1, p0, Lgov/nist/javax/sip/address/NetObject;->indentation:I
+    iget v1, p0, Lgov/nist/core/GenericObject;->indentation:I
 
-    iput p1, p0, Lgov/nist/javax/sip/address/NetObject;->indentation:I
+    iput p1, p0, Lgov/nist/core/GenericObject;->indentation:I
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/address/NetObject;->debugDump()Ljava/lang/String;
 
     move-result-object v0
 
-    iput v1, p0, Lgov/nist/javax/sip/address/NetObject;->indentation:I
+    iput v1, p0, Lgov/nist/core/GenericObject;->indentation:I
 
     return-object v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 17
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1076,6 +1078,7 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 23
+    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1660,7 +1663,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/address/NetObject;->encode()Ljava/lang/String;
+    invoke-virtual {p0}, Lgov/nist/core/GenericObject;->encode()Ljava/lang/String;
 
     move-result-object v0
 

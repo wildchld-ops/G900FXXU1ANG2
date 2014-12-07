@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d applications ont bien été mises à jour</item>
+        <item quantity="one">%1$d application a bien été mise à jour</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d mises à jour disponibles</item>
+        <item quantity="one">%1$d mise à jour disponible</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d mises à jour à approuver</item>
+        <item quantity="one">%1$d mise à jour à approuver</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d résultats</item>
+        <item quantity="one">%1$d résultat</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d nouvelles mises à jour</item>
+        <item quantity="one">%1$d nouvelle mise à jour</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Votre note : %1$s étoiles</item>
+        <item quantity="one">Votre note : %1$s étoile</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">+1 de %1$s personnes</item>
+        <item quantity="one">+1 de %1$s personnes</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">+1 de %1$s et %2$s autres personnes</item>
+        <item quantity="one">+1 de %1$s et %2$s autres personnes</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s autres</item>
+        <item quantity="one">+%1$d autre</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d sélectionnées</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Mises à jour disponibles</item>
+        <item quantity="one">Mise à jour disponible</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">%1$d mises à jour sont disponibles. Souhaitez-vous les installer ?</item>
+        <item quantity="one">"%1$d mise à jour est disponible. Souhaitez-vous l'installer ?"</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s cercles</item>
+        <item quantity="one">%1$s cercle</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">étoiles</item>
+        <item quantity="one">étoile</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoiles – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoile – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoiles – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoile – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s étoiles&amp;lt;/b> – %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s étoile&amp;lt;/b> – %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoiles</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> : %2$s étoile</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">A attribué &amp;lt;b>%1$s étoiles&amp;lt;/b> à cet élément.</item>
+        <item quantity="one">A attribué &amp;lt;b>%1$s étoile&amp;lt;/b> à cet élément.</item>
+    </plurals>
+</resources>

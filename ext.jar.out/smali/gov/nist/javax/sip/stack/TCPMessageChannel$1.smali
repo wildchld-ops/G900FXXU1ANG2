@@ -37,7 +37,7 @@
     :try_start_0
     iget-object v0, p0, Lgov/nist/javax/sip/stack/TCPMessageChannel$1;->this$0:Lgov/nist/javax/sip/stack/TCPMessageChannel;
 
-    #getter for: Lgov/nist/javax/sip/stack/TCPMessageChannel;->mySock:Ljava/net/Socket;
+    # getter for: Lgov/nist/javax/sip/stack/TCPMessageChannel;->mySock:Ljava/net/Socket;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/TCPMessageChannel;->access$000(Lgov/nist/javax/sip/stack/TCPMessageChannel;)Ljava/net/Socket;
 
     move-result-object v0
@@ -65,7 +65,7 @@
     :try_start_0
     iget-object v0, p0, Lgov/nist/javax/sip/stack/TCPMessageChannel$1;->this$0:Lgov/nist/javax/sip/stack/TCPMessageChannel;
 
-    #getter for: Lgov/nist/javax/sip/stack/TCPMessageChannel;->mySock:Ljava/net/Socket;
+    # getter for: Lgov/nist/javax/sip/stack/TCPMessageChannel;->mySock:Ljava/net/Socket;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/TCPMessageChannel;->access$000(Lgov/nist/javax/sip/stack/TCPMessageChannel;)Ljava/net/Socket;
 
     move-result-object v0

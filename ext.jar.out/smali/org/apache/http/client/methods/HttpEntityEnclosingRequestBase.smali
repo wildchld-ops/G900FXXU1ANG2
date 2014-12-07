@@ -58,7 +58,7 @@
 
     const-string v1, "Expect"
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header;
+    invoke-virtual {p0, v1}, Lorg/apache/http/message/AbstractHttpMessage;->getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header;
 
     move-result-object v0
 
@@ -97,6 +97,7 @@
 
 .method public setEntity(Lorg/apache/http/HttpEntity;)V
     .locals 0
+    .param p1    # Lorg/apache/http/HttpEntity;
 
     iput-object p1, p0, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->entity:Lorg/apache/http/HttpEntity;
 

@@ -38,6 +38,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/routing/HttpRoute;I)V
     .locals 1
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,12 +80,13 @@
 # virtual methods
 .method public allocEntry(Ljava/lang/Object;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 7
+    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
     iget-object v5, p0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;->freeEntries:Ljava/util/LinkedList;
 
-    invoke-virtual {v5}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v5}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v5
 
@@ -114,7 +117,7 @@
 
     check-cast v1, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
-    invoke-virtual {v1}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;->getState()Ljava/lang/Object;
+    invoke-virtual {v1}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->getState()Ljava/lang/Object;
 
     move-result-object v5
 
@@ -132,7 +135,7 @@
     :cond_1
     iget-object v5, p0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;->freeEntries:Ljava/util/LinkedList;
 
-    invoke-virtual {v5}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v5}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v5
 
@@ -146,7 +149,7 @@
 
     check-cast v1, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
-    invoke-virtual {v1, v4}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;->setState(Ljava/lang/Object;)V
+    invoke-virtual {v1, v4}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->setState(Ljava/lang/Object;)V
 
     invoke-virtual {v1}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;->getConnection()Lorg/apache/http/conn/OperatedClientConnection;
 
@@ -178,6 +181,7 @@
 
 .method public createdEntry(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;)V
     .locals 3
+    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
     iget-object v0, p0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;->route:Lorg/apache/http/conn/routing/HttpRoute;
 
@@ -243,6 +247,7 @@
 
 .method public deleteEntry(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;)Z
     .locals 2
+    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
     iget-object v1, p0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;->freeEntries:Ljava/util/LinkedList;
 
@@ -291,6 +296,7 @@
 
 .method public freeEntry(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;)V
     .locals 3
+    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
     iget v0, p0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;->numEntries:I
 
@@ -469,6 +475,7 @@
 
 .method public queueThread(Lorg/apache/http/impl/conn/tsccm/WaitingThread;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/conn/tsccm/WaitingThread;
 
     if-nez p1, :cond_0
 
@@ -490,6 +497,7 @@
 
 .method public removeThread(Lorg/apache/http/impl/conn/tsccm/WaitingThread;)V
     .locals 1
+    .param p1    # Lorg/apache/http/impl/conn/tsccm/WaitingThread;
 
     if-nez p1, :cond_0
 

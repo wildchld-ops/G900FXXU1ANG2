@@ -32,6 +32,7 @@
 # direct methods
 .method constructor <init>(Ljava/util/Timer;)V
     .locals 1
+    .param p1    # Ljava/util/Timer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,6 +49,7 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/clientauthutils/CredentialsCache;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
+    .param p0    # Lgov/nist/javax/sip/clientauthutils/CredentialsCache;
 
     iget-object v0, p0, Lgov/nist/javax/sip/clientauthutils/CredentialsCache;->authorizationHeaders:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -58,6 +60,9 @@
 # virtual methods
 .method cacheAuthorizationHeader(Ljava/lang/String;Ljavax/sip/header/AuthorizationHeader;I)V
     .locals 9
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljavax/sip/header/AuthorizationHeader;
+    .param p3    # I
 
     invoke-interface {p2}, Ljavax/sip/header/AuthorizationHeader;->getUsername()Ljava/lang/String;
 
@@ -165,6 +170,7 @@
 
 .method getCachedAuthorizationHeaders(Ljava/lang/String;)Ljava/util/Collection;
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -201,6 +207,7 @@
 
 .method public removeAuthenticationHeader(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/clientauthutils/CredentialsCache;->authorizationHeaders:Ljava/util/concurrent/ConcurrentHashMap;
 

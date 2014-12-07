@@ -119,6 +119,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;
 
@@ -136,7 +137,7 @@
 
     sget-object v0, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;->$VALUES:[Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;
 
-    invoke-virtual {v0}, [Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

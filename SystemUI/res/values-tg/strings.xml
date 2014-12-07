@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Интерфейси корбари системавӣ</string>
+    <string name="status_bar_clear_all_button">Тоза кардан</string>
+    <string name="status_bar_do_not_disturb_button">Халал нарасонед</string>
+    <string name="status_bar_please_disturb_button">Нишон додани огоҳиҳо</string>
+    <string name="status_bar_recent_remove_item_title">Нест кардан аз рӯйхат</string>
+    <string name="status_bar_recent_inspect_item_title">Маълумоти барнома</string>
+    <string name="status_bar_no_recent_apps">Ягон барномаи ба наздикӣ истифода шуда нест</string>
+    <string name="status_bar_no_notifications_title">Ягон огоҳӣ нест</string>
+    <string name="status_bar_ongoing_events_title">Ҷорӣ</string>
+    <string name="status_bar_latest_events_title">Огоҳиҳо</string>
+    <string name="battery_low_title">Барқдиҳакро пайваст кунед.</string>
+    <string name="battery_low_percent_format">%d%% боқӣ монда аст.</string>
+    <string name="invalid_charger">Барқдиҳӣ тавассути USB дастгирӣ карда намешавад. Барқдиҳакро истифода баред.</string>
+    <string name="battery_low_why">Истифодаи батарея</string>
+    <string name="status_bar_settings_settings_button">Танзимот</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">Реҷаи Парвоз</string>
+    <string name="status_bar_settings_auto_rotation">Даврзанонии худкори экран</string>
+    <string name="status_bar_settings_mute_label">Бесадо кардан</string>
+    <string name="status_bar_settings_auto_brightness_label">Худкор</string>
+    <string name="status_bar_settings_notifications">Огоҳиҳо</string>
+    <string name="status_bar_settings_battery_meter_format">%d%%</string>
+    <string name="quickpanel_airmessage_text">Паёмҳои шиновар</string>
+    <string name="quickpanel_airmessage_description">Паёмҳои шиновар</string>
+    <string name="bluetooth_tethered">Bluetooth­модем фаъол аст</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Танзим кардани тарзҳои вуруд</string>
+    <string name="status_bar_use_physical_keyboard">Клавиатураи ҷисмӣ</string>
+    <string name="usb_device_permission_prompt">Ба барнома %1$s иҷозат медиҳед, ки дастгоҳи USB-ро дастрас кунад?</string>
+    <string name="usb_accessory_permission_prompt">Ба барнома %1$s иҷозат медиҳед, ки лавозимоти USB-ро дастрас кунад?</string>
+    <string name="usb_device_confirm_prompt">Вақте ки ин лавозими USB пайваст мешавад, %1$s-ро мекушоед?</string>
+    <string name="usb_accessory_confirm_prompt">Вақте ки ин лавозими USB пайваст мешавад, %1$s-ро мекушоед?</string>
+    <string name="usb_accessory_uri_prompt">Ягон барномаи насбшуда бо ин таҷҳизоти иловагии USB кор намекунад. Дар бораи ин таҷҳизоти иловагӣ дар %s маълумот гиред.</string>
+    <string name="title_usb_accessory">Лавозими USB</string>
+    <string name="label_view">Дидан</string>
+    <string name="always_use_device">Истифодаи ин дастгоҳи USB ҳамчун пешфарз</string>
+    <string name="always_use_accessory">Барои ин таҷҳизоти USB ҳамчун пешфарз</string>
+    <string name="usb_debugging_title">Ислоҳи хатогиҳои USB-ро иҷозат медиҳед?</string>
+    <string name="usb_debugging_message">"Изи ангушти тугмаи RSA дар компютер:
+%1$s"</string>
+    <string name="usb_debugging_always">Ба ин компютер ҳамеша иҷозат додан</string>
+    <string name="usb_30_debugging_title">Диққат</string>
+    <string name="usb_30_ok_button">USB 3.0-ро истифода баред</string>
+    <string name="compat_mode_on">Ёзондан барои пуркунии экран</string>
+    <string name="compat_mode_off">Ёзондан барои пур кардани экран</string>
+    <string name="compat_mode_help_header">Миқёсбандии мувофиқат</string>
+    <string name="compat_mode_help_body">Вақте ки барнома барои экрани хурдтар таҳия шуда бошад, дар назди соат даваки миқёс нишон дода мешавад.</string>
+    <string name="screenshot_saving_ticker">Акси экран захира карда мешавад…</string>
+    <string name="screenshot_saving_title">Акси экран захира карда мешавад…</string>
+    <string name="screenshot_saving_text">Акси экран захира карда мешавад</string>
+    <string name="screenshot_saved_title">Акси экран гирифта шуд.</string>
+    <string name="screenshot_saved_text">Барои дидани акси экран, зарба занед.</string>
+    <string name="screenshot_failed_title">Скриншот гирифта наметавонад.</string>
+    <string name="screenshot_failed_text">Захира кардани акси экран ғайриимкон аст. USB метавонад банд бошад.</string>
+    <string name="screenshot_failed_due_to_drm_text">Гирифтани акси экран ғайриимкон аст. Тасвири бо ИҲР муҳофизатшуда.</string>
+    <string name="one_item_will_be_deleted">1 ҷузъ нест карда мешавад</string>
+    <string name="usb_preference_title">Имконоти интиқоли файл бо USB</string>
+    <string name="use_mtp_button_title">Насб кардан ҳамчун плеери медиа (MTP)</string>
+    <string name="use_ptp_button_title">Насб кардан ҳамчун камера (PTP)</string>
+    <string name="installer_cd_button_title">Насб кардани барномаи таҳвили файлҳои Android барои Mac</string>
+    <string name="accessibility_back">Ба қафо</string>
+    <string name="accessibility_home">Хона</string>
+    <string name="accessibility_menu">Меню</string>
+    <string name="accessibility_recent">Барномаҳои охирин</string>
+    <string name="accessibility_search_light">Ҷустуҷӯ кардан</string>
+    <string name="accessibility_camera_button">Камера</string>
+    <string name="accessibility_ime_switch_button">Тугмаи иваз кардани тарзи вуруд</string>
+    <string name="accessibility_compatibility_zoom_button">Тугмаи танзими миқёси мувофиқ</string>
+    <string name="accessibility_compatibility_zoom_example">Калонтар нишон додан</string>
+    <string name="accessibility_bluetooth_connected">Ба Bluetooth пайваст шуд</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth ҷудо шуд.</string>
+    <string name="accessibility_no_battery">Батарея нест</string>
+    <string name="accessibility_battery_one_bar">Як сутуни барқи батарея</string>
+    <string name="accessibility_battery_two_bars">Ду сутуни барқи батарея</string>
+    <string name="accessibility_battery_three_bars">Се сутуни барқи батарея</string>
+    <string name="accessibility_battery_full">Батарея пур аст.</string>
+    <string name="accessibility_no_phone">Сигнали телефон нест</string>
+    <string name="accessibility_phone_one_bar">Як сутуни сигнали телефон</string>
+    <string name="accessibility_phone_two_bars">Ду сутуни сигнали телефон</string>
+    <string name="accessibility_phone_three_bars">Се сутуни сигнали телефон</string>
+    <string name="accessibility_phone_signal_full">Сигнали телефон пур аст</string>
+    <string name="accessibility_no_data">Ягон иттилоот нест</string>
+    <string name="accessibility_data_one_bar">Як сутуни сигнали иттилоот</string>
+    <string name="accessibility_data_two_bars">Ду сутуни сигнали иттилоот</string>
+    <string name="accessibility_data_three_bars">Се сутуни сигнали иттилоот</string>
+    <string name="accessibility_data_four_bars">Чор навори сигналҳои иттилоот</string>
+    <string name="accessibility_data_five_bars">Панҷ навори сигналҳои иттилоот</string>
+    <string name="accessibility_data_signal_full">Сигнали иттилоот пур аст</string>
+    <string name="accessibility_wifi_off">Wi-Fi Хомӯш аст</string>
+    <string name="accessibility_no_wifi">Сигнали Wi­Fi нест</string>
+    <string name="accessibility_wifi_one_bar">Як сутуни сигнали Wi-Fi</string>
+    <string name="accessibility_wifi_two_bars">Ду сутуни сигнали Wi-Fi</string>
+    <string name="accessibility_wifi_three_bars">Се сутуни сигнали Wi-Fi</string>
+    <string name="accessibility_wifi_signal_full">Сигнали Wi-Fi пур аст.</string>
+    <string name="accessibility_no_signal">Сигнал нест</string>
+    <string name="accessibility_not_connected">Пайваст нашудааст.</string>
+    <string name="accessibility_phone_four_bars">Чор навори сигналҳои телефон</string>
+    <string name="accessibility_phone_five_bars">Панҷ навори сигналҳои телефон</string>
+    <string name="accessibility_desc_on">Фаъол</string>
+    <string name="accessibility_desc_off">Ғайрифаъол</string>
+    <string name="accessibility_desc_connected">Пайваст шудем</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1X</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Роуминг</string>
+    <string name="accessibility_data_connection_edge">Канор</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">SIM-корт нест</string>
+    <string name="accessibility_bluetooth_tether">Bluetooth­модем</string>
+    <string name="accessibility_airplane_mode">Реҷаи Парвоз</string>
+    <string name="accessibility_battery_level">Батарея %d фоиз барқ дорад.</string>
+    <string name="accessibility_settings_button">Танзимоти система</string>
+    <string name="accessibility_notifications_button">Огоҳиҳо</string>
+    <string name="accessibility_remove_notification">Тоза кардани огоҳиҳо</string>
+    <string name="accessibility_gps_enabled">GPS фаъол аст</string>
+    <string name="accessibility_gps_acquiring">GPS дастрас карда мешавад…</string>
+    <string name="accessibility_tty_enabled">TeleTypewriter фаъол карда шуд</string>
+    <string name="accessibility_ringer_vibrate">Ларзиши рингтон</string>
+    <string name="accessibility_ringer_silent">Хомӯш кардани садои рингтон</string>
+    <string name="accessibility_desc_notification_shade">Панели огоҳӣ</string>
+    <string name="accessibility_desc_notification_panel">Панели огоҳиҳо</string>
+    <string name="accessibility_desc_quick_settings">Танзимоти зудамал</string>
+    <string name="accessibility_desc_recent_apps">Барномаҳои охирин</string>
+    <string name="accessibility_quick_settings_alarm">Бедоркунак ба %s таъин шуд.</string>
+    <string name="accessibility_sfinder_button">S Finder</string>
+    <string name="accessibility_qconnect_button">Пайвасти зудамал</string>
+    <string name="accessibility_qconnect_button_tts">Пайвасти зудамал</string>
+    <string name="data_usage_disabled_dialog_3g_title">Иттилооти 2G-3G ғайрифаъол шуд</string>
+    <string name="data_usage_disabled_dialog_4g_title">Иттилооти 4G ғайрифаъол карда шуд</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Иттилооти мобилӣ ғайрифаъол карда шуд</string>
+    <string name="data_usage_disabled_dialog_title">Иттилоот ғайрифаъол шуд</string>
+    <string name="data_usage_disabled_dialog">Маҳдудияти истифодаи иттилоот сарф карда шуд. Барои истифодаи миқдори иловагии иттилоот таҳвилгари хизматрасониҳои мобилӣ метавонад маблағи иловагӣ ситонад.</string>
+    <string name="data_usage_disabled_dialog_enable">Пайвастагии иттилоотро дубора фаъол кунед</string>
+    <string name="data_usage_enable_mobile_warning">Пайвастшавӣ тавассути иттилооти баставӣ метавонад боиси хароҷоти иловагӣ шавад. Идома медиҳед?</string>
+    <string name="data_usage_disable_mobile">Пайвасти иттилооти мобилиро ғайрифаъол кунем?</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Пайвастагии Интернет нест</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi пайваст карда шуд.</string>
+    <string name="gps_notification_searching_text">Ҷустуҷӯ бо истифодаи GPS…</string>
+    <string name="gps_notification_found_text">Макон бо GPS танзим шуд</string>
+    <string name="accessibility_clear_all">Тоза кардани ҳамаи огоҳиҳо</string>
+    <string name="status_bar_notification_inspect_item_title">Маълумоти барнома</string>
+    <string name="close_universe">Пӯшидан</string>
+    <string name="notifications_off_title">Огоҳиҳо ғайрифаъол шуданд</string>
+    <string name="notifications_off_text">Барои фаъол кардани огоҳиҳо, зарба занед.</string>
+    <string name="accessibility_rotation_lock_off">Экран ба тариқи худкор давр мезанад.</string>
+    <string name="start_dreams">Хаёл</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_battery_charged_label">Батарея пур шуд.</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth ғайрифаъол аст</string>
+    <string name="quick_settings_brightness_label">Равшанӣ</string>
+    <string name="quick_settings_rotation_unlocked_label">Даврзании худкор</string>
+    <string name="quick_settings_ime_label">Тарзи вуруд</string>
+    <string name="quick_settings_location_label">Макон</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Танҳо зангҳои таъҷилӣ</string>
+    <string name="quick_settings_settings_label">Танзимот</string>
+    <string name="quick_settings_time_label">Вақт</string>
+    <string name="quick_settings_user_label">Ман</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">Пайваст нашудааст.</string>
+    <string name="quick_settings_wifi_no_network">Ягон шабака нест</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi Хомӯш аст</string>
+    <string name="quick_settings_wifi_display_label">"Wi-Fi
+намоиш"</string>
+    <string name="quick_settings_wifi_display_no_connection_label">Дисплейи бесим</string>
+    <string name="quick_settings_brightness_dialog_title">Равшанӣ</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">Худкор</string>
+    <string name="quickpanel_wifi_text">Wi-Fi</string>
+    <string name="quickpanel_bluetooth_text">Bluetooth</string>
+    <string name="quickpanel_gps_text">Мавқеъ</string>
+    <string name="quickpanel_silent_mode_text">"Реҷаи
+бесадо"</string>
+    <string name="quickpanel_silent_mode_sound">Садо</string>
+    <string name="quickpanel_silent_mode_vibrate">Ларзиш</string>
+    <string name="quickpanel_silent_mode_mute">Бесадо</string>
+    <string name="quickpanel_rotation_text">"Даврзании
+экран"</string>
+    <string name="quickpanel_mobile_data_text">"Иттилооти
+мобилӣ"</string>
+    <string name="quickpanel_dormant_mode_text">"Реҷаи
+мамнуъкунӣ"</string>
+    <string name="quickpanel_notification_text">Огоҳӣ</string>
+    <string name="quickpanel_airplane_mode_text">"Реҷаи
+Парвоз"</string>
+    <string name="quickpanel_sync_text">Ҳамоҳангсозӣ</string>
+    <string name="quickpanel_wifi_display_text">"Screen
+Mirroring"</string>
+    <string name="quickpanel_power_saving_text">"Сарфаи
+барқ"</string>
+    <string name="quickpanel_ultra_power_saving_text">"Сарфаи
+қувва"</string>
+    <string name="quickpanel_driving_mode_text">"Реҷаи
+бедаст"</string>
+    <string name="quickpanel_smart_stay_text">"Истодани
+зеҳнӣ"</string>
+    <string name="quickpanel_smart_scroll_text">"Ҳаракати
+зеҳнӣ"</string>
+    <string name="quickpanel_smart_pause_text">"Таваққуфи
+зеҳнӣ"</string>
+    <string name="quickpanel_smart_network_text">"Шабакаи
+зеҳнӣ"</string>
+    <string name="quickpanel_s_beam_text">S Beam</string>
+    <string name="quickpanel_wifi_hotspot_text">"Нуқ. Дастраси 
+ моб."</string>
+    <string name="quickpanel_multiwindow_text">"Сер
+равзана"</string>
+    <string name="quickpanel_nfcc_text">NFC</string>
+    <string name="quickpanel_brightness_text">Равшанӣ</string>
+    <string name="quickpanel_airview_text">"Намуди
+ҳавоӣ"</string>
+    <string name="quickpanel_airgesture_text">"Ишораи
+ҳавоӣ"</string>
+    <string name="quickpanel_ebook_text">"Реҷаи
+хондан"</string>
+    <string name="quickpanel_personal_mode_text">"Реҷаи
+махфӣ"</string>
+    <string name="quickpanel_car_mode_text">"Реҷаи
+мошин"</string>
+    <string name="quickpanel_network_booster_text">"Суръатфизои
+боргирӣ"</string>
+    <string name="quickpanel_toolbox_text">Абзордон</string>
+    <string name="quickpanel_quick_connect_text">"Пайвасти
+фаврӣ"</string>
+    <string name="quickpanel_touch_sensitivity_text">"Ҳассосии
+ламс"</string>
+    <string name="quickpanel_wifi_content_description">Wi-Fi</string>
+    <string name="quickpanel_bluetooth_content_description">Bluetooth</string>
+    <string name="quickpanel_gps_content_description">Мавқеъ</string>
+    <string name="quickpanel_silent_mode_content_description">Реҷаи бесадо</string>
+    <string name="quickpanel_silent_mode_sound_content_description">Садо</string>
+    <string name="quickpanel_silent_mode_vibrate_content_description">Ларзиш</string>
+    <string name="quickpanel_silent_mode_mute_content_description">Бе садо</string>
+    <string name="quickpanel_rotation_content_description">Даврзанонии экран</string>
+    <string name="quickpanel_mobile_data_content_description">Иттилооти мобилӣ</string>
+    <string name="quickpanel_dormant_mode_content_description">Реҷаи блоконӣ</string>
+    <string name="quickpanel_notification_content_description">Огоҳӣ</string>
+    <string name="quickpanel_airplane_mode_content_description">Реҷаи парвоз</string>
+    <string name="quickpanel_sync_content_description">Ҳамоҳанг кардан</string>
+    <string name="quickpanel_wifi_display_content_description">Screen Mirroring</string>
+    <string name="quickpanel_power_saving_content_description">Реҷаи сарфаи қувва</string>
+    <string name="quickpanel_ultra_power_saving_content_description">Реҷаи сарфаи мукаммали қувва</string>
+    <string name="quickpanel_driving_mode_content_description">"Реҷаи
+бедаст"</string>
+    <string name="quickpanel_smart_stay_content_description">Дидбони зеҳнӣ</string>
+    <string name="quickpanel_smart_scroll_content_description">Ҳаракати зеҳнӣ</string>
+    <string name="quickpanel_smart_pause_content_description">Таваққуфи зеҳнӣ</string>
+    <string name="quickpanel_smart_network_content_description">Шабакаи зеҳнӣ</string>
+    <string name="quickpanel_s_beam_content_description">S Beam</string>
+    <string name="quickpanel_wifi_hotspot_content_description">Нуқтаи дастрасии мобилӣ</string>
+    <string name="quickpanel_multiwindow_content_description">Бисёрравзана</string>
+    <string name="quickpanel_nfcc_content_description">NFC</string>
+    <string name="quickpanel_brightness_content_description">Равшанӣ</string>
+    <string name="quickpanel_airview_content_description">Намоиш бе расиш</string>
+    <string name="quickpanel_airgesture_content_description">Ишораи ҳавоӣ</string>
+    <string name="quickpanel_ebook_content_description">Реҷаи хониш</string>
+    <string name="quickpanel_personal_mode_content_description">Реҷаи махфӣ</string>
+    <string name="quickpanel_vowifi_content_description">Занги Wi-Fi</string>
+    <string name="quickpanel_car_mode_content_description">Реҷаи мошин</string>
+    <string name="quickpanel_network_booster_content_description">Боргирӣ кардани суръатфизо</string>
+    <string name="quickpanel_toolbox_content_description">Абзордон</string>
+    <string name="quickpanel_touch_sensitivity_content_description">Ҳассосияти расиш</string>
+    <string name="air_gesture_use_popup_title">Фаъол кардани ишоратҳои ҳавоӣ</string>
+    <string name="air_gesture_use_popup_msg">Ишораи ҳавоӣ ва TalkBack-ро фаъол кардан номумкин аст. TalkBack ғайрифаъол мешавад.</string>
+    <string name="air_view_use_popup_title">Фаъол кардани намуди ҳавоӣ</string>
+    <string name="air_view_use_popup_msg">Намуди ҳавоӣ ва имконоти зерин фаъол буда наметавонанд. Имконоти зер ғайрифаъол карда мешаванд.</string>
+    <string name="multi_window_use_popup_title">Фаъол кардани серравзана</string>
+    <string name="multi_window_use_popup_msg">Серравзана ва TalkBack-ро дар як вақт фаъол кардан номумкин аст. TalkBack ғайрифаъол мешавад.</string>
+    <string name="smart_pause_use_popup_title">Фаъол кардани таваққуфи зеҳнӣ</string>
+    <string name="smart_pause_use_popup_msg">Таваққуфи зеҳнӣ ва TalkBack-ро фаъол кардан номумкин аст. TalkBack ғайрифаъол мешавад.</string>
+    <string name="smart_scroll_use_popup_title">Фаъол кардани ҳаракати зеҳнӣ</string>
+    <string name="smart_scroll_use_popup_msg">Ҳаракати зеҳнӣ ва TalkBack-ро фаъол кардан номумкин аст. TalkBack ғайрифаъол мешавад.</string>
+    <string name="smart_stay_use_popup_title">Фаъол кардани истодани зеҳнӣ</string>
+    <string name="smart_stay_use_popup_msg">Истодани зеҳнӣ ва TalkBack-ро фаъол кардан номумкин аст. TalkBack ғайрифаъол мешавад.</string>
+    <string name="toolbox_use_popup_title">Фаъол кардани Абзордон</string>
+    <string name="toolbox_use_popup_msg">Абзордон ва TalkBack наметавонанд якбора фаъол бошанд. TalkBack ғайрифаъол карда мешавад.</string>
+    <string name="quickpanel_content_description_led_on">%s фаъол карда шуд.</string>
+    <string name="quickpanel_content_description_led_off">%s ғайрифаъол карда шуд.</string>
+    <string name="quickpanel_content_description_led_dim">Фаъол кардани %s ғайриимкон аст.</string>
+    <string name="smart_network">Шабакаи зеҳнӣ</string>
+    <string name="smart_network_guide_msg">"Шабакаи зеҳнӣ барои сарфа кардани барқи батарея ёрӣ мерасонад.
+
+Ҳангоми хомӯш шудани экран, он иттилооти мобилӣ ва Wi­Fi­ро ғайрифаъол мекунад, то дастгоҳ барқи камтар сарф кунад.
+
+Бо вуҷуди ин, ҳангоми фаъол кардани экран, шумо метавонед ҳангоми фаъол кардани экран иттилооти кумулятивии Push қабул кунед."</string>
+    <string name="quickpanel_data_roaming_text">Роуминги иттилоот</string>
+    <string name="data_roaming_dialog_text">Барои роуминг маблағи иловагӣ ситонида мешавад. Давом диҳем?</string>
+    <string name="mobile_data_enable_dialog_text">Пайвастшавӣ ба шабакаҳои мобилӣ метавонад, ки вобаста аз нақшаи иттилооти шумо, сабабгори пардохтҳои изофӣ шавад. Идома медиҳед?</string>
+    <string name="quickpanel_edit_current">Панели огоҳиҳо</string>
+    <string name="quickpanel_edit_available">Тугмаҳои дастрас</string>
+    <string name="mobile_data_dialog_text">Шумо дигар барномаҳои ба мисли Интернет, Почтаи электронӣ, YouTube ба воситаи шабакаҳои мобилӣ истифода бурда наметавонед. Давом диҳем?</string>
+    <string name="data_usage_disable_mobile_vzw_1">Unless you use Wi-Fi, you will no longer be able to use the Internet, Email or other apps that require a data connection.</string>
+    <string name="data_usage_disable_mobile_vzw_2">Turn off the mobile data connection?</string>
+    <string name="data_usage_disable_mobile_vzw">"Агар шумо Wi-Fi-ро истифода набаред, шумо дигар наметавонед Интернет, Почтаи электронӣ ва барномаҳои, дигареро ки пайвастагии иттилоотро талаб мекунанд, истифода баред.
+
+Иттилооти мобилӣ ғайрифаъол мешавад."</string>
+    <string name="mobile_data_connect">Пайваст шудан</string>
+    <string name="mobile_data_connection_dialog_text">Mobile data connection is currently disabled. You need to connect Mobile data to use data applications such as Browser, Email and YouTube via mobile network. Do you want to make the connection?</string>
+    <string name="mobile_data_enable_toast_text">Ҳангоми фаъол будани реҷаи Парвоз ба шабакаҳои мобилӣ пайваст шуда наметавонад. Реҷаи Парвозро ғайрифаъол карда, аз нав кӯшиш кунед.</string>
+    <string name="warning_alert_check">Дигар нишон надиҳед</string>
+    <string name="blocking_mode_enable">Ҳангоми фаъол будани ин реҷа, огоҳиҳои функсияҳои интихобшуда нишон дода намешаванд. Шумо танҳо оиди зангҳои даромад аз шахсони дохили рӯйхати иҷозатшуда огоҳонида мешавед.</string>
+    <string name="blocking_mode_enable_for_grid_settings">Реҷаи блоконӣ огоҳиҳои функсияҳои дилхоҳи шуморо ғайрифаъол мекунад. Вақте ки зангҳои даромад баста мешаванд, шумо танҳо оиди зангҳои даромад аз шахсони дохили алоқаҳои иҷозатшуда огоҳонида мешавед. Барои тағйир додани Реҷаи блоконӣ, ба Танзимот > Фардикунонӣ > Реҷаи блоконӣ гузаред.</string>
+    <string name="blocking_mode_enable_wifi">Ҳангоми фаъол будани ин реҷа, огоҳиҳои функсияҳои интихобшуда нишон дода намешаванд.</string>
+    <string name="blocking_mode_title">Реҷаи блоконӣ</string>
+    <string name="dormant_mode_off_message">Барои фаъол кардани реҷаи Бастан, ақаллан як имконро дар зер интихоб кунед.</string>
+    <string name="driving_mode_title">Реҷаи бедаст</string>
+    <string name="driving_mode_on_dialog_msg_1">Пас аз он ки шумо S Voice Бедастро хомӯш кардед, Реҷаи бедаст бояд хомӯш карда шавад. Агар реҷаи бедаст фурӯзон боқӣ монад, огоҳиҳо ва маълумоти занги даромад ҳоло ҳам худкоран хонда мешаванд.</string>
+    <string name="driving_mode_on_dialog_msg_2">Шумо метавонед реҷаи Бедастро бо гуфтани “Хомӯш кардани реҷаи Бедаст” дар S Voice Hands-free ё бо гузаштан ба Танзимот ё панели огоҳиҳо хомӯш кунед.</string>
+    <string name="insert_sim_card">Гузоштани SIM-корт</string>
+    <string name="insert_sim_card_message">Барои дастрас кардани хизматрасониҳои шабака SIM-кортро гузоред.</string>
+    <string name="wifi_enable_warning">Ба кор даровардани Wi-Fi Нуқтаи дастрасии мобилиро ғайрифаъол мекунад.</string>
+    <string name="wifi_ap_turning_off">Нуқтаи дастрасии мобилӣ ғайрифаъол карда мешавад…</string>
+    <string name="no_sim_notification_title">SIM-корт нест</string>
+    <string name="no_sim_notification_title_tmo">Ягон СИМ-корт гузошта нашудааст.</string>
+    <string name="no_sim_notification_text">Гузоштани SIM-корт</string>
+    <string name="accessibility_power_saving_mode">Барои фаъол кардани реҷаи Сарфаи барқ, ақаллан як функсияро фаъол кунед.</string>
+    <string name="accessibility_power_saving_mode_title">Реҷаи сарфаи барқ</string>
+    <string name="accessibility_driving_mode">Барои фурӯзон кардани реҷаи Бедаст ақаллан як функсияи марбутро фаъол кунед.</string>
+    <string name="accessibility_toddler_mode_activate">In Network restriction mode, you can use all your applications without connecting to the network. You can also receive calls and SMS messages. Network restriction mode will be enabled.</string>
+    <string name="accessibility_toddler_mode_deactivate">Network restriction mode will be disabled.</string>
+    <string name="charging_interruption_title">Қуввагирӣ ғайриимкон аст</string>
+    <string name="charging_interruption_by_terminal_open_text">Додани қувва ба дастгоҳи шумо ғайриимкон аст. Мутмаин шавед, ки батарея ва қуввадиҳаки мувофиқи Samsung истифода мебаред. Инчунин дуруст пайваст будани дастгоҳро ба қуввадиҳак тафтиш кунед.</string>
+    <string name="charging_interruption_by_too_high_temperature_text">Барқгирӣ таваққуф карда шуд. Ҳарорати батарея бениҳоят баланд аст.</string>
+    <string name="charging_interruption_by_too_low_temperature_text">Барқгирӣ таваққуф карда шуд. Ҳарорати батарея бениҳоят паст аст.</string>
+    <string name="charging_interruption_by_limit_high_temperature_text">"Дастгоҳ қуввагириро қатъ намуд. Ҳарорати батарея беҳад баланд аст. Ҳангоми ҷудо кардани қуввадиҳак эҳтиёт бошед. Он метавонад хеле гарм бошад.
+
+Ҷудо кардан ва такроран пайваст кардани қуввадиҳак метавонад қуввадиҳиро идома диҳад. Агар батарея боз ҳам хеле гарм шавад, ба хадамоти дастгирии мизоҷон муроҷиат намоед, зеро хатари сӯхтор ё зарари ҷисмонӣ метавонад ба миён ояд."</string>
+    <string name="full_battery_title">Маълумот</string>
+    <string name="full_battery_text">"Батарея пурра барқ гирифт.
+Барқдиҳакро ҷудо кунед."</string>
+    <string name="low_battery_title">Барқи батарея кам аст</string>
+    <string name="critical_low_battery_title">Барқи батарея бениҳоят кам аст</string>
+    <string name="low_battery_text">Дастгоҳи худро ба барқдиҳанда пайваст кунед. Идома додани истифодаи дастгоҳ ҳангоми барқ гирифтани он метавонад барқгирии комили онро пешгирӣ кунад.</string>
+    <string name="low_battery_text_charged_via_ta">Идома додани истифодаи дастгоҳ ҳангоми барқ гирифтани он метавонад барқгирии комили онро пешгирӣ кунад.</string>
+    <string name="low_battery_camera_warning_text">Агар барқи батарея аз %d%% паст шавад, шумо Камераро кушода наметавонед.</string>
+    <string name="critical_low_battery_camera_warning_text">Камераро кушода наметавонад. Барқи батарея %d%% камтар аз ин аст.</string>
+    <string name="low_battery_power_saving_button_text">Сарфаи барқ</string>
+    <string name="start_force_consume_battery_title">Бонги хатар</string>
+    <string name="start_force_consume_battery_text">То хунук шудани он мунтазир шуда, пас дастгоҳро истифода баред.</string>
+    <string name="stop_force_consume_battery_title">Маълумот</string>
+    <string name="stop_force_consume_battery_text">Дастгоҳ пӯшида шуд.</string>
+    <string name="wireless_charging_title">Қуввагирии бесим</string>
+    <string name="cable_charging_title">Барқпуркунӣ бо сим</string>
+    <string name="wireless_charging_text">Тиргаки қуввадиҳанда зоҳир карда шуд. Қувва бе сим гирифта мешавад…</string>
+    <string name="wireless_charging_text_for_us">Now charging wirelessly…</string>
+    <string name="wireless_charging_from_wireless_to_cable_text">Гузариш аз барқгирии бесим ба барқгирӣ бо сим</string>
+    <string name="wireless_charging_from_cable_to_wireless_text">Гузариш аз барқгирӣ бо сим ба барқгирии бесим</string>
+    <string name="wireless_charging_spen_warning_text">Ҳоло дастгоҳ бесим барқ пур мешавад. S Pen дар диапазони пуркунаки барқи бесим кор намекунад.</string>
+    <string name="incompatible_charger_title">Барқ гирифта намешавад.</string>
+    <string name="incompatible_charger_dialog_text">The connected charger is incompatible with this phone. To prevent damage to your phone, charging has been stopped. To continue charging, use the original charger and cable that were provided with this phone.</string>
+    <string name="incompatible_charger_dialog_text_for_tablet">The connected charger is incompatible with this tablet. To prevent damage to your tablet, charging has been stopped. To continue charging, use the original charger and cable that were provided with this tablet.</string>
+    <string name="incompatible_charger_notification_text">Unable to charge. Use the original charger.</string>
+    <string name="slow_charging_title">Slow charging</string>
+    <string name="slow_charging_dialog_text">The connected charger will take longer to charge. To charge faster, use the original charger and cable that were provided with this phone.</string>
+    <string name="slow_charging_dialog_text_for_tablet">The connected charger will take longer to charge or may not charge at all. To charge faster, use the original charger and cable that were provided with this tablet.</string>
+    <string name="slow_charging_notification_text">To charge faster, use the original charger</string>
+    <string name="slow_charging_toast_text">To charge faster, use the charger and cable that were provided with this phone</string>
+    <string name="slow_charging_toast_text_for_tablet">To charge faster, use the charger and cable that were provided with this tablet.</string>
+    <string name="water_damage_warning_title">Болопуши қуввадиҳиро тафтиш кунед</string>
+    <string name="water_damage_warning_text">Барои муҳофизат аз зиёни об, пеш аз истифода сарпӯши барқдиҳиро бодиққат маҳкам кунед.</string>
+    <string name="overheat_shutdown_warning_title">Too hot - Turning off</string>
+    <string name="overheat_shutdown_warning_text">Your phone is getting too hot. It will now turn off to cool down.</string>
+    <string name="overheat_shutdown_warning_text_tablet">Your tablet is getting too hot. It will now turn off to cool down.</string>
+    <string name="overheat_shutdown_warning_button_text">"Don't turn off"</string>
+    <string name="overheat_shutdown_notice_title">Why did my phone turn off by itself?</string>
+    <string name="overheat_shutdown_notice_title_tablet">Why did my tablet turn off by itself?</string>
+    <string name="overheat_shutdown_notice_text">"Your phone got too hot. It turned off to prevent damage to the phone.
+
+Overheating can be caused by:
+Using graphics intensive apps like video games and navigation apps for long periods of time.
+Downloading or uploading large files.
+Using your phone in a very hot location."</string>
+    <string name="overheat_shutdown_notice_text_tablet">"Your tablet got too hot. It turned off to prevent damage to the tablet.
+
+Overheating can be caused by:
+Using graphics intensive apps like video games and navigation apps for long periods of time.
+Downloading or uploading large files.
+Using your tablet in a very hot location."</string>
+    <string name="overheat_poweroff_warning_title">Дастгоҳро хомӯш кардан</string>
+    <string name="overheat_poweroff_warning_text">Дастгоҳи шумо аз ҳад зиёд гарм мешавад. Он ҳозир барои хунук шудан худро хомӯш мекунад.</string>
+    <string name="overheat_poweroff_warning_button_text">Хомӯш накардан</string>
+    <string name="overheat_poweroff_notice_title">Дастгоҳ ба тариқи худкор хомӯш карда шуд</string>
+    <string name="overheat_poweroff_notice_text">"Дастгоҳи шумо бениҳоят гарм шуд. Он барои пешгирӣ кардани зарар худро хомӯш кард.
+
+Сабабҳои гарм шудан метавонанд зерин бошанд:
+Истифодаи бардавоми барномаҳое, ки графикаи мураккаб истифода мебаранд (бозиҳо ва барномаҳои навигатсия).
+Таҳвили файлҳои калон.
+Истифодаи дастгоҳ дар муҳитҳои гарм."</string>
+    <string name="power_sharing_warning_title">Мубодилаи барқ</string>
+    <string name="power_sharing_warning_text">Батареяи шумо аз ҳудуди мубодилаи барқ камтар барқ дорад. Барои идома додани мубодилаи барқ, ҳудуди мубодилаи барқро аз сатҳи барқи ҳозираи батарея пасттар таъин кунед.</string>
+    <string name="power_sharing_start_toast_text">Оғозкунии Мубодилаи барқ…</string>
+    <string name="power_sharing_end_notification_text">Мубодилаи барқ хотима ёфт. Ҷудо кардани сим.</string>
+    <string name="power_sharing_unable_notification_text">Мубодила карда наметавонад.</string>
+    <string name="face_detection_failure_text">Дидбони зеҳнӣ чашмони шуморо муайян карда наметавонад.</string>
+    <string name="status_bar_recent_launch_task_manager_title">Мудири вазифаҳо</string>
+    <string name="status_bar_recent_launch_google_button">Google+</string>
+    <string name="status_bar_recent_remove_all_button">Пӯшидани ҳама</string>
+    <string name="screen_capture_fail_for_storage_capacity">Захирагоҳи дастгоҳ пур аст. Якчанд объектро нест кунед.</string>
+    <string name="no_such_item">Ҷузъро ёфта наметавонад.</string>
+    <string name="pickup_tutorial_title">Огоҳии зеҳниро дида бароед</string>
+    <string name="put_your_phone">Вақте, ки дастгоҳро мегузоред, экран хомӯш мешавад.</string>
+    <string name="phone_detect">Фарз кардем, шумо зангҳои беҷавоб ё паёмҳои хонданашуда доред. Дастгоҳро монед ва баъд аз хомӯш шудани экран, онро ба даст гиред.</string>
+    <string name="pick_up_your_phone">Дастгоҳи худро бардоред</string>
+    <string name="tutorial_complete">Роҳнамо анҷом ёфт.</string>
+    <string name="camera_alert">Дар вақти занг Камераро оғоз карда наметавонад</string>
+    <string name="stms_version">SM-G900F_EUR_20140618_0408</string>
+    <string name="wifi_cw_ready">China Telecom WLAN connected</string>
+    <string name="wifi_cw_ready_message">You have access to China Telecom WLAN network, consult 10000 to understand billing information, please turn off when not use</string>
+    <string name="location_title">Standalone GPS consent</string>
+    <string name="location_3rdparty_gps_dialogtext">By selecting this setting, you are allowing access to all location information by any third party through web access or any software or peripheral components you chose to install, download, add/or attach to the device or any other means. Enabling this functionality could pose certain risks to users of this device. Data usage will apply.</string>
+    <string name="agree">Розиам</string>
+    <string name="disagree">Розӣ нестам</string>
+    <string name="location_masterswitch_dialogtitle">Розигӣ барои муайянкунии мавқеъ</string>
+    <string name="location_masterswitch_dialogtext">"Your phone can share its approximate location with apps and services like maps, shopping and weather.
+
+Apps and services that use your location should inform you. Read the privacy policy of any app or service provider you are considering to understand how they collect, use and share your location information before you use them.
+
+Determining your location will use the mobile network. Data usage will apply."</string>
+    <string name="location_masterswitch_dialogtext_tablet">"Your tablet can share its approximate location with apps and services like maps, shopping and weather.
+
+Apps and services that use your location should inform you. Read the privacy policy of any app or service provider you’re considering to understand how they collect, use and share your location information before you use them.
+
+Determining your location will use the mobile network. Data usage will apply."</string>
+    <string name="quickpanel_ctwap_text">CTWAP</string>
+    <string name="quickpanel_ctnet_text">CTNET</string>
+    <string name="tethering_attention_title">Таваҷҷӯҳ</string>
+    <string name="tethering_wifi_off_warning">Фаъол кардани Нуқтаи дастрасии мобилӣ Wi-Fi­ро хомӯш мекунад.</string>
+    <string name="quickpanel_air_view_warning">Барои фаъол кардани намуди ҳавоӣ, ақаллан як функсияро фаъол кунед.</string>
+    <string name="quickpanel_air_view_warning_pen_support">Барои фаъол кардани намуди ҳавоӣ, ақаллан як функсияро аз реҷаи Ҳавоии интихобшуда фаъол кунед.</string>
+    <string name="quickpanel_air_gesture_warning">Барои фаъол кардани ишораи ҳавоӣ, ақаллан як функсияи мувофиқро фаъол кунед.</string>
+    <string name="quickpanel_air_gesture_warning_continue">Барои рафтан ба танзимоти мувофиқ яке аз тугмаҳои танзими зудро зарба зада нигоҳ доред.</string>
+    <string name="roaming_title">Роуминг</string>
+    <string name="voice_and_data_roaming">Voice and data roaming</string>
+    <string name="data_only_roaming">Data only roaming</string>
+    <string name="voice_only_roaming">Voice only roaming</string>
+    <string name="gps_donotshow">Дигар нишон надиҳед</string>
+    <string name="quickpanel_brightess_level">Сатҳ</string>
+    <string name="quickpanel_brightess_minus">Тарҳ</string>
+    <string name="reading_mode_title">Реҷаи хониш</string>
+    <string name="reading_mode_alert">Реҷаи хониш фаъол карда шуд. Экран акнун барои хониш беҳинасозӣ карда шуд. Ин реҷа танҳо дар барномаҳои муайян дастрас аст.</string>
+    <string name="reading_mode_settings">Танзимот</string>
+    <string name="automatic_brightness_message">Танзимоти равшании худкор танҳо ба экрани дарунӣ татбиқ карда мешавад.</string>
+    <string name="manual_brightness_message">Равшанӣ дастӣ танзим карда шуд. Равшании худкор ғайрифаъол шуд.</string>
+    <string name="flight_mode_message_for_wifi_only">Реҷаи парвоз ба шумо имконият медиҳад, ки хусусиятҳои шабакавиро, аз он ҷумла Wi-Fi ва Bluetooth­ро, ғайрифаъол кунед. Барои истифодаи Wi-Fi ва Bluetooth, онҳоро дар Танзимот ё панели огоҳиҳо фаъол кунед.</string>
+    <string name="airplane_mode_message_on_for_vzw_only">Airplane mode turns off calling, messaging, and mobile network functions.</string>
+    <string name="tutorial_notification_panel_drag_down">Барои кашидани навори ҳолат аз болои экран ба поён як ангушт истифода баред.</string>
+    <string name="tutorial_notification_panel_drag_down_complete">Панели огоҳиҳо нишон дода мешавад.</string>
+    <string name="tutorial_quick_panel_drag_down">Барои кашидани навори ҳолат аз болои экран ба поён ду ангушт истифода баред.</string>
+    <string name="tutorial_quick_panel_drag_down_complete">Панели танзимоти зудамал нишон дода мешавад.</string>
+    <string name="tutorial_expand_notification_panel_drag_down">Барои кашидани яке аз рӯйхатҳо аз панели огоҳиҳо, ду ангушт истифода баред.</string>
+    <string name="tutorial_expand_notification_panel_drag_down_complete">Дар бораи рӯйхати интихобшуда маълумоти бештар нишон дода мешавад.</string>
+    <string name="tutorial_invaild_action">Амали нодуруст. Аз нав кӯшиш кунед.</string>
+    <string name="talkback_text_for_air_view_button">TalkBack</string>
+    <string name="magnification_text_for_air_view_button">Ишоратҳои танзими миқёс</string>
+    <string name="smartbonding_dialog_title">Боргирӣ кардани суръатфизо</string>
+    <string name="smartbonding_dialog_wifi_text">Файлҳои калонро (зиёда аз %d МБ) бо истифодаи якҷояи шабакаҳои Wi-Fi ва LTE зудтар боргирӣ кунед. Дар ёд доред, ки вобаста аз ҳолати шабакаҳо, Суръатфизои боргирӣ метавонад барои боригирии файлҳо танҳо шабакаҳои Wi-Fi ва LTE истифода барад.</string>
+    <string name="smartbonding_dialog_mobile_text">Файлҳои калонро (зиёда аз %d МБ) бо истифодаи якҷояи шабакаҳои Wi-Fi ва LTE зудтар боргирӣ кунед. Дар ёд доред, ки вобаста аз ҳолати шабакаҳо, Суръатфизои боргирӣ метавонад барои боригирии файлҳо танҳо шабакаҳои Wi-Fi ва LTE истифода барад.</string>
+    <string name="smart_bonding_popup_msg">Суръатфизои боргирӣ фаъол карда мешавад. Вобаста аз тарофаи мобилии шумо, боргирӣ тавассути шабакаҳои мобилӣ метавонад хароҷоти иловагӣ ба миён орад.</string>
+    <string name="smart_bonding_popup_msg_wifi">Wi-Fi айни ҳол хомӯш аст. Барои фаъол кардани Суръатфизои боргирӣ, ҳам Wi­Fi ва ҳам Иттилооти мобилӣ бояд фаъол бошанд. Вобаста аз тарофаи мобилии шумо, боргирӣ тавассути шабакаҳои мобилӣ метавонад хароҷоти иловагӣ ба миён орад.</string>
+    <string name="smart_bonding_popup_msg_data">Иттилооти мобилӣ айни ҳол ғайрифаъол аст. Барои фаъол кардани Суръатфизои боргирӣ, ҳам Wi­Fi ва ҳам Иттилооти мобилӣ бояд фаъол бошанд. Вобаста аз тарофаи мобилии шумо, боргирӣ тавассути шабакаҳои мобилӣ метавонад хароҷоти иловагӣ ба миён орад.</string>
+    <string name="smart_bonding_popup_msg_wifi_data">Wi­Fi ва Иттилооти мобилӣ айни ҳол ғайрифаъол мебошанд. Барои фаъол кардани Суръатфизои боргирӣ, ҳам Wi­Fi ва ҳам Иттилооти мобилӣ бояд фаъол бошанд. Вобаста аз тарофаи мобилии шумо, боргирӣ тавассути шабакаҳои мобилӣ метавонад хароҷоти иловагӣ ба миён орад.</string>
+    <string name="smart_bonding_popup_msg_roaming">Истифодаи Суръатфизои боргирӣ дар роуминг ғайриимкон аст. Тавсия мекунем, ки ба воситаи Wi-Fi боргирӣ кунед.</string>
+    <string name="smart_bonding_popup_msg_wifi_btn">Фурӯзон кардани Wi-Fi</string>
+    <string name="smart_bonding_popup_msg_data_btn">Фаъол кардани иттилооти мобилӣ</string>
+    <string name="smart_bonding_popup_msg_wifi_data_btn">Фаъол кардани Wi-Fi ва Иттилооти мобилӣ</string>
+    <string name="smart_bonding_turn_off_text">Ҳангоми фаъол будани %1$s, истифодаи Суръатфизои боргирӣ ғайриимкон аст. %2$s­ро ғайрифаъол карда, кӯшишро такрор кунед.</string>
+    <string name="smart_bonding_turn_off_text_airplane_mode">Ҳангоми фаъол будани реҷаи Парвоз ба шабакаҳои мобилӣ пайваст шуда наметавонад. Реҷаи Парвозро ғайрифаъол карда, аз нав кӯшиш кунед.</string>
+    <string name="dialog_battery_data_warning">Нуқтаи гарми Wi-Fi барқи батареяро зиёд сарф мекунад ва истифодаи иттилооти шуморо афзоиш медиҳад. Идома медиҳед?</string>
+    <string name="tether_settings_title_wifi">Нуқтаи гарми сайёр</string>
+    <string name="image_saved_in_gallery">Тасвир дар Нигористон захира шуд.</string>
+    <string name="airplane_mode_usb_3_popup_text">Turning off Airplane mode will end your USB 3.0 connection and stop any ongoing data transfers.</string>
+    <string name="airplane_mode_usb_3_popup_title">Огоҳинома</string>
+    <string name="airplane_mode_usb_3_popup_ok_button">End USB 3.0</string>
+    <string name="cooling_title">Дастгоҳ аз ҳад зиёд гарм мешавад</string>
+    <string name="cooling_body">"Дастгоҳи шумо аз ҳад зиёд гарм мешавад. Амалҳо барои хунук кардани он.
+
+Шумо ҳоло ҳам дастгоҳро истифода бурда метавонед, аммо
+- экран метавонад хиратар шавад.
+- кори дастгоҳ метавонад суст шавад.
+- Барқпуркунӣ метавонад таваққуф ёбад.
+
+Пӯшидани барномаи ҷорӣ дастгоҳи шуморо хунук мекунад.
+
+Пас аз хунук шудани дастгоҳ он ба таври худкор ба ҳолати кори муқарарраӣ бармегардад."</string>
+    <string name="cooling_noti_text">Барои дидани тафсилот, инҷо зарба занед.</string>
+    <string name="cooling_popup_name">Огоҳӣ</string>
+    <string name="cooling_noti_title">Дастгоҳ аз ҳад зиёд гарм мешавад</string>
+    <string name="btn_text_yes">OK</string>
+    <string name="btn_text_no">Бекор кардан</string>
+    <string name="device_overheating">Дастгоҳ аз ҳад зиёд гарм мешавад</string>
+    <string name="colling_noti_text_2">Барномаҳоро кушода наметавонад. Шумо танҳо барномаҳои Телефон ва Алоқаҳоро истифода бурда метавонед.</string>
+    <string name="vol_panel_audio_settings">тағйир додани танзимоти аудио.</string>
+    <string name="guest_launge_warning_toast_text">Дар реҷаи меҳмон %s -ро фаъол ё ғайрифаъол карда наметавонад.</string>
+    <string name="safe_mode_title_vzw">Turn Off Safe Mode</string>
+    <string name="safe_mode_popup_body_vzw">Do you want to restart your phone to turn off Safe Mode? All of your apps will be restored.</string>
+    <string name="safe_mode_btn_cancel_vzw">Бекор кардан</string>
+    <string name="safe_mode_off_btn_vzw">Turn Off Safe Mode</string>
+    <string name="safe_mode_noti_on_vzw">Safe Mode Is On</string>
+    <string name="safe_mode_noti_body_vzw">Tap to turn off Safe Mode.</string>
+    <string name="cooling_title_VZW">Cooling down</string>
+    <string name="cooling_body_VZW">"Your phone is getting too hot, so it's taking steps to cool itself down.
+
+You can still use your phone, but you may notice:
+The screen might dim.
+The phone might slow down.
+Charging might pause.
+
+After the phone cools down, performance will automatically go back to normal."</string>
+    <string name="cooling_noti_text_VZW">Барои гирифтани маълумоти бештар, инҷо зарба занед.</string>
+    <string name="cooling_popup_name_VZW">Огоҳӣ</string>
+    <string name="cooling_noti_title_VZW">Cooling down</string>
+    <string name="btn_text_yes_VZW">OK</string>
+    <string name="btn_text_no_VZW">Бекор кардан</string>
+    <string name="cooling_body_vzw_tablet">"Your tablet is getting too hot, so it’s taking steps to cool itself down.
+
+You can still use your tablet, but you may notice:
+The screen might dim.
+The tablet might slow down.
+Charging might pause.
+
+After the tablet cools down, performance will Automatically go back to normal."</string>
+    <string name="wifihotspot_detail">Тафсилот</string>
+    <string name="portable_wifi_hotspot">Нуқтаи дастрасии мобилии Wi-Fi</string>
+    <string name="wifi_tether_dialog_nosim_warning">Барои истифодаи нуқтаи гарми Wi-Fi ва бастан SIM-кортро гузоред.</string>
+    <string name="recent_menukey_press_description">Барои дидани меню, тугмаи охиринро зер карда нигоҳ доред.</string>
+    <string name="recent_menukey_press_description_vzw">Тугмаи меню бо тугмаи охирин ҷойгузин карда шуд, то шумо тавонед байни барномаҳои охирин зуд гузаред. Кӯмакро зарба зада, маълумоти бештар гиред.</string>
+    <string name="recent_menukey_press_description_vzw2">While in an application, you can press and hold the recent key to see menu options.</string>
+    <string name="recent_menukey_press_description_tablet">Тугмаи меню бо тугмаи охирин иваз шуд. Барои маълумоти бештар Кӯмакро зарба з-д.</string>
+    <string name="recent_menukey_press_description_no_help">Тугмаи меню бо тугмаи охирин ҷойиваз карда шуд, то ки шумо зуд байни барномаҳои охирини истифодакардаи худ гузариш карда тавонед.</string>
+    <string name="recent_menukey_press_description_att">Тугмаи меню бо тугмаи охирин ҷойиваз карда шуд. Ҳангоми дар барнома будан, тугмаи охиринро пахш карда нигоҳ доред ва менюи имконотро бинед.</string>
+    <string name="recent_menukey_help_button">Кӯмак</string>
+    <string name="smart_pause_toast_text">Барои истифодаи Таваққуфи зеҳнӣ, аввал Бесадокунӣ/таваққуфро фаъол кунед.</string>
+    <string name="quickpanel_torch_text">Фонус</string>
+    <string name="quickpanel_adaptive_mode_text">"Дисплейи
+мувофиқ"</string>
+    <string name="quickpanel_side_key_text">"Тг
+пн кн"</string>
+    <string name="quickpanel_adaptive_display_content_description">Дисплейи мувофиқшаванда</string>
+    <string name="data_usage_disable_mobile_vzw_volte">Video calls will not work when mobile data is off. Also, you will not be able to use Internet, Email or other apps that need a data connection unless you connect to a Wi-Fi network. Turn off the mobile data connection?</string>
+    <string name="mobile_data_disable_during_volte">Unable to turn off mobile data during VoLTE call.</string>
+    <string name="insert_uim_card">Гузоштани корти UIM</string>
+    <string name="notification_panel_flash_light">Flashlight</string>
+    <string name="sd_card">Корти SD</string>
+    <string name="sdcard_insert">Корти SD гузошта шуд.</string>
+    <string name="sdcard_unmount">Тақзия кардани корти SD</string>
+    <string name="go_to_myfiles">Гузариш ба Файлҳои ман</string>
+    <string name="unable_to_change_pen_window">Равзани қалам дар ин барнома дастгирӣ намешавад.</string>
+</resources>

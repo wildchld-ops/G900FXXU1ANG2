@@ -144,6 +144,13 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Rect;Landroid/graphics/Point;Landroid/graphics/Point;IILcom/android/internal/policy/impl/MultiPhoneWindow;)V
     .locals 8
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/graphics/Rect;
+    .param p3    # Landroid/graphics/Point;
+    .param p4    # Landroid/graphics/Point;
+    .param p5    # I
+    .param p6    # I
+    .param p7    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
@@ -417,7 +424,7 @@
 
     iput-wide v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mFixedRatio:D
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v3
 
@@ -425,7 +432,7 @@
 
     move-result-object v4
 
-    const/high16 v5, 0x103
+    const/high16 v5, 0x1030000
 
     iput v5, v4, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
@@ -532,7 +539,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0, v4}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v4}, Landroid/app/Dialog;->requestWindowFeature(I)Z
 
     new-instance v4, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
@@ -544,28 +551,28 @@
 
     iget v5, p3, Landroid/graphics/Point;->x:I
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mPosX:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mPosX:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$002(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
     iget v5, p3, Landroid/graphics/Point;->y:I
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mPosY:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mPosY:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$102(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
     iget v5, p4, Landroid/graphics/Point;->x:I
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mDeltaX:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mDeltaX:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$202(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
     iget v5, p4, Landroid/graphics/Point;->y:I
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mDeltaY:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mDeltaY:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$302(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
@@ -576,17 +583,17 @@
 
     iget v7, p3, Landroid/graphics/Point;->y:I
 
-    #calls: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->calculateGesture(II)I
+    # invokes: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->calculateGesture(II)I
     invoke-static {v5, v6, v7}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$500(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;II)I
 
     move-result v5
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mGestureMode:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mGestureMode:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$402(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -600,7 +607,7 @@
 
     iget v5, v5, Landroid/content/res/Configuration;->orientation:I
 
-    #setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mCurrentOrientation:I
+    # setter for: Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->mCurrentOrientation:I
     invoke-static {v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->access$602(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;I)I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
@@ -617,7 +624,7 @@
 
     invoke-direct {v5, v6, v7}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v4, v5}, Landroid/app/Dialog;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -645,7 +652,7 @@
 
     invoke-virtual {p0, p5}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->setMode(I)V
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->show()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->show()V
 
     return-void
 
@@ -655,7 +662,7 @@
     goto/16 :goto_0
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0x1t
         0x0t
         0x1t
@@ -679,6 +686,7 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mStatusBarHeight:I
 
@@ -687,6 +695,7 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mFreestyleStatusBarMargin_H:I
 
@@ -695,6 +704,7 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/graphics/Point;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMaxSize:Landroid/graphics/Point;
 
@@ -703,6 +713,7 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/view/WindowManager$LayoutParams;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mLayoutParam:Landroid/view/WindowManager$LayoutParams;
 
@@ -711,6 +722,8 @@
 
 .method static synthetic access$702(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;Landroid/view/WindowManager$LayoutParams;)Landroid/view/WindowManager$LayoutParams;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
+    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mLayoutParam:Landroid/view/WindowManager$LayoutParams;
 
@@ -719,6 +732,7 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/app/Activity;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mActivity:Landroid/app/Activity;
 
@@ -727,6 +741,7 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mPaddingWidth:I
 
@@ -735,6 +750,9 @@
 
 .method private createNinePatch(Landroid/graphics/Bitmap;Landroid/content/res/Resources;I)Landroid/graphics/NinePatch;
     .locals 3
+    .param p1    # Landroid/graphics/Bitmap;
+    .param p2    # Landroid/content/res/Resources;
+    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->recycleBitmap(Landroid/graphics/Bitmap;)V
 
@@ -759,6 +777,7 @@
 
 .method private getWindowMode(Landroid/app/ActivityManager$RunningTaskInfo;)I
     .locals 3
+    .param p1    # Landroid/app/ActivityManager$RunningTaskInfo;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -803,6 +822,7 @@
 
 .method private recycleBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
+    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -816,6 +836,8 @@
 
 .method private reviseWindowPosition(Landroid/graphics/Rect;Landroid/graphics/Point;)V
     .locals 4
+    .param p1    # Landroid/graphics/Rect;
+    .param p2    # Landroid/graphics/Point;
 
     const/16 v0, 0x12c
 
@@ -905,6 +927,7 @@
 
 .method private setNinePatchImg(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -962,7 +985,7 @@
 
     iput-object v2, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mLayoutParam:Landroid/view/WindowManager$LayoutParams;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->dismiss()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     return-void
 .end method
@@ -1044,6 +1067,7 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
+    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMode:I
 
@@ -1074,6 +1098,7 @@
 
 .method public setApplicationRect(Landroid/graphics/Rect;)V
     .locals 4
+    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -1121,12 +1146,14 @@
 
 .method public setCaptureImage(Landroid/graphics/Bitmap;)V
     .locals 0
+    .param p1    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public setMode(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMode:I
 
@@ -1135,6 +1162,8 @@
 
 .method public setMovePosition(II)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mTempRect:Landroid/graphics/Rect;
 
@@ -1154,7 +1183,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mInnerView:Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;
 
-    invoke-virtual {v0}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow$GuideView;->invalidate()V
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method

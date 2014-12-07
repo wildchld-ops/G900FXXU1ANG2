@@ -10,6 +10,7 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/entity/ContentLengthStrategy;)V
     .locals 2
+    .param p1    # Lorg/apache/http/entity/ContentLengthStrategy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,6 +34,8 @@
 # virtual methods
 .method public deserialize(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/HttpEntity;
     .locals 2
+    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
+    .param p2    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -71,6 +74,8 @@
 
 .method protected doDeserialize(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/entity/BasicHttpEntity;
     .locals 10
+    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
+    .param p2    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -100,7 +105,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v2, v5}, Lorg/apache/http/entity/BasicHttpEntity;->setChunked(Z)V
+    invoke-virtual {v2, v5}, Lorg/apache/http/entity/AbstractHttpEntity;->setChunked(Z)V
 
     invoke-virtual {v2, v7, v8}, Lorg/apache/http/entity/BasicHttpEntity;->setContentLength(J)V
 
@@ -119,7 +124,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v2, v1}, Lorg/apache/http/entity/BasicHttpEntity;->setContentType(Lorg/apache/http/Header;)V
+    invoke-virtual {v2, v1}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentType(Lorg/apache/http/Header;)V
 
     :cond_0
     const-string v5, "Content-Encoding"
@@ -130,7 +135,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v2, v0}, Lorg/apache/http/entity/BasicHttpEntity;->setContentEncoding(Lorg/apache/http/Header;)V
+    invoke-virtual {v2, v0}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentEncoding(Lorg/apache/http/Header;)V
 
     :cond_1
     return-object v2
@@ -140,7 +145,7 @@
 
     if-nez v5, :cond_3
 
-    invoke-virtual {v2, v9}, Lorg/apache/http/entity/BasicHttpEntity;->setChunked(Z)V
+    invoke-virtual {v2, v9}, Lorg/apache/http/entity/AbstractHttpEntity;->setChunked(Z)V
 
     invoke-virtual {v2, v7, v8}, Lorg/apache/http/entity/BasicHttpEntity;->setContentLength(J)V
 
@@ -153,7 +158,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v2, v9}, Lorg/apache/http/entity/BasicHttpEntity;->setChunked(Z)V
+    invoke-virtual {v2, v9}, Lorg/apache/http/entity/AbstractHttpEntity;->setChunked(Z)V
 
     invoke-virtual {v2, v3, v4}, Lorg/apache/http/entity/BasicHttpEntity;->setContentLength(J)V
 

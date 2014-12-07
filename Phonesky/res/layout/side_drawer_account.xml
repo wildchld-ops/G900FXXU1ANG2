@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.play.SideDrawerAccountRow android:background="@drawable/side_drawer_background_with_highlight" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.FifeImageView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" finsky:fixed_bounds="true" finsky:circle_cut="true" />
+    <TextView android:textSize="@dimen/side_drawer_primary_size" android:textColor="@color/play_fg_primary" android:ellipsize="end" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:singleLine="true" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" />
+</com.google.android.finsky.layout.play.SideDrawerAccountRow>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Aktualizované aplikácie: %1$d</item>
+        <item quantity="one">Aktualizované aplikácie: %1$d</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Dostupné aktualizácie: %1$d</item>
+        <item quantity="one">%1$d dostupná aktualizácia</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d aktualiz. so schválením</item>
+        <item quantity="one">%1$d aktualiz. so schválením</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Počet výsledkov: %1$d</item>
+        <item quantity="one">Počet výsledkov: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Počet nových aktualizácií: %1$d</item>
+        <item quantity="one">Počet nových aktualizácií: %1$d</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Vaše hodnotenie: %1$s *</item>
+        <item quantity="one">Vaše hodnotenie: %1$s *</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Ľudia, ktorí tomu dali +1: %1$s</item>
+        <item quantity="one">%1$s osoba tomu dala +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s a %2$s ďalší tomu dali +1.</item>
+        <item quantity="one">%1$s a %2$s ďalší tomuto dali +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">a ďalší (%1$s)</item>
+        <item quantity="one">a ďalší (%1$d)</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Vybraté: %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Sú k dispozícii aktualizácie</item>
+        <item quantity="one">Aktualizácia k dispozícii</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Sú k dispozícii aktualizácie (počet: %1$d). Chcete ich nainštalovať?</item>
+        <item quantity="one">K dispozícii je %1$d aktualizácia. Chcete ju inštalovať?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">Počet kruhov: %1$s</item>
+        <item quantity="one">Počet kruhov: %1$s</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">hviezd.</item>
+        <item quantity="one">hviezdička</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezd. – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezdička – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezd. – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezdička – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s hviezd.&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s hviezdička&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezd.</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s hviezdička</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Ohodnotené: &amp;lt;b>%1$s hviezd.&amp;lt;/b></item>
+        <item quantity="one">Ohodnotené: &amp;lt;b>%1$s hviezd.&amp;lt;/b></item>
+    </plurals>
+</resources>

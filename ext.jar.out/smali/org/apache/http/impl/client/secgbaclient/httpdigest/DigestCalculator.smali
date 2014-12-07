@@ -8,7 +8,7 @@
 
 .field private static final ALGORITHM_MD5:Ljava/lang/String; = "MD5"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final QOP_AUTH_INT:Ljava/lang/String; = "auth-int"
 
@@ -58,6 +58,10 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;Ljava/lang/String;Ljava/lang/String;[B)V
     .locals 1
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # [B
 
     const/4 v0, 0x0
 
@@ -531,6 +535,7 @@
 
 .method private calcMD5(Ljava/lang/String;)[B
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "MD5"
@@ -565,7 +570,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v2, 0x0
 
@@ -750,6 +755,7 @@
 
 .method private getAuthHeaderParamVal(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     invoke-virtual {p1}, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->getUserName()Ljava/lang/String;
 

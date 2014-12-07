@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DetailsPage_BylineText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/play_secondary_text</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Play_DetailsPage_ContentText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/play_fg_details_secondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">5.0sp</item>
+    </style>
+    <style name="SetupWizardTitle">
+        <item name="android:textSize">@dimen/setup_wizard_title_text_size</item>
+        <item name="android:textColor">@color/setup_wizard_title_color</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="SetupWizardContentHeight">
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">0.7</item>
+    </style>
+    <style name="SetupWizardStackedButtons">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">256.0dip</item>
+    </style>
+    <style name="Play_DetailsPage_ActionButton" parent="@style/PlayCardPrice">
+        <item name="android:textSize">@dimen/play_price_small_size</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:minWidth">@dimen/standard_button_minwidth</item>
+        <item name="action_xpadding">@dimen/play_action_button_xpadding</item>
+    </style>
+</resources>

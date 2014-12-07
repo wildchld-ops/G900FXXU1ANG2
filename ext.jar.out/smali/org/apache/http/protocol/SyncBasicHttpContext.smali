@@ -6,6 +6,7 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/protocol/HttpContext;)V
     .locals 0
+    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-direct {p0, p1}, Lorg/apache/http/protocol/BasicHttpContext;-><init>(Lorg/apache/http/protocol/HttpContext;)V
 
@@ -16,6 +17,7 @@
 # virtual methods
 .method public declared-synchronized getAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -40,6 +42,7 @@
 
 .method public declared-synchronized removeAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -64,6 +67,8 @@
 
 .method public declared-synchronized setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     monitor-enter p0
 

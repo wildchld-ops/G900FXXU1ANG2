@@ -103,6 +103,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;
 
@@ -120,7 +121,7 @@
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;->$VALUES:[Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;
 
-    invoke-virtual {v0}, [Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

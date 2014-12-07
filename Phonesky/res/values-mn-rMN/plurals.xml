@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d аппликешн шинэчлэгдэв</item>
+        <item quantity="one">%1$d аппликешн шинэчлэгдэв</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d шинэчлэлийг ашиглах боломжтой</item>
+        <item quantity="one">%1$d шинэчлэлийг ашиглах боломжтой</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d шинэчлэлд зөвшөөрөл шаардлагатай</item>
+        <item quantity="one">%1$d шинэчлэлд зөвшөөрөл шаардлагатай</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d илэрц</item>
+        <item quantity="one">%1$d илэрц</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d шинэ шинэчлэл</item>
+        <item quantity="one">%1$d шинэ шинэчлэл</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Энэнд %1$s хүн +1 өгөв.</item>
+        <item quantity="one">Энэнд %1$s хүн +1 өгөв.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">Энэнд %1$s болон бусад %2$s +1 өгөв.</item>
+        <item quantity="one">Энэнд %1$s болон бусад %2$s +1 өгөв</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s бусад</item>
+        <item quantity="one">+%1$d бусад</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d сонгогдсон</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Шинэчлэл бэлэн байна</item>
+        <item quantity="one">Шинэчлэл бэлэн байна</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Танд %1$d шинэчлэл бэлэн байна. Та эдгээрийг суулгахыг хүсэж байна уу?</item>
+        <item quantity="one">Танд %1$d шинэчлэл бэлэн байна. Та энийг суулгахыг хүсэж байна уу?</item>
+    </plurals>
+</resources>

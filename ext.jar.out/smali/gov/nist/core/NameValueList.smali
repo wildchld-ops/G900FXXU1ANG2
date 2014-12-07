@@ -64,6 +64,7 @@
 
 .method public constructor <init>(Z)V
     .locals 1
+    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,6 +155,7 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -174,6 +176,7 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -186,6 +189,7 @@
 
 .method public delete(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -234,6 +238,7 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 4
+    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v3, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -326,6 +331,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
+    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -421,6 +427,7 @@
 
 .method public get(Ljava/lang/Object;)Lgov/nist/core/NameValue;
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -443,6 +450,7 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lgov/nist/core/NameValueList;->get(Ljava/lang/Object;)Lgov/nist/core/NameValue;
 
@@ -453,6 +461,7 @@
 
 .method public getNameValue(Ljava/lang/String;)Lgov/nist/core/NameValue;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -496,6 +505,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lgov/nist/core/NameValueList;->getValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -531,6 +541,7 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -557,6 +568,7 @@
 
 .method public hasNameValue(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -647,6 +659,8 @@
 
 .method public put(Ljava/lang/String;Lgov/nist/core/NameValue;)Lgov/nist/core/NameValue;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -661,6 +675,8 @@
 
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -696,6 +712,7 @@
 
 .method public remove(Ljava/lang/Object;)Lgov/nist/core/NameValue;
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -718,6 +735,7 @@
 
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lgov/nist/core/NameValueList;->remove(Ljava/lang/Object;)Lgov/nist/core/NameValue;
 
@@ -728,6 +746,7 @@
 
 .method public set(Lgov/nist/core/NameValue;)V
     .locals 2
+    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/core/NameValueList;->hmap:Ljava/util/Map;
 
@@ -746,6 +765,8 @@
 
 .method public set(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -764,6 +785,7 @@
 
 .method public setSeparator(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/core/NameValueList;->separator:Ljava/lang/String;
 

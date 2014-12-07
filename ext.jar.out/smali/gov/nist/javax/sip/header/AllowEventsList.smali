@@ -40,9 +40,9 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/AllowEventsList;-><init>()V
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/AllowEventsList;->hlist:Ljava/util/List;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/header/AllowEventsList;->clonehlist(Ljava/util/List;)Lgov/nist/javax/sip/header/SIPHeaderList;
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/header/SIPHeaderList;->clonehlist(Ljava/util/List;)Lgov/nist/javax/sip/header/SIPHeaderList;
 
     return-object v0
 .end method
@@ -91,7 +91,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v2}, Ljava/util/LinkedList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v2}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v3
 
@@ -139,7 +139,7 @@
 
     invoke-virtual {v0, v2}, Lgov/nist/javax/sip/header/AllowEvents;->setEventType(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/AllowEventsList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/SIPHeaderList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
 
     goto :goto_0
 

@@ -31,6 +31,7 @@
 
 .method public constructor <init>(Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 2
+    .param p1    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,6 +65,11 @@
 
 .method public openConnection(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 25
+    .param p1    # Lorg/apache/http/conn/OperatedClientConnection;
+    .param p2    # Lorg/apache/http/HttpHost;
+    .param p3    # Ljava/net/InetAddress;
+    .param p4    # Lorg/apache/http/protocol/HttpContext;
+    .param p5    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -609,7 +615,7 @@
     :cond_13
     new-instance v11, Ljava/net/ConnectException;
 
-    invoke-virtual {v13}, Ljava/net/SocketException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v13}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -636,6 +642,12 @@
 
 .method public openConnection(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;Ljava/net/InetAddress;)V
     .locals 17
+    .param p1    # Lorg/apache/http/conn/OperatedClientConnection;
+    .param p2    # Lorg/apache/http/HttpHost;
+    .param p3    # Ljava/net/InetAddress;
+    .param p4    # Lorg/apache/http/protocol/HttpContext;
+    .param p5    # Lorg/apache/http/params/HttpParams;
+    .param p6    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -863,7 +875,7 @@
     :cond_8
     new-instance v10, Ljava/net/ConnectException;
 
-    invoke-virtual {v12}, Ljava/net/SocketException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -879,6 +891,9 @@
 
 .method protected prepareSocket(Ljava/net/Socket;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 2
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -921,6 +936,10 @@
 
 .method public updateSecureConnection(Lorg/apache/http/conn/OperatedClientConnection;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 8
+    .param p1    # Lorg/apache/http/conn/OperatedClientConnection;
+    .param p2    # Lorg/apache/http/HttpHost;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
+    .param p4    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

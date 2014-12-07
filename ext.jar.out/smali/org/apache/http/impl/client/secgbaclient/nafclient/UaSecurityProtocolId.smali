@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "UaSecurityProtocolId"
 
@@ -44,6 +44,7 @@
 
 .method private genUaSecureProtoId([B)[B
     .locals 4
+    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -82,6 +83,7 @@
 # virtual methods
 .method public getUaSecureProtoId(Ljava/lang/String;)[B
     .locals 6
+    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lorg/apache/http/impl/client/secgbaclient/nafclient/UaSecurityProtocolId;->Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
@@ -156,7 +158,7 @@
     return-object v0
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0x1t
         0x0t
         0x0t

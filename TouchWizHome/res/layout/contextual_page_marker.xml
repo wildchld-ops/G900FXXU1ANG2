@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_spen_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_spen" android:scaleType="center" />
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_earphone_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_earphone" android:scaleType="center" />
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_audiodock_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_earphone" android:scaleType="center" />
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_carcradle_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_carcradle" android:scaleType="center" />
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_deskcradle_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_deskcradle" android:scaleType="center" />
+    <ImageView android:layout_gravity="top" android:id="@id/contextual_page_roaming_marker" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_marker_roaming" android:scaleType="center" />
+</FrameLayout>

@@ -6,6 +6,7 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/ParametersParser;-><init>(Lgov/nist/javax/sip/parser/Lexer;)V
 
@@ -14,6 +15,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/ParametersParser;-><init>(Ljava/lang/String;)V
 
@@ -40,7 +42,7 @@
 
     const-string v5, "AlertInfoParser.parse"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/AlertInfoParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     new-instance v2, Lgov/nist/javax/sip/header/AlertInfoList;
@@ -50,14 +52,14 @@
     const/16 v5, 0x80d
 
     :try_start_0
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/AlertInfoParser;->headerName(I)V
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/HeaderParser;->headerName(I)V
 
     :cond_1
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
@@ -71,24 +73,24 @@
 
     const-string v5, "Alert-Info"
 
-    invoke-virtual {v0, v5}, Lgov/nist/javax/sip/header/AlertInfo;->setHeaderName(Ljava/lang/String;)V
+    invoke-virtual {v0, v5}, Lgov/nist/javax/sip/header/SIPHeader;->setHeaderName(Ljava/lang/String;)V
 
     :goto_0
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
     if-ne v5, v8, :cond_3
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x3c
 
@@ -96,7 +98,7 @@
 
     new-instance v4, Lgov/nist/javax/sip/parser/URLParser;
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     check-cast v5, Lgov/nist/javax/sip/parser/Lexer;
 
@@ -110,32 +112,32 @@
 
     invoke-virtual {v0, v3}, Lgov/nist/javax/sip/header/AlertInfo;->setAlertInfo(Ljavax/sip/address/URI;)V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x3e
 
     invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
     :goto_1
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     invoke-super {p0, v0}, Lgov/nist/javax/sip/parser/ParametersParser;->parse(Lgov/nist/javax/sip/header/ParametersHeader;)V
 
-    invoke-virtual {v2, v0}, Lgov/nist/javax/sip/header/AlertInfoList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
+    invoke-virtual {v2, v0}, Lgov/nist/javax/sip/header/SIPHeaderList;->add(Lgov/nist/javax/sip/header/SIPHeader;)Z
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
     if-ne v5, v7, :cond_1
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x2c
 
@@ -154,14 +156,14 @@
 
     const-string v6, "AlertInfoParser.parse"
 
-    invoke-virtual {p0, v6}, Lgov/nist/javax/sip/parser/AlertInfoParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v6}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_2
     throw v5
 
     :cond_3
     :try_start_1
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/AlertInfoParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->byteStringNoSemicolon()Ljava/lang/String;
 
@@ -180,7 +182,7 @@
 
     const-string v5, "AlertInfoParser.parse"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/AlertInfoParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_5
     return-object v2

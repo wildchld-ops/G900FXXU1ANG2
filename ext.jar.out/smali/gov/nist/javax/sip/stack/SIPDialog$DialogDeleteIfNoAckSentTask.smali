@@ -26,6 +26,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPDialog;J)V
     .locals 0
+    .param p2    # J
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
@@ -45,7 +46,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->highestSequenceNumberAcknowledged:J
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->highestSequenceNumberAcknowledged:J
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$900(Lgov/nist/javax/sip/stack/SIPDialog;)J
 
     move-result-wide v4
@@ -60,12 +61,12 @@
 
     const/4 v5, 0x0
 
-    #setter for: Lgov/nist/javax/sip/stack/SIPDialog;->dialogDeleteIfNoAckSentTask:Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
+    # setter for: Lgov/nist/javax/sip/stack/SIPDialog;->dialogDeleteIfNoAckSentTask:Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
     invoke-static {v4, v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$1002(Lgov/nist/javax/sip/stack/SIPDialog;Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;)Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->isBackToBackUserAgent:Z
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->isBackToBackUserAgent:Z
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$1100(Lgov/nist/javax/sip/stack/SIPDialog;)Z
 
     move-result v4
@@ -74,7 +75,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v4
@@ -87,7 +88,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v4
@@ -103,7 +104,7 @@
     :cond_0
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$100(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/SipProviderImpl;
 
     move-result-object v4
@@ -118,7 +119,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #calls: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
+    # invokes: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
     invoke-static {v4, v8}, Lgov/nist/javax/sip/stack/SIPDialog;->access$200(Lgov/nist/javax/sip/stack/SIPDialog;I)V
 
     :cond_1
@@ -135,7 +136,7 @@
     :cond_3
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v4
@@ -148,7 +149,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v4
@@ -164,7 +165,7 @@
     :cond_4
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
     invoke-static {v4}, Lgov/nist/javax/sip/stack/SIPDialog;->access$100(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/SipProviderImpl;
 
     move-result-object v4
@@ -179,7 +180,7 @@
 
     iget-object v4, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #calls: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
+    # invokes: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
     invoke-static {v4, v8}, Lgov/nist/javax/sip/stack/SIPDialog;->access$200(Lgov/nist/javax/sip/stack/SIPDialog;I)V
 
     goto :goto_0

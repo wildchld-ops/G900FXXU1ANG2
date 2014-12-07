@@ -27,6 +27,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/core/ThreadAuditor;Lgov/nist/core/ThreadAuditor;)V
     .locals 1
+    .param p2    # Lgov/nist/core/ThreadAuditor;
 
     iput-object p1, p0, Lgov/nist/core/ThreadAuditor$ThreadHandle;->this$0:Lgov/nist/core/ThreadAuditor;
 
@@ -89,6 +90,7 @@
 
 .method protected setThreadActive(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/core/ThreadAuditor$ThreadHandle;->isThreadActive:Z
 

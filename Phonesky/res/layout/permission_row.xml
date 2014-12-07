@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.SeparatorLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/permission_row" android:background="@drawable/highlight_overlay_light" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/play_purchase_primary_size" android:textColor="@color/play_primary_text" android:id="@id/header" android:lineSpacingExtra="0.0sp" style="@style/PermissionRow" />
+        <TextView android:textSize="@dimen/play_purchase_secondary_size" android:id="@id/new_content" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="1.0sp" />
+        <TextView android:id="@id/content" android:lineSpacingExtra="1.0sp" style="@style/PermissionRow" />
+    </LinearLayout>
+</com.google.android.finsky.layout.SeparatorLinearLayout>

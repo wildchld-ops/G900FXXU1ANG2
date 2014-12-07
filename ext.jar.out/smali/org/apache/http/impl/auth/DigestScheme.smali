@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final HEXADECIMAL:[C = null
+.field private static final HEXADECIMAL:[C
 
 .field private static final NC:Ljava/lang/String; = "00000001"
 
@@ -38,23 +38,23 @@
     return-void
 
     :array_0
-    .array-data 0x2
-        0x30t 0x0t
-        0x31t 0x0t
-        0x32t 0x0t
-        0x33t 0x0t
-        0x34t 0x0t
-        0x35t 0x0t
-        0x36t 0x0t
-        0x37t 0x0t
-        0x38t 0x0t
-        0x39t 0x0t
-        0x61t 0x0t
-        0x62t 0x0t
-        0x63t 0x0t
-        0x64t 0x0t
-        0x65t 0x0t
-        0x66t 0x0t
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x61s
+        0x62s
+        0x63s
+        0x64s
+        0x65s
+        0x66s
     .end array-data
 .end method
 
@@ -106,6 +106,7 @@
 
 .method private createDigest(Lorg/apache/http/auth/Credentials;)Ljava/lang/String;
     .locals 25
+    .param p1    # Lorg/apache/http/auth/Credentials;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -118,7 +119,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v21
 
@@ -128,7 +129,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -138,7 +139,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -148,7 +149,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -158,7 +159,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -206,7 +207,7 @@
 
     move-object/from16 v1, v22
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -737,6 +738,8 @@
 
 .method private createDigestHeader(Lorg/apache/http/auth/Credentials;Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 15
+    .param p1    # Lorg/apache/http/auth/Credentials;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -749,7 +752,7 @@
 
     invoke-direct {v1, v12}, Lorg/apache/http/util/CharArrayBuffer;-><init>(I)V
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/auth/DigestScheme;->isProxy()Z
+    invoke-virtual {p0}, Lorg/apache/http/impl/auth/AuthSchemeBase;->isProxy()Z
 
     move-result v12
 
@@ -766,25 +769,25 @@
 
     const-string v12, "uri"
 
-    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
     const-string v12, "realm"
 
-    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
     const-string v12, "nonce"
 
-    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     const-string v12, "opaque"
 
-    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -792,7 +795,7 @@
 
     const-string v12, "algorithm"
 
-    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v12}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1001,6 +1004,7 @@
 
 .method private static createMessageDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
     .locals 4
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/auth/UnsupportedDigestAlgorithmException;
@@ -1046,6 +1050,7 @@
 
 .method private static encode([B)Ljava/lang/String;
     .locals 7
+    .param p0    # [B
 
     const/16 v6, 0x10
 
@@ -1151,6 +1156,8 @@
 # virtual methods
 .method public authenticate(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;
     .locals 5
+    .param p1    # Lorg/apache/http/auth/Credentials;
+    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -1179,7 +1186,7 @@
     throw v2
 
     :cond_1
-    invoke-virtual {p0}, Lorg/apache/http/impl/auth/DigestScheme;->getParameters()Ljava/util/Map;
+    invoke-virtual {p0}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameters()Ljava/util/Map;
 
     move-result-object v2
 
@@ -1195,7 +1202,7 @@
 
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/auth/DigestScheme;->getParameters()Ljava/util/Map;
+    invoke-virtual {p0}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameters()Ljava/util/Map;
 
     move-result-object v2
 
@@ -1213,7 +1220,7 @@
 
     const-string v2, "charset"
 
-    invoke-virtual {p0, v2}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1227,7 +1234,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/auth/DigestScheme;->getParameters()Ljava/util/Map;
+    invoke-virtual {p0}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameters()Ljava/util/Map;
 
     move-result-object v2
 
@@ -1260,7 +1267,7 @@
 
     const-string v1, "stale"
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1293,8 +1300,10 @@
 
 .method public overrideParamter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/auth/DigestScheme;->getParameters()Ljava/util/Map;
+    invoke-virtual {p0}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameters()Ljava/util/Map;
 
     move-result-object v0
 
@@ -1305,6 +1314,7 @@
 
 .method public processChallenge(Lorg/apache/http/Header;)V
     .locals 6
+    .param p1    # Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;
@@ -1313,11 +1323,11 @@
 
     const/4 v5, 0x1
 
-    invoke-super {p0, p1}, Lorg/apache/http/impl/auth/RFC2617Scheme;->processChallenge(Lorg/apache/http/Header;)V
+    invoke-super {p0, p1}, Lorg/apache/http/impl/auth/AuthSchemeBase;->processChallenge(Lorg/apache/http/Header;)V
 
     const-string v4, "realm"
 
-    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1334,7 +1344,7 @@
     :cond_0
     const-string v4, "nonce"
 
-    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1353,7 +1363,7 @@
 
     const-string v4, "qop"
 
-    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/DigestScheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

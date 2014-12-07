@@ -1,0 +1,9 @@
+oem.id=30030
+version=2.0.2.20249
+url=https://api-samsung.swypeconnect.com/
+build.timestamp=20130905.202732
+build.expiration=
+appkey.starts=SAMSUNG
+developerlog.enabled=false
+locationlevel.default=0
+loglevel.default=6

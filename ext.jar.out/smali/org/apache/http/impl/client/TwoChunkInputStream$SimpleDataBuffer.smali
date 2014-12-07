@@ -49,6 +49,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/TwoChunkInputStream;JJ)V
     .locals 7
+    .param p2    # J
+    .param p4    # J
 
     const/4 v6, 0x0
 
@@ -159,8 +161,8 @@
     :try_start_0
     invoke-virtual {v1, v2, v3}, Ljava/lang/Object;->wait(J)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_1
     :try_start_1
@@ -190,7 +192,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -224,7 +226,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -238,7 +240,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->dis:Ljava/io/DataInputStream;
 
-    invoke-virtual {v1}, Ljava/io/DataInputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/FilterInputStream;->close()V
 
     :cond_1
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->dos:Ljava/io/DataOutputStream;
@@ -251,7 +253,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->dos:Ljava/io/DataOutputStream;
 
-    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
 
     :cond_2
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->fileBuf:Ljava/io/File;
@@ -284,7 +286,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_3
@@ -295,15 +297,15 @@
     :cond_4
     iget-object v1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->clearBufferDir()V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_5
     :goto_0
@@ -338,7 +340,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v3
@@ -410,7 +412,7 @@
 
     move-result-object v4
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -419,7 +421,7 @@
     :try_start_1
     iget-object v2, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -430,7 +432,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -473,7 +475,7 @@
 
     move-result-object v4
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_1
@@ -501,8 +503,8 @@
 
     iput-object v2, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->dos:Ljava/io/DataOutputStream;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     const/4 v2, 0x1
 
@@ -658,6 +660,9 @@
 
 .method public push(I[BI)J
     .locals 10
+    .param p1    # I
+    .param p2    # [B
+    .param p3    # I
 
     const-wide/16 v8, -0x1
 
@@ -729,7 +734,7 @@
 
     move-result-object v5
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -748,7 +753,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -783,7 +788,7 @@
 
     move-result-object v5
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_2
@@ -840,7 +845,7 @@
 
     move-result-object v5
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_6
@@ -874,7 +879,7 @@
 
     const-string v5, "failed to create temp buffered file for 3 times "
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_8
@@ -906,7 +911,7 @@
 
     move-result-object v5
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_9
@@ -924,7 +929,7 @@
 
     const-string v5, "buffer is empty now, can keep on write"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_a
@@ -963,8 +968,8 @@
     :try_start_2
     invoke-virtual {p0, v4, v5}, Ljava/lang/Object;->wait(J)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :goto_3
     :try_start_3
@@ -1010,7 +1015,7 @@
 
     move-result-object v5
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_e
@@ -1029,7 +1034,7 @@
 
     const-string v5, "buffer cannot be created again"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v4, v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_10
@@ -1047,6 +1052,9 @@
 
 .method public push(Ljava/io/InputStream;JJ)V
     .locals 6
+    .param p1    # Ljava/io/InputStream;
+    .param p2    # J
+    .param p4    # J
 
     monitor-enter p0
 
@@ -1115,7 +1123,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -1158,7 +1166,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_2
@@ -1178,6 +1186,9 @@
 
 .method public read([BII)I
     .locals 10
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
 
     const-wide/16 v8, 0x1
 
@@ -1373,7 +1384,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_1
@@ -1523,7 +1534,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_5
@@ -1572,7 +1583,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_7
@@ -1618,7 +1629,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_8

@@ -31,6 +31,9 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;ILjava/util/Timer;)V
     .locals 1
+    .param p1    # Ljava/io/InputStream;
+    .param p2    # I
+    .param p3    # Ljava/util/Timer;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -155,7 +158,7 @@
 
     iget-object v2, p0, Lgov/nist/javax/sip/parser/Pipeline;->buffList:Ljava/util/LinkedList;
 
-    invoke-virtual {v2}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v2}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v2
 
@@ -178,7 +181,7 @@
     :try_start_1
     iget-object v2, p0, Lgov/nist/javax/sip/parser/Pipeline;->buffList:Ljava/util/LinkedList;
 
-    invoke-virtual {v2}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v2}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v2
 
@@ -190,9 +193,9 @@
 
     iget-boolean v2, p0, Lgov/nist/javax/sip/parser/Pipeline;->isClosed:Z
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/util/NoSuchElementException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v2, :cond_2
 
@@ -235,9 +238,9 @@
 
     iput-object v2, p0, Lgov/nist/javax/sip/parser/Pipeline;->currentBuffer:Lgov/nist/javax/sip/parser/Pipeline$Buffer;
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/util/NoSuchElementException; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :cond_4
     :try_start_4
@@ -250,7 +253,7 @@
 
     new-instance v2, Ljava/io/IOException;
 
-    invoke-virtual {v0}, Ljava/lang/InterruptedException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -261,11 +264,11 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/util/NoSuchElementException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     new-instance v2, Ljava/io/IOException;
 
-    invoke-virtual {v0}, Ljava/util/NoSuchElementException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -335,6 +338,7 @@
 
 .method public write([B)V
     .locals 3
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -389,6 +393,9 @@
 
 .method public write([BII)V
     .locals 3
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

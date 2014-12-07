@@ -23,6 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
@@ -37,12 +38,13 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 4
+    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v0, 0x1
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHasTelephony:Z
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHasTelephony:Z
     invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$1100(Lcom/android/internal/policy/impl/GlobalActions;)Z
 
     move-result v1
@@ -66,7 +68,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHasTelephony:Z
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHasTelephony:Z
     invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$1100(Lcom/android/internal/policy/impl/GlobalActions;)Z
 
     move-result v3
@@ -97,7 +99,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
 
     move-result-object v1
@@ -151,7 +153,7 @@
     sget-object v1, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->On:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     :goto_2
-    #setter for: Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     invoke-static {v2, v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$1402(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     sget-boolean v1, Lcom/android/internal/policy/impl/GlobalActions;->SAFE_DEBUG:Z
@@ -182,7 +184,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$1400(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     move-result-object v3
@@ -200,7 +202,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$DuosPhoneStateListener;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$300(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
 
     move-result-object v1

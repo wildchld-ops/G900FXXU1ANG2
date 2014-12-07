@@ -1,0 +1,18 @@
+version: 2.0.0-RC2
+apkFileName: SecSettings.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '19'
+  versionName: 4.4.2-G900FXXU1ANG2
+compressionType: false
+unknownFiles:
+  com/sec/android/app/screenrecorder/remote/ISRService.aidl: '8'

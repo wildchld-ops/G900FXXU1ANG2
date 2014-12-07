@@ -17,6 +17,8 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/cookie/BasicClientCookie;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -41,7 +43,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie2;->ports:[I
 
-    invoke-virtual {v1}, [I->clone()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -70,6 +72,7 @@
 
 .method public isExpired(Ljava/util/Date;)Z
     .locals 1
+    .param p1    # Ljava/util/Date;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/cookie/BasicClientCookie2;->discard:Z
 
@@ -119,6 +122,7 @@
 
 .method public setCommentURL(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie2;->commentURL:Ljava/lang/String;
 
@@ -127,6 +131,7 @@
 
 .method public setDiscard(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie2;->discard:Z
 
@@ -135,6 +140,7 @@
 
 .method public setPorts([I)V
     .locals 0
+    .param p1    # [I
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie2;->ports:[I
 

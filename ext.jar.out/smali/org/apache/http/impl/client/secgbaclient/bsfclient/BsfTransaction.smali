@@ -6,7 +6,7 @@
 # static fields
 .field private static final BSF_AUTH_MAX_TRIES:I = 0x5
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "BsfTransaction"
 
@@ -62,6 +62,7 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;)V
     .locals 4
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;
 
     const/4 v2, 0x0
 
@@ -232,6 +233,8 @@
 
 .method private handleBsf200Response(Lorg/apache/http/HttpResponse;Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;)Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
     .locals 6
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
 
     new-instance v0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfResponseXmlParser;
 
@@ -683,7 +686,7 @@
     :catch_0
     move-exception v13
 
-    invoke-virtual {v13}, Ljava/net/URISyntaxException;->printStackTrace()V
+    invoke-virtual {v13}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v1, 0x0
 
@@ -1051,6 +1054,7 @@
 
 .method public performBsfAuth([B)Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
     .locals 12
+    .param p1    # [B
 
     const/4 v5, 0x0
 
@@ -1264,21 +1268,21 @@
     :catch_0
     move-exception v2
 
-    invoke-virtual {v2}, Lorg/apache/http/client/ClientProtocolException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto/16 :goto_0
 
     :catch_1
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto/16 :goto_0
 
     :catch_2
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/net/URISyntaxException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto/16 :goto_0
 

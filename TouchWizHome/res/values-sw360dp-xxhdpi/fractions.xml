@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="config_workspaceFastScrollInwardFactor">37.0%</fraction>
+    <fraction name="folderIcon_appIconScaleFactor">27.999996%</fraction>
+    <fraction name="contextualPage_pageindicator_grow_by">119.99817%</fraction>
+    <fraction name="folderIcon_appIconScaleFactor_normal">25.0%</fraction>
+    <fraction name="folderIcon_ScaleFactor_normal">90.0%</fraction>
+</resources>

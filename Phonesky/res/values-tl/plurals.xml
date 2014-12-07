@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Na-update ang %1$d (na) application</item>
+        <item quantity="one">Na-update ang %1$d (na) application</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d (na) available na update</item>
+        <item quantity="one">%1$d (na) available na update</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Kailangan ng %1$d update ng apruba</item>
+        <item quantity="one">Kailangan ng %1$d update ng apruba</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d (na) resulta</item>
+        <item quantity="one">%1$d (na) resulta</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d (na) bagong update</item>
+        <item quantity="one">%1$d (na) bagong update</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Ang iyong rating: %1$s (na) star</item>
+        <item quantity="one">Ang iyong rating: %1$s star</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s (na) tao ang nag-+1 nito.</item>
+        <item quantity="one">%1$s (na) tao ang nag-+1 nito.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">Na-+1 ito ni %1$s at ng %2$s (na) iba pa.</item>
+        <item quantity="one">Na-+1 ito ni %1$s at %2$s (na) iba pa.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s pa</item>
+        <item quantity="one">+%1$d pa</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d ang napili</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">May available na mga update</item>
+        <item quantity="one">Available ang update</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Mayroon kang available na %1$d (na) update. Gusto mo bang i-install ang mga ito?</item>
+        <item quantity="one">Mayroon kang available na %1$d (na) update. Gusto mo ba itong i-install?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s (na) lupon</item>
+        <item quantity="one">%1$s lupon</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">mga bituin</item>
+        <item quantity="one">bituin</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s (na) star - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s star - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s (na) star - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s star - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s (na) star&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s star&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s (na) star</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s star</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Na-rate na &amp;lt;b>%1$s (na) star&amp;lt;/b></item>
+        <item quantity="one">Na-rate na &amp;lt;b>%1$s star&amp;lt;/b></item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/empty_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/name_container" android:visibility="gone" layout="@layout/my_emergency_info_detail_item" />
+            <include android:id="@id/health_record_container" android:visibility="gone" layout="@layout/my_emergency_info_detail_item" />
+            <include android:id="@id/allergies_container" android:visibility="gone" layout="@layout/my_emergency_info_detail_item" />
+            <include android:id="@id/current_medications_container" android:visibility="gone" layout="@layout/my_emergency_info_detail_item" />
+            <include android:id="@id/other_container" android:visibility="gone" layout="@layout/my_emergency_info_detail_item" />
+            <View android:id="@id/list_divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

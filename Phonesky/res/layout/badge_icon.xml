@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.FifeImageView android:layout_width="@dimen/content_generic_medium_size" android:layout_height="@dimen/content_generic_medium_size" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$29;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,7 +36,9 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
+    .param p1    # Landroid/content/DialogInterface;
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -46,13 +48,14 @@
     const/4 v0, 0x0
 
     :try_start_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$202(Z)Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$29;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     const/4 v2, 0x0
 
-    #setter for: Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialog:Landroid/app/AlertDialog;
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialog:Landroid/app/AlertDialog;
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$2102(Lcom/android/internal/policy/impl/GlobalActions;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     monitor-exit v1

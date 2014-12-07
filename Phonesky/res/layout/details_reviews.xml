@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <include layout="@layout/details_section_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/section_content_sample_reviews" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/reviews_statistics" />
+    </LinearLayout>
+    <com.google.android.finsky.layout.DetailsReviewsFooter android:gravity="right|center" android:orientation="vertical" android:id="@id/details_footer" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="16.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.play.layout.PlayActionButton android:textSize="@dimen/play_cluster_header_more_size" android:textColor="@color/white" android:id="@id/all_reviews" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/all_reviews" android:singleLine="true" finsky:action_xpadding="@dimen/play_cluster_header_more_padding" />
+    </com.google.android.finsky.layout.DetailsReviewsFooter>
+</LinearLayout>

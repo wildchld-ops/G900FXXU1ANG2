@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Programu %1$d zimesasishwa</item>
+        <item quantity="one">Programu %1$d zimesasishwa</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Masasisho %1$d yanapatikana</item>
+        <item quantity="one">Sasisho %1$d linapatikana</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Sasisho %1$d zinahitaji idhini</item>
+        <item quantity="one">Sasisho %1$d inahitaji idhini</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Matokeo %1$d</item>
+        <item quantity="one">Tokeo %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Sasisho %1$d mapya yanapatikana</item>
+        <item quantity="one">Sasisho %1$d jipya</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Ukadiriaji wako: nyota %1$s</item>
+        <item quantity="one">Ukadiriaji wako: nyota %1$s</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Watu %1$s waliipatia +1.</item>
+        <item quantity="one">Mtu %1$s ali+1 hii.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s na wengine %2$s waliipatia +1.</item>
+        <item quantity="one">%1$s na wengine %2$s waliipatia +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+wengine %1$s</item>
+        <item quantity="one">+ mwingine %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d zimechaguliwa</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Taarifa zinapatikana</item>
+        <item quantity="one">Taarifa inapatikana</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Una taarifa %1$d. Je, ungependa kuzisakinisha?</item>
+        <item quantity="one">Una arifa %1$d. Je, ungependa kuisakinisha?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">Miduara %1$s</item>
+        <item quantity="one">Mduara %1$s</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">nyota</item>
+        <item quantity="one">nyota</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>nyota %1$s&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>nyota %1$s&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> nyota %2$s</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Aliikadiria &amp;lt;b> nyota%1$s&amp;lt;/b></item>
+        <item quantity="one">Aliikadiria &amp;lt;b> nyota%1$s&amp;lt;/b></item>
+    </plurals>
+</resources>

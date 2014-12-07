@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/details_column_right" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_summary_container" android:layout_width="fill_parent" android:layout_height="@dimen/framed_details_top_banner_height">
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" layout="@layout/details_summary_header" />
+        <View android:id="@id/item_summary_trailing" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    </LinearLayout>
+    <com.google.android.finsky.layout.ObservableScrollView android:id="@id/details_scroller" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="4.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <com.google.android.finsky.layout.DetailsRightColumn android:orientation="vertical" android:id="@id/details_scroller_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.finsky.layout.ObservableScrollView>
+</LinearLayout>

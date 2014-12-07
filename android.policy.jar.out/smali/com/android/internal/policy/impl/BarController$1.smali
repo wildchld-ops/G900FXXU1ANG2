@@ -31,7 +31,7 @@
 
     iput p2, p0, Lcom/android/internal/policy/impl/BarController$1;->val$state:I
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/BarController$1;->this$0:Lcom/android/internal/policy/impl/BarController;
 
-    #calls: Lcom/android/internal/policy/impl/BarController;->getStatusBarService()Lcom/android/internal/statusbar/IStatusBarService;
+    # invokes: Lcom/android/internal/policy/impl/BarController;->getStatusBarService()Lcom/android/internal/statusbar/IStatusBarService;
     invoke-static {v2}, Lcom/android/internal/policy/impl/BarController;->access$000(Lcom/android/internal/policy/impl/BarController;)Lcom/android/internal/statusbar/IStatusBarService;
 
     move-result-object v1
@@ -53,7 +53,7 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/BarController$1;->this$0:Lcom/android/internal/policy/impl/BarController;
 
-    #getter for: Lcom/android/internal/policy/impl/BarController;->mStatusBarManagerId:I
+    # getter for: Lcom/android/internal/policy/impl/BarController;->mStatusBarManagerId:I
     invoke-static {v2}, Lcom/android/internal/policy/impl/BarController;->access$100(Lcom/android/internal/policy/impl/BarController;)I
 
     move-result v2
@@ -75,7 +75,7 @@
 
     const/4 v3, 0x0
 
-    #setter for: Lcom/android/internal/policy/impl/BarController;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    # setter for: Lcom/android/internal/policy/impl/BarController;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/BarController;->access$202(Lcom/android/internal/policy/impl/BarController;Lcom/android/internal/statusbar/IStatusBarService;)Lcom/android/internal/statusbar/IStatusBarService;
 
     goto :goto_0

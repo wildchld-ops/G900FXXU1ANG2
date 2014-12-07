@@ -14,6 +14,7 @@
 
 .method public static getCookiePolicy(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;
     .locals 3
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -44,6 +45,7 @@
 
 .method public static isAuthenticating(Lorg/apache/http/params/HttpParams;)Z
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -69,6 +71,7 @@
 
 .method public static isRedirecting(Lorg/apache/http/params/HttpParams;)Z
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -94,6 +97,8 @@
 
 .method public static setAuthenticating(Lorg/apache/http/params/HttpParams;Z)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -115,6 +120,8 @@
 
 .method public static setCookiePolicy(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -136,6 +143,8 @@
 
 .method public static setRedirecting(Lorg/apache/http/params/HttpParams;Z)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Z
 
     if-nez p0, :cond_0
 

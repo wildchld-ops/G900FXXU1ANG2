@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction$LingerTimer;->this$0:Lgov/nist/javax/sip/stack/SIPTransaction;
 
@@ -170,7 +171,7 @@
 
     if-nez v3, :cond_4
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
+    # getter for: Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
     invoke-static {v1}, Lgov/nist/javax/sip/stack/SIPTransaction;->access$000(Lgov/nist/javax/sip/stack/SIPTransaction;)Lgov/nist/javax/sip/stack/MessageChannel;
 
     move-result-object v3
@@ -204,7 +205,7 @@
 
     if-eqz v3, :cond_1
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
+    # getter for: Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
     invoke-static {v1}, Lgov/nist/javax/sip/stack/SIPTransaction;->access$000(Lgov/nist/javax/sip/stack/SIPTransaction;)Lgov/nist/javax/sip/stack/MessageChannel;
 
     move-result-object v3

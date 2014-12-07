@@ -26,6 +26,7 @@
 # virtual methods
 .method public lookup(Ljava/lang/String;)Ljava/lang/Object;
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -142,6 +143,8 @@
 
 .method protected matchUriRequestPattern(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -217,6 +220,8 @@
 
 .method public register(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -249,6 +254,7 @@
 
 .method public setHandlers(Ljava/util/Map;)V
     .locals 2
+    .param p1    # Ljava/util/Map;
 
     if-nez p1, :cond_0
 
@@ -274,6 +280,7 @@
 
 .method public unregister(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

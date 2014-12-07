@@ -60,6 +60,7 @@
 # virtual methods
 .method public addWindow(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 4
+    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindow$RotationWatcher;->mWindows:Ljava/util/ArrayList;
 
@@ -87,8 +88,8 @@
 
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$RotationWatcher;->mIsWatching:Z
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_0
     :goto_0
@@ -153,7 +154,7 @@
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -194,6 +195,7 @@
 
 .method public onRotationChanged(I)V
     .locals 2
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -211,6 +213,7 @@
 
 .method public removeWindow(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 5
+    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindow$RotationWatcher;->mWindows:Ljava/util/ArrayList;
 
@@ -236,7 +239,7 @@
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
 

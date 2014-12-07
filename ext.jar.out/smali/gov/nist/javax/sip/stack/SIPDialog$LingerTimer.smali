@@ -41,7 +41,7 @@
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPDialog$LingerTimer;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
     invoke-static {v1}, Lgov/nist/javax/sip/stack/SIPDialog;->access$400(Lgov/nist/javax/sip/stack/SIPDialog;)Ljava/util/Set;
 
     move-result-object v1
@@ -50,7 +50,7 @@
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPDialog$LingerTimer;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
     invoke-static {v1}, Lgov/nist/javax/sip/stack/SIPDialog;->access$400(Lgov/nist/javax/sip/stack/SIPDialog;)Ljava/util/Set;
 
     move-result-object v1
@@ -62,12 +62,12 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lgov/nist/javax/sip/stack/SIPDialog;->timerTaskLock:Ljava/util/concurrent/Semaphore;
+    # setter for: Lgov/nist/javax/sip/stack/SIPDialog;->timerTaskLock:Ljava/util/concurrent/Semaphore;
     invoke-static {v1, v2}, Lgov/nist/javax/sip/stack/SIPDialog;->access$502(Lgov/nist/javax/sip/stack/SIPDialog;Ljava/util/concurrent/Semaphore;)Ljava/util/concurrent/Semaphore;
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPDialog$LingerTimer;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v1}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v1

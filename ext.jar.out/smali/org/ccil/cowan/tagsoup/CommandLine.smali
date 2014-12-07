@@ -236,6 +236,7 @@
 
 .method private static chooseContentHandler(Ljava/io/Writer;)Lorg/xml/sax/ContentHandler;
     .locals 6
+    .param p0    # Ljava/io/Writer;
 
     sget-object v4, Lorg/ccil/cowan/tagsoup/CommandLine;->options:Ljava/util/Hashtable;
 
@@ -415,7 +416,7 @@
     :cond_6
     sget-object v4, Lorg/ccil/cowan/tagsoup/CommandLine;->theSchema:Lorg/ccil/cowan/tagsoup/HTMLSchema;
 
-    invoke-virtual {v4}, Lorg/ccil/cowan/tagsoup/HTMLSchema;->getURI()Ljava/lang/String;
+    invoke-virtual {v4}, Lorg/ccil/cowan/tagsoup/Schema;->getURI()Ljava/lang/String;
 
     move-result-object v4
 
@@ -516,6 +517,8 @@
 
 .method private static getopts(Ljava/util/Hashtable;[Ljava/lang/String;)I
     .locals 7
+    .param p0    # Ljava/util/Hashtable;
+    .param p1    # [Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -611,6 +614,8 @@
 
 .method private static hasOption(Ljava/util/Hashtable;Ljava/lang/String;)Z
     .locals 3
+    .param p0    # Ljava/util/Hashtable;
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -640,6 +645,7 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 9
+    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -893,6 +899,8 @@
 
 .method private static process(Ljava/lang/String;Ljava/io/OutputStream;)V
     .locals 9
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

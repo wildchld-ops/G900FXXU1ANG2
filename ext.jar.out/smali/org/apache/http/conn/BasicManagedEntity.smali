@@ -16,6 +16,9 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpEntity;Lorg/apache/http/conn/ManagedClientConnection;Z)V
     .locals 2
+    .param p1    # Lorg/apache/http/HttpEntity;
+    .param p2    # Lorg/apache/http/conn/ManagedClientConnection;
+    .param p3    # Z
 
     invoke-direct {p0, p1}, Lorg/apache/http/entity/HttpEntityWrapper;-><init>(Lorg/apache/http/HttpEntity;)V
 
@@ -94,7 +97,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lorg/apache/http/conn/BasicManagedEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v0, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v0}, Lorg/apache/http/HttpEntity;->consumeContent()V
 
@@ -119,6 +122,7 @@
 
 .method public eofDetected(Ljava/io/InputStream;)Z
     .locals 1
+    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -167,7 +171,7 @@
 
     new-instance v0, Lorg/apache/http/conn/EofSensorInputStream;
 
-    iget-object v1, p0, Lorg/apache/http/conn/BasicManagedEntity;->wrappedEntity:Lorg/apache/http/HttpEntity;
+    iget-object v1, p0, Lorg/apache/http/entity/HttpEntityWrapper;->wrappedEntity:Lorg/apache/http/HttpEntity;
 
     invoke-interface {v1}, Lorg/apache/http/HttpEntity;->getContent()Ljava/io/InputStream;
 
@@ -235,6 +239,7 @@
 
 .method public streamAbort(Ljava/io/InputStream;)Z
     .locals 1
+    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -257,6 +262,7 @@
 
 .method public streamClosed(Ljava/io/InputStream;)Z
     .locals 1
+    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -297,6 +303,7 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 0
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

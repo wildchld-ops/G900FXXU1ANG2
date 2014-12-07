@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/root_layout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flayout_sw_welcome" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/image_intro_personalpage" android:background="@drawable/privatemode_setting_tutorial" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <VideoView android:id="@id/video_intro_personalpage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_personalpage_welcome_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/private_mode_welcome_title_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/private_mode_welcome_title_marginTop" android:text="@string/personal_page" android:shadowColor="?android:colorBackground" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:fontFamily="samsung-sans" style="@style/title_area" />
+                <ImageView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/private_mode_welcome_icon_marginTop" android:src="@drawable/privatemode_setup_icon" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_personalpage_welcome_msg" android:background="#ccff9c00" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingLeft="@dimen/private_mode_welcome_message_layout_paddingLeft" android:paddingTop="@dimen/private_mode_welcome_message_layout_paddingTop" android:paddingRight="@dimen/private_mode_welcome_message_layout_paddingRight" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/private_mode_welcome_message_title_text_size" android:textColor="@android:color/white" android:id="@id/start_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_page_welcome_title" android:fontFamily="roboto" />
+                    <TextView android:textSize="@dimen/private_mode_welcome_message_msg_text_size" android:textColor="@android:color/white" android:id="@id/accessibility_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/private_mode_welcome_message_msg_marginTop" android:text="@string/personal_page_welcome_message" android:maxLines="5" android:lines="5" android:fontFamily="roboto" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_buttons_height">
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:background="@drawable/dvline" android:layout_width="@dimen/bottom_button_area_divider_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/bottom_buttons_area_divider_padding" android:layout_marginBottom="@dimen/bottom_buttons_area_divider_padding" />
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/next_btn_area" android:background="@drawable/action_bar_button_focus_only" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/private_mode_welcome_next_button_paddingRight" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <TextView android:textSize="@dimen/private_mode_welcome_next_button_text_size" android:textColor="@color/bottom_button_textcolor_for_personalpage" android:gravity="center" android:id="@id/next_btn_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/private_mode_welcome_next_button_text_marginRight" android:text="@string/next_button_label" />
+                            <ImageView android:layout_gravity="center" android:id="@id/next_btn_arrow" android:background="@drawable/welcome_page_actionbar_bottom_next_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

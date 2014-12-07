@@ -104,6 +104,7 @@
 
 .method public constructor <init>(J)V
     .locals 4
+    .param p1    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -926,6 +927,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1088,6 +1090,7 @@
 
 .method public setDay(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1139,6 +1142,7 @@
 
 .method public setHour(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1188,6 +1192,7 @@
 
 .method public setMinute(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1241,6 +1246,7 @@
 
 .method public setMonth(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1481,6 +1487,7 @@
 
 .method public setSecond(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1534,6 +1541,7 @@
 
 .method public setWkday(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1689,6 +1697,7 @@
 
 .method public setYear(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

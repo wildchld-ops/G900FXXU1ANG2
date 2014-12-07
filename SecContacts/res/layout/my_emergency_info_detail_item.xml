@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/textAppearanceGroupListItemHeader" android:gravity="center_vertical" android:id="@id/header_title" android:background="@drawable/tw_list_section_divider" android:layout_width="fill_parent" android:layout_height="@dimen/group_list_section_header_height" android:paddingStart="@dimen/tw_list_item_left_padding" android:paddingEnd="@dimen/tw_list_item_right_padding" />
+    <TextView android:textAppearance="@style/textAppearanceListPrimary" android:gravity="center_vertical" android:id="@id/detail_content" android:layout_width="fill_parent" android:layout_height="@dimen/list_one_line_height" android:layout_below="@id/header_title" android:paddingStart="@dimen/tw_list_item_left_padding" android:paddingEnd="@dimen/tw_list_item_right_padding" />
+</RelativeLayout>

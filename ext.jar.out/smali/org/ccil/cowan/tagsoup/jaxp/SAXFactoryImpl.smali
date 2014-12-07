@@ -47,6 +47,7 @@
 # virtual methods
 .method public getFeature(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,
@@ -101,6 +102,8 @@
 
 .method public setFeature(Ljava/lang/String;Z)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,

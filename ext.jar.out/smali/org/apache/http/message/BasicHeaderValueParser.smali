@@ -7,9 +7,9 @@
 
 
 # static fields
-.field private static final ALL_DELIMITERS:[C = null
+.field private static final ALL_DELIMITERS:[C
 
-.field public static final DEFAULT:Lorg/apache/http/message/BasicHeaderValueParser; = null
+.field public static final DEFAULT:Lorg/apache/http/message/BasicHeaderValueParser;
 
 .field private static final ELEM_DELIMITER:C = ','
 
@@ -37,9 +37,9 @@
     return-void
 
     :array_0
-    .array-data 0x2
-        0x3bt 0x0t
-        0x2ct 0x0t
+    .array-data 2
+        0x3bs
+        0x2cs
     .end array-data
 .end method
 
@@ -53,6 +53,8 @@
 
 .method private static isOneOf(C[C)Z
     .locals 2
+    .param p0    # C
+    .param p1    # [C
 
     if-eqz p1, :cond_1
 
@@ -85,6 +87,8 @@
 
 .method public static final parseElements(Ljava/lang/String;Lorg/apache/http/message/HeaderValueParser;)[Lorg/apache/http/HeaderElement;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/HeaderValueParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -136,6 +140,8 @@
 
 .method public static final parseHeaderElement(Ljava/lang/String;Lorg/apache/http/message/HeaderValueParser;)Lorg/apache/http/HeaderElement;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/HeaderValueParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -187,6 +193,8 @@
 
 .method public static final parseNameValuePair(Ljava/lang/String;Lorg/apache/http/message/HeaderValueParser;)Lorg/apache/http/NameValuePair;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/HeaderValueParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -238,6 +246,8 @@
 
 .method public static final parseParameters(Ljava/lang/String;Lorg/apache/http/message/HeaderValueParser;)[Lorg/apache/http/NameValuePair;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/HeaderValueParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -291,6 +301,9 @@
 # virtual methods
 .method protected createHeaderElement(Ljava/lang/String;Ljava/lang/String;[Lorg/apache/http/NameValuePair;)Lorg/apache/http/HeaderElement;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # [Lorg/apache/http/NameValuePair;
 
     new-instance v0, Lorg/apache/http/message/BasicHeaderElement;
 
@@ -301,6 +314,8 @@
 
 .method protected createNameValuePair(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/NameValuePair;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/http/message/BasicNameValuePair;
 
@@ -311,6 +326,8 @@
 
 .method public parseElements(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/HeaderElement;
     .locals 4
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     if-nez p1, :cond_0
 
@@ -391,6 +408,8 @@
 
 .method public parseHeaderElement(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;
     .locals 5
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     if-nez p1, :cond_0
 
@@ -462,6 +481,8 @@
 
 .method public parseNameValuePair(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/NameValuePair;
     .locals 1
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     sget-object v0, Lorg/apache/http/message/BasicHeaderValueParser;->ALL_DELIMITERS:[C
 
@@ -474,6 +495,9 @@
 
 .method public parseNameValuePair(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;[C)Lorg/apache/http/NameValuePair;
     .locals 14
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
+    .param p3    # [C
 
     if-nez p1, :cond_0
 
@@ -743,6 +767,8 @@
 
 .method public parseParameters(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)[Lorg/apache/http/NameValuePair;
     .locals 7
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     if-nez p1, :cond_0
 

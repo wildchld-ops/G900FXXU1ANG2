@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final CHARACTER_CLASS_PATTERN:Ljava/util/regex/Pattern; = null
+.field private static final CHARACTER_CLASS_PATTERN:Ljava/util/regex/Pattern;
 
-.field private static final DIGIT_PATTERN:Ljava/util/regex/Pattern; = null
+.field private static final DIGIT_PATTERN:Ljava/util/regex/Pattern;
 
 .field private static final DIGIT_PLACEHOLDER:Ljava/lang/String; = "\u2008"
 
-.field private static final ELIGIBLE_FORMAT_PATTERN:Ljava/util/regex/Pattern; = null
+.field private static final ELIGIBLE_FORMAT_PATTERN:Ljava/util/regex/Pattern;
 
-.field private static final EMPTY_METADATA:Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata; = null
+.field private static final EMPTY_METADATA:Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
 
 .field private static final MIN_LEADING_DIGITS_LENGTH:I = 0x3
 
-.field private static final NATIONAL_PREFIX_SEPARATORS_PATTERN:Ljava/util/regex/Pattern; = null
+.field private static final NATIONAL_PREFIX_SEPARATORS_PATTERN:Ljava/util/regex/Pattern;
 
 .field private static final SEPARATOR_BEFORE_NATIONAL_NUMBER:C = ' '
 
@@ -139,6 +139,7 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -293,6 +294,7 @@
 
 .method private appendNationalNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x20
 
@@ -665,6 +667,7 @@
 
 .method private createFormattingTemplate(Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;)Z
     .locals 5
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
 
     const/4 v2, 0x0
 
@@ -740,6 +743,7 @@
 
 .method private getAvailableFormats(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     iget-boolean v4, p0, Lcom/android/i18n/phonenumbers/AsYouTypeFormatter;->isCompleteNumber:Z
 
@@ -842,6 +846,8 @@
 
 .method private getFormattingTemplate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const-string v1, "999999999999999"
 
@@ -896,6 +902,7 @@
 
 .method private getMetadataForRegion(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/i18n/phonenumbers/AsYouTypeFormatter;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -991,6 +998,7 @@
 
 .method private inputDigitHelper(C)Ljava/lang/String;
     .locals 5
+    .param p1    # C
 
     const/4 v4, 0x0
 
@@ -1074,6 +1082,8 @@
 
 .method private inputDigitWithOptionToRememberPosition(CZ)Ljava/lang/String;
     .locals 5
+    .param p1    # C
+    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -1343,6 +1353,7 @@
 
 .method private isDigitOrLeadingPlusSign(C)Z
     .locals 3
+    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -1388,6 +1399,7 @@
 
 .method private isFormatEligible(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/AsYouTypeFormatter;->ELIGIBLE_FORMAT_PATTERN:Ljava/util/regex/Pattern;
 
@@ -1537,6 +1549,7 @@
 
 .method private narrowDownPossibleFormats(Ljava/lang/String;)V
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -1600,6 +1613,8 @@
 
 .method private normalizeAndAccrueDigitsAndPlusSign(CZ)C
     .locals 3
+    .param p1    # C
+    .param p2    # Z
 
     const/16 v2, 0x2b
 
@@ -1962,6 +1977,7 @@
 
 .method public inputDigit(C)Ljava/lang/String;
     .locals 1
+    .param p1    # C
 
     const/4 v0, 0x0
 
@@ -1978,6 +1994,7 @@
 
 .method public inputDigitAndRememberPosition(C)Ljava/lang/String;
     .locals 1
+    .param p1    # C
 
     const/4 v0, 0x1
 

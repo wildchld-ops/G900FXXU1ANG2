@@ -36,9 +36,9 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPClientTransaction$TransactionTimer;->this$0:Lgov/nist/javax/sip/stack/SIPClientTransaction;
 
-    iget-object v4, v0, Lgov/nist/javax/sip/stack/SIPClientTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v4, v0, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->isTerminated()Z
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isTerminated()Z
 
     move-result v6
 
@@ -74,7 +74,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->isReliable()Z
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isReliable()Z
 
     move-result v8
 
@@ -92,7 +92,7 @@
     invoke-virtual {v4, v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->removeTransaction(Lgov/nist/javax/sip/stack/SIPTransaction;)V
 
     :try_start_0
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPClientTransaction$TransactionTimer;->cancel()Z
+    invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -101,13 +101,13 @@
 
     if-nez v6, :cond_3
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->isReliable()Z
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isReliable()Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->getMessageChannel()Lgov/nist/javax/sip/stack/MessageChannel;
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->getMessageChannel()Lgov/nist/javax/sip/stack/MessageChannel;
 
     move-result-object v6
 
@@ -155,13 +155,13 @@
 
     if-eqz v6, :cond_2
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->isReliable()Z
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isReliable()Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->getMessageChannel()Lgov/nist/javax/sip/stack/MessageChannel;
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->getMessageChannel()Lgov/nist/javax/sip/stack/MessageChannel;
 
     move-result-object v6
 
@@ -200,7 +200,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->fireTimer()V
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->fireTimer()V
 
     goto :goto_0
 .end method

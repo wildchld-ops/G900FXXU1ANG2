@@ -28,6 +28,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPDialog;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 1
+    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
@@ -53,7 +54,7 @@
 
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v5
@@ -66,7 +67,7 @@
 
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v5
@@ -96,7 +97,7 @@
 
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
     invoke-static {v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$100(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/SipProviderImpl;
 
     move-result-object v5
@@ -109,7 +110,7 @@
 
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
     invoke-static {v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$100(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/SipProviderImpl;
 
     move-result-object v5
@@ -124,7 +125,7 @@
 
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    #calls: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
+    # invokes: Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
     invoke-static {v5, v7}, Lgov/nist/javax/sip/stack/SIPDialog;->access$200(Lgov/nist/javax/sip/stack/SIPDialog;I)V
 
     :goto_0
@@ -138,7 +139,7 @@
 
     if-eq v5, v6, :cond_1
 
-    invoke-virtual {v4, v7}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->raiseErrorEvent(I)V
+    invoke-virtual {v4, v7}, Lgov/nist/javax/sip/stack/SIPTransaction;->raiseErrorEvent(I)V
 
     :cond_1
     :goto_1
@@ -148,7 +149,7 @@
 
     if-nez v5, :cond_2
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->dialogState:I
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->dialogState:I
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPDialog;->access$800(Lgov/nist/javax/sip/stack/SIPDialog;)I
 
     move-result v5
@@ -162,7 +163,7 @@
 
     iput-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->transaction:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->cancel()Z
+    invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
 
     :cond_3
     return-void
@@ -192,9 +193,9 @@
     if-ne v5, v6, :cond_1
 
     :try_start_0
-    iget v5, v4, Lgov/nist/javax/sip/stack/SIPServerTransaction;->T2:I
+    iget v5, v4, Lgov/nist/javax/sip/stack/SIPTransaction;->T2:I
 
-    #calls: Lgov/nist/javax/sip/stack/SIPDialog;->toRetransmitFinalResponse(I)Z
+    # invokes: Lgov/nist/javax/sip/stack/SIPDialog;->toRetransmitFinalResponse(I)Z
     invoke-static {v0, v5}, Lgov/nist/javax/sip/stack/SIPDialog;->access$600(Lgov/nist/javax/sip/stack/SIPDialog;I)Z
 
     move-result v5
@@ -203,11 +204,11 @@
 
     invoke-virtual {v4, v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_6
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v3
@@ -244,7 +245,7 @@
 
     :cond_7
     :goto_2
-    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->fireTimer()V
+    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPTransaction;->fireTimer()V
 
     goto :goto_1
 
@@ -254,24 +255,24 @@
     :try_start_1
     iget-object v5, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getPeerAddress()Ljava/lang/String;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPTransaction;->getPeerAddress()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getPeerPort()I
+    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPTransaction;->getPeerPort()I
 
     move-result v7
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getPeerProtocol()Ljava/lang/String;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPTransaction;->getPeerProtocol()Ljava/lang/String;
 
     move-result-object v8
 
-    #calls: Lgov/nist/javax/sip/stack/SIPDialog;->raiseIOException(Ljava/lang/String;ILjava/lang/String;)V
+    # invokes: Lgov/nist/javax/sip/stack/SIPDialog;->raiseIOException(Ljava/lang/String;ILjava/lang/String;)V
     invoke-static {v5, v6, v7, v8}, Lgov/nist/javax/sip/stack/SIPDialog;->access$700(Lgov/nist/javax/sip/stack/SIPDialog;Ljava/lang/String;ILjava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v3
@@ -311,7 +312,7 @@
     :catchall_0
     move-exception v5
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    # getter for: Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPDialog;->access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     move-result-object v3
@@ -347,7 +348,7 @@
     invoke-interface {v6, v7}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
 
     :cond_8
-    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->fireTimer()V
+    invoke-virtual {v4}, Lgov/nist/javax/sip/stack/SIPTransaction;->fireTimer()V
 
     throw v5
 .end method

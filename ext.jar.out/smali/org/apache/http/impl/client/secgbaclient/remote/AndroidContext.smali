@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "GBAAndroidContext"
 
@@ -113,7 +113,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -151,6 +151,7 @@
 
 .method private getIntentInstance(Ljava/lang/String;)Ljava/lang/Object;
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -177,7 +178,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v0, v4}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    invoke-virtual {v0, v4}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     const/4 v4, 0x1
 
@@ -233,55 +234,56 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/SecurityException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/NoSuchMethodException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_3
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_4
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/InstantiationException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_5
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_6
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
 
 .method private varargs getMethod(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -338,14 +340,14 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/NoSuchMethodException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -354,6 +356,8 @@
 # virtual methods
 .method public bindService(Ljava/lang/String;Ljava/lang/Object;)Z
     .locals 12
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x3
 
@@ -440,21 +444,21 @@
     :catch_0
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -483,6 +487,7 @@
 
 .method public startService(Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -537,21 +542,21 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -580,6 +585,7 @@
 
 .method public unbindService(Ljava/lang/Object;)Z
     .locals 8
+    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -638,21 +644,21 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 

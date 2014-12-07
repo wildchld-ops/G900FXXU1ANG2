@@ -29,6 +29,7 @@
 
 .method public createAddress(Ljava/lang/String;)Ljavax/sip/address/Address;
     .locals 5
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -89,6 +90,8 @@
 
 .method public createAddress(Ljava/lang/String;Ljavax/sip/address/URI;)Ljavax/sip/address/Address;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljavax/sip/address/URI;
 
     if-nez p2, :cond_0
 
@@ -117,6 +120,7 @@
 
 .method public createAddress(Ljavax/sip/address/URI;)Ljavax/sip/address/Address;
     .locals 3
+    .param p1    # Ljavax/sip/address/URI;
 
     if-nez p1, :cond_0
 
@@ -140,6 +144,7 @@
 
 .method public createSipURI(Ljava/lang/String;)Ljavax/sip/address/SipURI;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -175,7 +180,7 @@
 
     new-instance v3, Ljava/text/ParseException;
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -188,6 +193,8 @@
 
 .method public createSipURI(Ljava/lang/String;Ljava/lang/String;)Ljavax/sip/address/SipURI;
     .locals 8
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -293,7 +300,7 @@
 
     new-instance v4, Ljava/text/ParseException;
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -304,6 +311,7 @@
 
 .method public createTelURL(Ljava/lang/String;)Ljavax/sip/address/TelURL;
     .locals 7
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -359,7 +367,7 @@
 
     new-instance v4, Ljava/text/ParseException;
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -372,6 +380,7 @@
 
 .method public createURI(Ljava/lang/String;)Ljavax/sip/address/URI;
     .locals 7
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -419,7 +428,7 @@
 
     new-instance v3, Ljava/text/ParseException;
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 

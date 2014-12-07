@@ -21,6 +21,8 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
     .locals 0
+    .param p2    # I
+    .param p3    # I
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
@@ -46,7 +48,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mWindowManagerFuncs:Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mWindowManagerFuncs:Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$2500(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
     move-result-object v0
@@ -88,32 +90,35 @@
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mWindowManagerFuncs:Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mWindowManagerFuncs:Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$2500(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDisplayConfirm:Z
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDisplayConfirm:Z
     invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$2400(Lcom/android/internal/policy/impl/GlobalActions;)Z
 
     move-result v1
 
     invoke-interface {v0, v1}, Landroid/view/WindowManagerPolicy$WindowManagerFuncs;->shutdown(Z)V
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$2600()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$000()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -123,6 +128,7 @@
     const/4 v0, 0x0
 
     :try_start_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$202(Z)Z
 
     monitor-exit v1
@@ -132,7 +138,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$7;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$300(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
 
     move-result-object v0
@@ -155,6 +161,7 @@
     throw v0
 
     :cond_2
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$002(Z)Z
 
     goto :goto_0
@@ -173,6 +180,7 @@
 
     const/4 v2, 0x1
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mStrCSCFeatureGlobalActionItems:Ljava/lang/String;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$800()Ljava/lang/String;
 
     move-result-object v0
@@ -190,6 +198,7 @@
     return v2
 
     :cond_1
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mStrCSCFeatureGlobalActionItems:Ljava/lang/String;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$800()Ljava/lang/String;
 
     move-result-object v0

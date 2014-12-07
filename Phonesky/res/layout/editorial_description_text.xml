@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.play.layout.PlayTextView android:textSize="@dimen/play_details_subtitle_size" android:textColor="@color/play_primary_text" android:id="@id/section_content" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" finsky:lastLineOverdrawColor="@color/play_main_background" finsky:lastLineOverdrawHint="@string/read_more" finsky:lastLineOverdrawHintColor="@color/play_fg_secondary" finsky:supportsHtmlLinks="true" finsky:expandable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending" />

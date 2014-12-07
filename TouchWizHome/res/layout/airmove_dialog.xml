@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/motion_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/airmove_dialog_image" android:background="@drawable/airmove_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_description_2" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/airmove_dialog_text_two" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_description_3" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_description_4" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_description_5" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.sec.android.touchwiz.widget.TwCheckBox android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_dialog_enable_airmove" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:checked="true" android:text="@string/airmove_dialog_enable_airmove" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/airmove_dialog_to_learn_more" android:padding="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/airmove_dialog_to_learn_more" />
+    </LinearLayout>
+</ScrollView>

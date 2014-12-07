@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/RecentApplicationsDialog$2;->this$0:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,6 +36,8 @@
 # virtual methods
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 1
+    .param p1    # Landroid/view/View;
+    .param p2    # Z
 
     if-nez p2, :cond_0
 

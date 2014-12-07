@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final GMT:Ljava/util/TimeZone; = null
+.field public static final GMT:Ljava/util/TimeZone;
 
 .field public static final PATTERN_RFC1123:Ljava/lang/String; = "EEE, dd MMM yyyy HH:mm:ss zzz"
 

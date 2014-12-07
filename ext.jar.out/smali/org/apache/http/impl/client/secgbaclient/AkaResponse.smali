@@ -6,7 +6,7 @@
 # static fields
 .field private static final IMS_AUTH_NO_ERR_STRING:Ljava/lang/String; = "DB"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "AkaResponse "
 
@@ -68,6 +68,7 @@
 
 .method public parseResKeyFromIsimResponse([B)V
     .locals 9
+    .param p1    # [B
 
     const/4 v8, 0x2
 

@@ -36,6 +36,7 @@
 # virtual methods
 .method protected dbg_enter(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -109,6 +110,7 @@
 
 .method protected dbg_leave(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -199,6 +201,7 @@
 
 .method protected nameValue(C)Lgov/nist/core/NameValue;
     .locals 11
+    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -240,7 +243,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v8, v9}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v8, v9}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v2
 
@@ -250,7 +253,7 @@
 
     const/4 v9, 0x1
 
-    invoke-virtual {v8, v9}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v8, v9}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     iget-object v8, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
@@ -264,7 +267,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v8, v9}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v8, v9}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v8
 
@@ -292,8 +295,8 @@
 
     invoke-virtual {v4}, Lgov/nist/core/NameValue;->setQuotedValue()V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/text/ParseException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_2
     sget-boolean v8, Lgov/nist/core/ParserCore;->debug:Z
@@ -343,8 +346,8 @@
 
     invoke-direct {v4, v8, v9, v10}, Lgov/nist/core/NameValue;-><init>(Ljava/lang/String;Ljava/lang/Object;Z)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/text/ParseException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     sget-boolean v8, Lgov/nist/core/ParserCore;->debug:Z
 
@@ -399,6 +402,7 @@
 
 .method protected peekLine(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lgov/nist/core/ParserCore;->debug:Z
 
@@ -420,7 +424,7 @@
 
     iget-object v1, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    invoke-virtual {v1}, Lgov/nist/core/LexerCore;->peekLine()Ljava/lang/String;
+    invoke-virtual {v1}, Lgov/nist/core/StringTokenizer;->peekLine()Ljava/lang/String;
 
     move-result-object v1
 

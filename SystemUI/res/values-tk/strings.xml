@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quickpanel_touch_sensitivity_content_description">Degiş duýgurlygy</string>
+    <string name="safe_mode_title_vzw">Howpsuz rejäni öçür</string>
+    <string name="safe_mode_popup_body_vzw">Howpsuz rejäni öçürmek üçin telefonyňyzy täzeden işletmek isleýärsiňizmi? Ähli programmalaryňyz dikeldiler.</string>
+    <string name="safe_mode_off_btn_vzw">Howpsuz rejäni öçür</string>
+    <string name="safe_mode_noti_on_vzw">Howpsuz reje açyk</string>
+    <string name="safe_mode_noti_body_vzw">Howpsuz rejani öçürmek üçin barmagyňyzy degriň.</string>
+    <string name="recent_menukey_press_description_vzw2">While in an application, you can press and hold the recent key to see menu options.</string>
+    <string name="recent_menukey_press_description_no_help">Iň soňky ulanan gollanmalaryňyzyň arasynda çalt geçmegiňize mümkinçilik bermek üçin, menýu düwmesi soňkular düwmesi bilen çalşyryldy.</string>
+    <string name="recent_menukey_press_description_att">Menýu düwmesi soňky düwmesi bilen çalşyryldy. Gollanmada wagtyňyz, menýu opsiýalaryny görmek üçin, soňky düwmesine basyp saklaň.</string>
+    <string name="smart_pause_toast_text">Akylly dyngy ulanmak üçin, ilki bilen, Sessiz/dyngyny işlediň.</string>
+</resources>

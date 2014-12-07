@@ -27,6 +27,7 @@
 
 .method public constructor <init>(Lgov/nist/core/Token;)V
     .locals 1
+    .param p1    # Lgov/nist/core/Token;
 
     const-string v0, "P-Visited-Network-ID"
 
@@ -43,6 +44,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "P-Visited-Network-ID"
 
@@ -129,7 +131,7 @@
 
     :cond_0
     :goto_0
-    iget-object v1, p0, Lgov/nist/javax/sip/header/ims/PVisitedNetworkID;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v1}, Lgov/nist/core/NameValueList;->isEmpty()Z
 
@@ -147,7 +149,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ims/PVisitedNetworkID;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v2}, Lgov/nist/core/NameValueList;->encode()Ljava/lang/String;
 
@@ -182,6 +184,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -207,7 +210,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PVisitedNetworkID;->equalParameters(Ljavax/sip/header/Parameters;)Z
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->equalParameters(Ljavax/sip/header/Parameters;)Z
 
     move-result v2
 
@@ -229,6 +232,7 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -246,6 +250,7 @@
 
 .method public setVisitedNetworkID(Lgov/nist/core/Token;)V
     .locals 2
+    .param p1    # Lgov/nist/core/Token;
 
     if-nez p1, :cond_0
 
@@ -273,6 +278,7 @@
 
 .method public setVisitedNetworkID(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

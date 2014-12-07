@@ -28,7 +28,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
@@ -42,7 +42,7 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;->mIvt:[B
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Context;
 
     move-result-object v0
@@ -60,7 +60,7 @@
     return-void
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0x1t
         0x0t
         0x1t
@@ -78,7 +78,7 @@
         0x7ft
         0x0t
         0x0t
-        0xb2t
+        -0x4et
     .end array-data
 .end method
 
@@ -93,7 +93,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Context;
 
     move-result-object v0
@@ -111,7 +111,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnabledHapticFeedback:Z
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnabledHapticFeedback:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     move-result v0

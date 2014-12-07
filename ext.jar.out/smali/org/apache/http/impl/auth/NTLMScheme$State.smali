@@ -153,6 +153,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/apache/http/impl/auth/NTLMScheme$State;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/apache/http/impl/auth/NTLMScheme$State;
 
@@ -170,7 +171,7 @@
 
     sget-object v0, Lorg/apache/http/impl/auth/NTLMScheme$State;->$VALUES:[Lorg/apache/http/impl/auth/NTLMScheme$State;
 
-    invoke-virtual {v0}, [Lorg/apache/http/impl/auth/NTLMScheme$State;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

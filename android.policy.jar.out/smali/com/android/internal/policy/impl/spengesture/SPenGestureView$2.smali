@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -50,7 +52,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$2;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
     invoke-static {v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     move-result v1
@@ -67,7 +69,7 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
     invoke-static {v1, v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
 
     :cond_0
@@ -83,7 +85,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$2;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
     invoke-static {v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     move-result v1
@@ -92,7 +94,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$2;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
     invoke-static {v1, v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$102(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
 
     const-string v1, "SPenGesture"

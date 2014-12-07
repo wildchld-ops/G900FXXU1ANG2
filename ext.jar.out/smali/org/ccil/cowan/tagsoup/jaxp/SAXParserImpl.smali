@@ -24,6 +24,7 @@
 
 .method public static newInstance(Ljava/util/Map;)Lorg/ccil/cowan/tagsoup/jaxp/SAXParserImpl;
     .locals 5
+    .param p0    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -85,6 +86,7 @@
 # virtual methods
 .method public getFeature(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXNotRecognizedException;,
@@ -120,6 +122,7 @@
 
 .method public getProperty(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXNotRecognizedException;,
@@ -206,6 +209,8 @@
 
 .method public setFeature(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXNotRecognizedException;,
@@ -222,6 +227,8 @@
 
 .method public setProperty(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXNotRecognizedException;,

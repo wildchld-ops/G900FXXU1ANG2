@@ -22,6 +22,7 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 9
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -292,6 +293,9 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

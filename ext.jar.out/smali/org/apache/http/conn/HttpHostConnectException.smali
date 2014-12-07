@@ -14,6 +14,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/ConnectException;)V
     .locals 2
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Ljava/net/ConnectException;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -43,7 +45,7 @@
 
     iput-object p1, p0, Lorg/apache/http/conn/HttpHostConnectException;->host:Lorg/apache/http/HttpHost;
 
-    invoke-virtual {p0, p2}, Lorg/apache/http/conn/HttpHostConnectException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p0, p2}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     return-void
 .end method

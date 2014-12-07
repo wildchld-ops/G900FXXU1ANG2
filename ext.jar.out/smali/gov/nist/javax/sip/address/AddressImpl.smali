@@ -42,7 +42,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/address/NetObject;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -54,7 +54,7 @@
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/address/GenericURI;->clone()Ljava/lang/Object;
+    invoke-virtual {v1}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -86,6 +86,7 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 3
+    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v2, 0x1
 
@@ -171,6 +172,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -423,6 +425,7 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 5
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -448,13 +451,13 @@
 
     check-cast v0, Lgov/nist/javax/sip/address/AddressImpl;
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/address/AddressImpl;->getMatcher()Lgov/nist/core/Match;
+    invoke-virtual {v0}, Lgov/nist/core/GenericObject;->getMatcher()Lgov/nist/core/Match;
 
     move-result-object v3
 
     if-eqz v3, :cond_3
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/address/AddressImpl;->getMatcher()Lgov/nist/core/Match;
+    invoke-virtual {v0}, Lgov/nist/core/GenericObject;->getMatcher()Lgov/nist/core/Match;
 
     move-result-object v1
 
@@ -490,7 +493,7 @@
 
     iget-object v2, v0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 
-    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/address/GenericURI;->match(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/address/NetObject;->match(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -511,7 +514,7 @@
 
     iget-object v4, v0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 
-    invoke-virtual {v3, v4}, Lgov/nist/javax/sip/address/GenericURI;->match(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Lgov/nist/javax/sip/address/NetObject;->match(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -535,6 +538,7 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 
@@ -562,6 +566,7 @@
 
 .method public setAddess(Ljavax/sip/address/URI;)V
     .locals 0
+    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -572,6 +577,7 @@
 
 .method public setAddressType(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/address/AddressImpl;->addressType:I
 
@@ -580,6 +586,7 @@
 
 .method public setDisplayName(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/AddressImpl;->displayName:Ljava/lang/String;
 
@@ -592,6 +599,7 @@
 
 .method public setURI(Ljavax/sip/address/URI;)V
     .locals 0
+    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -602,6 +610,7 @@
 
 .method public setUser(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 

@@ -76,6 +76,7 @@
 
 .method public static isWhitespace(C)Z
     .locals 1
+    .param p0    # C
 
     const/16 v0, 0x20
 

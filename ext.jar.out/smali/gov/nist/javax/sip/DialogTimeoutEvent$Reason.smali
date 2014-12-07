@@ -103,6 +103,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;
 
@@ -120,7 +121,7 @@
 
     sget-object v0, Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;->$VALUES:[Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;
 
-    invoke-virtual {v0}, [Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

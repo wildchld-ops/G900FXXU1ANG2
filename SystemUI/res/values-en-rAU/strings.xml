@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smartbonding_dialog_wifi_text">Download large files (over %d MB) faster by using Wi-Fi and 4G networks at the same time. Note that depending on the statuses of networks, Download booster may use only Wi-Fi or 4G networks to download files.</string>
+    <string name="smartbonding_dialog_mobile_text">Download large files (over %d MB) faster by using Wi-Fi and 4G networks at the same time. Note that depending on the statuses of networks, Download booster may use only Wi-Fi or 4G networks to download files.</string>
+</resources>

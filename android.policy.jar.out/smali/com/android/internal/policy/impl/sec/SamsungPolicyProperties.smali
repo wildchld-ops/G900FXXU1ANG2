@@ -83,13 +83,17 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static dump(Ljava/lang/String;Ljava/io/PrintWriter;[Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/io/PrintWriter;
+    .param p2    # [Ljava/lang/String;
+    .param p3    # Landroid/content/Context;
 
     invoke-virtual {p1, p0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -330,6 +334,7 @@
 
 .method public static hasNumericKeyboard(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -371,6 +376,7 @@
 
 .method public static hasQwertyKeyboard(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -412,6 +418,7 @@
 
 .method public static hasSPenFeature(Landroid/content/Context;)Z
     .locals 2
+    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->mHasSPenFeatureChecked:Z
 
@@ -441,6 +448,7 @@
 
 .method public static isBlockKey(Landroid/content/Context;)Z
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -513,6 +521,7 @@
 
 .method public static isCameraKeyWakeKey(Landroid/content/Context;)Z
     .locals 1
+    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->isMirrorLessCameraSpecialized()Z
 
@@ -663,6 +672,7 @@
 
 .method public static isOneTouchReportChordEnabled(Landroid/content/Context;)Z
     .locals 2
+    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -687,6 +697,7 @@
 
 .method public static isScreenShotChordEnabled(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->mScreenShotChordEnableChecked:Z
 
@@ -815,6 +826,7 @@
 
 .method public static isVoiceTalkDefaultLaunch(Landroid/content/Context;)Z
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -885,6 +897,7 @@
 
 .method public static setEasyOneHandEnabled(Z)V
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->mEasyOneHandEnabled:Z
 
@@ -893,6 +906,7 @@
 
 .method public static setEasyOneHandRunning(Z)V
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->mEasyOneHandRunning:Z
 

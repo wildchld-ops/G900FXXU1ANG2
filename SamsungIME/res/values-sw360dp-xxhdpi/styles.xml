@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:actionBarStyle">@style/ActionBarNoIcon</item>
+    </style>
+    <item type="style" name="APKTOOL_DUMMY_0021">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0022">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0023">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0024">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0025">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0026">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0027">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0028">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0029">false</item>
+    <item type="style" name="APKTOOL_DUMMY_002a">false</item>
+    <item type="style" name="APKTOOL_DUMMY_002b">false</item>
+    <item type="style" name="APKTOOL_DUMMY_002c">false</item>
+</resources>

@@ -43,9 +43,9 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->shutdownEntry()V
+    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->shutdownEntry()V
 
-    iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
+    iget-object v0, p0, Lorg/apache/http/impl/conn/AbstractPoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
 
     invoke-interface {v0}, Lorg/apache/http/conn/OperatedClientConnection;->isOpen()Z
 
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
+    iget-object v0, p0, Lorg/apache/http/impl/conn/AbstractPoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
 
     invoke-interface {v0}, Lorg/apache/http/conn/OperatedClientConnection;->close()V
 
@@ -69,9 +69,9 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->shutdownEntry()V
+    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->shutdownEntry()V
 
-    iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
+    iget-object v0, p0, Lorg/apache/http/impl/conn/AbstractPoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
 
     invoke-interface {v0}, Lorg/apache/http/conn/OperatedClientConnection;->isOpen()Z
 
@@ -79,7 +79,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
+    iget-object v0, p0, Lorg/apache/http/impl/conn/AbstractPoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
 
     invoke-interface {v0}, Lorg/apache/http/conn/OperatedClientConnection;->shutdown()V
 

@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -65,7 +67,7 @@
 
     move-result-object v4
 
-    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mBlockedHwKeys:Ljava/util/Map;
+    # setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mBlockedHwKeys:Ljava/util/Map;
     invoke-static {v3, v4}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$2402(Lcom/android/internal/policy/impl/PhoneWindowManager;Ljava/util/Map;)Ljava/util/Map;
 
     const-string v3, "WindowManager"

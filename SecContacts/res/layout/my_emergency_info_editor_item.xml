@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/textAppearanceGroupEditorLabel" android:id="@id/detail_lable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_editor_group_name_label_margin_top" android:paddingStart="@dimen/list_item_left_padding" android:paddingEnd="@dimen/list_item_right_padding" />
+    <EditText android:id="@id/detail_edit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_editor_group_name_margin_top" android:layout_marginBottom="@dimen/group_editor_group_name_margin_bottom" android:layout_below="@id/detail_lable" android:inputType="textCapSentences" android:imeOptions="flagNoFullscreen" android:layout_marginStart="@dimen/list_item_left_padding" android:layout_marginEnd="@dimen/list_item_right_padding" />
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/detail_edit_view" />
+</RelativeLayout>

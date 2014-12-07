@@ -33,6 +33,8 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -46,7 +48,7 @@
 
     :cond_0
     :goto_0
-    #setter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsRingingOrOffhook:Z
+    # setter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsRingingOrOffhook:Z
     invoke-static {v1, v0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->access$302(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Z)Z
 
     return-void

@@ -27,6 +27,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "Unsupported"
 
@@ -57,6 +58,7 @@
 
 .method public setOptionTag(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

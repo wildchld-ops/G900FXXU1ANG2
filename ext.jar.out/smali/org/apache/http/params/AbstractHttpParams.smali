@@ -19,6 +19,8 @@
 # virtual methods
 .method public getBooleanParameter(Ljava/lang/String;Z)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lorg/apache/http/params/AbstractHttpParams;->getParameter(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -41,6 +43,8 @@
 
 .method public getDoubleParameter(Ljava/lang/String;D)D
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # D
 
     invoke-virtual {p0, p1}, Lorg/apache/http/params/AbstractHttpParams;->getParameter(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -63,6 +67,8 @@
 
 .method public getIntParameter(Ljava/lang/String;I)I
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-virtual {p0, p1}, Lorg/apache/http/params/AbstractHttpParams;->getParameter(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -85,6 +91,8 @@
 
 .method public getLongParameter(Ljava/lang/String;J)J
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # J
 
     invoke-virtual {p0, p1}, Lorg/apache/http/params/AbstractHttpParams;->getParameter(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -107,6 +115,7 @@
 
 .method public isParameterFalse(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -124,6 +133,7 @@
 
 .method public isParameterTrue(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -136,6 +146,8 @@
 
 .method public setBooleanParameter(Ljava/lang/String;Z)Lorg/apache/http/params/HttpParams;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -154,6 +166,8 @@
 
 .method public setDoubleParameter(Ljava/lang/String;D)Lorg/apache/http/params/HttpParams;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # D
 
     new-instance v0, Ljava/lang/Double;
 
@@ -166,6 +180,8 @@
 
 .method public setIntParameter(Ljava/lang/String;I)Lorg/apache/http/params/HttpParams;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     new-instance v0, Ljava/lang/Integer;
 
@@ -178,6 +194,8 @@
 
 .method public setLongParameter(Ljava/lang/String;J)Lorg/apache/http/params/HttpParams;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # J
 
     new-instance v0, Ljava/lang/Long;
 

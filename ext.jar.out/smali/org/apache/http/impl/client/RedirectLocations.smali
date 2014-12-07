@@ -35,6 +35,7 @@
 # virtual methods
 .method public add(Ljava/net/URI;)V
     .locals 1
+    .param p1    # Ljava/net/URI;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/RedirectLocations;->uris:Ljava/util/Set;
 
@@ -45,6 +46,7 @@
 
 .method public contains(Ljava/net/URI;)Z
     .locals 1
+    .param p1    # Ljava/net/URI;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/RedirectLocations;->uris:Ljava/util/Set;
 
@@ -57,6 +59,7 @@
 
 .method public remove(Ljava/net/URI;)Z
     .locals 1
+    .param p1    # Ljava/net/URI;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/RedirectLocations;->uris:Ljava/util/Set;
 

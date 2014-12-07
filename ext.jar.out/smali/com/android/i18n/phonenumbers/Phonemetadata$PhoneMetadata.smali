@@ -256,6 +256,7 @@
 # virtual methods
 .method public addIntlNumberFormat(Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
 
     if-nez p1, :cond_0
 
@@ -275,6 +276,7 @@
 
 .method public addNumberFormat(Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
 
     if-nez p1, :cond_0
 
@@ -352,6 +354,7 @@
 
 .method public getIntlNumberFormat(I)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;->intlNumberFormat_:Ljava/util/List;
 
@@ -422,6 +425,7 @@
 
 .method public getNumberFormat(I)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;->numberFormat_:Ljava/util/List;
 
@@ -798,6 +802,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 8
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1166,6 +1171,7 @@
 
 .method public setCountryCode(I)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1178,6 +1184,7 @@
 
 .method public setEmergency(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1199,6 +1206,7 @@
 
 .method public setFixedLine(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1220,6 +1228,7 @@
 
 .method public setGeneralDesc(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1241,6 +1250,7 @@
 
 .method public setId(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1253,6 +1263,7 @@
 
 .method public setInternationalPrefix(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1265,6 +1276,7 @@
 
 .method public setLeadingDigits(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1277,6 +1289,7 @@
 
 .method public setLeadingZeroPossible(Z)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1289,6 +1302,7 @@
 
 .method public setMainCountryForCode(Z)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1301,6 +1315,7 @@
 
 .method public setMobile(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1322,6 +1337,7 @@
 
 .method public setNationalPrefix(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1334,6 +1350,7 @@
 
 .method public setNationalPrefixForParsing(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1346,6 +1363,7 @@
 
 .method public setNationalPrefixTransformRule(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1358,6 +1376,7 @@
 
 .method public setNoInternationalDialling(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1379,6 +1398,7 @@
 
 .method public setPager(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1400,6 +1420,7 @@
 
 .method public setPersonalNumber(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1421,6 +1442,7 @@
 
 .method public setPreferredExtnPrefix(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1433,6 +1455,7 @@
 
 .method public setPreferredInternationalPrefix(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1445,6 +1468,7 @@
 
 .method public setPremiumRate(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1466,6 +1490,7 @@
 
 .method public setSameMobileAndFixedLinePattern(Z)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1478,6 +1503,7 @@
 
 .method public setSharedCost(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1499,6 +1525,7 @@
 
 .method public setTollFree(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1520,6 +1547,7 @@
 
 .method public setUan(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1541,6 +1569,7 @@
 
 .method public setVoicemail(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1562,6 +1591,7 @@
 
 .method public setVoip(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     if-nez p1, :cond_0
 
@@ -1583,6 +1613,7 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 4
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

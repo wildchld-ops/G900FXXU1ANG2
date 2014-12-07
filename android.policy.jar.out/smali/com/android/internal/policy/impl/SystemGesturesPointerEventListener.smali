@@ -89,10 +89,12 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener$Callbacks;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener$Callbacks;
 
     const/16 v2, 0x20
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-array v1, v2, [I
 
@@ -154,11 +156,11 @@
 
     iget v0, v1, Landroid/util/DisplayMetrics;->density:F
 
-    const/high16 v1, 0x4248
+    const/high16 v1, 0x42480000
 
     mul-float/2addr v1, v0
 
-    const/high16 v2, 0x3f00
+    const/high16 v2, 0x3f000000
 
     add-float/2addr v1, v2
 
@@ -171,6 +173,8 @@
 
 .method private captureDown(Landroid/view/MotionEvent;I)V
     .locals 5
+    .param p1    # Landroid/view/MotionEvent;
+    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -214,6 +218,7 @@
 
 .method private static checkNull(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -256,6 +261,7 @@
 
 .method private detectEasyOneHandGesture(Landroid/view/MotionEvent;)I
     .locals 14
+    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {}, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->isEasyOneHandEnabled()Z
 
@@ -613,6 +619,10 @@
 
 .method private detectSwipe(IJFF)I
     .locals 10
+    .param p1    # I
+    .param p2    # J
+    .param p4    # F
+    .param p5    # F
 
     iget-object v8, p0, Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener;->mDownX:[F
 
@@ -781,6 +791,7 @@
 
 .method private detectSwipe(Landroid/view/MotionEvent;)I
     .locals 20
+    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getHistorySize()I
 
@@ -907,6 +918,7 @@
 
 .method private findIndex(I)I
     .locals 4
+    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -967,6 +979,7 @@
 # virtual methods
 .method public onPointerEvent(Landroid/view/MotionEvent;)V
     .locals 11
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x5
 

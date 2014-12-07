@@ -10,7 +10,7 @@
 # static fields
 .field static final BASELENGTH:I = 0xff
 
-.field static final CHUNK_SEPARATOR:[B = null
+.field static final CHUNK_SEPARATOR:[B
 
 .field static final CHUNK_SIZE:I = 0x4c
 
@@ -242,6 +242,7 @@
 
 .method public static decodeBase64([B)[B
     .locals 15
+    .param p0    # [B
 
     invoke-static {p0}, Lorg/apache/commons/codec/binary/Base64;->discardNonBase64([B)[B
 
@@ -454,6 +455,7 @@
 
 .method static discardNonBase64([B)[B
     .locals 7
+    .param p0    # [B
 
     const/4 v6, 0x0
 
@@ -501,6 +503,7 @@
 
 .method static discardWhitespace([B)[B
     .locals 7
+    .param p0    # [B
 
     const/4 v6, 0x0
 
@@ -552,6 +555,7 @@
 
 .method public static encodeBase64([B)[B
     .locals 1
+    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -564,6 +568,8 @@
 
 .method public static encodeBase64([BZ)[B
     .locals 27
+    .param p0    # [B
+    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -821,7 +827,7 @@
 
     move/from16 v23, v0
 
-    const/high16 v24, 0x4298
+    const/high16 v24, 0x42980000
 
     div-float v23, v23, v24
 
@@ -1136,6 +1142,7 @@
 
 .method public static encodeBase64Chunked([B)[B
     .locals 1
+    .param p0    # [B
 
     const/4 v0, 0x1
 
@@ -1148,6 +1155,7 @@
 
 .method public static isArrayByteBase64([B)Z
     .locals 4
+    .param p0    # [B
 
     const/4 v2, 0x1
 
@@ -1189,6 +1197,7 @@
 
 .method private static isBase64(B)Z
     .locals 3
+    .param p0    # B
 
     const/4 v0, 0x1
 
@@ -1218,6 +1227,7 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -1250,6 +1260,7 @@
 
 .method public decode([B)[B
     .locals 1
+    .param p1    # [B
 
     invoke-static {p1}, Lorg/apache/commons/codec/binary/Base64;->decodeBase64([B)[B
 
@@ -1260,6 +1271,7 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -1292,6 +1304,7 @@
 
 .method public encode([B)[B
     .locals 1
+    .param p1    # [B
 
     const/4 v0, 0x0
 

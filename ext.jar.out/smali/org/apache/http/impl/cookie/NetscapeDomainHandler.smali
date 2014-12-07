@@ -14,6 +14,7 @@
 
 .method private static isSpecialDomain(Ljava/lang/String;)Z
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
@@ -93,6 +94,8 @@
 # virtual methods
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 4
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     if-nez p1, :cond_0
 
@@ -141,6 +144,8 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 6
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

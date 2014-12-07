@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -42,12 +42,12 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadBlockTaskList:Ljava/util/ArrayList;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadBlockTaskList:Ljava/util/ArrayList;
     invoke-static {v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$2400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/util/ArrayList;
 
     move-result-object v3
 
-    #calls: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isTopActivity(Ljava/util/ArrayList;)Z
+    # invokes: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isTopActivity(Ljava/util/ArrayList;)Z
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$2500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Ljava/util/ArrayList;)Z
 
     move-result v2
@@ -66,7 +66,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #calls: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isLockScreenShowing()Z
+    # invokes: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isLockScreenShowing()Z
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$1200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
 
     move-result v2
@@ -86,7 +86,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -132,7 +132,7 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Context;
 
     move-result-object v2
@@ -141,13 +141,13 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$7;->this$0:Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadIntent:Landroid/content/Intent;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadIntent:Landroid/content/Intent;
     invoke-static {v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->access$2600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Intent;
 
     move-result-object v3

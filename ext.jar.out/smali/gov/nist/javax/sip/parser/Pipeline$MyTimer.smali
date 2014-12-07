@@ -25,6 +25,7 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Pipeline;Lgov/nist/javax/sip/parser/Pipeline;)V
     .locals 0
+    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/Pipeline$MyTimer;->this$0:Lgov/nist/javax/sip/parser/Pipeline;
 
@@ -40,7 +41,7 @@
 .method public cancel()Z
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/stack/SIPStackTimerTask;->cancel()Z
+    invoke-super {p0}, Ljava/util/TimerTask;->cancel()Z
 
     move-result v0
 

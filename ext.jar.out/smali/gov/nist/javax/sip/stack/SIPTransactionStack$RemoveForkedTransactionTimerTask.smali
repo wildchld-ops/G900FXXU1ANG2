@@ -23,6 +23,7 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/SIPClientTransaction;)V
     .locals 0
+    .param p2    # Lgov/nist/javax/sip/stack/SIPClientTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack$RemoveForkedTransactionTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -40,14 +41,14 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack$RemoveForkedTransactionTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
-    #getter for: Lgov/nist/javax/sip/stack/SIPTransactionStack;->forkedClientTransactionTable:Ljava/util/concurrent/ConcurrentHashMap;
+    # getter for: Lgov/nist/javax/sip/stack/SIPTransactionStack;->forkedClientTransactionTable:Ljava/util/concurrent/ConcurrentHashMap;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->access$000(Lgov/nist/javax/sip/stack/SIPTransactionStack;)Ljava/util/concurrent/ConcurrentHashMap;
 
     move-result-object v0
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack$RemoveForkedTransactionTimerTask;->clientTransaction:Lgov/nist/javax/sip/stack/SIPClientTransaction;
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/stack/SIPClientTransaction;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {v1}, Lgov/nist/javax/sip/stack/SIPTransaction;->getTransactionId()Ljava/lang/String;
 
     move-result-object v1
 

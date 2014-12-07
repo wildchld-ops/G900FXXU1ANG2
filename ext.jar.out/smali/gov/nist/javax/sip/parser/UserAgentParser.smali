@@ -6,6 +6,7 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Lgov/nist/javax/sip/parser/Lexer;)V
 
@@ -14,6 +15,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Ljava/lang/String;)V
 
@@ -22,6 +24,7 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 7
+    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -99,7 +102,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v2}, Lgov/nist/javax/sip/header/UserAgent;->encode()Ljava/lang/String;
+    invoke-virtual {v2}, Lgov/nist/javax/sip/header/SIPHeader;->encode()Ljava/lang/String;
 
     move-result-object v6
 
@@ -143,7 +146,7 @@
 
     const-string v5, "UserAgentParser.parse"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     new-instance v4, Lgov/nist/javax/sip/header/UserAgent;
@@ -153,13 +156,13 @@
     const/16 v5, 0x811
 
     :try_start_0
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->headerName(I)V
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/HeaderParser;->headerName(I)V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
@@ -167,7 +170,7 @@
 
     const-string v5, "empty header"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v5
 
@@ -184,7 +187,7 @@
 
     const-string v6, "UserAgentParser.parse"
 
-    invoke-virtual {p0, v6}, Lgov/nist/javax/sip/parser/UserAgentParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v6}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     throw v5
@@ -192,37 +195,37 @@
     :cond_2
     :goto_0
     :try_start_1
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
     if-eq v5, v7, :cond_7
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
     if-eqz v5, :cond_7
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v5
 
     if-ne v5, v8, :cond_3
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->comment()Ljava/lang/String;
 
@@ -255,20 +258,20 @@
     invoke-virtual {v4, v5}, Lgov/nist/javax/sip/header/UserAgent;->addProductToken(Ljava/lang/String;)V
 
     :goto_1
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/UserAgentParser;->getLexer()Lgov/nist/javax/sip/parser/Lexer;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/Parser;->getLexer()Lgov/nist/javax/sip/parser/Lexer;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lgov/nist/javax/sip/parser/Lexer;->SPorHT()V
+    invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->byteStringNoSlash()Ljava/lang/String;
 
@@ -278,7 +281,7 @@
 
     const-string v5, "Expected product string"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v5
 
@@ -289,7 +292,7 @@
 
     invoke-direct {v2, v1}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->peekNextToken()Lgov/nist/core/Token;
 
@@ -301,19 +304,19 @@
 
     if-ne v5, v9, :cond_6
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x2f
 
     invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/UserAgentParser;->getLexer()Lgov/nist/javax/sip/parser/Lexer;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/Parser;->getLexer()Lgov/nist/javax/sip/parser/Lexer;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lgov/nist/javax/sip/parser/Lexer;->SPorHT()V
+    invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/UserAgentParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->byteStringNoSlash()Ljava/lang/String;
 
@@ -323,7 +326,7 @@
 
     const-string v5, "Expected product version"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v5
 
@@ -354,7 +357,7 @@
 
     const-string v5, "UserAgentParser.parse"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/UserAgentParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_8
     return-object v4

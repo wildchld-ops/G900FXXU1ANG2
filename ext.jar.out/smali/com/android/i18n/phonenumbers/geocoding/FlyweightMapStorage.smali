@@ -59,7 +59,7 @@
 
     iput v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->descIndexSizeInBytes:I
 
-    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget v6, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->descIndexSizeInBytes:I
 
@@ -88,7 +88,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v1, v5, :cond_0
 
@@ -134,6 +134,7 @@
 
 .method private static getOptimalNumberOfBytesForValue(I)I
     .locals 1
+    .param p0    # I
 
     const/16 v0, 0x7fff
 
@@ -152,6 +153,7 @@
 
 .method private readEntries(Ljava/io/ObjectInput;)V
     .locals 3
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -162,7 +164,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iput v1, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->phoneNumberPrefixes:Ljava/nio/ByteBuffer;
 
@@ -170,16 +172,16 @@
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->phoneNumberPrefixes:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->capacity()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->capacity()I
 
     move-result v1
 
-    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v1, v2, :cond_1
 
     :cond_0
-    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->prefixSizeInBytes:I
 
@@ -198,16 +200,16 @@
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->descriptionIndexes:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->capacity()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->capacity()I
 
     move-result v1
 
-    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v1, v2, :cond_3
 
     :cond_2
-    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->descIndexSizeInBytes:I
 
@@ -223,7 +225,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v1, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v0, v1, :cond_4
 
@@ -249,6 +251,10 @@
 
 .method private static readExternalWord(Ljava/io/ObjectInput;ILjava/nio/ByteBuffer;I)V
     .locals 2
+    .param p0    # Ljava/io/ObjectInput;
+    .param p1    # I
+    .param p2    # Ljava/nio/ByteBuffer;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -282,6 +288,9 @@
 
 .method private static readWordFromBuffer(Ljava/nio/ByteBuffer;II)I
     .locals 2
+    .param p0    # Ljava/nio/ByteBuffer;
+    .param p1    # I
+    .param p2    # I
 
     mul-int v0, p2, p1
 
@@ -306,6 +315,10 @@
 
 .method private static storeWordInBuffer(Ljava/nio/ByteBuffer;III)V
     .locals 2
+    .param p0    # Ljava/nio/ByteBuffer;
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
 
     mul-int v0, p2, p1
 
@@ -328,6 +341,10 @@
 
 .method private static writeExternalWord(Ljava/io/ObjectOutput;ILjava/nio/ByteBuffer;I)V
     .locals 2
+    .param p0    # Ljava/io/ObjectOutput;
+    .param p1    # I
+    .param p2    # Ljava/nio/ByteBuffer;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -363,6 +380,7 @@
 # virtual methods
 .method public getDescription(I)Ljava/lang/String;
     .locals 3
+    .param p1    # I
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->descriptionIndexes:Ljava/nio/ByteBuffer;
 
@@ -381,6 +399,7 @@
 
 .method public getPrefix(I)I
     .locals 2
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->phoneNumberPrefixes:Ljava/nio/ByteBuffer;
 
@@ -395,6 +414,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 6
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -417,7 +437,7 @@
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v4}, Ljava/util/TreeSet;->clear()V
 
@@ -426,7 +446,7 @@
     :goto_0
     if-ge v2, v3, :cond_0
 
-    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-interface {p1}, Ljava/io/ObjectInput;->readInt()I
 
@@ -507,7 +527,7 @@
 
     move-result v5
 
-    iput v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iput v5, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     invoke-interface {p1}, Ljava/util/SortedMap;->lastKey()Ljava/lang/Object;
 
@@ -525,7 +545,7 @@
 
     iput v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->prefixSizeInBytes:I
 
-    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v5, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget v6, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->prefixSizeInBytes:I
 
@@ -576,7 +596,7 @@
 
     invoke-static {v5, v6, v3, v4}, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->storeWordInBuffer(Ljava/nio/ByteBuffer;III)V
 
-    iget-object v5, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v5, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     int-to-double v6, v4
 
@@ -612,6 +632,7 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 9
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -626,7 +647,7 @@
 
     invoke-interface {p1, v7}, Ljava/io/ObjectOutput;->writeInt(I)V
 
-    iget-object v7, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v7, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v7}, Ljava/util/TreeSet;->size()I
 
@@ -634,7 +655,7 @@
 
     invoke-interface {p1, v6}, Ljava/io/ObjectOutput;->writeInt(I)V
 
-    iget-object v7, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v7, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v7}, Ljava/util/TreeSet;->iterator()Ljava/util/Iterator;
 
@@ -686,14 +707,14 @@
     goto :goto_1
 
     :cond_1
-    iget v7, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v7, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     invoke-interface {p1, v7}, Ljava/io/ObjectOutput;->writeInt(I)V
 
     const/4 v2, 0x0
 
     :goto_2
-    iget v7, p0, Lcom/android/i18n/phonenumbers/geocoding/FlyweightMapStorage;->numOfEntries:I
+    iget v7, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v2, v7, :cond_2
 

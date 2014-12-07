@@ -16,21 +16,21 @@
 
 
 # static fields
-.field public static final CALLING_STATE:Ljavax/sip/TransactionState; = null
+.field public static final CALLING_STATE:Ljavax/sip/TransactionState;
 
-.field public static final COMPLETED_STATE:Ljavax/sip/TransactionState; = null
+.field public static final COMPLETED_STATE:Ljavax/sip/TransactionState;
 
-.field public static final CONFIRMED_STATE:Ljavax/sip/TransactionState; = null
+.field public static final CONFIRMED_STATE:Ljavax/sip/TransactionState;
 
-.field public static final INITIAL_STATE:Ljavax/sip/TransactionState; = null
+.field public static final INITIAL_STATE:Ljavax/sip/TransactionState;
 
 .field protected static final MAXIMUM_RETRANSMISSION_TICK_COUNT:I = 0x8
 
-.field public static final PROCEEDING_STATE:Ljavax/sip/TransactionState; = null
+.field public static final PROCEEDING_STATE:Ljavax/sip/TransactionState;
 
 .field protected static final T1:I = 0x1
 
-.field public static final TERMINATED_STATE:Ljavax/sip/TransactionState; = null
+.field public static final TERMINATED_STATE:Ljavax/sip/TransactionState;
 
 .field protected static final TIMER_A:I = 0x1
 
@@ -173,6 +173,8 @@
 
 .method protected constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     const/4 v2, 0x1
 
@@ -360,6 +362,7 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/stack/SIPTransaction;)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 1
+    .param p0    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
 
@@ -465,8 +468,8 @@
 
     invoke-interface {v2, v3}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
     iput-boolean v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->isSemaphoreAquired:Z
@@ -510,6 +513,7 @@
 
 .method public addEventListener(Lgov/nist/javax/sip/stack/SIPTransactionEventListener;)V
     .locals 1
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->eventListeners:Ljava/util/Set;
 
@@ -587,6 +591,7 @@
 
 .method public doesCancelMatchTransaction(Lgov/nist/javax/sip/message/SIPRequest;)Z
     .locals 8
+    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     const/4 v2, 0x0
 
@@ -619,13 +624,13 @@
     return v4
 
     :cond_1
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
 
     move-result-object v3
 
     if-eqz v3, :cond_3
 
-    invoke-virtual {v3}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual {v3}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v1
 
@@ -678,11 +683,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v4
 
@@ -791,11 +796,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getTo()Ljavax/sip/header/ToHeader;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getTo()Ljavax/sip/header/ToHeader;
 
     move-result-object v4
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getTo()Ljavax/sip/header/ToHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTo()Ljavax/sip/header/ToHeader;
 
     move-result-object v5
 
@@ -809,11 +814,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getFrom()Ljavax/sip/header/FromHeader;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getFrom()Ljavax/sip/header/FromHeader;
 
     move-result-object v4
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getFrom()Ljavax/sip/header/FromHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getFrom()Ljavax/sip/header/FromHeader;
 
     move-result-object v5
 
@@ -827,7 +832,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getCallId()Ljavax/sip/header/CallIdHeader;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
     move-result-object v4
 
@@ -835,7 +840,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getCallId()Ljavax/sip/header/CallIdHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
     move-result-object v5
 
@@ -853,7 +858,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getCSeq()Ljavax/sip/header/CSeqHeader;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getCSeq()Ljavax/sip/header/CSeqHeader;
 
     move-result-object v4
 
@@ -861,7 +866,7 @@
 
     move-result-wide v4
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getCSeq()Ljavax/sip/header/CSeqHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getCSeq()Ljavax/sip/header/CSeqHeader;
 
     move-result-object v6
 
@@ -877,11 +882,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPRequest;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/message/SIPMessage;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual {v4}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v4
 
@@ -908,6 +913,7 @@
 
 .method protected final enableRetransmissionTimer(I)V
     .locals 1
+    .param p1    # I
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isInviteTransaction()Z
 
@@ -942,6 +948,7 @@
 
 .method protected final enableTimeoutTimer(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -1074,7 +1081,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/message/SIPRequest;->getTopmostVia()Lgov/nist/javax/sip/header/Via;
+    invoke-virtual {v0}, Lgov/nist/javax/sip/message/SIPMessage;->getTopmostVia()Lgov/nist/javax/sip/header/Via;
 
     move-result-object v0
 
@@ -1774,6 +1781,7 @@
 
 .method protected raiseErrorEvent(I)V
     .locals 5
+    .param p1    # I
 
     new-instance v1, Lgov/nist/javax/sip/stack/SIPTransactionErrorEvent;
 
@@ -1929,6 +1937,7 @@
 
 .method public removeEventListener(Lgov/nist/javax/sip/stack/SIPTransactionEventListener;)V
     .locals 1
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->eventListeners:Ljava/util/Set;
 
@@ -2015,6 +2024,7 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2046,6 +2056,10 @@
 
 .method protected sendMessage([BLjava/net/InetAddress;IZ)V
     .locals 2
+    .param p1    # [B
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2063,6 +2077,7 @@
 
 .method public setApplicationData(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->applicationData:Ljava/lang/Object;
 
@@ -2071,6 +2086,7 @@
 
 .method public final setBranch(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->branch:Ljava/lang/String;
 
@@ -2082,6 +2098,7 @@
 
 .method public setEncapsulatedChannel(Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 1
+    .param p1    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
 
@@ -2102,6 +2119,7 @@
 
 .method public setOriginalRequest(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 4
+    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->originalRequest:Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -2109,11 +2127,11 @@
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->originalRequest:Lgov/nist/javax/sip/message/SIPRequest;
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPRequest;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPMessage;->getTransactionId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTransactionId()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2136,7 +2154,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->method:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getFrom()Ljavax/sip/header/FromHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getFrom()Ljavax/sip/header/FromHeader;
 
     move-result-object v1
 
@@ -2144,7 +2162,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->from:Lgov/nist/javax/sip/header/From;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getTo()Ljavax/sip/header/ToHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTo()Ljavax/sip/header/ToHeader;
 
     move-result-object v1
 
@@ -2168,7 +2186,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->fromTag:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getCallId()Ljavax/sip/header/CallIdHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
     move-result-object v1
 
@@ -2176,7 +2194,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->callId:Lgov/nist/javax/sip/header/CallID;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getCSeq()Ljavax/sip/header/CSeqHeader;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getCSeq()Ljavax/sip/header/CSeqHeader;
 
     move-result-object v1
 
@@ -2188,7 +2206,7 @@
 
     const-string v1, "Event"
 
-    invoke-virtual {p1, v1}, Lgov/nist/javax/sip/message/SIPRequest;->getHeader(Ljava/lang/String;)Ljavax/sip/header/Header;
+    invoke-virtual {p1, v1}, Lgov/nist/javax/sip/message/SIPMessage;->getHeader(Ljava/lang/String;)Ljavax/sip/header/Header;
 
     move-result-object v1
 
@@ -2196,7 +2214,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->event:Lgov/nist/javax/sip/header/Event;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTransactionId()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2206,11 +2224,11 @@
 
     invoke-virtual {v1, p0}, Lgov/nist/javax/sip/message/SIPRequest;->setTransaction(Ljava/lang/Object;)V
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getViaHeaders()Lgov/nist/javax/sip/header/ViaList;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual {v1}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v1
 
@@ -2302,7 +2320,7 @@
     invoke-interface {v1, v2}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
 
     :cond_3
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPRequest;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTransactionId()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2342,6 +2360,7 @@
 
 .method public setRetransmitTimer(I)V
     .locals 2
+    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -2410,6 +2429,7 @@
 
 .method public setState(Ljavax/sip/TransactionState;)V
     .locals 3
+    .param p1    # Ljavax/sip/TransactionState;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->currentState:Ljavax/sip/TransactionState;
 

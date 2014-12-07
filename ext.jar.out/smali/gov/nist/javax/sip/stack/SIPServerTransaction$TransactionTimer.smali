@@ -26,7 +26,7 @@
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/SIPStackTimerTask;-><init>()V
 
-    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isLoggingEnabled()Z
 
@@ -34,7 +34,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 
@@ -50,7 +50,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getTransactionId()Ljava/lang/String;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/stack/SIPTransaction;->getTransactionId()Ljava/lang/String;
 
     move-result-object v2
 
@@ -75,14 +75,14 @@
 
     iget-object v2, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$TransactionTimer;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->isTerminated()Z
+    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPTransaction;->isTerminated()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     :try_start_0
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPServerTransaction$TransactionTimer;->cancel()Z
+    invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -95,7 +95,7 @@
 
     iget-object v2, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$TransactionTimer;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v2, v2, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v2, v2, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getTimer()Ljava/util/Timer;
 
@@ -113,7 +113,7 @@
 
     iget-object v2, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$TransactionTimer;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v2, v2, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v2, v2, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isAlive()Z
 
@@ -126,7 +126,7 @@
     :cond_1
     iget-object v2, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$TransactionTimer;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->fireTimer()V
+    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPTransaction;->fireTimer()V
 
     goto :goto_0
 .end method

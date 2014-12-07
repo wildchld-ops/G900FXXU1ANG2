@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d sovellusta päivitetty</item>
+        <item quantity="one">%1$d sovellus päivitetty</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d päivitystä saatavana</item>
+        <item quantity="one">%1$d päivitys saatavana</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d päivit. odottaa hyväksyntää</item>
+        <item quantity="one">%1$d päivitys odottaa hyväksyntää</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d tulosta</item>
+        <item quantity="one">%1$d tulos</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d uutta päivitystä</item>
+        <item quantity="one">%1$d uusi päivitys</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Arviosi: %1$s tähteä</item>
+        <item quantity="one">Arviosi: %1$s tähti</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s käyttäjää antoi tälle +1.</item>
+        <item quantity="one">%1$s käyttäjä antoi tälle +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s ja %2$s muuta antoivat tälle +1.</item>
+        <item quantity="one">%1$s ja %2$s muu antoivat tälle +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s muuta</item>
+        <item quantity="one">+%1$d muu</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d valittu</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Päivityksiä saatavilla</item>
+        <item quantity="one">Päivitys saatavilla</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">%1$d päivitystä saatavilla. Asennetaanko ne?</item>
+        <item quantity="one">%1$d päivitys saatavilla. Asennetaanko se?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s piiriä</item>
+        <item quantity="one">%1$s piiri</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">tähteä</item>
+        <item quantity="one">tähti</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähteä – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähti – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähteä – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähti – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s tähteä&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s tähti&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähteä</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s tähti</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Arvio: &amp;lt;b>%1$s tähteä&amp;lt;/b></item>
+        <item quantity="one">Arvio: &amp;lt;b>%1$s tähti&amp;lt;/b></item>
+    </plurals>
+</resources>

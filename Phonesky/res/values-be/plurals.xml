@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Прыкладанняў абноўлена: %1$d</item>
+        <item quantity="one">Прыкладанне %1$d абнаўляецца</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Даступных абнаўленняў: %1$d</item>
+        <item quantity="one">Даступнае абнаўленне: %1$d</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Абнаўленні (%1$d) патр. зацвярдж.</item>
+        <item quantity="one">Абнаўленне (%1$d) патр. зацвярдж.</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Вынікаў: %1$d</item>
+        <item quantity="one">Вынікаў: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Новых абнаўленняў: %1$d</item>
+        <item quantity="one">Новае абнаўленне: %1$d</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Ваш рэйтынг, %1$s зоркі/зорак</item>
+        <item quantity="one">Ваш рэйтынг, %1$s зорка</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Дадалі гэта ў +1: %1$s чал.</item>
+        <item quantity="one">Дадалі гэта ў +1: %1$s чал.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s і яшчэ %2$s дадалі гэта у +1.</item>
+        <item quantity="one">%1$s і яшчэ %2$s дадалі гэта ў +1</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+ яшчэ %1$s</item>
+        <item quantity="one">+ яшчэ %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Выбрана: %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Абнаўленні даступныя</item>
+        <item quantity="one">Абнаўленне даступнае</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">У вас ёсць наступная колькасць абнаўленняў: %1$d. Жадаеце іх усталяваць?</item>
+        <item quantity="one">У вас ёсць %1$d абнаўленне. Жадаеце яго ўсталяваць?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">Кругоў: %1$s</item>
+        <item quantity="one">%1$s круг</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">зоркі</item>
+        <item quantity="one">зорка</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s зоркі - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s зорка - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s зоркі - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s зорка - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s зоркі&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s зорка&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s зоркі</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s зорка</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Гэта ацэнена ў &amp;lt;b>%1$s зоркі&amp;lt;/b></item>
+        <item quantity="one">Гэта ацэнена ў &amp;lt;b>%1$s зорку&amp;lt;/b></item>
+    </plurals>
+</resources>

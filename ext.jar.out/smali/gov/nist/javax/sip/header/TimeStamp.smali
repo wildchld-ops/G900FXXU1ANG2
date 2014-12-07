@@ -26,7 +26,7 @@
 
     const/4 v3, -0x1
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     const-string v0, "Timestamp"
 
@@ -58,7 +58,7 @@
 
     iget v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->delayFloat:F
 
-    const/high16 v1, -0x4080
+    const/high16 v1, -0x40800000
 
     cmpl-float v0, v0, v1
 
@@ -105,7 +105,7 @@
 
     iget v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->timeStampFloat:F
 
-    const/high16 v1, -0x4080
+    const/high16 v1, -0x40800000
 
     cmpl-float v0, v0, v1
 
@@ -220,7 +220,7 @@
 
     iget v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->delayFloat:F
 
-    const/high16 v1, -0x4080
+    const/high16 v1, -0x40800000
 
     cmpl-float v0, v0, v1
 
@@ -298,7 +298,7 @@
 
     iget v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->timeStampFloat:F
 
-    const/high16 v1, -0x4080
+    const/high16 v1, -0x40800000
 
     cmpl-float v0, v0, v1
 
@@ -357,6 +357,7 @@
 
 .method public setDelay(F)V
     .locals 2
+    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -369,7 +370,7 @@
 
     if-gez v0, :cond_0
 
-    const/high16 v0, -0x4080
+    const/high16 v0, -0x40800000
 
     cmpl-float v0, p1, v0
 
@@ -395,6 +396,7 @@
 
 .method public setTime(J)V
     .locals 2
+    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -418,7 +420,7 @@
     :cond_0
     iput-wide p1, p0, Lgov/nist/javax/sip/header/TimeStamp;->timeStamp:J
 
-    const/high16 v0, -0x4080
+    const/high16 v0, -0x40800000
 
     iput v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->timeStampFloat:F
 
@@ -427,6 +429,7 @@
 
 .method public setTimeDelay(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -464,7 +467,7 @@
     :cond_0
     iput p1, p0, Lgov/nist/javax/sip/header/TimeStamp;->delay:I
 
-    const/high16 v0, -0x4080
+    const/high16 v0, -0x40800000
 
     iput v0, p0, Lgov/nist/javax/sip/header/TimeStamp;->delayFloat:F
 
@@ -473,6 +476,7 @@
 
 .method public setTimeStamp(F)V
     .locals 2
+    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

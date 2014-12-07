@@ -50,6 +50,10 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/TwoChunkInputStream;IJJLorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;)V
     .locals 3
+    .param p2    # I
+    .param p3    # J
+    .param p5    # J
+    .param p7    # Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
     const/4 v2, 0x0
 
@@ -93,7 +97,7 @@
 
     new-instance v0, Lorg/apache/http/impl/client/CustomHttpClient;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {p1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v1
@@ -106,7 +110,7 @@
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->secCustomHttpClient:Lorg/apache/http/impl/client/CustomHttpClient;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
     invoke-static {p1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$100(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpRequest;
 
     move-result-object v1
@@ -147,7 +151,7 @@
 
     iget-object v3, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1100(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v3
@@ -172,7 +176,7 @@
 
     move-result-object v2
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -215,12 +219,13 @@
 
 .method public createTwoChunkInSec(Z)V
     .locals 26
+    .param p1    # Z
 
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v1
@@ -245,7 +250,7 @@
 
     const-string v2, "createTwoChunkInSec: session is finished"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -260,7 +265,7 @@
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v1
@@ -269,7 +274,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v6
@@ -282,7 +287,7 @@
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v1
@@ -311,7 +316,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v6
@@ -330,7 +335,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mLength:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mLength:J
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$600(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v6
@@ -349,7 +354,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStart:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStart:J
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$700(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v6
@@ -362,7 +367,7 @@
 
     move-result-object v2
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_2
@@ -426,7 +431,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mManConn:Lorg/apache/http/conn/ManagedClientConnection;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mManConn:Lorg/apache/http/conn/ManagedClientConnection;
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$800(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/conn/ManagedClientConnection;
 
     move-result-object v3
@@ -443,7 +448,7 @@
 
     iget-object v10, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
     invoke-static {v10}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$100(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpRequest;
 
     move-result-object v10
@@ -452,7 +457,7 @@
 
     iget-object v11, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
     invoke-static {v11}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$900(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpHost;
 
     move-result-object v11
@@ -461,7 +466,7 @@
 
     iget-object v12, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mContext:Lorg/apache/http/protocol/HttpContext;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mContext:Lorg/apache/http/protocol/HttpContext;
     invoke-static {v12}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/protocol/HttpContext;
 
     move-result-object v12
@@ -472,7 +477,7 @@
 
     move-object/from16 v17, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
     invoke-static/range {v17 .. v17}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1100(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v17
@@ -485,7 +490,7 @@
 
     move-object/from16 v18, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static/range {v18 .. v18}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v18
@@ -496,7 +501,7 @@
 
     move-object/from16 v19, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mFullConSize:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mFullConSize:J
     invoke-static/range {v19 .. v19}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1200(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v19
@@ -507,7 +512,7 @@
 
     move-object/from16 v21, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeOut:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeOut:I
     invoke-static/range {v21 .. v21}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1300(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v21
@@ -528,14 +533,14 @@
 
     move-object/from16 v0, v25
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v0, v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$502(Lorg/apache/http/impl/client/TwoChunkInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v1
@@ -582,7 +587,7 @@
 
     const-string v2, "Need to start another sec chunk input"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_4
@@ -598,7 +603,7 @@
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v7
@@ -617,15 +622,15 @@
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->startRun()V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_6
     :goto_2
@@ -649,7 +654,7 @@
 
     iget-object v1, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v1
@@ -688,7 +693,7 @@
 
     move-result-object v2
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     goto :goto_1
@@ -705,11 +710,11 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v1, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$502(Lorg/apache/http/impl/client/TwoChunkInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     goto :goto_2
 .end method
@@ -747,7 +752,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1100(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v4
@@ -802,7 +807,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0
@@ -829,7 +834,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -852,7 +857,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -871,7 +876,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -894,14 +899,14 @@
 
     const/4 v3, 0x0
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->bSecThreadExisted:Z
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->bSecThreadExisted:Z
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1902(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)Z
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -929,8 +934,8 @@
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/Object;->wait(J)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_c
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_3
+    .catchall {:try_start_0 .. :try_end_0} :catchall_c
 
     :goto_2
     :try_start_1
@@ -944,7 +949,7 @@
 
     const/4 v3, 0x1
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->createTwoChunkInTwoChunk(Z)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->createTwoChunkInTwoChunk(Z)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$2000(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)V
 
     :cond_2
@@ -970,7 +975,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1100(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v4
@@ -997,7 +1002,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_3
@@ -1038,7 +1043,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1055,7 +1060,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1070,8 +1075,8 @@
 
     iput-wide v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->mStartReadHeaderTime:J
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_6
 
     const/4 v2, 0x2
 
@@ -1092,7 +1097,7 @@
 
     iget-object v5, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
     invoke-static {v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$900(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpHost;
 
     move-result-object v5
@@ -1119,7 +1124,7 @@
 
     iget-object v5, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
     invoke-static {v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$900(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpHost;
 
     move-result-object v5
@@ -1142,7 +1147,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$900(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpHost;
 
     move-result-object v3
@@ -1151,7 +1156,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$100(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpRequest;
 
     move-result-object v4
@@ -1160,7 +1165,7 @@
 
     iget-object v5, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mContext:Lorg/apache/http/protocol/HttpContext;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mContext:Lorg/apache/http/protocol/HttpContext;
     invoke-static {v5}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/protocol/HttpContext;
 
     move-result-object v5
@@ -1177,7 +1182,7 @@
 
     iget-object v10, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mFullConSize:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mFullConSize:J
     invoke-static {v10}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1200(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v10
@@ -1194,7 +1199,7 @@
 
     iget-object v14, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v14}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v14
@@ -1207,7 +1212,7 @@
 
     move-object/from16 v16, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static/range {v16 .. v16}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v16
@@ -1224,7 +1229,7 @@
 
     move-object/from16 v18, v0
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static/range {v18 .. v18}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v18
@@ -1249,9 +1254,9 @@
 
     throw v2
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_6
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_6
 
     :catch_0
     move-exception v25
@@ -1259,15 +1264,15 @@
     :try_start_4
     monitor-enter p0
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_1
+    .catchall {:try_start_4 .. :try_end_4} :catchall_6
 
     :try_start_5
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1286,8 +1291,8 @@
     :try_start_6
     throw v2
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_1
+    .catchall {:try_start_6 .. :try_end_6} :catchall_6
 
     :catch_1
     move-exception v33
@@ -1321,8 +1326,8 @@
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/Object;->wait(J)V
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_a
     .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_4
+    .catchall {:try_start_8 .. :try_end_8} :catchall_a
 
     :goto_3
     :try_start_9
@@ -1341,7 +1346,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeForDownload:[J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeForDownload:[J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1800(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
 
     move-result-object v2
@@ -1362,7 +1367,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1391,7 +1396,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1446,7 +1451,7 @@
 
     const/4 v3, 0x1
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->bFailedInSecChunk:Z
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->bFailedInSecChunk:Z
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1402(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)Z
 
     sget-boolean v2, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
@@ -1459,12 +1464,12 @@
 
     const-string v3, "unexpected HTTP response in ExtremThread"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_6
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_0
     .catch Ljava/lang/Throwable; {:try_start_c .. :try_end_c} :catch_1
+    .catchall {:try_start_c .. :try_end_c} :catchall_6
 
     :cond_a
     monitor-enter p0
@@ -1474,7 +1479,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1515,7 +1520,7 @@
 
     const-string v3, "childIS is created before this exception"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_d
@@ -1527,8 +1532,8 @@
     :try_start_f
     monitor-enter p0
     :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_1
+    .catchall {:try_start_f .. :try_end_f} :catchall_6
 
     const-wide/16 v2, -0x1
 
@@ -1553,7 +1558,7 @@
 
     const-string v3, "thread is deprecated, break"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_f
@@ -1568,7 +1573,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1603,7 +1608,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1638,7 +1643,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -1715,7 +1720,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_13
@@ -1723,7 +1728,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1500(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
 
     move-result-object v2
@@ -1744,7 +1749,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1500(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
 
     move-result-object v2
@@ -1783,11 +1788,11 @@
 
     const-string v3, "thread is deprecated2, break"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_13
-    .catchall {:try_start_13 .. :try_end_13} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_13 .. :try_end_13} :catch_1
+    .catchall {:try_start_13 .. :try_end_13} :catchall_6
 
     :cond_16
     monitor-enter p0
@@ -1797,7 +1802,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -1846,8 +1851,8 @@
     :try_start_16
     throw v2
     :try_end_16
-    .catchall {:try_start_16 .. :try_end_16} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_16 .. :try_end_16} :catch_1
+    .catchall {:try_start_16 .. :try_end_16} :catchall_6
 
     :catchall_6
     move-exception v2
@@ -1859,7 +1864,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v3
@@ -1893,7 +1898,7 @@
 
     const-string v3, "childIS is created before this connection"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_18
     .catchall {:try_start_18 .. :try_end_18} :catchall_5
@@ -1912,7 +1917,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -1963,7 +1968,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_1c
@@ -1975,7 +1980,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mSocket0:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mSocket0:I
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1600(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v3
@@ -2033,7 +2038,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_1d
@@ -2051,7 +2056,7 @@
 
     iget-object v3, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v3
@@ -2060,7 +2065,7 @@
 
     div-long/2addr v3, v5
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v2, v3, v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$402(Lorg/apache/http/impl/client/TwoChunkInputStream;J)J
 
     move-object/from16 v0, p0
@@ -2071,7 +2076,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v4
@@ -2104,21 +2109,21 @@
 
     iget-object v6, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v6}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v6
 
     invoke-direct/range {v2 .. v7}, Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;-><init>(Lorg/apache/http/impl/client/TwoChunkInputStream;JJ)V
 
-    #setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
+    # setter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
     invoke-static {v8, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1702(Lorg/apache/http/impl/client/TwoChunkInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;)Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1700(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
     move-result-object v2
@@ -2153,7 +2158,7 @@
 
     const-string v3, "do reconnect"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_1e
@@ -2170,7 +2175,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v2
@@ -2194,7 +2199,7 @@
 
     const-string v3, "small data left, ignore me, exit thread"
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_21
@@ -2206,8 +2211,8 @@
 
     invoke-virtual/range {p0 .. p0}, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->closeSocketAndStreams()V
     :try_end_19
-    .catchall {:try_start_19 .. :try_end_19} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_19 .. :try_end_19} :catch_1
+    .catchall {:try_start_19 .. :try_end_19} :catchall_6
 
     monitor-enter p0
 
@@ -2216,7 +2221,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -2251,7 +2256,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1500(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
 
     move-result-object v2
@@ -2272,7 +2277,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1500(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
 
     move-result-object v2
@@ -2336,7 +2341,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_25
@@ -2361,7 +2366,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2374,7 +2379,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2393,7 +2398,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2453,11 +2458,11 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_1b
-    .catchall {:try_start_1b .. :try_end_1b} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_1b .. :try_end_1b} :catch_1
+    .catchall {:try_start_1b .. :try_end_1b} :catchall_6
 
     :cond_28
     :goto_7
@@ -2468,7 +2473,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -2521,8 +2526,8 @@
 
     invoke-virtual {v0, v2}, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->switchSocket(I)V
     :try_end_1d
-    .catchall {:try_start_1d .. :try_end_1d} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_1
+    .catchall {:try_start_1d .. :try_end_1d} :catchall_6
 
     goto :goto_7
 
@@ -2539,7 +2544,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2592,7 +2597,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2607,7 +2612,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v2
@@ -2616,7 +2621,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v4
@@ -2659,7 +2664,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v4
@@ -2678,7 +2683,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
 
     move-result-wide v4
@@ -2703,11 +2708,11 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_1e
-    .catchall {:try_start_1e .. :try_end_1e} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_1e .. :try_end_1e} :catch_2
+    .catchall {:try_start_1e .. :try_end_1e} :catchall_6
 
     :cond_2d
     :goto_8
@@ -2726,8 +2731,8 @@
 
     monitor-enter v3
     :try_end_1f
-    .catchall {:try_start_1f .. :try_end_1f} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_1f .. :try_end_1f} :catch_1
+    .catchall {:try_start_1f .. :try_end_1f} :catchall_6
 
     :try_start_20
     move-object/from16 v0, p0
@@ -2788,7 +2793,7 @@
 
     move-result-object v4
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_2e
@@ -2810,8 +2815,8 @@
     :try_start_21
     throw v2
     :try_end_21
-    .catchall {:try_start_21 .. :try_end_21} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_21 .. :try_end_21} :catch_1
+    .catchall {:try_start_21 .. :try_end_21} :catchall_6
 
     :cond_2f
     move/from16 v0, v20
@@ -2877,11 +2882,11 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     :try_end_22
-    .catchall {:try_start_22 .. :try_end_22} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_22 .. :try_end_22} :catch_2
+    .catchall {:try_start_22 .. :try_end_22} :catchall_6
 
     goto/16 :goto_8
 
@@ -2893,7 +2898,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v2
@@ -2932,7 +2937,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -2957,7 +2962,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -2976,7 +2981,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_30
@@ -3040,7 +3045,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     move-result-object v4
@@ -3055,7 +3060,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/CustomHttpClient;->log(Ljava/lang/Throwable;)V
@@ -3063,8 +3068,8 @@
     :cond_31
     throw v26
     :try_end_23
-    .catchall {:try_start_23 .. :try_end_23} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_23 .. :try_end_23} :catch_1
+    .catchall {:try_start_23 .. :try_end_23} :catchall_6
 
     :cond_32
     const-wide/16 v4, 0x0
@@ -3112,7 +3117,7 @@
 
     move-result-object v4
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_33
@@ -3165,7 +3170,7 @@
 
     iget-object v4, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mSocket0:I
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->mSocket0:I
     invoke-static {v4}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$1600(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
 
     move-result v4
@@ -3176,7 +3181,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->this$0:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
+    # getter for: Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
     invoke-static {v2}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     move-result-object v2
@@ -3223,8 +3228,8 @@
 
     invoke-virtual {v2}, Ljava/lang/Object;->notifyAll()V
     :try_end_25
-    .catchall {:try_start_25 .. :try_end_25} :catchall_9
     .catch Ljava/lang/Throwable; {:try_start_25 .. :try_end_25} :catch_5
+    .catchall {:try_start_25 .. :try_end_25} :catchall_9
 
     :goto_9
     :try_start_26
@@ -3269,7 +3274,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_36
@@ -3352,7 +3357,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_38
@@ -3435,7 +3440,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_3a
@@ -3477,8 +3482,8 @@
 
     throw v2
     :try_end_27
-    .catchall {:try_start_27 .. :try_end_27} :catchall_6
     .catch Ljava/lang/Throwable; {:try_start_27 .. :try_end_27} :catch_1
+    .catchall {:try_start_27 .. :try_end_27} :catchall_6
 
     :catchall_a
     move-exception v2
@@ -3533,6 +3538,7 @@
 
 .method public setInput(Ljava/io/InputStream;)V
     .locals 0
+    .param p1    # Ljava/io/InputStream;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->input:Ljava/io/InputStream;
 
@@ -3541,6 +3547,7 @@
 
 .method public startTryBoth(I)V
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3551,6 +3558,7 @@
 
 .method public switchSocket(I)V
     .locals 3
+    .param p1    # I
 
     sget-boolean v0, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
 
@@ -3588,7 +3596,7 @@
 
     move-result-object v1
 
-    #calls: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
+    # invokes: Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
 
     :cond_0

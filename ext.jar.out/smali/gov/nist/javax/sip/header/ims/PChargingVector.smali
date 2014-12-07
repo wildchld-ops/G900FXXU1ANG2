@@ -30,13 +30,13 @@
 
     const-string v2, "icid-value"
 
-    invoke-virtual {p0, v2}, Lgov/nist/javax/sip/header/ims/PChargingVector;->getNameValue(Ljava/lang/String;)Lgov/nist/core/NameValue;
+    invoke-virtual {p0, v2}, Lgov/nist/javax/sip/header/ParametersHeader;->getNameValue(Ljava/lang/String;)Lgov/nist/core/NameValue;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Lgov/nist/core/NameValue;->encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
 
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ims/PChargingVector;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v3, "icid-generated-at"
 
@@ -71,7 +71,7 @@
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_0
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ims/PChargingVector;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v3, "term-ioi"
 
@@ -106,7 +106,7 @@
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_1
-    iget-object v2, p0, Lgov/nist/javax/sip/header/ims/PChargingVector;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v3, "orig-ioi"
 
@@ -153,7 +153,7 @@
 
     const-string v0, "icid-value"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
 
     const-string v0, "icid-generated-at"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
 
     const-string v0, "orig-ioi"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
 
     const-string v0, "term-ioi"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->getParameter(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -198,6 +198,7 @@
 
 .method public setICID(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -217,13 +218,14 @@
     :cond_0
     const-string v0, "icid-value"
 
-    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ims/PChargingVector;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public setICIDGeneratedAt(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -243,13 +245,14 @@
     :cond_0
     const-string v0, "icid-generated-at"
 
-    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ims/PChargingVector;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public setOriginatingIOI(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -267,7 +270,7 @@
     :cond_0
     const-string v0, "orig-ioi"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->removeParameter(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->removeParameter(Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -275,13 +278,14 @@
     :cond_1
     const-string v0, "orig-ioi"
 
-    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ims/PChargingVector;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
 .method public setTerminatingIOI(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -299,7 +303,7 @@
     :cond_0
     const-string v0, "term-ioi"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ims/PChargingVector;->removeParameter(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->removeParameter(Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -307,13 +311,14 @@
     :cond_1
     const-string v0, "term-ioi"
 
-    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ims/PChargingVector;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

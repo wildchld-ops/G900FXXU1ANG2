@@ -27,6 +27,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "Content-Language"
 
@@ -42,7 +43,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/header/SIPHeader;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -150,6 +151,7 @@
 
 .method public setContentLanguage(Ljava/util/Locale;)V
     .locals 0
+    .param p1    # Ljava/util/Locale;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/ContentLanguage;->locale:Ljava/util/Locale;
 
@@ -158,6 +160,7 @@
 
 .method public setLanguageTag(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x2d
 

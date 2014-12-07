@@ -39,6 +39,7 @@
 
 .method protected static getList(Lgov/nist/javax/sip/header/SIPHeader;)Lgov/nist/javax/sip/header/SIPHeaderList;
     .locals 5
+    .param p0    # Lgov/nist/javax/sip/header/SIPHeader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,7 +82,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Lgov/nist/javax/sip/header/SIPHeaderList;->setHeaderName(Ljava/lang/String;)V
+    invoke-virtual {v3, v4}, Lgov/nist/javax/sip/header/SIPHeader;->setHeaderName(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
@@ -92,7 +93,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/InstantiationException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
     const/4 v3, 0x0
@@ -102,7 +103,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 .end method
@@ -139,6 +140,7 @@
 
 .method protected static hasList(Lgov/nist/javax/sip/header/SIPHeader;)Z
     .locals 3
+    .param p0    # Lgov/nist/javax/sip/header/SIPHeader;
 
     const/4 v1, 0x0
 

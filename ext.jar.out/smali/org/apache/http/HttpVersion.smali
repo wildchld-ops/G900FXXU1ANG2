@@ -9,11 +9,11 @@
 # static fields
 .field public static final HTTP:Ljava/lang/String; = "HTTP"
 
-.field public static final HTTP_0_9:Lorg/apache/http/HttpVersion; = null
+.field public static final HTTP_0_9:Lorg/apache/http/HttpVersion;
 
-.field public static final HTTP_1_0:Lorg/apache/http/HttpVersion; = null
+.field public static final HTTP_1_0:Lorg/apache/http/HttpVersion;
 
-.field public static final HTTP_1_1:Lorg/apache/http/HttpVersion; = null
+.field public static final HTTP_1_1:Lorg/apache/http/HttpVersion;
 
 .field private static final serialVersionUID:J = -0x514703574c384bf0L
 
@@ -51,6 +51,8 @@
 
 .method public constructor <init>(II)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
 
     const-string v0, "HTTP"
 
@@ -63,14 +65,16 @@
 # virtual methods
 .method public forVersion(II)Lorg/apache/http/ProtocolVersion;
     .locals 2
+    .param p1    # I
+    .param p2    # I
 
     const/4 v1, 0x1
 
-    iget v0, p0, Lorg/apache/http/HttpVersion;->major:I
+    iget v0, p0, Lorg/apache/http/ProtocolVersion;->major:I
 
     if-ne p1, v0, :cond_0
 
-    iget v0, p0, Lorg/apache/http/HttpVersion;->minor:I
+    iget v0, p0, Lorg/apache/http/ProtocolVersion;->minor:I
 
     if-ne p2, v0, :cond_0
 

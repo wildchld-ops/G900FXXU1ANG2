@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="listNumberOfTotalContacts">
+        <item quantity="other">Displaying %d contacts</item>
+        <item quantity="one">1 алоқа нишон дода мешавад</item>
+    </plurals>
+    <plurals name="listNumberOfTotalPhoneContacts">
+        <item quantity="other">%d алоқа бо рақами телефон нишон дода мешавад.</item>
+        <item quantity="one">1 алоқа бо рақами телефон нишон дода мешавад.</item>
+    </plurals>
+    <plurals name="listTotalPhoneContacts">
+        <item quantity="other">%d алоқа бо рақами телефон</item>
+        <item quantity="one">1 алоқа бо рақами телефон</item>
+    </plurals>
+    <plurals name="listTotalAllContacts">
+        <item quantity="other">%d алоқаҳо</item>
+        <item quantity="one">1 алоқа</item>
+    </plurals>
+    <plurals name="num_groups_in_account">
+        <item quantity="other">%0$d гурӯҳ</item>
+        <item quantity="one">1 гурӯҳ</item>
+    </plurals>
+    <plurals name="num_contacts_in_group">
+        <item quantity="other">%1$d нафар дар гуруҳи %2$s</item>
+        <item quantity="one">%1$d нафар дар гурӯҳи %2$s</item>
+    </plurals>
+    <plurals name="group_list_num_contacts_in_group">
+        <item quantity="other">%d нафар</item>
+        <item quantity="one">%1$d person</item>
+    </plurals>
+    <plurals name="notification_voicemail_title">
+        <item quantity="other">%d паёми почтаи овозӣ</item>
+        <item quantity="one">Почтаи овозӣ</item>
+    </plurals>
+    <plurals name="copied_N">
+        <item quantity="other">%d алоқаҳо нусхагирӣ шуданд.</item>
+        <item quantity="one">%d алоқа нусхагирӣ шуд.</item>
+    </plurals>
+</resources>

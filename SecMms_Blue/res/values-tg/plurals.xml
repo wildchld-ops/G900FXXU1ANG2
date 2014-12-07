@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="threads_results_title">
+        <item quantity="other">%1$s сӯҳбат</item>
+        <item quantity="one">1 мукотиба</item>
+    </plurals>
+    <plurals name="message_results_title">
+        <item quantity="other">%1$s паём</item>
+        <item quantity="one">1 паём</item>
+    </plurals>
+    <plurals name="Conversation_count">
+        <item quantity="other">%d мукотиба</item>
+        <item quantity="one">%d сӯҳбат</item>
+    </plurals>
+    <plurals name="recipient_more">
+        <item quantity="other">%1$s ва %2$d­тои дигар</item>
+        <item quantity="one">%s ва 1­тои дигар</item>
+    </plurals>
+    <plurals name="attachment_more">
+        <item quantity="other">%1$s ва %2$d бештар</item>
+        <item quantity="one">%s ва 1­тои дигар</item>
+    </plurals>
+    <plurals name="sim_delete_completed">
+        <item quantity="other">Паёмҳо аз SIM-корт нест карда шуданд.</item>
+        <item quantity="one">Паём аз SIM-корт нест карда шуд.</item>
+    </plurals>
+    <plurals name="sim_copy_to_phone_completed">
+        <item quantity="other">Паёмҳо аз SIM-корт нусха гирифта шуданд.</item>
+        <item quantity="one">Паём аз SIM-корт нусхагирӣ шуд.</item>
+    </plurals>
+    <plurals name="slide_duration">
+        <item quantity="other">%s secs</item>
+        <item quantity="one">%s сония</item>
+        <item quantity="few">%s secs</item>
+    </plurals>
+    <plurals name="search_results_title">
+        <item quantity="other">%1$s натиҷаҳо барои %2$s</item>
+        <item quantity="one">1 натиҷа барои %s</item>
+    </plurals>
+    <plurals name="successful_copy_to_sdcard">
+        <item quantity="other">Замимаҳо ба корти SD нусхагирӣ шуданд.</item>
+        <item quantity="one">Замима ба корти SD нусха гирифта шуд.</item>
+    </plurals>
+    <plurals name="failed_copy_to_sdcard">
+        <item quantity="other">Нусхагирии замимаҳо ба корти SD иҷро нашуд.</item>
+        <item quantity="one">Нусхагирии замима ба корти SD иҷро нашуд.</item>
+    </plurals>
+    <plurals name="uim_copy_to_phone_completed">
+        <item quantity="other">Messages copied from UIM card.</item>
+        <item quantity="one">Message copied from UIM card.</item>
+    </plurals>
+    <plurals name="uim_delete_completed">
+        <item quantity="other">%d messages deleted from UIM card.</item>
+        <item quantity="one">1 message deleted from UIM card.</item>
+    </plurals>
+</resources>

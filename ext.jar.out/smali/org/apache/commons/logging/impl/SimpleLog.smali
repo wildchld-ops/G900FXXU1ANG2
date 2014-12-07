@@ -36,7 +36,7 @@
 
 .field protected static showShortName:Z = false
 
-.field protected static final simpleLogProps:Ljava/util/Properties; = null
+.field protected static final simpleLogProps:Ljava/util/Properties;
 
 .field protected static final systemPrefix:Ljava/lang/String; = "org.apache.commons.logging.simplelog."
 
@@ -180,6 +180,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 6
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -421,6 +422,8 @@
 
 .method private static getBooleanProperty(Ljava/lang/String;Z)Z
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     invoke-static {p0}, Lorg/apache/commons/logging/impl/SimpleLog;->getStringProperty(Ljava/lang/String;)Ljava/lang/String;
 
@@ -538,6 +541,7 @@
 
 .method private static getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/logging/impl/SimpleLog$1;
 
@@ -554,6 +558,7 @@
 
 .method private static getStringProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -584,6 +589,8 @@
 
 .method private static getStringProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lorg/apache/commons/logging/impl/SimpleLog;->getStringProperty(Ljava/lang/String;)Ljava/lang/String;
 
@@ -604,6 +611,7 @@
 # virtual methods
 .method public final debug(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x2
 
@@ -623,6 +631,8 @@
 
 .method public final debug(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x2
 
@@ -640,6 +650,7 @@
 
 .method public final error(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x5
 
@@ -659,6 +670,8 @@
 
 .method public final error(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x5
 
@@ -676,6 +689,7 @@
 
 .method public final fatal(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x6
 
@@ -695,6 +709,8 @@
 
 .method public final fatal(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x6
 
@@ -720,6 +736,7 @@
 
 .method public final info(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x3
 
@@ -739,6 +756,8 @@
 
 .method public final info(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x3
 
@@ -804,6 +823,7 @@
 
 .method protected isLevelEnabled(I)Z
     .locals 1
+    .param p1    # I
 
     iget v0, p0, Lorg/apache/commons/logging/impl/SimpleLog;->currentLogLevel:I
 
@@ -846,6 +866,9 @@
 
 .method protected log(ILjava/lang/Object;Ljava/lang/Throwable;)V
     .locals 6
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # Ljava/lang/Throwable;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -1061,6 +1084,7 @@
 
 .method public setLevel(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lorg/apache/commons/logging/impl/SimpleLog;->currentLogLevel:I
 
@@ -1069,6 +1093,7 @@
 
 .method public final trace(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1088,6 +1113,8 @@
 
 .method public final trace(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x1
 
@@ -1105,6 +1132,7 @@
 
 .method public final warn(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x4
 
@@ -1124,6 +1152,8 @@
 
 .method public final warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Throwable;
 
     const/4 v1, 0x4
 
@@ -1141,6 +1171,7 @@
 
 .method protected write(Ljava/lang/StringBuffer;)V
     .locals 2
+    .param p1    # Ljava/lang/StringBuffer;
 
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 

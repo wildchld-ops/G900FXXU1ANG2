@@ -63,7 +63,7 @@
 
     if-eqz v0, :cond_0
 
-    #calls: Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->getReferenced()Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
+    # invokes: Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->getReferenced()Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
     invoke-static {v0}, Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->access$400(Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;)Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
     move-result-object v1
@@ -108,7 +108,7 @@
 
     if-eqz v0, :cond_0
 
-    #calls: Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->getReferenced()Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
+    # invokes: Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->getReferenced()Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
     invoke-static {v0}, Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;->access$400(Lorg/apache/commons/logging/impl/WeakHashtable$WeakKey;)Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
     move-result-object v1
@@ -134,6 +134,7 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
@@ -197,7 +198,7 @@
 
     check-cast v5, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
-    #calls: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
+    # invokes: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
     invoke-static {v5}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->access$100(Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;)Ljava/lang/Object;
 
     move-result-object v3
@@ -224,6 +225,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
@@ -281,7 +283,7 @@
 
     check-cast v2, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
-    #calls: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
+    # invokes: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
     invoke-static {v2}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->access$100(Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;)Ljava/lang/Object;
 
     move-result-object v1
@@ -314,6 +316,8 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -385,6 +389,7 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 5
+    .param p1    # Ljava/util/Map;
 
     if-eqz p1, :cond_0
 
@@ -437,6 +442,7 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Lorg/apache/commons/logging/impl/WeakHashtable;->changeCount:I
 

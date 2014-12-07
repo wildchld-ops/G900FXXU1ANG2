@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="text_compact_mode_enable">false</bool>
+    <bool name="use_dynamic_button_on_details">false</bool>
+    <bool name="always_show_reviews_more_button">false</bool>
+    <bool name="use_two_column_layout">false</bool>
+    <bool name="use_action_bar_tabs">false</bool>
+    <bool name="now_playing_widgets_enabled">false</bool>
+    <bool name="recommendation_widgets_enabled">false</bool>
+    <bool name="play_dynamic_column_count">false</bool>
+    <bool name="play_merch_banner_compact">true</bool>
+    <bool name="play_can_use_mini_cards">true</bool>
+    <bool name="play_follow_person_cluster_vertical_stack">true</bool>
+    <bool name="verification_activity_enable">true</bool>
+</resources>

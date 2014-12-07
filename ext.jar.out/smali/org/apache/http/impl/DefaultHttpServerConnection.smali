@@ -16,6 +16,8 @@
 # virtual methods
 .method public bind(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V
     .locals 3
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -44,7 +46,7 @@
     throw v1
 
     :cond_1
-    invoke-virtual {p0}, Lorg/apache/http/impl/DefaultHttpServerConnection;->assertNotOpen()V
+    invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpServerConnection;->assertNotOpen()V
 
     invoke-static {p2}, Lorg/apache/http/params/HttpConnectionParams;->getTcpNoDelay(Lorg/apache/http/params/HttpParams;)Z
 
@@ -93,13 +95,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/DefaultHttpServerConnection;->isOpen()Z
+    invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpServerConnection;->isOpen()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/DefaultHttpServerConnection;->getRemotePort()I
+    invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpServerConnection;->getRemotePort()I
 
     move-result v1
 

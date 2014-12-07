@@ -16,6 +16,8 @@
 
 .method public constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 0
+    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
+    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/client/AbstractHttpClient;-><init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
 
@@ -24,6 +26,7 @@
 
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 1
+    .param p1    # Lorg/apache/http/params/HttpParams;
 
     const/4 v0, 0x0
 
@@ -97,7 +100,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v5
 
@@ -180,7 +183,7 @@
 
     new-instance v7, Ljava/lang/IllegalAccessError;
 
-    invoke-virtual {v3}, Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -193,7 +196,7 @@
 
     new-instance v7, Ljava/lang/InstantiationError;
 
-    invoke-virtual {v3}, Ljava/lang/InstantiationException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -204,7 +207,7 @@
     :cond_1
     new-instance v2, Lorg/apache/http/impl/conn/SingleClientConnManager;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v7
 
@@ -312,7 +315,7 @@
 
     const-string v1, "http.authscheme-registry"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getAuthSchemes()Lorg/apache/http/auth/AuthSchemeRegistry;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getAuthSchemes()Lorg/apache/http/auth/AuthSchemeRegistry;
 
     move-result-object v2
 
@@ -320,7 +323,7 @@
 
     const-string v1, "http.cookiespec-registry"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getCookieSpecs()Lorg/apache/http/cookie/CookieSpecRegistry;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCookieSpecs()Lorg/apache/http/cookie/CookieSpecRegistry;
 
     move-result-object v2
 
@@ -328,7 +331,7 @@
 
     const-string v1, "http.cookie-store"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getCookieStore()Lorg/apache/http/client/CookieStore;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCookieStore()Lorg/apache/http/client/CookieStore;
 
     move-result-object v2
 
@@ -336,7 +339,7 @@
 
     const-string v1, "http.auth.credentials-provider"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getCredentialsProvider()Lorg/apache/http/client/CredentialsProvider;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCredentialsProvider()Lorg/apache/http/client/CredentialsProvider;
 
     move-result-object v2
 
@@ -504,7 +507,7 @@
 
     new-instance v0, Lorg/apache/http/impl/conn/ProxySelectorRoutePlanner;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
 
     move-result-object v1
 

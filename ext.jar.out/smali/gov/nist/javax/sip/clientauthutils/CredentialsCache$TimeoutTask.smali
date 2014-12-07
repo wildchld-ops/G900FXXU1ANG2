@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/clientauthutils/CredentialsCache;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/clientauthutils/CredentialsCache$TimeoutTask;->this$0:Lgov/nist/javax/sip/clientauthutils/CredentialsCache;
 
@@ -44,7 +46,7 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/clientauthutils/CredentialsCache$TimeoutTask;->this$0:Lgov/nist/javax/sip/clientauthutils/CredentialsCache;
 
-    #getter for: Lgov/nist/javax/sip/clientauthutils/CredentialsCache;->authorizationHeaders:Ljava/util/concurrent/ConcurrentHashMap;
+    # getter for: Lgov/nist/javax/sip/clientauthutils/CredentialsCache;->authorizationHeaders:Ljava/util/concurrent/ConcurrentHashMap;
     invoke-static {v0}, Lgov/nist/javax/sip/clientauthutils/CredentialsCache;->access$000(Lgov/nist/javax/sip/clientauthutils/CredentialsCache;)Ljava/util/concurrent/ConcurrentHashMap;
 
     move-result-object v0

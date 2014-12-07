@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.RateReviewSection android:id="@id/rate_and_review_section" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rating_layout" android:paddingTop="@dimen/details_review_section_top_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.google.android.finsky.layout.AccessibleTextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/play_fg_details_secondary" android:layout_gravity="center_horizontal" android:id="@id/my_rating_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PlayPlainText" />
+        <ViewStub android:layout_gravity="center_horizontal" android:id="@id/my_rating_bar_stub" android:inflatedId="@id/my_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/review_item" />
+</com.google.android.finsky.layout.RateReviewSection>

@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -52,7 +54,7 @@
 
     const/4 v1, -0x1
 
-    #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mEnableMultiWindowUISetting:I
+    # setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mEnableMultiWindowUISetting:I
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$1502(Lcom/android/internal/policy/impl/PhoneWindowManager;I)I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$26;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -86,7 +88,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$26;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->updateSystemUiVisibilityLw()I
+    # invokes: Lcom/android/internal/policy/impl/PhoneWindowManager;->updateSystemUiVisibilityLw()I
     invoke-static {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$2100(Lcom/android/internal/policy/impl/PhoneWindowManager;)I
 
     monitor-exit v1
@@ -99,11 +101,12 @@
 
     move-result v0
 
+    # setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mCurrentUser:I
     invoke-static {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$2202(I)I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$26;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->refreshKnoxInfo()V
+    # invokes: Lcom/android/internal/policy/impl/PhoneWindowManager;->refreshKnoxInfo()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$2300(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
     :cond_0

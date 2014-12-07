@@ -15,8 +15,9 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/IKeyguardService;)V
     .locals 1
+    .param p1    # Lcom/android/internal/policy/IKeyguardService;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "KeyguardServiceWrapper"
 
@@ -68,12 +69,14 @@
 
 .method public dispatch(Landroid/view/MotionEvent;)V
     .locals 0
+    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public doKeyguardTimeout(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -273,6 +276,8 @@
 
 .method public keyguardDone(ZZ)V
     .locals 3
+    .param p1    # Z
+    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -379,6 +384,7 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 3
+    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -404,6 +410,7 @@
 
 .method public onScreenTurnedOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 3
+    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -454,6 +461,7 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -479,6 +487,7 @@
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -504,6 +513,9 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/widget/RemoteViews;
+    .param p3    # Landroid/widget/RemoteViews;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -529,6 +541,8 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/widget/RemoteViews;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -554,6 +568,7 @@
 
 .method public setCurrentUser(I)V
     .locals 3
+    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -579,6 +594,7 @@
 
 .method public setHidden(Z)V
     .locals 3
+    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -604,6 +620,7 @@
 
 .method public setKeyguardEnabled(Z)V
     .locals 3
+    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -635,6 +652,9 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/widget/RemoteViews;
+    .param p3    # Landroid/widget/RemoteViews;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -660,6 +680,8 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/widget/RemoteViews;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;
@@ -685,6 +707,7 @@
 
 .method public verifyUnlock(Lcom/android/internal/policy/IKeyguardExitCallback;)V
     .locals 3
+    .param p1    # Lcom/android/internal/policy/IKeyguardExitCallback;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceWrapper;->mService:Lcom/android/internal/policy/IKeyguardService;

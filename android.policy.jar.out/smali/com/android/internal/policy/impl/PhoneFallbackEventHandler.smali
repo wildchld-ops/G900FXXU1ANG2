@@ -49,10 +49,11 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput v1, p0, Lcom/android/internal/policy/impl/PhoneFallbackEventHandler;->NO_LAUNCH:I
 
@@ -73,6 +74,7 @@
 
 .method private handleMediaKeyEvent(Landroid/view/KeyEvent;)V
     .locals 5
+    .param p1    # Landroid/view/KeyEvent;
 
     const-string v2, "audio"
 
@@ -133,6 +135,7 @@
 
 .method private launchUserDefinedApp(I)Z
     .locals 10
+    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -256,7 +259,7 @@
 
     invoke-direct {v2, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const/high16 v7, 0x3000
+    const/high16 v7, 0x30000000
 
     invoke-virtual {v2, v7}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
@@ -298,6 +301,7 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
+    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
@@ -468,8 +472,10 @@
 
 .method onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
-    const/high16 v4, 0x1000
+    const/high16 v4, 0x10000000
 
     const/4 v2, 0x2
 
@@ -496,7 +502,7 @@
 
     move-result-object v0
 
-    const/high16 v2, -0x8000
+    const/high16 v2, -0x80000000
 
     invoke-virtual {v0, p2, v2}, Landroid/media/AudioManager;->handleKeyDown(Landroid/view/KeyEvent;I)V
 
@@ -937,6 +943,8 @@
 
 .method onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -985,7 +993,7 @@
 
     move-result-object v3
 
-    const/high16 v4, -0x8000
+    const/high16 v4, -0x80000000
 
     invoke-virtual {v3, p2, v4}, Landroid/media/AudioManager;->handleKeyUp(Landroid/view/KeyEvent;I)V
 
@@ -1127,12 +1135,13 @@
 
 .method public preDispatchKeyEvent(Landroid/view/KeyEvent;)V
     .locals 2
+    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneFallbackEventHandler;->getAudioManager()Landroid/media/AudioManager;
 
     move-result-object v0
 
-    const/high16 v1, -0x8000
+    const/high16 v1, -0x80000000
 
     invoke-virtual {v0, p1, v1}, Landroid/media/AudioManager;->preDispatchKeyEvent(Landroid/view/KeyEvent;I)V
 
@@ -1153,6 +1162,7 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 0
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneFallbackEventHandler;->mView:Landroid/view/View;
 
@@ -1170,7 +1180,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const/high16 v2, 0x1000
+    const/high16 v2, 0x10000000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 

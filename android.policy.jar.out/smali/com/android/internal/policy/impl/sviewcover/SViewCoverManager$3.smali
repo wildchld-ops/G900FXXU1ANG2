@@ -21,6 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;Landroid/os/Looper;)V
     .locals 0
+    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager$3;->this$0:Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -45,7 +47,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager$3;->this$0:Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
-    #calls: Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleHide()V
+    # invokes: Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleHide()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->access$700(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)V
 
     goto :goto_0
@@ -53,7 +55,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager$3;->this$0:Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
-    #calls: Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleShow()V
+    # invokes: Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleShow()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->access$800(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)V
 
     goto :goto_0

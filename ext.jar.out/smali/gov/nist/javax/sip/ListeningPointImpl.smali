@@ -22,6 +22,9 @@
 # direct methods
 .method protected constructor <init>(Ljavax/sip/SipStack;ILjava/lang/String;)V
     .locals 0
+    .param p1    # Ljavax/sip/SipStack;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,6 +41,9 @@
 
 .method public static makeKey(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -144,7 +150,7 @@
 
     iget-object v7, p0, Lgov/nist/javax/sip/ListeningPointImpl;->sipStack:Lgov/nist/javax/sip/SipStackImpl;
 
-    invoke-virtual {v7}, Lgov/nist/javax/sip/SipStackImpl;->getStackLogger()Lgov/nist/core/StackLogger;
+    invoke-virtual {v7}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 
     move-result-object v7
 
@@ -287,6 +293,8 @@
 
 .method public sendHeartbeat(Ljava/lang/String;I)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -315,7 +323,7 @@
 
     invoke-direct {v1}, Lgov/nist/javax/sip/message/SIPRequest;-><init>()V
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPRequest;->setNullRequest()V
+    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPMessage;->setNullRequest()V
 
     invoke-virtual {v0, v1}, Lgov/nist/javax/sip/stack/MessageChannel;->sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
 
@@ -324,6 +332,7 @@
 
 .method public setSentBy(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -339,6 +348,7 @@
 
 .method protected setSipProvider(Lgov/nist/javax/sip/SipProviderImpl;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/SipProviderImpl;
 
     iput-object p1, p0, Lgov/nist/javax/sip/ListeningPointImpl;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
 

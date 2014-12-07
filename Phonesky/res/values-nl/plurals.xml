@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d apps bijgewerkt</item>
+        <item quantity="one">%1$d app bijgewerkt</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d updates beschikbaar</item>
+        <item quantity="one">%1$d update beschikbaar</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d updates vereisen goedkeuring</item>
+        <item quantity="one">%1$d update vereist goedkeuring</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d resultaten</item>
+        <item quantity="one">%1$d resultaat</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d nieuwe updates</item>
+        <item quantity="one">%1$d nieuwe update</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Uw beoordeling: %1$s sterren</item>
+        <item quantity="one">Uw beoordeling: %1$s ster</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s personen gaven dit een +1.</item>
+        <item quantity="one">%1$s persoon gaf dit een +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s en %2$s anderen gaven dit een +1.</item>
+        <item quantity="one">%1$s en %2$s anderen gaven dit een +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s anderen</item>
+        <item quantity="one">+%1$d andere</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d geselecteerd</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Updates beschikbaar</item>
+        <item quantity="one">Update beschikbaar</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Er zijn %1$d updates beschikbaar. Wilt u deze installeren?</item>
+        <item quantity="one">Er is %1$d update beschikbaar. Wilt u deze installeren?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s kringen</item>
+        <item quantity="one">%1$s kring</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">sterren</item>
+        <item quantity="one">ster</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s sterren&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s ster&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Heeft dit een beoordeling van &amp;lt;b>%1$s sterren&amp;lt;/b> gegeven</item>
+        <item quantity="one">Heeft dit een beoordeling van &amp;lt;b>%1$s ster&amp;lt;/b> gegeven</item>
+    </plurals>
+</resources>

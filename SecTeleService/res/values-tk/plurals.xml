@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="phone_in_ecm_notification_time">
+        <item quantity="other">%s minut üçin maglumat birikdirmesi tapylmady</item>
+        <item quantity="one">%s minut üçin maglumat birikdirmesi tapylmady</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="other">Telefon %s minut çenli adatdan daşary yzyna jaň etme režiminde bolar. Maglumat baglanyşygy ulanyp, gollanmalar bu režimde ulanylyp bilmeýärler. Häzir çykaýynmy?</item>
+        <item quantity="one">Gollanmalar üçin maglumat baglanyşyklary ulanyp bolmaýar. Telefon %s minut heläkçilik režiminde bolar. Şu wagt çykmak isleýärsiňizmi?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="other">Heläkçilik režiminde saýlan herekediňizi amala aşyrmaga ygtyýar berilmeýär. Telefon %s minut şu režimde bolar. Şu wagt çykmak isleýärsiňizmi?</item>
+        <item quantity="one">Heläkçilik režiminde saýlan herekediňizi amala aşyrmaga ygtyýar berilmeýär. Telefon %s minut şu režimde bolar. Şu wagt çykmak isleýärsiňizmi?</item>
+    </plurals>
+</resources>

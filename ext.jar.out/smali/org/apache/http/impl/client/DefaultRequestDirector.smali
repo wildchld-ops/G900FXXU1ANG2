@@ -102,7 +102,7 @@
 
     sput-boolean v1, Lorg/apache/http/impl/client/DefaultRequestDirector;->sIsReadValuesFromFile:Z
 
-    const/high16 v0, 0x50
+    const/high16 v0, 0x500000
 
     sput v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->THRESHOLD_LENGTH:I
 
@@ -131,6 +131,18 @@
 
 .method public constructor <init>(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)V
     .locals 3
+    .param p1    # Lorg/apache/http/protocol/HttpRequestExecutor;
+    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
+    .param p3    # Lorg/apache/http/ConnectionReuseStrategy;
+    .param p4    # Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
+    .param p5    # Lorg/apache/http/conn/routing/HttpRoutePlanner;
+    .param p6    # Lorg/apache/http/protocol/HttpProcessor;
+    .param p7    # Lorg/apache/http/client/HttpRequestRetryHandler;
+    .param p8    # Lorg/apache/http/client/RedirectHandler;
+    .param p9    # Lorg/apache/http/client/AuthenticationHandler;
+    .param p10    # Lorg/apache/http/client/AuthenticationHandler;
+    .param p11    # Lorg/apache/http/client/UserTokenHandler;
+    .param p12    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -414,7 +426,7 @@
 
     iget-object v3, p0, Lorg/apache/http/impl/client/DefaultRequestDirector;->log:Lorg/apache/commons/logging/Log;
 
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -436,6 +448,9 @@
 
 .method private copyAllHeaders(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/impl/client/RoutedRequest;
     .locals 22
+    .param p1    # Lorg/apache/http/HttpRequest;
+    .param p2    # Lorg/apache/http/HttpHost;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -454,7 +469,7 @@
 
     move-object/from16 v0, v19
 
-    invoke-virtual {v11, v0}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v11, v0}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     sget-boolean v19, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
 
@@ -560,7 +575,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v13, v3}, Lorg/apache/http/client/methods/HttpGet;->setHeaders([Lorg/apache/http/Header;)V
+    invoke-virtual {v13, v3}, Lorg/apache/http/message/AbstractHttpMessage;->setHeaders([Lorg/apache/http/Header;)V
 
     new-instance v18, Lorg/apache/http/impl/client/RequestWrapper;
 
@@ -572,7 +587,7 @@
 
     if-eqz v19, :cond_2
 
-    invoke-virtual/range {v18 .. v18}, Lorg/apache/http/impl/client/RequestWrapper;->getAllHeaders()[Lorg/apache/http/Header;
+    invoke-virtual/range {v18 .. v18}, Lorg/apache/http/message/AbstractHttpMessage;->getAllHeaders()[Lorg/apache/http/Header;
 
     move-result-object v16
 
@@ -650,7 +665,7 @@
     :cond_2
     move-object/from16 v0, v18
 
-    invoke-virtual {v0, v3}, Lorg/apache/http/impl/client/RequestWrapper;->setHeaders([Lorg/apache/http/Header;)V
+    invoke-virtual {v0, v3}, Lorg/apache/http/message/AbstractHttpMessage;->setHeaders([Lorg/apache/http/Header;)V
 
     move-object/from16 v0, p0
 
@@ -658,7 +673,7 @@
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v18 .. v19}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual/range {v18 .. v19}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     new-instance v6, Lorg/apache/http/conn/routing/HttpRoute;
 
@@ -676,7 +691,7 @@
 
     move-object/from16 v0, v19
 
-    invoke-virtual {v0, v3}, Lorg/apache/http/impl/client/RequestWrapper;->setHeaders([Lorg/apache/http/Header;)V
+    invoke-virtual {v0, v3}, Lorg/apache/http/message/AbstractHttpMessage;->setHeaders([Lorg/apache/http/Header;)V
 
     invoke-virtual {v5}, Lorg/apache/http/impl/client/RoutedRequest;->getRequest()Lorg/apache/http/impl/client/RequestWrapper;
 
@@ -688,13 +703,16 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v19 .. v20}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual/range {v19 .. v20}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     return-object v5
 .end method
 
 .method private executeOriginal(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 31
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -720,7 +738,7 @@
 
     move-object/from16 v1, v28
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v1}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -825,10 +843,10 @@
 
     invoke-interface {v0, v4}, Lorg/apache/http/client/methods/AbortableHttpRequest;->setConnectionRequest(Lorg/apache/http/conn/ClientConnectionRequest;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_3
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
     :try_start_1
@@ -848,11 +866,11 @@
 
     iput-object v0, v1, Lorg/apache/http/impl/client/DefaultRequestDirector;->managedConn:Lorg/apache/http/conn/ManagedClientConnection;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Lorg/apache/http/HttpException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_3
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
     move-object/from16 v0, p0
@@ -899,10 +917,10 @@
 
     invoke-interface/range {v28 .. v29}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :try_start_3
     move-object/from16 v0, p0
@@ -913,10 +931,10 @@
 
     invoke-interface/range {v28 .. v28}, Lorg/apache/http/conn/ManagedClientConnection;->close()V
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_6
     .catch Lorg/apache/http/HttpException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :cond_2
     :goto_1
@@ -976,10 +994,10 @@
 
     invoke-interface {v0, v1, v2, v3}, Lorg/apache/http/conn/ManagedClientConnection;->open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_4 .. :try_end_4} :catch_0
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_4 .. :try_end_4} :catch_3
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     :goto_2
     :try_start_5
@@ -991,11 +1009,11 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->establishRoute(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)V
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
     .catch Lorg/apache/http/impl/client/TunnelRefusedException; {:try_start_5 .. :try_end_5} :catch_4
     .catch Lorg/apache/http/HttpException; {:try_start_5 .. :try_end_5} :catch_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_5 .. :try_end_5} :catch_3
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     :try_start_6
     invoke-virtual/range {v27 .. v27}, Lorg/apache/http/impl/client/RequestWrapper;->resetHeaders()V
@@ -1008,7 +1026,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
 
-    invoke-virtual/range {v27 .. v27}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v27 .. v27}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v28
 
@@ -1170,10 +1188,10 @@
 
     throw v28
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_6 .. :try_end_6} :catch_0
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_6 .. :try_end_6} :catch_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     :catch_0
     move-exception v10
@@ -1205,14 +1223,14 @@
 
     invoke-direct {v14}, Ljava/io/InterruptedIOException;-><init>()V
 
-    invoke-virtual {v14, v13}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v14, v13}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     throw v14
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_8 .. :try_end_8} :catch_0
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_8 .. :try_end_8} :catch_3
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     :catch_2
     move-exception v10
@@ -1244,10 +1262,10 @@
 
     invoke-interface/range {v28 .. v29}, Lorg/apache/http/conn/ManagedClientConnection;->setSocketTimeout(I)V
     :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_a .. :try_end_a} :catch_0
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_a .. :try_end_a} :catch_3
+    .catchall {:try_start_a .. :try_end_a} :catchall_0
 
     goto/16 :goto_2
 
@@ -1283,7 +1301,7 @@
 
     move-object/from16 v28, v0
 
-    invoke-virtual {v10}, Lorg/apache/http/impl/client/TunnelRefusedException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v29
 
@@ -1327,10 +1345,10 @@
     :cond_a
     invoke-virtual/range {p0 .. p0}, Lorg/apache/http/impl/client/DefaultRequestDirector;->releaseConnection()V
     :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_c .. :try_end_c} :catch_0
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_c .. :try_end_c} :catch_3
+    .catchall {:try_start_c .. :try_end_c} :catchall_0
 
     :goto_4
     sget-boolean v28, Lorg/apache/http/impl/client/DefaultRequestDirector;->SMARTBONDING_ENABLED:Z
@@ -1413,10 +1431,10 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/apache/http/protocol/HttpRequestExecutor;->execute(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpClientConnection;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_0
     .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_d .. :try_end_d} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_d .. :try_end_d} :catch_3
+    .catchall {:try_start_d .. :try_end_d} :catchall_0
 
     move-result-object v19
 
@@ -1508,7 +1526,7 @@
 
     move-result-object v29
 
-    invoke-virtual {v10}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v30
 
@@ -1541,7 +1559,7 @@
 
     move-object/from16 v28, v0
 
-    invoke-virtual {v10}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v29
 
@@ -1850,10 +1868,10 @@
 
     invoke-interface {v0, v9}, Lorg/apache/http/HttpResponse;->setEntity(Lorg/apache/http/HttpEntity;)V
     :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_e .. :try_end_e} :catch_0
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_e .. :try_end_e} :catch_3
+    .catchall {:try_start_e .. :try_end_e} :catchall_0
 
     goto/16 :goto_4
 
@@ -1865,6 +1883,9 @@
 
 .method private executeSB(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 65
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -1941,8 +1962,8 @@
 
     invoke-virtual {v5, v7, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_7
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :goto_0
     :try_start_1
@@ -1966,7 +1987,7 @@
 
     move-object/from16 v0, v49
 
-    invoke-virtual {v0, v5}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v5}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -2066,10 +2087,10 @@
 
     invoke-interface {v5, v0}, Lorg/apache/http/client/methods/AbortableHttpRequest;->setConnectionRequest(Lorg/apache/http/conn/ClientConnectionRequest;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :cond_2
     :try_start_3
@@ -2087,11 +2108,11 @@
 
     iput-object v5, v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->managedConn:Lorg/apache/http/conn/ManagedClientConnection;
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Lorg/apache/http/HttpException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
     move-object/from16 v0, p0
@@ -2130,10 +2151,10 @@
 
     invoke-interface {v5, v6}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;)V
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_4 .. :try_end_4} :catch_0
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_4 .. :try_end_4} :catch_3
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     :try_start_5
     move-object/from16 v0, p0
@@ -2142,10 +2163,10 @@
 
     invoke-interface {v5}, Lorg/apache/http/conn/ManagedClientConnection;->close()V
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_6
     .catch Lorg/apache/http/HttpException; {:try_start_5 .. :try_end_5} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_5 .. :try_end_5} :catch_3
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     :cond_3
     :goto_2
@@ -2197,10 +2218,10 @@
 
     invoke-interface {v5, v0, v1, v6}, Lorg/apache/http/conn/ManagedClientConnection;->open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_6 .. :try_end_6} :catch_0
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_6 .. :try_end_6} :catch_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     :goto_3
     :try_start_7
@@ -2212,11 +2233,11 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->establishRoute(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)V
     :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
     .catch Lorg/apache/http/impl/client/TunnelRefusedException; {:try_start_7 .. :try_end_7} :catch_4
     .catch Lorg/apache/http/HttpException; {:try_start_7 .. :try_end_7} :catch_0
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_7 .. :try_end_7} :catch_3
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     :try_start_8
     invoke-virtual/range {v64 .. v64}, Lorg/apache/http/impl/client/RequestWrapper;->resetHeaders()V
@@ -2229,7 +2250,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
 
-    invoke-virtual/range {v64 .. v64}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v64 .. v64}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v5
 
@@ -2355,10 +2376,10 @@
 
     throw v5
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_8 .. :try_end_8} :catch_0
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_8 .. :try_end_8} :catch_3
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     :catch_0
     move-exception v37
@@ -2395,8 +2416,8 @@
 
     move-object/from16 v20, v0
     :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_1
     .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_7
+    .catchall {:try_start_a .. :try_end_a} :catchall_1
 
     goto/16 :goto_0
 
@@ -2422,14 +2443,14 @@
 
     move-object/from16 v1, v42
 
-    invoke-virtual {v0, v1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     throw v43
     :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_c .. :try_end_c} :catch_0
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_c .. :try_end_c} :catch_3
+    .catchall {:try_start_c .. :try_end_c} :catchall_0
 
     :catch_2
     move-exception v37
@@ -2457,10 +2478,10 @@
 
     invoke-interface {v5, v6}, Lorg/apache/http/conn/ManagedClientConnection;->setSocketTimeout(I)V
     :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_e .. :try_end_e} :catch_0
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_e .. :try_end_e} :catch_3
+    .catchall {:try_start_e .. :try_end_e} :catchall_0
 
     goto/16 :goto_3
 
@@ -2492,7 +2513,7 @@
 
     iget-object v5, v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->log:Lorg/apache/commons/logging/Log;
 
-    invoke-virtual/range {v37 .. v37}, Lorg/apache/http/impl/client/TunnelRefusedException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v37 .. v37}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -2534,10 +2555,10 @@
     :cond_b
     invoke-virtual/range {p0 .. p0}, Lorg/apache/http/impl/client/DefaultRequestDirector;->releaseConnection()V
     :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_10 .. :try_end_10} :catch_0
     .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_10 .. :try_end_10} :catch_3
+    .catchall {:try_start_10 .. :try_end_10} :catchall_0
 
     :cond_c
     :goto_5
@@ -2812,10 +2833,10 @@
 
     monitor-enter p0
     :try_end_11
-    .catchall {:try_start_11 .. :try_end_11} :catchall_0
     .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_11 .. :try_end_11} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_11 .. :try_end_11} :catch_3
+    .catchall {:try_start_11 .. :try_end_11} :catchall_0
 
     :try_start_12
     sget v5, Lorg/apache/http/impl/client/DefaultRequestDirector;->sProcessUsingMultiSocket:I
@@ -3239,10 +3260,10 @@
 
     monitor-enter v6
     :try_end_13
-    .catchall {:try_start_13 .. :try_end_13} :catchall_0
     .catch Ljava/io/IOException; {:try_start_13 .. :try_end_13} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_13 .. :try_end_13} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_13 .. :try_end_13} :catch_3
+    .catchall {:try_start_13 .. :try_end_13} :catchall_0
 
     :try_start_14
     sget-object v5, Lorg/apache/http/impl/client/DefaultRequestDirector;->originalRequest:Ljava/util/HashMap;
@@ -3313,10 +3334,10 @@
     :cond_22
     invoke-virtual/range {v40 .. v40}, Lorg/apache/http/entity/BasicHttpEntity;->getContentLength()J
     :try_end_15
-    .catchall {:try_start_15 .. :try_end_15} :catchall_0
     .catch Ljava/io/IOException; {:try_start_15 .. :try_end_15} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_15 .. :try_end_15} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_15 .. :try_end_15} :catch_3
+    .catchall {:try_start_15 .. :try_end_15} :catchall_0
 
     move-result-wide v17
 
@@ -3333,10 +3354,10 @@
     :try_start_17
     throw v5
     :try_end_17
-    .catchall {:try_start_17 .. :try_end_17} :catchall_0
     .catch Ljava/io/IOException; {:try_start_17 .. :try_end_17} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_17 .. :try_end_17} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_17 .. :try_end_17} :catch_3
+    .catchall {:try_start_17 .. :try_end_17} :catchall_0
 
     :catch_5
     move-exception v37
@@ -3363,10 +3384,10 @@
 
     monitor-enter v6
     :try_end_18
-    .catchall {:try_start_18 .. :try_end_18} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_18 .. :try_end_18} :catch_0
     .catch Ljava/io/IOException; {:try_start_18 .. :try_end_18} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_18 .. :try_end_18} :catch_3
+    .catchall {:try_start_18 .. :try_end_18} :catchall_0
 
     :try_start_19
     sget-object v5, Lorg/apache/http/impl/client/DefaultRequestDirector;->originalRequest:Ljava/util/HashMap;
@@ -3455,7 +3476,7 @@
 
     move-result-object v6
 
-    invoke-virtual/range {v37 .. v37}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v37 .. v37}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v7
 
@@ -3484,7 +3505,7 @@
 
     iget-object v5, v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->log:Lorg/apache/commons/logging/Log;
 
-    invoke-virtual/range {v37 .. v37}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v37 .. v37}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -3542,10 +3563,10 @@
 
     invoke-interface {v5, v0, v1, v6}, Lorg/apache/http/conn/ManagedClientConnection;->open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     :try_end_1a
-    .catchall {:try_start_1a .. :try_end_1a} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_1a .. :try_end_1a} :catch_0
     .catch Ljava/io/IOException; {:try_start_1a .. :try_end_1a} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_1a .. :try_end_1a} :catch_3
+    .catchall {:try_start_1a .. :try_end_1a} :catchall_0
 
     goto/16 :goto_4
 
@@ -3611,10 +3632,10 @@
 
     monitor-enter v6
     :try_end_1c
-    .catchall {:try_start_1c .. :try_end_1c} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1c .. :try_end_1c} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_1c .. :try_end_1c} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_1c .. :try_end_1c} :catch_3
+    .catchall {:try_start_1c .. :try_end_1c} :catchall_0
 
     :try_start_1d
     sget-object v5, Lorg/apache/http/impl/client/DefaultRequestDirector;->originalRequest:Ljava/util/HashMap;
@@ -3639,10 +3660,10 @@
     :try_start_1e
     throw v5
     :try_end_1e
-    .catchall {:try_start_1e .. :try_end_1e} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1e .. :try_end_1e} :catch_5
     .catch Lorg/apache/http/HttpException; {:try_start_1e .. :try_end_1e} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_1e .. :try_end_1e} :catch_3
+    .catchall {:try_start_1e .. :try_end_1e} :catchall_0
 
     :catchall_5
     move-exception v5
@@ -3966,10 +3987,10 @@
 
     invoke-static {v5}, Lorg/apache/http/impl/client/CustomHttpClient;->log(Ljava/lang/String;)V
     :try_end_20
-    .catchall {:try_start_20 .. :try_end_20} :catchall_0
     .catch Lorg/apache/http/HttpException; {:try_start_20 .. :try_end_20} :catch_0
     .catch Ljava/io/IOException; {:try_start_20 .. :try_end_20} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_20 .. :try_end_20} :catch_3
+    .catchall {:try_start_20 .. :try_end_20} :catchall_0
 
     goto/16 :goto_5
 
@@ -3994,6 +4015,10 @@
 
 .method private processChallenges(Ljava/util/Map;Lorg/apache/http/auth/AuthState;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 6
+    .param p2    # Lorg/apache/http/auth/AuthState;
+    .param p3    # Lorg/apache/http/client/AuthenticationHandler;
+    .param p4    # Lorg/apache/http/HttpResponse;
+    .param p5    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4095,11 +4120,11 @@
 
     const/16 v1, 0x3e8
 
-    const/high16 v2, 0x10
+    const/high16 v2, 0x100000
 
     sput v2, Lorg/apache/http/impl/client/MultiSocketInputStream;->MIN_MULTIRAT_BLOCK_SIZE:I
 
-    const/high16 v0, 0x20
+    const/high16 v0, 0x200000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAX_MULTIRAT_BLOCK_SIZE:I
 
@@ -4113,7 +4138,7 @@
 
     sput v2, Lorg/apache/http/impl/client/MultiSocketInputStream;->MIN_SIZE_FOR_MULTISOCKET_CON_CLOSE:I
 
-    const/high16 v0, 0x50
+    const/high16 v0, 0x500000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAX_MULTIRAT_BLOCK_SIZE_CON_CLOSED:I
 
@@ -4123,7 +4148,7 @@
 
     sput v2, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAX_BUFFERLEN:I
 
-    const/high16 v0, 0x8
+    const/high16 v0, 0x80000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->EXPECTSIZE:I
 
@@ -4137,7 +4162,7 @@
 
     sput v1, Lorg/apache/http/impl/client/MultiSocketInputStream;->IDLE_THREAD_WAIT_INTERVAL:I
 
-    const/high16 v0, 0x20
+    const/high16 v0, 0x200000
 
     sput v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->THRESHOLD_LENGTH:I
 
@@ -4159,19 +4184,19 @@
 
     sput-wide v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAXTIMEFORSPEED:J
 
-    const/high16 v0, 0x4
+    const/high16 v0, 0x40000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MIN_BLOCKSIZE_TO_HANDOVER:I
 
     sput-boolean v3, Lorg/apache/http/impl/client/MultiSocketInputStream;->SPEED_CALC:Z
 
-    const/high16 v0, 0x2
+    const/high16 v0, 0x20000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MIN_DATA_READ_SPEED_CALC:I
 
     sput v4, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAX_JUMP_STEP:I
 
-    const/high16 v0, 0x50
+    const/high16 v0, 0x500000
 
     sput v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MAX_DOWNLOADED_DATA_FOR_SPEED_CALC:I
 
@@ -4212,6 +4237,9 @@
 
 .method private updateAuthState(Lorg/apache/http/auth/AuthState;Lorg/apache/http/HttpHost;Lorg/apache/http/client/CredentialsProvider;)V
     .locals 9
+    .param p1    # Lorg/apache/http/auth/AuthState;
+    .param p2    # Lorg/apache/http/HttpHost;
+    .param p3    # Lorg/apache/http/client/CredentialsProvider;
 
     invoke-virtual {p1}, Lorg/apache/http/auth/AuthState;->isValid()Z
 
@@ -4358,6 +4386,7 @@
 
 .method private wrapRequest(Lorg/apache/http/HttpRequest;)Lorg/apache/http/impl/client/RequestWrapper;
     .locals 1
+    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -4389,6 +4418,8 @@
 # virtual methods
 .method protected createConnectRequest(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpRequest;
     .locals 10
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-virtual {p1}, Lorg/apache/http/conn/routing/HttpRoute;->getTargetHost()Lorg/apache/http/HttpHost;
 
@@ -4480,6 +4511,9 @@
 
 .method protected createTunnelToProxy(Lorg/apache/http/conn/routing/HttpRoute;ILorg/apache/http/protocol/HttpContext;)Z
     .locals 2
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # I
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -4498,6 +4532,8 @@
 
 .method protected createTunnelToTarget(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)Z
     .locals 21
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -4777,7 +4813,7 @@
 
     move-result-object v4
 
-    invoke-virtual/range {v16 .. v16}, Lorg/apache/http/auth/AuthenticationException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -4961,7 +4997,7 @@
 
     move-result-object v4
 
-    invoke-virtual/range {v16 .. v16}, Lorg/apache/http/auth/AuthenticationException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -5071,6 +5107,9 @@
 
 .method protected determineRoute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/conn/routing/HttpRoute;
     .locals 7
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -5220,6 +5259,8 @@
 
 .method protected establishRoute(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)V
     .locals 8
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -5509,6 +5550,9 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 10
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -5907,6 +5951,12 @@
 
 .method protected execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJLjava/net/InetAddress;)Lorg/apache/http/HttpResponse;
     .locals 37
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
+    .param p4    # J
+    .param p6    # J
+    .param p8    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -6103,7 +6153,7 @@
 
     move-object/from16 v1, v32
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v1}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -6567,7 +6617,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
 
-    invoke-virtual/range {v31 .. v31}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v31 .. v31}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v32
 
@@ -6804,7 +6854,7 @@
 
     move-result-object v33
 
-    invoke-virtual/range {v31 .. v33}, Lorg/apache/http/impl/client/RequestWrapper;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v31 .. v33}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     sget-boolean v32, Lorg/apache/http/impl/client/DefaultRequestDirector;->IS_KEEP_ALIVE:Z
 
@@ -6814,7 +6864,7 @@
 
     const-string v33, "Keep-Alive"
 
-    invoke-virtual/range {v31 .. v33}, Lorg/apache/http/impl/client/RequestWrapper;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v31 .. v33}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_b
     invoke-virtual/range {v31 .. v31}, Lorg/apache/http/impl/client/RequestWrapper;->getExecCount()I
@@ -6864,7 +6914,7 @@
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v15}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, v15}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     throw v16
     :try_end_7
@@ -6934,7 +6984,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual {v12}, Lorg/apache/http/impl/client/TunnelRefusedException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v33
 
@@ -7181,7 +7231,7 @@
 
     move-result-object v33
 
-    invoke-virtual {v12}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v34
 
@@ -7214,7 +7264,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual {v12}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v33
 
@@ -7621,6 +7671,13 @@
 
 .method protected execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJLjava/net/InetAddress;Ljava/net/InetAddress;)Lorg/apache/http/HttpResponse;
     .locals 35
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
+    .param p4    # J
+    .param p6    # J
+    .param p8    # Ljava/net/InetAddress;
+    .param p9    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -7799,7 +7856,7 @@
 
     move-object/from16 v1, v30
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v1}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -8369,7 +8426,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
 
-    invoke-virtual/range {v29 .. v29}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v29 .. v29}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v30
 
@@ -8606,7 +8663,7 @@
 
     move-result-object v31
 
-    invoke-virtual/range {v29 .. v31}, Lorg/apache/http/impl/client/RequestWrapper;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v29 .. v31}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     sget-boolean v30, Lorg/apache/http/impl/client/DefaultRequestDirector;->IS_KEEP_ALIVE:Z
 
@@ -8616,7 +8673,7 @@
 
     const-string v31, "Keep-Alive"
 
-    invoke-virtual/range {v29 .. v31}, Lorg/apache/http/impl/client/RequestWrapper;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v29 .. v31}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_d
     invoke-virtual/range {v29 .. v29}, Lorg/apache/http/impl/client/RequestWrapper;->getExecCount()I
@@ -8666,7 +8723,7 @@
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v0, v15}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, v15}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     throw v16
     :try_end_7
@@ -8736,7 +8793,7 @@
 
     move-object/from16 v30, v0
 
-    invoke-virtual {v12}, Lorg/apache/http/impl/client/TunnelRefusedException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v31
 
@@ -8962,7 +9019,7 @@
 
     move-result-object v31
 
-    invoke-virtual {v12}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v32
 
@@ -8995,7 +9052,7 @@
 
     move-object/from16 v30, v0
 
-    invoke-virtual {v12}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v31
 
@@ -9382,6 +9439,18 @@
 
 .method protected execute([Lorg/apache/http/HttpHost;[Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJJIZJI[Lorg/apache/http/HttpHost;I)Lorg/apache/http/HttpResponse;
     .locals 43
+    .param p1    # [Lorg/apache/http/HttpHost;
+    .param p2    # [Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
+    .param p4    # J
+    .param p6    # J
+    .param p8    # J
+    .param p10    # I
+    .param p11    # Z
+    .param p12    # J
+    .param p14    # I
+    .param p15    # [Lorg/apache/http/HttpHost;
+    .param p16    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -9701,7 +9770,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v1}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v1}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -9975,7 +10044,7 @@
 
     invoke-virtual {v0, v1, v2}, Lorg/apache/http/impl/client/DefaultRequestDirector;->rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
 
-    invoke-virtual/range {v36 .. v36}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v36 .. v36}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v37
 
@@ -10147,7 +10216,7 @@
 
     move-result-object v38
 
-    invoke-virtual/range {v36 .. v38}, Lorg/apache/http/impl/client/RequestWrapper;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v36 .. v38}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual/range {v36 .. v36}, Lorg/apache/http/impl/client/RequestWrapper;->incrementExecCount()V
 
@@ -10256,7 +10325,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     throw v20
 
@@ -10302,7 +10371,7 @@
 
     move-object/from16 v37, v0
 
-    invoke-virtual {v15}, Lorg/apache/http/impl/client/TunnelRefusedException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v38
 
@@ -10584,7 +10653,7 @@
 
     move-result-object v38
 
-    invoke-virtual {v15}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v39
 
@@ -10617,7 +10686,7 @@
 
     move-object/from16 v37, v0
 
-    invoke-virtual {v15}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v38
 
@@ -11079,6 +11148,8 @@
 
 .method protected getFullContentLength(Lorg/apache/http/HttpResponse;J)J
     .locals 9
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # J
 
     const-wide/16 v3, 0x0
 
@@ -11158,6 +11229,9 @@
 
 .method protected handleResponse(Lorg/apache/http/impl/client/RoutedRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/impl/client/RoutedRequest;
     .locals 23
+    .param p1    # Lorg/apache/http/impl/client/RoutedRequest;
+    .param p2    # Lorg/apache/http/HttpResponse;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -11177,7 +11251,7 @@
 
     move-result-object v18
 
-    invoke-virtual/range {v18 .. v18}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual/range {v18 .. v18}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v15
 
@@ -11367,7 +11441,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-virtual {v0, v3}, Lorg/apache/http/client/methods/HttpGet;->setHeaders([Lorg/apache/http/Header;)V
+    invoke-virtual {v0, v3}, Lorg/apache/http/message/AbstractHttpMessage;->setHeaders([Lorg/apache/http/Header;)V
 
     new-instance v22, Lorg/apache/http/impl/client/RequestWrapper;
 
@@ -11379,7 +11453,7 @@
 
     move-object/from16 v0, v22
 
-    invoke-virtual {v0, v15}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v0, v15}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -11591,7 +11665,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v10}, Lorg/apache/http/auth/AuthenticationException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -11723,7 +11797,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v10}, Lorg/apache/http/auth/AuthenticationException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -11758,6 +11832,7 @@
 
 .method isRangeRequestProper(Lorg/apache/http/HttpRequest;)I
     .locals 11
+    .param p1    # Lorg/apache/http/HttpRequest;
 
     const/4 v5, -0x1
 
@@ -11934,6 +12009,7 @@
 
 .method isTargetAddressProper(Ljava/net/InetAddress;)Z
     .locals 1
+    .param p1    # Ljava/net/InetAddress;
 
     invoke-virtual {p1}, Ljava/net/InetAddress;->isAnyLocalAddress()Z
 
@@ -11979,6 +12055,11 @@
 
 .method protected reconnect(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;Ljava/net/InetAddress;Ljava/net/InetAddress;)V
     .locals 18
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Lorg/apache/http/HttpRequest;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
+    .param p4    # Ljava/net/InetAddress;
+    .param p5    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -12159,7 +12240,7 @@
 
     iget-object v13, v0, Lorg/apache/http/impl/client/DefaultRequestDirector;->mCustomHttpParams:Lorg/apache/http/params/HttpParams;
 
-    invoke-virtual {v7, v13}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {v7, v13}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     move-object/from16 v0, p0
 
@@ -12506,6 +12587,8 @@
 
 .method protected rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 6
+    .param p1    # Lorg/apache/http/impl/client/RequestWrapper;
+    .param p2    # Lorg/apache/http/conn/routing/HttpRoute;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -12606,6 +12689,9 @@
 
 .method protected setParameter(Lorg/apache/http/params/HttpParams;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 5
+    .param p1    # Lorg/apache/http/params/HttpParams;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/Object;
 
     :try_start_0
     sget-boolean v3, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z

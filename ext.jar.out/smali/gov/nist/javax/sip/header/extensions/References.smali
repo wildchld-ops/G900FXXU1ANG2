@@ -96,6 +96,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameter(Ljava/lang/String;)Ljava/lang/String;
 
@@ -128,6 +129,7 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->removeParameter(Ljava/lang/String;)V
 
@@ -136,6 +138,7 @@
 
 .method public setCallId(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/extensions/References;->callId:Ljava/lang/String;
 
@@ -144,6 +147,8 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -157,6 +162,7 @@
 
 .method public setRel(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -175,6 +181,7 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

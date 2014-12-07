@@ -119,6 +119,7 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/core/GenericObjectList;-><init>()V
 
@@ -129,6 +130,8 @@
 
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/Class;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Class;
 
     invoke-direct {p0, p1}, Lgov/nist/core/GenericObjectList;-><init>(Ljava/lang/String;)V
 
@@ -139,6 +142,8 @@
 
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/core/GenericObjectList;-><init>(Ljava/lang/String;)V
 
@@ -164,6 +169,7 @@
 
 .method protected static isCloneable(Ljava/lang/Object;)Z
     .locals 1
+    .param p0    # Ljava/lang/Object;
 
     instance-of v0, p0, Ljava/lang/Cloneable;
 
@@ -191,6 +197,7 @@
 
 .method private sprint(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -365,6 +372,7 @@
 # virtual methods
 .method public addFirst(Lgov/nist/core/GenericObject;)V
     .locals 1
+    .param p1    # Lgov/nist/core/GenericObject;
 
     iget-object v0, p0, Lgov/nist/core/GenericObjectList;->myClass:Ljava/lang/Class;
 
@@ -387,6 +395,7 @@
 
 .method public bridge synthetic addFirst(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lgov/nist/core/GenericObject;
 
@@ -404,7 +413,7 @@
 
     check-cast v2, Lgov/nist/core/GenericObjectList;
 
-    invoke-virtual {v2}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v2}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v0
 
@@ -437,6 +446,7 @@
 
 .method protected concatenate(Lgov/nist/core/GenericObjectList;)V
     .locals 1
+    .param p1    # Lgov/nist/core/GenericObjectList;
 
     const/4 v0, 0x0
 
@@ -447,10 +457,12 @@
 
 .method protected concatenate(Lgov/nist/core/GenericObjectList;Z)V
     .locals 1
+    .param p1    # Lgov/nist/core/GenericObjectList;
+    .param p2    # Z
 
     if-nez p2, :cond_0
 
-    invoke-virtual {p0, p1}, Lgov/nist/core/GenericObjectList;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {p0, p1}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
 
     :goto_0
     return-void
@@ -458,7 +470,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0, p1}, Lgov/nist/core/GenericObjectList;->addAll(ILjava/util/Collection;)Z
+    invoke-virtual {p0, v0, p1}, Ljava/util/LinkedList;->addAll(ILjava/util/Collection;)Z
 
     goto :goto_0
 .end method
@@ -533,6 +545,7 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     iget v1, p0, Lgov/nist/core/GenericObjectList;->indentation:I
 
@@ -550,7 +563,7 @@
 .method public encode()Ljava/lang/String;
     .locals 5
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->isEmpty()Z
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v4
 
@@ -566,7 +579,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v2
 
@@ -627,6 +640,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 9
+    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x0
 
@@ -655,17 +669,17 @@
 
     check-cast v5, Lgov/nist/core/GenericObjectList;
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->size()I
+    invoke-virtual {p0}, Ljava/util/LinkedList;->size()I
 
     move-result v7
 
-    invoke-virtual {v5}, Lgov/nist/core/GenericObjectList;->size()I
+    invoke-virtual {v5}, Ljava/util/LinkedList;->size()I
 
     move-result v8
 
     if-ne v7, v8, :cond_0
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v3
 
@@ -680,7 +694,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v5}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v5}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 
@@ -706,7 +720,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v5}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v5}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 
@@ -721,7 +735,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v3
 
@@ -757,7 +771,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lgov/nist/core/GenericObjectList;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {p0, v1}, Ljava/util/LinkedList;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object v1
 
@@ -813,6 +827,7 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 9
+    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x0
 
@@ -840,7 +855,7 @@
 
     check-cast v4, Lgov/nist/core/GenericObjectList;
 
-    invoke-virtual {v4}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v4}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v0
 
@@ -856,7 +871,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v2
 
@@ -971,6 +986,7 @@
 
 .method public mergeObjects(Lgov/nist/core/GenericObjectList;)V
     .locals 5
+    .param p1    # Lgov/nist/core/GenericObjectList;
 
     if-nez p1, :cond_1
 
@@ -978,11 +994,11 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lgov/nist/core/GenericObjectList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {p1}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v2
 
@@ -1026,7 +1042,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lgov/nist/core/GenericObjectList;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {p0, v1}, Ljava/util/LinkedList;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object v1
 
@@ -1059,6 +1075,7 @@
 
 .method protected next(Ljava/util/ListIterator;)Lgov/nist/core/GenericObject;
     .locals 2
+    .param p1    # Ljava/util/ListIterator;
 
     :try_start_0
     invoke-interface {p1}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
@@ -1082,6 +1099,7 @@
 
 .method public setMyClass(Ljava/lang/Class;)V
     .locals 0
+    .param p1    # Ljava/lang/Class;
 
     iput-object p1, p0, Lgov/nist/core/GenericObjectList;->myClass:Ljava/lang/Class;
 
@@ -1090,6 +1108,7 @@
 
 .method public setSeparator(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/core/GenericObjectList;->separator:Ljava/lang/String;
 

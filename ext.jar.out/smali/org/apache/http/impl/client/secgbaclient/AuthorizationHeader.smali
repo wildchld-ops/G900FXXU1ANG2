@@ -364,6 +364,7 @@
 
 .method public getAuthorizationHeaderVal(Z)Ljava/lang/String;
     .locals 1
+    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -416,6 +417,7 @@
 
 .method public getParamValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -469,6 +471,7 @@
 
 .method public setAlgorithm(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->algorithm:Ljava/lang/String;
 
@@ -477,6 +480,7 @@
 
 .method public setCnonce(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->cnonce:Ljava/lang/String;
 
@@ -485,6 +489,7 @@
 
 .method public setNonce(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->nonce:Ljava/lang/String;
 
@@ -493,6 +498,7 @@
 
 .method public setNonceCount(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->nonceCount:Ljava/lang/String;
 
@@ -501,6 +507,7 @@
 
 .method public setOpaque(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->opaque:Ljava/lang/String;
 
@@ -509,6 +516,7 @@
 
 .method public setQop(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->qop:Ljava/lang/String;
 
@@ -517,6 +525,7 @@
 
 .method public setRealm(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->realm:Ljava/lang/String;
 
@@ -525,6 +534,7 @@
 
 .method public setResponse(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->response:Ljava/lang/String;
 
@@ -533,6 +543,7 @@
 
 .method public setUri(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->uri:Ljava/lang/String;
 
@@ -541,6 +552,7 @@
 
 .method public setUserName(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->userName:Ljava/lang/String;
 

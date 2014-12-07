@@ -76,6 +76,7 @@
 # virtual methods
 .method public exactlySameAs(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Z
     .locals 2
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;->nationalNumberPattern_:Ljava/lang/String;
 
@@ -168,6 +169,7 @@
 
 .method public mergeFrom(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;->hasNationalNumberPattern()Z
 
@@ -213,6 +215,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 1
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -263,6 +266,7 @@
 
 .method public setExampleNumber(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -275,6 +279,7 @@
 
 .method public setNationalNumberPattern(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -287,6 +292,7 @@
 
 .method public setPossibleNumberPattern(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -299,6 +305,7 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 1
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

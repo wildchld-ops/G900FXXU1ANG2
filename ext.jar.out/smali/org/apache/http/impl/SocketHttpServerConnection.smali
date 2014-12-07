@@ -67,6 +67,8 @@
 
 .method protected bind(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V
     .locals 3
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -109,7 +111,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v1, v2, p2}, Lorg/apache/http/impl/SocketHttpServerConnection;->init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {p0, v1, v2, p2}, Lorg/apache/http/impl/AbstractHttpServerConnection;->init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
 
     const/4 v1, 0x1
 
@@ -138,7 +140,7 @@
 
     iput-boolean v0, p0, Lorg/apache/http/impl/SocketHttpServerConnection;->open:Z
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpServerConnection;->doFlush()V
+    invoke-virtual {p0}, Lorg/apache/http/impl/AbstractHttpServerConnection;->doFlush()V
 
     :try_start_0
     iget-object v0, p0, Lorg/apache/http/impl/SocketHttpServerConnection;->socket:Ljava/net/Socket;
@@ -175,6 +177,9 @@
 
 .method protected createHttpDataReceiver(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionInputBuffer;
     .locals 1
+    .param p1    # Ljava/net/Socket;
+    .param p2    # I
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -190,6 +195,9 @@
 
 .method protected createHttpDataTransmitter(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionOutputBuffer;
     .locals 1
+    .param p1    # Ljava/net/Socket;
+    .param p2    # I
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -337,6 +345,7 @@
 
 .method public setSocketTimeout(I)V
     .locals 1
+    .param p1    # I
 
     invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpServerConnection;->assertOpen()V
 

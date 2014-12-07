@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d ծրագիր թարմացվել է</item>
+        <item quantity="one">Թարմացվել է %1$d ծրագիր</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Հասանելի է %1$d թարմացում</item>
+        <item quantity="one">Հասանելի է %1$d թարմացում</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Անհրաժեշտ է հաստատել %1$d թարմացում</item>
+        <item quantity="one">Անհրաժեշտ է հաստատել %1$d թարմացում</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d արդյունք</item>
+        <item quantity="one">%1$d արդյունք</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d նոր թարմացում կա</item>
+        <item quantity="one">%1$d նոր թարմացում կա</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">+1 է ավելացվել %1$s օգտվողի կողմից:</item>
+        <item quantity="one">+1 է ավելացվել %1$s օգտվողի կողմից:</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">+1 է ավելացվել %1$s-ի և %2$s այլ օգտվողի կողմից:</item>
+        <item quantity="one">+1 է ավելացվել %1$s-ի և %2$s այլ օգտվողի կողմից</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s այլ օգտվող</item>
+        <item quantity="one">+%1$d այլ օգտվող</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d-ն ընտրված է</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Առկա են թարմացումներ</item>
+        <item quantity="one">"Թարմացումը հասանելի  է"</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Դուք ունեք %1$d հասանելի թարմացում: Ցանկանո՞ւմ եք տեղադրել դրանք:</item>
+        <item quantity="one">Դուք ունեք %1$d հասանելի թարմացում: Ցանկանո՞ւմ եք տեղադրել այն:</item>
+    </plurals>
+</resources>

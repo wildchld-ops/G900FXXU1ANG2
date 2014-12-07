@@ -223,6 +223,7 @@
 
 .method public static getInstance(Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
     .locals 1
+    .param p0    # Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -237,6 +238,7 @@
 
 .method public static getInstance(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lorg/apache/commons/logging/LogSource;->logs:Ljava/util/Hashtable;
 
@@ -294,6 +296,7 @@
 
 .method public static makeNewLogInstance(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 5
+    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -342,6 +345,7 @@
 
 .method public static setLogImplementation(Ljava/lang/Class;)V
     .locals 3
+    .param p0    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/LinkageError;,
@@ -376,6 +380,7 @@
 
 .method public static setLogImplementation(Ljava/lang/String;)V
     .locals 5
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/LinkageError;,

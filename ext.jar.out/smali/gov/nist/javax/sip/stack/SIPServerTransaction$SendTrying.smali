@@ -26,7 +26,7 @@
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/SIPStackTimerTask;-><init>()V
 
-    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isLoggingEnabled()Z
 
@@ -34,7 +34,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v0, p1, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 
@@ -71,7 +71,7 @@
 
     iget-object v2, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    #calls: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
+    # invokes: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
     invoke-static {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->access$100(Lgov/nist/javax/sip/stack/SIPServerTransaction;)Ljavax/sip/TransactionState;
 
     move-result-object v1
@@ -85,7 +85,7 @@
     :cond_0
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isLoggingEnabled()Z
 
@@ -95,7 +95,7 @@
 
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 
@@ -111,7 +111,7 @@
 
     move-result-object v4
 
-    #calls: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
+    # invokes: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
     invoke-static {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->access$100(Lgov/nist/javax/sip/stack/SIPServerTransaction;)Ljavax/sip/TransactionState;
 
     move-result-object v5
@@ -128,7 +128,7 @@
 
     :cond_1
     :try_start_0
-    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->getOriginalRequest()Lgov/nist/javax/sip/message/SIPRequest;
+    invoke-virtual {v2}, Lgov/nist/javax/sip/stack/SIPTransaction;->getOriginalRequest()Lgov/nist/javax/sip/message/SIPRequest;
 
     move-result-object v3
 
@@ -144,7 +144,7 @@
 
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isLoggingEnabled()Z
 
@@ -154,7 +154,7 @@
 
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 
@@ -170,7 +170,7 @@
 
     move-result-object v4
 
-    #calls: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
+    # invokes: Lgov/nist/javax/sip/stack/SIPServerTransaction;->getRealState()Ljavax/sip/TransactionState;
     invoke-static {v2}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->access$100(Lgov/nist/javax/sip/stack/SIPServerTransaction;)Ljavax/sip/TransactionState;
 
     move-result-object v5
@@ -196,7 +196,7 @@
 
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isLoggingEnabled()Z
 
@@ -206,7 +206,7 @@
 
     iget-object v3, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$SendTrying;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPServerTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-virtual {v3}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->getStackLogger()Lgov/nist/core/StackLogger;
 

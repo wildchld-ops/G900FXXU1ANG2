@@ -28,6 +28,8 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 2
+    .param p1    # Landroid/view/View;
+    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -107,7 +109,7 @@
 
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    const/high16 v2, 0x20
+    const/high16 v2, 0x200000
 
     or-int/2addr v1, v2
 
@@ -183,6 +185,7 @@
 
 .method public setType(I)V
     .locals 1
+    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/GuideView;->mType:I
 
@@ -201,6 +204,10 @@
 
 .method public show(IIII)V
     .locals 4
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/GuideView;->mShowing:Z
 
@@ -228,13 +235,13 @@
 
     invoke-direct {v1, p3, p4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    iput p1, v1, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
+    iput p1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     iput p2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/GuideView;->mBorderView:Landroid/view/View;
 
-    invoke-virtual {p0, v2, v1}, Lcom/android/internal/policy/impl/GuideView;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v2, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/GuideView;->mWindowManager:Landroid/view/WindowManager;
@@ -254,7 +261,7 @@
 
     check-cast v1, Landroid/widget/FrameLayout$LayoutParams;
 
-    iput p1, v1, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
+    iput p1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     iput p2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 

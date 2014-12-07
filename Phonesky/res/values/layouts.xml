@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="play_pack_card">@layout/play_card_mini</item>
+</resources>

@@ -26,6 +26,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;)V
     .locals 2
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Ljava/net/InetAddress;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,6 +59,7 @@
 
 .method public constructor <init>(Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 2
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     invoke-virtual {p1}, Lorg/apache/http/conn/routing/HttpRoute;->getTargetHost()Lorg/apache/http/HttpHost;
 
@@ -90,6 +93,8 @@
 
 .method public final connectProxy(Lorg/apache/http/HttpHost;Z)V
     .locals 2
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -134,6 +139,7 @@
 
 .method public final connectTarget(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-boolean v0, p0, Lorg/apache/http/conn/routing/RouteTracker;->connected:Z
 
@@ -159,6 +165,7 @@
 
 .method public final equals(Ljava/lang/Object;)Z
     .locals 7
+    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -359,6 +366,7 @@
 
 .method public final getHopTarget(I)Lorg/apache/http/HttpHost;
     .locals 5
+    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -583,7 +591,7 @@
     :cond_3
     iget-object v2, p0, Lorg/apache/http/conn/routing/RouteTracker;->tunnelled:Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
 
-    invoke-virtual {v2}, Lorg/apache/http/conn/routing/RouteInfo$TunnelType;->hashCode()I
+    invoke-virtual {v2}, Ljava/lang/Enum;->hashCode()I
 
     move-result v2
 
@@ -591,7 +599,7 @@
 
     iget-object v2, p0, Lorg/apache/http/conn/routing/RouteTracker;->layered:Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
-    invoke-virtual {v2}, Lorg/apache/http/conn/routing/RouteInfo$LayerType;->hashCode()I
+    invoke-virtual {v2}, Ljava/lang/Enum;->hashCode()I
 
     move-result v2
 
@@ -658,6 +666,7 @@
 
 .method public final layerProtocol(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-boolean v0, p0, Lorg/apache/http/conn/routing/RouteTracker;->connected:Z
 
@@ -838,6 +847,8 @@
 
 .method public final tunnelProxy(Lorg/apache/http/HttpHost;Z)V
     .locals 4
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -909,6 +920,7 @@
 
 .method public final tunnelTarget(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-boolean v0, p0, Lorg/apache/http/conn/routing/RouteTracker;->connected:Z
 

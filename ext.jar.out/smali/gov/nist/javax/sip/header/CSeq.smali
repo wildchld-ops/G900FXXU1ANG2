@@ -29,6 +29,8 @@
 
 .method public constructor <init>(JLjava/lang/String;)V
     .locals 1
+    .param p1    # J
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/header/CSeq;-><init>()V
 
@@ -56,7 +58,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/CSeq;->headerName:Ljava/lang/String;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/SIPHeader;->headerName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -115,6 +117,7 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
+    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/CSeq;->seqno:Ljava/lang/Long;
 
@@ -143,6 +146,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -230,6 +234,7 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -258,6 +263,7 @@
 
 .method public setSeqNumber(J)V
     .locals 3
+    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -337,6 +343,7 @@
 
 .method public setSequenceNumber(I)V
     .locals 2
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

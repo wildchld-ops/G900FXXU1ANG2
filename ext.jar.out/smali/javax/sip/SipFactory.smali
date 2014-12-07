@@ -203,6 +203,7 @@
 
 .method public declared-synchronized createSipStack(Ljava/util/Properties;)Ljavax/sip/SipStack;
     .locals 8
+    .param p1    # Ljava/util/Properties;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/PeerUnavailableException;
@@ -328,8 +329,8 @@
 
     check-cast v3, Ljavax/sip/SipStack;
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :try_start_3
     iget-object v4, p0, Ljavax/sip/SipFactory;->mNameSipStackMap:Ljava/util/Map;

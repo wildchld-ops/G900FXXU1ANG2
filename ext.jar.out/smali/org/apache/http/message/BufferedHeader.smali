@@ -18,6 +18,7 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/util/CharArrayBuffer;)V
     .locals 5
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;

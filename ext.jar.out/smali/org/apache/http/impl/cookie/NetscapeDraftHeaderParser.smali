@@ -54,6 +54,8 @@
 # virtual methods
 .method public parseHeader(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;
     .locals 7
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;

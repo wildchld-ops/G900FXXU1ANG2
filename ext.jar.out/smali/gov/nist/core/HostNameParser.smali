@@ -30,15 +30,16 @@
     nop
 
     :array_0
-    .array-data 0x2
-        0xfdt 0xfft
-        0x2dt 0x0t
-        0x2et 0x0t
+    .array-data 2
+        -0x3s
+        0x2ds
+        0x2es
     .end array-data
 .end method
 
 .method public constructor <init>(Lgov/nist/core/LexerCore;)V
     .locals 1
+    .param p1    # Lgov/nist/core/LexerCore;
 
     invoke-direct {p0}, Lgov/nist/core/ParserCore;-><init>()V
 
@@ -46,7 +47,7 @@
 
     iput-boolean v0, p0, Lgov/nist/core/HostNameParser;->stripAddressScopeZones:Z
 
-    iput-object p1, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object p1, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const-string v0, "charLexer"
 
@@ -65,6 +66,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/core/ParserCore;-><init>()V
 
@@ -78,7 +80,7 @@
 
     invoke-direct {v0, v1, p1}, Lgov/nist/core/LexerCore;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const-string v0, "gov.nist.core.STRIP_ADDR_SCOPES"
 
@@ -93,6 +95,7 @@
 
 .method private isIPv6Address(Ljava/lang/String;)Z
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/16 v8, 0x3a
 
@@ -167,6 +170,7 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 8
+    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -293,7 +297,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v7
 
@@ -329,11 +333,11 @@
 
     const-string v0, "domainLabel"
 
-    invoke-virtual {p0, v0}, Lgov/nist/core/HostNameParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     sget-object v1, Lgov/nist/core/HostNameParser;->VALID_DOMAIN_LABEL_CHAR:[C
 
@@ -347,7 +351,7 @@
 
     const-string v0, "domainLabel"
 
-    invoke-virtual {p0, v0}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     return-void
@@ -361,7 +365,7 @@
 
     const-string v1, "domainLabel"
 
-    invoke-virtual {p0, v1}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_2
     throw v0
@@ -381,15 +385,15 @@
 
     const-string v2, "host"
 
-    invoke-virtual {p0, v2}, Lgov/nist/core/HostNameParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     :try_start_0
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v2, v3}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v2
 
@@ -414,7 +418,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
@@ -434,7 +438,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -455,14 +459,14 @@
 
     const-string v3, "host"
 
-    invoke-virtual {p0, v3}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     throw v2
 
     :cond_2
     :try_start_1
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getRest()Ljava/lang/String;
 
@@ -474,13 +478,13 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getPtr()I
 
     move-result v1
 
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v3, 0x2
 
@@ -496,13 +500,13 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v3}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -529,7 +533,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -537,13 +541,13 @@
 
     invoke-virtual {p0}, Lgov/nist/core/HostNameParser;->consumeDomainLabel()V
 
-    iget-object v2, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v3}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -568,7 +572,7 @@
 
     const-string v3, "host"
 
-    invoke-virtual {p0, v3}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_5
     return-object v2
@@ -576,14 +580,15 @@
     nop
 
     :array_0
-    .array-data 0x2
-        0xfdt 0xfft
-        0x3at 0x0t
+    .array-data 2
+        -0x3s
+        0x3as
     .end array-data
 .end method
 
 .method public hostPort(Z)Lgov/nist/core/HostPort;
     .locals 9
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -596,7 +601,7 @@
 
     const-string v5, "hostPort"
 
-    invoke-virtual {p0, v5}, Lgov/nist/core/HostNameParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     :try_start_0
@@ -612,24 +617,24 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
 
     :cond_1
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    invoke-virtual {v5}, Lgov/nist/core/LexerCore;->hasMoreChars()Z
+    invoke-virtual {v5}, Lgov/nist/core/StringTokenizer;->hasMoreChars()Z
 
     move-result v5
 
     if-eqz v5, :cond_5
 
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v2
 
@@ -644,7 +649,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v7, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
@@ -660,11 +665,11 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v8, 0x0
 
-    invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v7, v8}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v7
 
@@ -676,7 +681,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -697,22 +702,22 @@
 
     const-string v6, "hostPort"
 
-    invoke-virtual {p0, v6}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v6}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_3
     throw v5
 
     :sswitch_0
     :try_start_1
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v6, 0x1
 
-    invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v5, v6}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     if-eqz p1, :cond_4
 
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->SPorHT()V
     :try_end_1
@@ -720,7 +725,7 @@
 
     :cond_4
     :try_start_2
-    iget-object v5, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -732,8 +737,8 @@
 
     invoke-virtual {v1, v5}, Lgov/nist/core/HostPort;->setPort(I)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/NumberFormatException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :cond_5
     :goto_0
@@ -744,7 +749,7 @@
 
     const-string v5, "hostPort"
 
-    invoke-virtual {p0, v5}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_6
     return-object v1
@@ -759,7 +764,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v7, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
@@ -779,7 +784,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -838,7 +843,7 @@
 
     const-string v4, "ipv6Reference"
 
-    invoke-virtual {p0, v4}, Lgov/nist/core/HostNameParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     :try_start_0
@@ -847,19 +852,19 @@
     if-eqz v4, :cond_8
 
     :goto_0
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    invoke-virtual {v4}, Lgov/nist/core/LexerCore;->hasMoreChars()Z
+    invoke-virtual {v4}, Lgov/nist/core/StringTokenizer;->hasMoreChars()Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v0
 
@@ -878,11 +883,11 @@
     if-ne v0, v4, :cond_3
 
     :cond_1
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
     :try_end_0
@@ -899,7 +904,7 @@
 
     const-string v5, "ipv6Reference"
 
-    invoke-virtual {p0, v5}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_2
     throw v4
@@ -908,11 +913,11 @@
     if-ne v0, v6, :cond_5
 
     :try_start_1
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
@@ -929,7 +934,7 @@
     const-string v5, "ipv6Reference"
 
     :goto_1
-    invoke-virtual {p0, v5}, Lgov/nist/core/HostNameParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_4
     return-object v4
@@ -940,13 +945,13 @@
     if-ne v0, v4, :cond_6
 
     :try_start_2
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->getRest()Ljava/lang/String;
 
@@ -967,7 +972,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v6, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v6, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v6}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
@@ -987,7 +992,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v6, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v6}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -1008,11 +1013,11 @@
 
     if-eq v3, v4, :cond_6
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     add-int/lit8 v5, v3, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     const-string v4, "]"
 
@@ -1035,19 +1040,19 @@
     :cond_8
     :goto_2
     :try_start_3
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    invoke-virtual {v4}, Lgov/nist/core/LexerCore;->hasMoreChars()Z
+    invoke-virtual {v4}, Lgov/nist/core/StringTokenizer;->hasMoreChars()Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->lookAhead(I)C
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->lookAhead(I)C
 
     move-result v0
 
@@ -1066,11 +1071,11 @@
     if-ne v0, v4, :cond_a
 
     :cond_9
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
@@ -1079,11 +1084,11 @@
     :cond_a
     if-ne v0, v6, :cond_6
 
-    iget-object v4, p0, Lgov/nist/core/HostNameParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v4, v5}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 

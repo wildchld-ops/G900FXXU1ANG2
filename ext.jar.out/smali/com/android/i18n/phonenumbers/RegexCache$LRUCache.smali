@@ -41,6 +41,7 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 4
+    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +55,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    const/high16 v2, 0x3f40
+    const/high16 v2, 0x3f400000
 
     const/4 v3, 0x1
 
@@ -67,6 +68,7 @@
 
 .method static synthetic access$000(Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;)I
     .locals 1
+    .param p0    # Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;
 
     iget v0, p0, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->size:I
 
@@ -88,7 +90,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->map:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -150,7 +152,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->map:Ljava/util/LinkedHashMap;
 
-    invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

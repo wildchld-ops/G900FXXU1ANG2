@@ -28,6 +28,9 @@
 # direct methods
 .method constructor <init>(Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;IFZ)V
     .locals 0
+    .param p2    # I
+    .param p3    # F
+    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache$1;->this$0:Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;
 
@@ -48,13 +51,13 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache$1;->size()I
+    invoke-virtual {p0}, Ljava/util/HashMap;->size()I
 
     move-result v0
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache$1;->this$0:Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;
 
-    #getter for: Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->size:I
+    # getter for: Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->size:I
     invoke-static {v1}, Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;->access$000(Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;)I
 
     move-result v1

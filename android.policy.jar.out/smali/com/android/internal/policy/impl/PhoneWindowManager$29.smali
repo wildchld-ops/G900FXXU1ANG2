@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 
@@ -93,7 +95,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$29;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->setStatusBarExpandable(Z)V
+    # invokes: Lcom/android/internal/policy/impl/PhoneWindowManager;->setStatusBarExpandable(Z)V
     invoke-static {v3, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$2500(Lcom/android/internal/policy/impl/PhoneWindowManager;Z)V
 
     :cond_0

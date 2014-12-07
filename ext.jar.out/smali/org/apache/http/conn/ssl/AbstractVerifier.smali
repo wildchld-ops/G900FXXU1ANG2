@@ -121,6 +121,7 @@
 
 .method public static acceptableCountryWildcard(Ljava/lang/String;)Z
     .locals 6
+    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -174,6 +175,7 @@
 
 .method public static countDots(Ljava/lang/String;)I
     .locals 4
+    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -207,6 +209,7 @@
 
 .method public static getCNs(Ljava/security/cert/X509Certificate;)[Ljava/lang/String;
     .locals 7
+    .param p0    # Ljava/security/cert/X509Certificate;
 
     new-instance v0, Ljava/util/LinkedList;
 
@@ -257,7 +260,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v0}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v6
 
@@ -282,6 +285,7 @@
 
 .method public static getDNSSubjectAlts(Ljava/security/cert/X509Certificate;)[Ljava/lang/String;
     .locals 12
+    .param p0    # Ljava/security/cert/X509Certificate;
 
     new-instance v6, Ljava/util/LinkedList;
 
@@ -369,7 +373,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v6}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v6}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v9
 
@@ -396,6 +400,8 @@
 # virtual methods
 .method public final verify(Ljava/lang/String;Ljava/security/cert/X509Certificate;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLException;
@@ -417,6 +423,8 @@
 
 .method public final verify(Ljava/lang/String;Ljavax/net/ssl/SSLSocket;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljavax/net/ssl/SSLSocket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -455,6 +463,10 @@
 
 .method public final verify(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Z)V
     .locals 16
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/String;
+    .param p3    # [Ljava/lang/String;
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLException;
@@ -509,7 +521,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v11}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v11}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v13
 
@@ -564,7 +576,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v11}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v11}, Ljava/util/AbstractSequentialList;->iterator()Ljava/util/Iterator;
 
     move-result-object v7
 
@@ -737,6 +749,8 @@
 
 .method public final verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljavax/net/ssl/SSLSession;
 
     const/4 v3, 0x0
 

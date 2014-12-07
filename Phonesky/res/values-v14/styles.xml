@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Play_DetailsPage_ContentText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/play_fg_details_secondary</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">5.0sp</item>
+    </style>
+    <style name="FinskyTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/play_main_background</item>
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/FinskyActionBarTabStyle</item>
+        <item name="android:actionBarWidgetTheme">@style/FinskyActionBarWidgetStyle</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="FinskyDarkTheme" parent="@android:style/Theme.Holo">
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="SettingsTheme" parent="@style/FinskyTheme" />
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyDarkTheme" />
+    <style name="FinskyActionBarDropDownStyle" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:textAppearance">?android:textAppearanceInverse</item>
+    </style>
+    <style name="FinskyActionBarWidgetStyle" parent="@android:style/Theme.Holo">
+        <item name="android:dropDownListViewStyle">@style/FinskyActionBarDropDownStyle</item>
+        <item name="android:textColorHint">@color/action_bar_menu_color</item>
+        <item name="android:listDivider">@drawable/list_divider_holo_light</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/FinskyActionBarPopupLargeStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/FinskyActionBarPopupSmallStyle</item>
+    </style>
+    <style name="FinskyActionBarPopupLargeStyle" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+    <style name="FinskyActionBarPopupSmallStyle" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Small">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+</resources>

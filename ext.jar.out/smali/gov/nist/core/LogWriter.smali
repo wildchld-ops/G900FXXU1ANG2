@@ -75,6 +75,7 @@
 
 .method public isLoggingEnabled(I)Z
     .locals 1
+    .param p1    # I
 
     iget-boolean v0, p0, Lgov/nist/core/LogWriter;->mEnabled:Z
 
@@ -83,36 +84,43 @@
 
 .method public logDebug(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public logError(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public logError(Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Exception;
 
     return-void
 .end method
 
 .method public logException(Ljava/lang/Throwable;)V
     .locals 0
+    .param p1    # Ljava/lang/Throwable;
 
     return-void
 .end method
 
 .method public logFatalError(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public logInfo(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -125,30 +133,35 @@
 
 .method public logStackTrace(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
 
 .method public logTrace(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public logWarning(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setBuildTimeStamp(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setStackProperties(Ljava/util/Properties;)V
     .locals 0
+    .param p1    # Ljava/util/Properties;
 
     return-void
 .end method

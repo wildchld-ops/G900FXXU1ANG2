@@ -134,7 +134,7 @@
 
     iput-object v2, v0, Lorg/apache/http/client/methods/HttpRequestBase;->connRequest:Lorg/apache/http/conn/ClientConnectionRequest;
 
-    iget-object v1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iget-object v1, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
     invoke-static {v1}, Lorg/apache/http/client/utils/CloneUtils;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,9 +142,9 @@
 
     check-cast v1, Lorg/apache/http/message/HeaderGroup;
 
-    iput-object v1, v0, Lorg/apache/http/client/methods/HttpRequestBase;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iput-object v1, v0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
-    iget-object v1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->params:Lorg/apache/http/params/HttpParams;
+    iget-object v1, p0, Lorg/apache/http/message/AbstractHttpMessage;->params:Lorg/apache/http/params/HttpParams;
 
     invoke-static {v1}, Lorg/apache/http/client/utils/CloneUtils;->clone(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +152,7 @@
 
     check-cast v1, Lorg/apache/http/params/HttpParams;
 
-    iput-object v1, v0, Lorg/apache/http/client/methods/HttpRequestBase;->params:Lorg/apache/http/params/HttpParams;
+    iput-object v1, v0, Lorg/apache/http/message/AbstractHttpMessage;->params:Lorg/apache/http/params/HttpParams;
 
     return-object v0
 .end method
@@ -163,7 +163,7 @@
 .method public getProtocolVersion()Lorg/apache/http/ProtocolVersion;
     .locals 1
 
-    invoke-virtual {p0}, Lorg/apache/http/client/methods/HttpRequestBase;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v0
 
@@ -235,6 +235,7 @@
 
 .method public setConnectionRequest(Lorg/apache/http/conn/ClientConnectionRequest;)V
     .locals 2
+    .param p1    # Lorg/apache/http/conn/ClientConnectionRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -288,6 +289,7 @@
 
 .method public setReleaseTrigger(Lorg/apache/http/conn/ConnectionReleaseTrigger;)V
     .locals 2
+    .param p1    # Lorg/apache/http/conn/ConnectionReleaseTrigger;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -341,6 +343,7 @@
 
 .method public setURI(Ljava/net/URI;)V
     .locals 0
+    .param p1    # Ljava/net/URI;
 
     iput-object p1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->uri:Ljava/net/URI;
 

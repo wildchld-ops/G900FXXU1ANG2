@@ -40,6 +40,9 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/app/AlertController$AlertParams;Landroid/os/Handler;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Lcom/android/internal/app/AlertController$AlertParams;
+    .param p3    # Landroid/os/Handler;
 
     invoke-static {p1}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->getDialogTheme(Landroid/content/Context;)I
 
@@ -65,7 +68,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -109,7 +112,7 @@
 
     move-result-object v2
 
-    const/high16 v3, 0x104
+    const/high16 v3, 0x1040000
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -160,6 +163,7 @@
 
 .method static synthetic access$4500(Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->mHandler:Landroid/os/Handler;
 
@@ -168,6 +172,7 @@
 
 .method private static getDialogTheme(Landroid/content/Context;)I
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -190,6 +195,7 @@
 
 .method public static isTalkBackEnabled(Landroid/content/Context;)Z
     .locals 10
+    .param p0    # Landroid/content/Context;
 
     const/16 v1, 0x3a
 
@@ -264,6 +270,7 @@
 
 .method public static turnOffTalkBack(Landroid/content/Context;)Z
     .locals 13
+    .param p0    # Landroid/content/Context;
 
     const/16 v12, 0x3a
 
@@ -377,6 +384,7 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v13, 0x1
 
@@ -392,7 +400,7 @@
 
     if-nez v8, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -565,7 +573,7 @@
 
     if-eqz v2, :cond_6
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->cancel()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->cancel()V
 
     :cond_6
     iput-boolean v12, p0, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->mCancelOnUp:Z
@@ -597,7 +605,7 @@
 
     if-eqz v3, :cond_a
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->cancel()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->cancel()V
 
     :cond_a
     iput-boolean v12, p0, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->mCancelOnUp:Z
@@ -615,7 +623,7 @@
 
     if-eqz v3, :cond_b
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->cancel()V
+    invoke-virtual {p0}, Landroid/app/Dialog;->cancel()V
 
     :cond_b
     iput-boolean v12, p0, Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;->mCancelOnUp:Z
@@ -629,12 +637,14 @@
 .method public getListView()Landroid/widget/ListView;
     .locals 1
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$2600()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mCoverViewListView:Landroid/widget/ListView;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$3200()Landroid/widget/ListView;
 
     move-result-object v0
@@ -662,6 +672,7 @@
 
 .method public isTalkBackExclusiveOptionEnabled(Landroid/content/Context;)Landroid/os/Bundle;
     .locals 21
+    .param p1    # Landroid/content/Context;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1111,9 +1122,11 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$2600()Z
 
     move-result v0
@@ -1130,7 +1143,10 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$2600()Z
 
     move-result v0
@@ -1160,7 +1176,10 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$2600()Z
 
     move-result v0
@@ -1247,6 +1266,8 @@
 
 .method public turnOffTalkBackExclusiveOptions(Landroid/content/Context;I)V
     .locals 11
+    .param p1    # Landroid/content/Context;
+    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

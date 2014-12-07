@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/APKTOOL_DUMMY_0001" android:id="@id/actionbar_menu_download" android:orderInCategory="1" android:title="@string/download" android:showAsAction="ifRoom" />
+</menu>

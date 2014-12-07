@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$15;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,15 +36,18 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
+    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$000()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -54,6 +57,7 @@
     const/4 v0, 0x0
 
     :try_start_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$202(Z)Z
 
     monitor-exit v1
@@ -65,7 +69,7 @@
 
     const-string v1, "GlobalActions"
 
-    #calls: Lcom/android/internal/policy/impl/GlobalActions;->virtualDismissInSCover(Ljava/lang/String;)V
+    # invokes: Lcom/android/internal/policy/impl/GlobalActions;->virtualDismissInSCover(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$3100(Lcom/android/internal/policy/impl/GlobalActions;Ljava/lang/String;)V
 
     return-void
@@ -81,6 +85,7 @@
     throw v0
 
     :cond_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$002(Z)Z
 
     goto :goto_0

@@ -353,6 +353,7 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 7
+    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -369,11 +370,11 @@
 
     check-cast v3, Lgov/nist/javax/sip/header/StatusLine;
 
-    iget-object v5, v3, Lgov/nist/javax/sip/header/StatusLine;->matchExpression:Lgov/nist/core/Match;
+    iget-object v5, v3, Lgov/nist/core/GenericObject;->matchExpression:Lgov/nist/core/Match;
 
     if-eqz v5, :cond_2
 
-    iget-object v4, v3, Lgov/nist/javax/sip/header/StatusLine;->matchExpression:Lgov/nist/core/Match;
+    iget-object v4, v3, Lgov/nist/core/GenericObject;->matchExpression:Lgov/nist/core/Match;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/header/StatusLine;->encode()Ljava/lang/String;
 
@@ -472,6 +473,7 @@
 
 .method public setMatchStatusClass(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/header/StatusLine;->matchStatusClass:Z
 
@@ -480,6 +482,7 @@
 
 .method public setReasonPhrase(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/StatusLine;->reasonPhrase:Ljava/lang/String;
 
@@ -488,6 +491,7 @@
 
 .method public setSipVersion(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/StatusLine;->sipVersion:Ljava/lang/String;
 
@@ -496,6 +500,7 @@
 
 .method public setStatusCode(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/header/StatusLine;->statusCode:I
 

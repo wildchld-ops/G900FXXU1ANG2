@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smart_bonding_description">Download large files (over %d MB) faster by using Wi-Fi and 4G networks at the same time. The Download booster icon will be shown on the status bar while Download booster is running. We recommend disabling the Via Wi-Fi only download option while using Download booster to improve your experience. Note that some third-party applications may be able to use Download booster even if the Via Wi-Fi only download option is enabled for them.</string>
+</resources>

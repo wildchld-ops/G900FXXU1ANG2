@@ -12,6 +12,10 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/HttpResponseFactory;Lorg/apache/http/params/HttpParams;)V
     .locals 2
+    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
+    .param p2    # Lorg/apache/http/message/LineParser;
+    .param p3    # Lorg/apache/http/HttpResponseFactory;
+    .param p4    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1, p2, p4}, Lorg/apache/http/impl/io/AbstractMessageParser;-><init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/params/HttpParams;)V
 
@@ -43,6 +47,7 @@
 # virtual methods
 .method protected parseHead(Lorg/apache/http/io/SessionInputBuffer;)Lorg/apache/http/HttpMessage;
     .locals 5
+    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -86,7 +91,7 @@
 
     invoke-direct {v0, v3, v4}, Lorg/apache/http/message/ParserCursor;-><init>(II)V
 
-    iget-object v3, p0, Lorg/apache/http/impl/io/HttpResponseParser;->lineParser:Lorg/apache/http/message/LineParser;
+    iget-object v3, p0, Lorg/apache/http/impl/io/AbstractMessageParser;->lineParser:Lorg/apache/http/message/LineParser;
 
     iget-object v4, p0, Lorg/apache/http/impl/io/HttpResponseParser;->lineBuf:Lorg/apache/http/util/CharArrayBuffer;
 

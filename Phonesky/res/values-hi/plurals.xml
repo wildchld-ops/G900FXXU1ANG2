@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">"%1$d ऐप्स  अपडेट किए गए"</item>
+        <item quantity="one">"%1$d ऐप्स  अपडेट किए गए"</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d अपडेट उपलब्ध</item>
+        <item quantity="one">%1$d अपडेट उपलब्ध</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d अपडेट को स्‍वीकृति चाहिए</item>
+        <item quantity="one">%1$d अपडेट को स्‍वीकृति चाहिए</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d परिणाम</item>
+        <item quantity="one">%1$d परिणाम</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d नए अपडेट</item>
+        <item quantity="one">%1$d नया अपडेट</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">आपकी रेटिंग: %1$s तारे</item>
+        <item quantity="one">आपकी रेटिंग: %1$s तारा</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s लोगों ने इसे +1 किया.</item>
+        <item quantity="one">%1$s व्यक्ति ने इसे +1 किया.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s और %2$s अन्‍य ने इसे +1 किया.</item>
+        <item quantity="one">%1$s और %2$s अन्‍य ने इसे +1 किया.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s अन्य</item>
+        <item quantity="one">+%1$d अन्य</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d चयनित</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">अपडेट उपलब्ध</item>
+        <item quantity="one">अपडेट उपलब्ध</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">आपके पास %1$d अपडेट उपलब्ध हैं. क्या आप उन्हें इंस्टॉल करना चाहते हैं?</item>
+        <item quantity="one">आपके पास %1$d अपडेट उपलब्ध हैं. क्या आप उन्हें इंस्टॉल करना चाहते हैं?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s मंडलियां</item>
+        <item quantity="one">%1$s मंडली</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">तारे</item>
+        <item quantity="one">तारा</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारे - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारा - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारे - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारा - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s तारे&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s तारा&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारे</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s तारा</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">इसे &amp;lt;b>%1$s तारे&amp;lt;/b> रेट किया गया</item>
+        <item quantity="one">इसे &amp;lt;b>%1$s तारा&amp;lt;/b> रेट किया गया</item>
+    </plurals>
+</resources>

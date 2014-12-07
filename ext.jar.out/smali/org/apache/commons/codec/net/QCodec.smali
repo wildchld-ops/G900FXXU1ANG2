@@ -288,6 +288,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/commons/codec/net/RFC1522Codec;-><init>()V
 
@@ -308,6 +309,7 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -376,6 +378,7 @@
 
 .method public decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -391,7 +394,7 @@
 
     :cond_0
     :try_start_0
-    invoke-virtual {p0, p1}, Lorg/apache/commons/codec/net/QCodec;->decodeText(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lorg/apache/commons/codec/net/RFC1522Codec;->decodeText(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -404,7 +407,7 @@
 
     new-instance v1, Lorg/apache/commons/codec/DecoderException;
 
-    invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -415,6 +418,7 @@
 
 .method protected doDecoding([B)[B
     .locals 6
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -502,6 +506,7 @@
 
 .method protected doEncoding([B)[B
     .locals 4
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -551,6 +556,7 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -619,6 +625,7 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -646,6 +653,8 @@
 
 .method public encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -661,7 +670,7 @@
 
     :cond_0
     :try_start_0
-    invoke-virtual {p0, p1, p2}, Lorg/apache/commons/codec/net/QCodec;->encodeText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1, p2}, Lorg/apache/commons/codec/net/RFC1522Codec;->encodeText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -674,7 +683,7 @@
 
     new-instance v1, Lorg/apache/commons/codec/EncoderException;
 
-    invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -709,6 +718,7 @@
 
 .method public setEncodeBlanks(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/commons/codec/net/QCodec;->encodeBlanks:Z
 

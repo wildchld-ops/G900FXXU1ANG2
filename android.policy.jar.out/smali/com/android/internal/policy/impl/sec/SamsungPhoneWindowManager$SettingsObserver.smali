@@ -21,6 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Landroid/os/Handler;)V
     .locals 0
+    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SettingsObserver;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
@@ -191,6 +192,7 @@
 
 .method public onChange(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SettingsObserver;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 

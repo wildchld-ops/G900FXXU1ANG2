@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Atnaujinta programų: %1$d</item>
+        <item quantity="one">Atnaujinta programų: %1$d</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Pasiekiama naujinių: %1$d</item>
+        <item quantity="one">Pasiekiama naujinių: %1$d</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Reikia patvirtinti naujinių: %1$d</item>
+        <item quantity="one">Reikia patvirtinti naujinių: %1$d</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Rezultatų: %1$d</item>
+        <item quantity="one">Rezultatų: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Naujų naujinių: %1$d</item>
+        <item quantity="one">Naujų naujinių: %1$d</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Jūsų įvertinimas: %1$s žvaigžd.</item>
+        <item quantity="one">Jūsų įvertinimas: %1$s žvaigžd.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s žm. spust. mygtuką +1.</item>
+        <item quantity="one">%1$s žm. spustelėjo mygtuką +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s ir dar %2$s žm. spust. m. +1.</item>
+        <item quantity="one">%1$s ir dar %2$s žm. spust. m. +1</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">ir dar %1$s</item>
+        <item quantity="one">ir dar %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Pasirinkta: %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Pasiekiami naujiniai</item>
+        <item quantity="one">Pasiekiamas naujinys</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Pasiekiama naujinių: %1$d. Ar norite įdiegti?</item>
+        <item quantity="one">Pasiekiama naujinių: %1$d. Ar norite įdiegti?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">DRAUGŲ RATŲ: %1$s</item>
+        <item quantity="one">DRAUGŲ RATŲ: %1$s</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">žvaigžd.</item>
+        <item quantity="one">žvaigžd.</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd. – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd. – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd. – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd. – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s žvaigžd.&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s žvaigžd.&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd.</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s žvaigžd.</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Įvertinta &amp;lt;b>%1$s žvaigžd.&amp;lt;/b></item>
+        <item quantity="one">Įvertinta &amp;lt;b>%1$s žvaigžd.&amp;lt;/b></item>
+    </plurals>
+</resources>

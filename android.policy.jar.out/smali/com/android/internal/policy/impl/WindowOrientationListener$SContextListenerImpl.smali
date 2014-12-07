@@ -28,6 +28,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/WindowOrientationListener;)V
     .locals 0
+    .param p1    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,6 +39,7 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;)V
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->resetRotation()V
 
@@ -75,6 +77,7 @@
 
     iget-object v5, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mbResultFaceDectection:Z
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$300()Z
 
     move-result v5
@@ -91,6 +94,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mbResultFaceDectection:Z
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$300()Z
 
     move-result v3
@@ -99,7 +103,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$400(Lcom/android/internal/policy/impl/WindowOrientationListener;)Landroid/content/Context;
 
     move-result-object v3
@@ -124,6 +128,7 @@
 
     const/4 v3, -0x1
 
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {v3}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$502(I)I
 
     :goto_0
@@ -139,6 +144,7 @@
 
     move-result-object v4
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$500()I
 
     move-result v5
@@ -153,6 +159,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$500()I
 
     move-result v3
@@ -163,11 +170,13 @@
     :pswitch_0
     const/4 v3, 0x0
 
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {v3}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$502(I)I
 
     goto :goto_0
 
     :pswitch_1
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {v6}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$502(I)I
 
     goto :goto_0
@@ -175,6 +184,7 @@
     :pswitch_2
     const/4 v3, 0x2
 
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {v3}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$502(I)I
 
     goto :goto_0
@@ -182,6 +192,7 @@
     :pswitch_3
     const/4 v3, 0x3
 
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
     invoke-static {v3}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$502(I)I
 
     goto :goto_0
@@ -228,6 +239,7 @@
 
 .method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
     .locals 9
+    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     const/4 v4, 0x1
 
@@ -284,7 +296,7 @@
 
     iget-object v7, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
     invoke-static {v7}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$600(Lcom/android/internal/policy/impl/WindowOrientationListener;)I
 
     move-result v7
@@ -297,7 +309,7 @@
 
     iget-object v6, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
     invoke-static {v6}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$400(Lcom/android/internal/policy/impl/WindowOrientationListener;)Landroid/content/Context;
 
     move-result-object v6
@@ -349,7 +361,7 @@
 
     iget-object v6, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
     invoke-static {v6}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$600(Lcom/android/internal/policy/impl/WindowOrientationListener;)I
 
     move-result v6
@@ -358,6 +370,7 @@
 
     if-eq v6, v7, :cond_5
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->msfforSContextRotation:Lcom/sec/android/smartface/SmartFaceManager;
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$700()Lcom/sec/android/smartface/SmartFaceManager;
 
     move-result-object v6
@@ -368,22 +381,25 @@
 
     move-result-object v6
 
+    # setter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->msfforSContextRotation:Lcom/sec/android/smartface/SmartFaceManager;
     invoke-static {v6}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$702(Lcom/sec/android/smartface/SmartFaceManager;)Lcom/sec/android/smartface/SmartFaceManager;
 
     :cond_3
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->msfforSContextRotation:Lcom/sec/android/smartface/SmartFaceManager;
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$700()Lcom/sec/android/smartface/SmartFaceManager;
 
     move-result-object v6
 
     if-eqz v6, :cond_4
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->msfforSContextRotation:Lcom/sec/android/smartface/SmartFaceManager;
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$700()Lcom/sec/android/smartface/SmartFaceManager;
 
     move-result-object v6
 
     iget-object v7, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
     invoke-static {v7}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$600(Lcom/android/internal/policy/impl/WindowOrientationListener;)I
 
     move-result v7
@@ -404,7 +420,7 @@
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
-    #getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$400(Lcom/android/internal/policy/impl/WindowOrientationListener;)Landroid/content/Context;
 
     move-result-object v4
@@ -433,6 +449,7 @@
     :cond_5
     iget-object v6, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->mOrientationListener:Lcom/android/internal/policy/impl/WindowOrientationListener;
 
+    # getter for: Lcom/android/internal/policy/impl/WindowOrientationListener;->mbResultFaceDectection:Z
     invoke-static {}, Lcom/android/internal/policy/impl/WindowOrientationListener;->access$300()Z
 
     move-result v6

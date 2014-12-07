@@ -61,7 +61,7 @@
     const/4 v5, 0x0
 
     :try_start_0
-    #calls: Lorg/apache/http/impl/client/CustomHttpClient;->getService()V
+    # invokes: Lorg/apache/http/impl/client/CustomHttpClient;->getService()V
     invoke-static {}, Lorg/apache/http/impl/client/CustomHttpClient;->access$000()V
 
     sget-object v6, Lorg/apache/http/impl/client/CustomHttpClient;->sIConnectivityManagerClass:Ljava/lang/Class;
@@ -220,8 +220,8 @@
 
     invoke-virtual {v6, v8, v9}, Ljava/lang/Object;->wait(J)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     :cond_5
     :goto_1
@@ -387,8 +387,8 @@
 
     invoke-static {v6}, Lorg/apache/http/impl/client/CustomHttpClient;->log(Ljava/lang/String;)V
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_3
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     :cond_8
     :goto_4

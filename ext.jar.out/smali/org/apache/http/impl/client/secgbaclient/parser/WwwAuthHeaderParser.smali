@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "WwwAuthHeaderParser"
 
@@ -42,6 +42,8 @@
 
 .method private parse(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 3
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -80,12 +82,14 @@
 
 .method private setAlgorithm(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "algorithm[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -97,7 +101,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -109,12 +113,14 @@
 
 .method private setNonce(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "nonce[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -126,7 +132,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -138,12 +144,14 @@
 
 .method private setOpaque(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "opaque[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -155,7 +163,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -167,12 +175,14 @@
 
 .method private setQop(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "qop[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -184,7 +194,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -196,12 +206,14 @@
 
 .method private setRealm(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "realm[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -213,7 +225,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -225,6 +237,8 @@
 
 .method private setScheme(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const-string v0, "Digest"
 
@@ -266,12 +280,14 @@
 
 .method private setStale(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
     const-string v1, "stale[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -283,7 +299,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -301,6 +317,7 @@
 # virtual methods
 .method public WwwAuthHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
     .locals 6
+    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 
@@ -327,7 +344,7 @@
     :cond_0
     const-string v3, "WWW-Authenticate"
 
-    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -378,6 +395,7 @@
 
 .method public proxyAuthHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
     .locals 6
+    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 
@@ -404,7 +422,7 @@
     :cond_0
     const-string v3, "Proxy-Authenticate"
 
-    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/WwwAuthHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

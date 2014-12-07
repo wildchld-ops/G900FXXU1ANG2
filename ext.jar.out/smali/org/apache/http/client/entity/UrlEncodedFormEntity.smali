@@ -34,13 +34,14 @@
 
     const-string v0, "application/x-www-form-urlencoded"
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/client/entity/UrlEncodedFormEntity;->setContentType(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentType(Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
     .locals 1
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,7 +68,7 @@
 
     const-string v0, "application/x-www-form-urlencoded"
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/client/entity/UrlEncodedFormEntity;->setContentType(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentType(Ljava/lang/String;)V
 
     return-void
 .end method

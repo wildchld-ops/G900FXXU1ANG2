@@ -41,7 +41,7 @@
 
     fill-array-data v1, :array_0
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_NULL_MD5"
 
@@ -49,7 +49,7 @@
 
     fill-array-data v1, :array_1
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "NULL-MD5"
 
@@ -57,7 +57,7 @@
 
     fill-array-data v1, :array_2
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_NULL_SHA"
 
@@ -65,7 +65,7 @@
 
     fill-array-data v1, :array_3
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "NULL-SHA"
 
@@ -73,7 +73,7 @@
 
     fill-array-data v1, :array_4
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_NULL_SHA256"
 
@@ -81,7 +81,7 @@
 
     fill-array-data v1, :array_5
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_RC4_128_MD5"
 
@@ -89,7 +89,7 @@
 
     fill-array-data v1, :array_6
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "RC4-MD5"
 
@@ -97,7 +97,7 @@
 
     fill-array-data v1, :array_7
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_RC4_128_SHA"
 
@@ -105,7 +105,7 @@
 
     fill-array-data v1, :array_8
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "RC4-SHA"
 
@@ -113,7 +113,7 @@
 
     fill-array-data v1, :array_9
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_3DES_EDE_CBC_SHA"
 
@@ -121,7 +121,7 @@
 
     fill-array-data v1, :array_a
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "DES-CBC3-SHA"
 
@@ -129,7 +129,7 @@
 
     fill-array-data v1, :array_b
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_AES_128_CBC_SHA"
 
@@ -137,7 +137,7 @@
 
     fill-array-data v1, :array_c
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "AES128-SHA"
 
@@ -145,7 +145,7 @@
 
     fill-array-data v1, :array_d
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_AES_256_CBC_SHA"
 
@@ -153,7 +153,7 @@
 
     fill-array-data v1, :array_e
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "AES256-SHA"
 
@@ -161,7 +161,7 @@
 
     fill-array-data v1, :array_f
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_AES_128_CBC_SHA256"
 
@@ -169,7 +169,7 @@
 
     fill-array-data v1, :array_10
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "TLS_RSA_WITH_AES_256_CBC_SHA256"
 
@@ -177,14 +177,14 @@
 
     fill-array-data v1, :array_11
 
-    invoke-virtual {p0, v0, v1}, Lorg/apache/http/impl/client/secgbaclient/CipherSuiteMapper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
     nop
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x0t
     .end array-data
@@ -192,7 +192,7 @@
     nop
 
     :array_1
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x1t
     .end array-data
@@ -200,7 +200,7 @@
     nop
 
     :array_2
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x1t
     .end array-data
@@ -208,7 +208,7 @@
     nop
 
     :array_3
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x2t
     .end array-data
@@ -216,7 +216,7 @@
     nop
 
     :array_4
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x2t
     .end array-data
@@ -224,7 +224,7 @@
     nop
 
     :array_5
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x3bt
     .end array-data
@@ -232,7 +232,7 @@
     nop
 
     :array_6
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x4t
     .end array-data
@@ -240,7 +240,7 @@
     nop
 
     :array_7
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x4t
     .end array-data
@@ -248,7 +248,7 @@
     nop
 
     :array_8
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x5t
     .end array-data
@@ -256,7 +256,7 @@
     nop
 
     :array_9
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x5t
     .end array-data
@@ -264,7 +264,7 @@
     nop
 
     :array_a
-    .array-data 0x1
+    .array-data 1
         0x0t
         0xat
     .end array-data
@@ -272,7 +272,7 @@
     nop
 
     :array_b
-    .array-data 0x1
+    .array-data 1
         0x0t
         0xat
     .end array-data
@@ -280,7 +280,7 @@
     nop
 
     :array_c
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x2ft
     .end array-data
@@ -288,7 +288,7 @@
     nop
 
     :array_d
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x2ft
     .end array-data
@@ -296,7 +296,7 @@
     nop
 
     :array_e
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x35t
     .end array-data
@@ -304,7 +304,7 @@
     nop
 
     :array_f
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x35t
     .end array-data
@@ -312,7 +312,7 @@
     nop
 
     :array_10
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x3ct
     .end array-data
@@ -320,7 +320,7 @@
     nop
 
     :array_11
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x3dt
     .end array-data

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final REGEX_CNONCE:Ljava/lang/String; = "cnonce[\\s]*="
 
@@ -48,6 +48,8 @@
 
 .method private parse(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
+    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -77,6 +79,8 @@
 
 .method private setCNonce(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -90,7 +94,7 @@
 
     const-string v1, "cnonce[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -102,7 +106,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -138,6 +142,8 @@
 
 .method private setNonceCount(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -151,7 +157,7 @@
 
     const-string v1, "nc[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -163,7 +169,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -199,6 +205,8 @@
 
 .method private setQop(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -212,7 +220,7 @@
 
     const-string v1, "qop[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -224,7 +232,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -260,6 +268,8 @@
 
 .method private setRspAuth(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -273,7 +283,7 @@
 
     const-string v1, "rspauth[\\s]*="
 
-    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1, p2}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -285,7 +295,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->paramSplitHeader:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getParamValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -323,6 +333,7 @@
 # virtual methods
 .method public authInfoHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
     .locals 5
+    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 
@@ -341,7 +352,7 @@
     :cond_0
     const-string v3, "Authentication-Info"
 
-    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/AuthInfoHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1, v3}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpHeaderParser;->getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

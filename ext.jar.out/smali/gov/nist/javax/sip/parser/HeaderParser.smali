@@ -6,12 +6,13 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 2
+    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
-    iput-object p1, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object p1, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const-string v1, "command_keywordLexer"
 
@@ -22,6 +23,7 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -31,7 +33,7 @@
 
     invoke-direct {v0, v1, p1}, Lgov/nist/javax/sip/parser/Lexer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     return-void
 .end method
@@ -57,7 +59,7 @@
 
     move-result-object v3
 
-    iget-object v7, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -76,7 +78,7 @@
     :cond_0
     const-string v7, "Bad day "
 
-    invoke-virtual {p0, v7}, Lgov/nist/javax/sip/parser/HeaderParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v7}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v7
 
@@ -89,7 +91,7 @@
 
     const-string v7, "bad date field"
 
-    invoke-virtual {p0, v7}, Lgov/nist/javax/sip/parser/HeaderParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v7}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v7
 
@@ -101,13 +103,13 @@
     :try_start_1
     invoke-virtual {v3, v7, v0}, Ljava/util/Calendar;->set(II)V
 
-    iget-object v7, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v8, 0x20
 
     invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v7, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->ttoken()Ljava/lang/String;
 
@@ -133,13 +135,13 @@
 
     :cond_2
     :goto_0
-    iget-object v7, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v8, 0x20
 
     invoke-virtual {v7, v8}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v7, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v7, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v7}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -347,27 +349,28 @@
 
 .method protected headerName(I)V
     .locals 2
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
         }
     .end annotation
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v0, p1}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v0}, Lgov/nist/core/LexerCore;->SPorHT()V
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v1, 0x3a
 
     invoke-virtual {v0, v1}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v0}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -382,23 +385,23 @@
         }
     .end annotation
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x3a
 
-    invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->getNextToken(C)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lgov/nist/core/StringTokenizer;->getNextToken(C)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->consume(I)V
+    invoke-virtual {v3, v4}, Lgov/nist/core/StringTokenizer;->consume(I)V
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    invoke-virtual {v3}, Lgov/nist/core/LexerCore;->getLine()Ljava/lang/String;
+    invoke-virtual {v3}, Lgov/nist/core/StringTokenizer;->getLine()Ljava/lang/String;
 
     move-result-object v3
 
@@ -417,6 +420,7 @@
 
 .method protected time(Ljava/util/Calendar;)V
     .locals 7
+    .param p1    # Ljava/util/Calendar;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -424,7 +428,7 @@
     .end annotation
 
     :try_start_0
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -438,13 +442,13 @@
 
     invoke-virtual {p1, v5, v1}, Ljava/util/Calendar;->set(II)V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x3a
 
     invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -458,13 +462,13 @@
 
     invoke-virtual {p1, v5, v2}, Ljava/util/Calendar;->set(II)V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v6, 0x3a
 
     invoke-virtual {v5, v6}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -487,7 +491,7 @@
 
     const-string v5, "error processing time "
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/HeaderParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v5
 
@@ -504,10 +508,10 @@
 
     const-string v2, "wkday"
 
-    invoke-virtual {p0, v2}, Lgov/nist/javax/sip/parser/HeaderParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :try_start_0
-    iget-object v2, p0, Lgov/nist/javax/sip/parser/HeaderParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v2, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v2}, Lgov/nist/core/LexerCore;->ttoken()Ljava/lang/String;
 
@@ -532,7 +536,7 @@
     const-string v3, "wkday"
 
     :goto_0
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/HeaderParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     return v2
 
@@ -648,7 +652,7 @@
     :try_start_7
     const-string v2, "bad wkday"
 
-    invoke-virtual {p0, v2}, Lgov/nist/javax/sip/parser/HeaderParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v2}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v2
 
@@ -661,7 +665,7 @@
 
     const-string v3, "wkday"
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/HeaderParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     throw v2
 .end method

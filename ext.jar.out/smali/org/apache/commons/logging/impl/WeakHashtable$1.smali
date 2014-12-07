@@ -61,7 +61,7 @@
 
     check-cast v0, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
-    #calls: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
+    # invokes: Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
     invoke-static {v0}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->access$100(Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;)Ljava/lang/Object;
 
     move-result-object v1

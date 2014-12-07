@@ -37,7 +37,7 @@
 .method public run()Ljava/lang/Object;
     .locals 2
 
-    #calls: Lorg/apache/commons/logging/impl/SimpleLog;->getContextClassLoader()Ljava/lang/ClassLoader;
+    # invokes: Lorg/apache/commons/logging/impl/SimpleLog;->getContextClassLoader()Ljava/lang/ClassLoader;
     invoke-static {}, Lorg/apache/commons/logging/impl/SimpleLog;->access$000()Ljava/lang/ClassLoader;
 
     move-result-object v0

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d個のアプリを更新</item>
+        <item quantity="one">%1$d個のアプリを更新</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d件のアップデートがあります</item>
+        <item quantity="one">%1$d件のアップデートがあります</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d件のアップデートで承認が必要です</item>
+        <item quantity="one">%1$d件のアップデートで承認が必要です</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d件</item>
+        <item quantity="one">%1$d件の結果</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">新しいアップデート%1$d件</item>
+        <item quantity="one">新しいアップデート%1$d件</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">あなたの評価: %1$sつ星</item>
+        <item quantity="one">あなたの評価: %1$sつ星</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s人が+1しました。</item>
+        <item quantity="one">%1$s人が+1しました。</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$sさんと他%2$s人が+1しました。</item>
+        <item quantity="one">%1$sさんと他%2$s人が+1しました。</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">他%1$s人</item>
+        <item quantity="one">他%1$d人</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d件を選択済み</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">アップデート利用可能</item>
+        <item quantity="one">アップデート利用可能</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">%1$d件のアップデートがあります。インストールしますか？</item>
+        <item quantity="one">%1$d件のアップデートがあります。インストールしますか？</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s個のサークル</item>
+        <item quantity="one">%1$s個のサークル</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">つ星</item>
+        <item quantity="one">つ星</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$sつ星&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$sつ星&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">&amp;lt;b>%1$sつ星&amp;lt;/b>と評価しました</item>
+        <item quantity="one">&amp;lt;b>%1$sつ星&amp;lt;/b>と評価しました</item>
+    </plurals>
+</resources>

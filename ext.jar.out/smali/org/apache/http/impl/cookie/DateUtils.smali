@@ -12,11 +12,11 @@
 
 
 # static fields
-.field private static final DEFAULT_PATTERNS:[Ljava/lang/String; = null
+.field private static final DEFAULT_PATTERNS:[Ljava/lang/String;
 
-.field private static final DEFAULT_TWO_DIGIT_YEAR_START:Ljava/util/Date; = null
+.field private static final DEFAULT_TWO_DIGIT_YEAR_START:Ljava/util/Date;
 
-.field public static final GMT:Ljava/util/TimeZone; = null
+.field public static final GMT:Ljava/util/TimeZone;
 
 .field public static final PATTERN_ASCTIME:Ljava/lang/String; = "EEE MMM d HH:mm:ss yyyy"
 
@@ -102,6 +102,7 @@
 
 .method public static formatDate(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
+    .param p0    # Ljava/util/Date;
 
     const-string v0, "EEE, dd MMM yyyy HH:mm:ss zzz"
 
@@ -114,6 +115,8 @@
 
 .method public static formatDate(Ljava/util/Date;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p0    # Ljava/util/Date;
+    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -141,7 +144,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -150,6 +153,7 @@
 
 .method public static parseDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 1
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;
@@ -167,6 +171,8 @@
 
 .method public static parseDate(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/Date;
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;
@@ -184,6 +190,9 @@
 
 .method public static parseDate(Ljava/lang/String;[Ljava/lang/String;Ljava/util/Date;)Ljava/util/Date;
     .locals 8
+    .param p0    # Ljava/lang/String;
+    .param p1    # [Ljava/lang/String;
+    .param p2    # Ljava/util/Date;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;
@@ -264,7 +273,7 @@
     invoke-virtual {v2, p2}, Ljava/text/SimpleDateFormat;->set2DigitYearStart(Ljava/util/Date;)V
 
     :try_start_0
-    invoke-virtual {v2, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v2, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/directory_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DirectoryHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/list_section_divider_holo_custom" android:paddingTop="@dimen/sub_title_top_padding" android:layout_width="fill_parent" android:layout_height="@dimen/list_header_height">
+        <TextView android:textSize="@dimen/tw_list_item_header_text_size" android:textColor="@color/header_text_color" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tw_list_item_header_text_indent" android:singleLine="true" android:textAlignment="viewStart" />
+        <TextView android:textSize="@dimen/tw_list_item_header_text_size" android:textStyle="bold" android:textColor="@color/header_text_color" android:id="@id/display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tw_list_item_header_text_indent" android:layout_marginRight="8.0dip" android:singleLine="true" android:textAlignment="viewStart" />
+        <TextView android:textSize="@dimen/tw_list_item_header_secondary_text_size" android:textColor="@color/header_secondary_text_color" android:gravity="right" android:id="@id/count" android:paddingTop="1.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/tw_list_item_header_text_indent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/radio_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="@color/primary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kt114_sort_by" />
+            <RadioGroup android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+                <RadioButton android:textSize="17.0dip" android:textColor="@color/primary_text_color" android:id="@id/radio_acc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/kt114_accuracy" />
+                <RadioButton android:textSize="17.0dip" android:textColor="@color/primary_text_color" android:id="@id/radio_dis" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="@dimen/tw_list_item_header_text_indent" android:text="@string/kt114_distance" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

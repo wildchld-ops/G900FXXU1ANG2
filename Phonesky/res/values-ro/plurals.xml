@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d de aplicații actualizate</item>
+        <item quantity="one">%1$d aplicație actualizată</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d de actualizări disponibile</item>
+        <item quantity="one">%1$d actualizare disponibilă</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d (de) actualizări au nevoie de aprobare</item>
+        <item quantity="one">%1$d actualizare are nevoie de aprobare</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d (de) rezultate</item>
+        <item quantity="one">%1$d rezultat</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d de actualizări noi</item>
+        <item quantity="one">%1$d actualizare nouă</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Evaluare: %1$s stele</item>
+        <item quantity="one">Evaluare: %1$s stea</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Au dat +1: %1$s (de) persoane</item>
+        <item quantity="one">%1$s persoană a dat +1</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s şi încă %2$s au dat +1.</item>
+        <item quantity="one">+1 de la %1$s şi alţi %2$s.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">și încă %1$s</item>
+        <item quantity="one">și încă %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d selectate</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Actualizări disponibile</item>
+        <item quantity="one">Actualizare disponibilă</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Există %1$d (de) actualizări disponibile. Doriți să le instalați?</item>
+        <item quantity="one">Există %1$d actualizare disponibilă. Doriți să o instalați?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s cercuri</item>
+        <item quantity="one">%1$s cerc</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">stele</item>
+        <item quantity="one">stea</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s stele&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s stea&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">A evaluat cu &amp;lt;b>%1$s stele&amp;lt;/b></item>
+        <item quantity="one">A evaluat cu &amp;lt;b>%1$s stea&amp;lt;/b></item>
+    </plurals>
+</resources>

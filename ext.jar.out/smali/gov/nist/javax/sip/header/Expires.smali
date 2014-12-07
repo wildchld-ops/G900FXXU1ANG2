@@ -47,6 +47,7 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
+    .param p1    # Ljava/lang/StringBuffer;
 
     iget v0, p0, Lgov/nist/javax/sip/header/Expires;->expires:I
 
@@ -67,6 +68,7 @@
 
 .method public setExpires(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

@@ -17,6 +17,7 @@
 
 .method public static getConnectionTimeout(Lorg/apache/http/params/HttpParams;)I
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -42,6 +43,7 @@
 
 .method public static getLinger(Lorg/apache/http/params/HttpParams;)I
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -67,6 +69,7 @@
 
 .method public static getSoTimeout(Lorg/apache/http/params/HttpParams;)I
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -92,6 +95,7 @@
 
 .method public static getSocketBufferSize(Lorg/apache/http/params/HttpParams;)I
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -117,6 +121,7 @@
 
 .method public static getTcpNoDelay(Lorg/apache/http/params/HttpParams;)Z
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -142,6 +147,7 @@
 
 .method public static isStaleCheckingEnabled(Lorg/apache/http/params/HttpParams;)Z
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -167,6 +173,8 @@
 
 .method public static setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -188,6 +196,8 @@
 
 .method public static setLinger(Lorg/apache/http/params/HttpParams;I)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -209,6 +219,8 @@
 
 .method public static setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -230,6 +242,8 @@
 
 .method public static setSocketBufferSize(Lorg/apache/http/params/HttpParams;I)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -251,6 +265,8 @@
 
 .method public static setStaleCheckingEnabled(Lorg/apache/http/params/HttpParams;Z)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -272,6 +288,8 @@
 
 .method public static setTcpNoDelay(Lorg/apache/http/params/HttpParams;Z)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Z
 
     if-nez p0, :cond_0
 

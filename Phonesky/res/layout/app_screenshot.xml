@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.AppScreenshot android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:contentDescription="@string/content_description_screenshot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/screenshot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <View android:id="@id/accessibility_overlay" android:background="@drawable/highlight_overlay_dark" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.google.android.finsky.layout.AppScreenshot>

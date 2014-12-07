@@ -43,6 +43,7 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Pipeline;)V
     .locals 2
+    .param p1    # Lgov/nist/javax/sip/parser/Pipeline;
 
     const/4 v1, 0x0
 
@@ -55,6 +56,9 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/SIPMessageListener;Lgov/nist/javax/sip/parser/Pipeline;I)V
     .locals 1
+    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
+    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
+    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -65,6 +69,10 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/SIPMessageListener;Lgov/nist/javax/sip/parser/Pipeline;ZI)V
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
+    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
+    .param p3    # Z
+    .param p4    # I
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/PipelinedMsgParser;-><init>()V
 
@@ -139,6 +147,7 @@
 
 .method private readLine(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 5
+    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -321,8 +330,8 @@
 
     invoke-static {v13}, Lgov/nist/core/Debug;->println(Ljava/lang/String;)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_1
 
@@ -376,8 +385,8 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     move-result v13
 
@@ -448,8 +457,8 @@
 
     invoke-virtual {v13}, Lgov/nist/javax/sip/parser/Pipeline;->stopTimer()V
     :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
     .catch Ljava/text/ParseException; {:try_start_7 .. :try_end_7} :catch_1
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     goto/16 :goto_0
 
@@ -571,8 +580,8 @@
 
     invoke-interface {v13, v11}, Lgov/nist/javax/sip/parser/SIPMessageListener;->processMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_4
+    .catchall {:try_start_d .. :try_end_d} :catchall_0
 
     goto/16 :goto_0
 
@@ -623,10 +632,10 @@
     sub-int v13, v1, v9
 
     :try_start_10
-    invoke-virtual {v5, v8, v9, v13}, Lgov/nist/javax/sip/parser/Pipeline;->read([BII)I
+    invoke-virtual {v5, v8, v9, v13}, Ljava/io/InputStream;->read([BII)I
     :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_1
     .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_6
+    .catchall {:try_start_10 .. :try_end_10} :catchall_1
 
     move-result v10
 
@@ -700,6 +709,7 @@
 
 .method public setMessageListener(Lgov/nist/javax/sip/parser/SIPMessageListener;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/PipelinedMsgParser;->sipMessageListener:Lgov/nist/javax/sip/parser/SIPMessageListener;
 

@@ -26,23 +26,23 @@
     return-void
 
     :array_0
-    .array-data 0x2
-        0x30t 0x0t
-        0x31t 0x0t
-        0x32t 0x0t
-        0x33t 0x0t
-        0x34t 0x0t
-        0x35t 0x0t
-        0x36t 0x0t
-        0x37t 0x0t
-        0x38t 0x0t
-        0x39t 0x0t
-        0x61t 0x0t
-        0x62t 0x0t
-        0x63t 0x0t
-        0x64t 0x0t
-        0x65t 0x0t
-        0x66t 0x0t
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x61s
+        0x62s
+        0x63s
+        0x64s
+        0x65s
+        0x66s
     .end array-data
 .end method
 
@@ -56,6 +56,7 @@
 
 .method public static decodeHex([C)[B
     .locals 7
+    .param p0    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -124,6 +125,7 @@
 
 .method public static encodeHex([B)[C
     .locals 7
+    .param p0    # [B
 
     array-length v3, p0
 
@@ -176,6 +178,8 @@
 
 .method protected static toDigit(CI)I
     .locals 4
+    .param p0    # C
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -234,6 +238,7 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -274,7 +279,7 @@
 
     new-instance v2, Lorg/apache/commons/codec/DecoderException;
 
-    invoke-virtual {v1}, Ljava/lang/ClassCastException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -285,6 +290,7 @@
 
 .method public decode([B)[B
     .locals 1
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -308,6 +314,7 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -348,7 +355,7 @@
 
     new-instance v2, Lorg/apache/commons/codec/EncoderException;
 
-    invoke-virtual {v1}, Ljava/lang/ClassCastException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -359,6 +366,7 @@
 
 .method public encode([B)[B
     .locals 2
+    .param p1    # [B
 
     new-instance v0, Ljava/lang/String;
 

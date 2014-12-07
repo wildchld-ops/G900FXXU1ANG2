@@ -105,7 +105,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/header/SIPObject;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -219,6 +219,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Challenge;->authParams:Lgov/nist/core/NameValueList;
 
@@ -353,6 +354,7 @@
 
 .method public hasParameter(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Challenge;->authParams:Lgov/nist/core/NameValueList;
 
@@ -397,6 +399,7 @@
 
 .method public removeParameter(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Challenge;->authParams:Lgov/nist/core/NameValueList;
 
@@ -421,6 +424,7 @@
 
 .method public setAuthParams(Lgov/nist/core/NameValueList;)V
     .locals 0
+    .param p1    # Lgov/nist/core/NameValueList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/Challenge;->authParams:Lgov/nist/core/NameValueList;
 
@@ -429,6 +433,7 @@
 
 .method public setParameter(Lgov/nist/core/NameValue;)V
     .locals 1
+    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Challenge;->authParams:Lgov/nist/core/NameValueList;
 
@@ -439,6 +444,7 @@
 
 .method public setScheme(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/Challenge;->scheme:Ljava/lang/String;
 

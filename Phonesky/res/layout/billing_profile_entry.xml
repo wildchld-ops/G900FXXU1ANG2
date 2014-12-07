@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.SeparatorLinearLayout android:gravity="center_vertical" android:background="@drawable/highlight_overlay_light" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_weight="1.0" style="@style/BillingProfile_Entry" />
+    <ImageView android:id="@id/checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_selected_instrument_light" android:contentDescription="@string/content_description_selected_billing_profile_entry" />
+</com.google.android.finsky.layout.SeparatorLinearLayout>

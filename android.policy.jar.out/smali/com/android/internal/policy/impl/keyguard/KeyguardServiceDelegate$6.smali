@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -44,7 +45,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate$6;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;
 
-    #calls: Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;->handleSettingUpdated()V
+    # invokes: Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;->handleSettingUpdated()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;->access$300(Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;)V
 
     goto :goto_0

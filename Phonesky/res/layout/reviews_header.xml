@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/reviews_header" android:layout_width="fill_parent" android:text="@string/details_reviews" style="@style/Play_DetailsPage_HeaderText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

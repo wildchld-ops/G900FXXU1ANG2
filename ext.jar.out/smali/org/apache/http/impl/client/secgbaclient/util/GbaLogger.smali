@@ -12,12 +12,13 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/logging/impl/SimpleLog;-><init>(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;->setLevel(I)V
+    invoke-virtual {p0, v0}, Lorg/apache/commons/logging/impl/SimpleLog;->setLevel(I)V
 
     return-void
 .end method
@@ -26,6 +27,8 @@
 # virtual methods
 .method public d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -54,13 +57,15 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;->debug(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lorg/apache/commons/logging/impl/SimpleLog;->debug(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 .method public e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -89,7 +94,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;->error(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lorg/apache/commons/logging/impl/SimpleLog;->error(Ljava/lang/Object;)V
 
     return-void
 .end method

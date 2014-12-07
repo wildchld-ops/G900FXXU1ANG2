@@ -50,11 +50,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v1}, Lgov/nist/core/NameValueList;->isEmpty()Z
 
@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v2, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     invoke-virtual {v2}, Lgov/nist/core/NameValueList;->encode()Ljava/lang/String;
 
@@ -89,7 +89,7 @@
 
     const-string v0, "cause"
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/Reason;->getParameterAsInt(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameterAsInt(Ljava/lang/String;)I
 
     move-result v0
 
@@ -115,7 +115,7 @@
 .method public getText()Ljava/lang/String;
     .locals 2
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "text"
 
@@ -128,13 +128,14 @@
 
 .method public setCause(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
         }
     .end annotation
 
-    iget-object v0, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "cause"
 
@@ -149,6 +150,7 @@
 
 .method public setProtocol(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -162,6 +164,7 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -183,7 +186,7 @@
     move-result-object p1
 
     :cond_0
-    iget-object v0, p0, Lgov/nist/javax/sip/header/Reason;->parameters:Lgov/nist/core/NameValueList;
+    iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
     const-string v1, "text"
 

@@ -103,7 +103,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -115,7 +115,7 @@
 
     move-result-object v2
 
-    #calls: Lorg/apache/commons/logging/LogFactory;->logDiagnostic(Ljava/lang/String;)V
+    # invokes: Lorg/apache/commons/logging/LogFactory;->logDiagnostic(Ljava/lang/String;)V
     invoke-static {v2}, Lorg/apache/commons/logging/LogFactory;->access$000(Ljava/lang/String;)V
 
     goto :goto_0

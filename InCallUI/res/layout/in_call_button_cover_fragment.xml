@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtonsCover" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/cover_speakerButton" android:background="@drawable/clear_during_speaker_icon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="19.0dip" android:layout_marginBottom="58.0dip" android:textOn="" android:textOff="" android:layout_alignParentBottom="true" android:contentDescription="@string/onscreenSpeakerText" />
+    <ToggleButton android:id="@id/cover_muteButton" android:background="@drawable/clear_during_mute_icon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="58.0dip" android:textOn="" android:textOff="" android:layout_toRightOf="@id/cover_speakerButton" android:layout_alignParentBottom="true" android:contentDescription="@string/onscreenMuteText" />
+    <com.android.incallui.widget.incomingwidget.IncomingCallImageWidget android:id="@id/incallImageWidget" android:tag="cover_incall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coverToast" android:background="@drawable/tw_toast_frame_holo_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/coverToastText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/long_click_guide" android:shadowColor="#bb000000" android:shadowRadius="2.75" />
+    </LinearLayout>
+</RelativeLayout>

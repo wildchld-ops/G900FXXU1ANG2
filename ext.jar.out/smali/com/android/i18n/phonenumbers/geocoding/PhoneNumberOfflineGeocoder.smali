@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final LOGGER:Ljava/util/logging/Logger; = null
+.field private static final LOGGER:Ljava/util/logging/Logger;
 
 .field private static final MAPPING_DATA_DIRECTORY:Ljava/lang/String; = "/com/android/i18n/phonenumbers/geocoding/data/"
 
@@ -56,6 +56,7 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,6 +87,7 @@
 
 .method private canBeGeocoded(Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;)Z
     .locals 1
+    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;->FIXED_LINE:Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
@@ -113,6 +115,7 @@
 
 .method private static close(Ljava/io/InputStream;)V
     .locals 4
+    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -132,7 +135,7 @@
 
     sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -143,6 +146,10 @@
 
 .method private getAreaDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getCountryCode()I
 
@@ -238,6 +245,8 @@
 
 .method private getCountryNameForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/util/Locale;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -291,6 +300,10 @@
 
 .method private getPhonePrefixDescriptions(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMap;
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->mappingFileProvider:Lcom/android/i18n/phonenumbers/geocoding/MappingFileProvider;
 
@@ -334,6 +347,8 @@
 
 .method private getRegionDisplayName(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/util/Locale;
 
     if-eqz p1, :cond_0
 
@@ -375,6 +390,7 @@
 
 .method private loadAreaCodeMapFromFile(Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     const-class v5, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;
 
@@ -407,8 +423,8 @@
 
     invoke-direct {v2, v4}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :try_start_1
     new-instance v3, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMap;
@@ -421,8 +437,8 @@
 
     invoke-interface {v5, p1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     invoke-static {v2}, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->close(Ljava/io/InputStream;)V
 
@@ -440,7 +456,7 @@
 
     sget-object v6, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v7
 
@@ -511,16 +527,16 @@
 
     invoke-direct {v2, v3}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :try_start_1
     iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->mappingFileProvider:Lcom/android/i18n/phonenumbers/geocoding/MappingFileProvider;
 
     invoke-virtual {v4, v2}, Lcom/android/i18n/phonenumbers/geocoding/MappingFileProvider;->readExternal(Ljava/io/ObjectInput;)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     invoke-static {v2}, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->close(Ljava/io/InputStream;)V
 
@@ -538,7 +554,7 @@
 
     sget-object v5, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -575,6 +591,7 @@
 
 .method private mayFallBackToEnglish(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "zh"
 
@@ -615,6 +632,8 @@
 # virtual methods
 .method public getDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/util/Locale;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -654,6 +673,9 @@
 
 .method public getDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/util/Locale;
+    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -693,6 +715,8 @@
 
 .method public getDescriptionForValidNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 5
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/util/Locale;
 
     invoke-virtual {p2}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -727,6 +751,9 @@
 
 .method public getDescriptionForValidNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
+    .param p2    # Ljava/util/Locale;
+    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 

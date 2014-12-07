@@ -77,6 +77,7 @@
 
 .method private static close(Ljava/io/InputStream;)V
     .locals 4
+    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -96,7 +97,7 @@
 
     sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -107,6 +108,7 @@
 
 .method static getAlternateFormatsForCountry(I)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 3
+    .param p0    # I
 
     sget-object v0, Lcom/android/i18n/phonenumbers/MetadataManager;->countryCodeSet:Ljava/util/Set;
 
@@ -177,6 +179,7 @@
 
 .method private static loadMetadataFromFile(I)V
     .locals 10
+    .param p0    # I
 
     const-class v7, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher;
 
@@ -209,8 +212,8 @@
 
     invoke-direct {v4, v6}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :try_start_1
     new-instance v0, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadataCollection;
@@ -252,8 +255,8 @@
 
     invoke-interface {v7, v8, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     goto :goto_0
 
@@ -268,7 +271,7 @@
 
     sget-object v8, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-virtual {v1}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v9
 

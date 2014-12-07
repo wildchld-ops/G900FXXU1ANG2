@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="related_items_per_row">4</integer>
+    <integer name="creator_moreby_items_per_row">4</integer>
+    <integer name="creator_related_items_per_row">2</integer>
+    <integer name="music_items_per_row">3</integer>
+    <integer name="antenna_num_items_per_row">4</integer>
+    <integer name="num_items_per_list_column">4</integer>
+    <integer name="play_featured_grid_width">3</integer>
+    <integer name="play_regular_grid_width">2</integer>
+    <integer name="editorial_bucket_columns">2</integer>
+</resources>

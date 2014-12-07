@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Şadyýan</item>
+        <item>Sad</item>
+        <item>Göz gyrpmak</item>
+        <item>Dil ýelmeşip çykdy</item>
+        <item>Haýran galdy</item>
+        <item>Ogşamak</item>
+        <item>Gaty ses çykýär</item>
+        <item>Salkyn</item>
+        <item>Pully agyz</item>
+        <item>Aýak agyzda</item>
+        <item>Utanan</item>
+        <item>Perişde</item>
+        <item>Çözülmedik</item>
+        <item>Ses çykarmak</item>
+        <item>Dodaklar ýapyşan</item>
+        <item>Gülýän</item>
+        <item>Bulaşyk</item>
+        <item>Ýürek</item>
+        <item>Däli</item>
+        <item>Kinaýaly ýylgyryş</item>
+        <item>Biperwaý ýüz</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Enjamyň şrift ölçegini ulanyň</item>
+        <item>Kiçijek</item>
+        <item>Kiçi</item>
+        <item>Normal</item>
+        <item>Uly</item>
+        <item>Uly</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Enjamyň şrift ölçegini ulanyň</item>
+        <item>Ownuk</item>
+        <item>Çenden aşa kiçi</item>
+        <item>Kiçi</item>
+        <item>Ortaça</item>
+        <item>Uly</item>
+        <item>Çenden aşa uly</item>
+        <item>Ägirt uly</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>Ähli kanallar</item>
+        <item>Meniň kanallarym</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>GSM elipbiý</item>
+        <item>Unicode</item>
+        <item>Awtomatiki</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 gün</item>
+        <item>1 gün</item>
+        <item>2 gün</item>
+        <item>3 gün</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Çäklendiriler</item>
+        <item>Duýduryş</item>
+        <item>Mugt</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Hemişe</item>
+        <item>Prompt</item>
+        <item>Hiç haçan</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Origami</item>
+        <item>Belgi</item>
+        <item>Pop</item>
+        <item>Zamanabap</item>
+        <item>Melewşe</item>
+        <item>Defolt</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>Bir gezek</item>
+        <item>Her 2 minutda</item>
+        <item>Her 15 minutdan</item>
+        <item>Öçürmek</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Hiç haçan</item>
+        <item>Her 2 minutda</item>
+        <item>Her 10 minutda</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array_values">
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>Ýerli</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 sagat</item>
+        <item>6 sagat</item>
+        <item>24 sagat</item>
+        <item>2 gün</item>
+        <item>Ulgam ýalňyşy</item>
+        <item>Iň köp</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>Beýik</item>
+        <item>Kadaly</item>
+        <item>Pes</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Häziriň özünde</item>
+        <item>1 sagat</item>
+        <item>6 sagat</item>
+        <item>24 sagat</item>
+        <item>1 hepde</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 sekunt</item>
+        <item>5 sekunt</item>
+        <item>10 sekunt</item>
+        <item>20 sekunt</item>
+        <item>30 sekunt</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Ýap</item>
+        <item>Ähli hatlary bloklamak</item>
+        <item>Hasaba alnan sanlary we gepleşikleri bloklamak</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Edil şoňa meňzeş</item>
+        <item>… Bilen başlaýar</item>
+        <item>Gutarýar</item>
+        <item>Özüne alýar</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>žurnallar</item>
+        <item>Kontaktlar</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Jaňy bloklamak</item>
+        <item>Hatyň bloklanmagy</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Ses jaňy bloklandy</item>
+        <item>Wideo ses blogy</item>
+        <item>Hatyň bloklanmagy</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Bagyşlaň, siziň jaňyňyza jogap berip bilmedim.</item>
+        <item>Men gijä galýaryn, ýöne basym şol ýerde bolaryn.</item>
+        <item>Işler nähili?</item>
+        <item>Näme boldy?</item>
+        <item>Sen nirede?</item>
+        <item>Şu haty alanyňyzda maňa jaň ediň.</item>
+        <item>Biz haçan duşuşyp bileris?</item>
+        <item>Çalt wagtdan siz bilen gürleşerin.</item>
+        <item>Ýygnak nirede?</item>
+        <item>Belgi näçe?</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Brazilia Portugalçasy</item>
+        <item>Iňlisçe (UK)</item>
+        <item>Iňlisçe (ABŞ)</item>
+        <item>Fransuz</item>
+        <item>Nemes dili</item>
+        <item>Italýan</item>
+        <item>Ýapon</item>
+        <item>Koreý dili</item>
+        <item>Sada hytaýça</item>
+        <item>Rusça</item>
+        <item>Ispan</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Kiçijik</item>
+        <item>Kiçi</item>
+        <item>Normal</item>
+        <item>Uly</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>Ähli</item>
+        <item>Iberiji</item>
+        <item>Material</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 sekunt</item>
+        <item>2 sekunt</item>
+        <item>3 sekunt</item>
+        <item>4 sekunt</item>
+        <item>5 sekunt</item>
+        <item>6 sekunt</item>
+        <item>7 seconds</item>
+        <item>8 sekunt</item>
+        <item>9 seconds</item>
+        <item>10 sekunt</item>
+        <item>Başgalar…</item>
+    </string-array>
+    <string-array name="pref_entries_message_skin">
+        <item>Gök</item>
+        <item>Mele</item>
+        <item>Mydama ýaşyl</item>
+        <item>Mono</item>
+        <item>Käwat neşe serişdesini ulanmak</item>
+    </string-array>
+    <string-array name="pref_entries_background_style">
+        <item>Fon 1</item>
+        <item>Fon 2</item>
+        <item>Fon 3</item>
+        <item>Fon 4</item>
+        <item>Fon 5</item>
+        <item>Fon 6</item>
+    </string-array>
+    <string-array name="pref_entries_text_field_color">
+        <item>Gara</item>
+        <item>Ak</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Hemişe</item>
+        <item>Diňe sessiz režimde</item>
+        <item>Hiç haçan</item>
+    </string-array>
+</resources>

@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$2;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,10 +36,11 @@
 # virtual methods
 .method public onInit(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$2;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mDestroyed:Z
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mDestroyed:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$400(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Z
 
     move-result v0
@@ -48,7 +49,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$2;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
     invoke-static {v0}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$100(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/speech/tts/TextToSpeech;
 
     move-result-object v0

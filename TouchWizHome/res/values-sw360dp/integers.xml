@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="home_cellCountX">4</integer>
+    <integer name="home_cellCountY">4</integer>
+    <integer name="home_pageIndicatorMaxVisible">9</integer>
+    <integer name="page_snap_animation_duration">550</integer>
+    <integer name="hotseat_cellCountX">5</integer>
+    <integer name="hotseat_cellCountY">1</integer>
+    <integer name="menuAppsGrid_cellCountX">4</integer>
+    <integer name="menuAppsGrid_cellCountY">5</integer>
+    <integer name="menu_pageIndicatorMaxVisible">11</integer>
+    <integer name="menuAppsGrid_clingFocusedX">1</integer>
+    <integer name="menuAppsGrid_clingFocusedY">1</integer>
+    <integer name="menuWidgets_cellCountX">2</integer>
+    <integer name="menuWidgets_cellCountY">3</integer>
+    <integer name="max_folder_visible_rows">4</integer>
+    <integer name="max_folder_visible_cols">4</integer>
+    <integer name="folderIcon_animation_GapX">8</integer>
+    <integer name="folderIcon_animation_GapY">10</integer>
+</resources>

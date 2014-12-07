@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.play.layout.PlayTextView android:textSize="30.0sp" android:textColor="@color/play_fg_primary" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warm_welcome_own_profile_title" style="@style/PlayThinText" />
+    <com.google.android.play.layout.PlayTextView android:textSize="14.0sp" android:textColor="@color/play_fg_details_secondary" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warm_welcome_own_profile_body" finsky:allowsCompactLineSpacing="true" style="@style/PlayLightText" />
+    <View android:background="@color/translucent_separator_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/darkgrey" android:gravity="center_vertical" android:id="@id/got_it" android:background="@drawable/highlight_overlay_light" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warm_welcome_own_profile_got_it" android:drawableLeft="@drawable/ic_check" android:drawablePadding="2.0dip" style="@style/PlayPlainText" />
+</merge>

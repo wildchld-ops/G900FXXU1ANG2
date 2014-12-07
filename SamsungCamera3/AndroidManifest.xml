@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sec.android.app.camera">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DEV_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE">
+        <group gid="media_rw"/>
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.samsung.helphub.permission.GET_DATA"/>
+    <uses-permission android:name="com.samsung.helphub.permission.WRITE_DATA"/>
+    <uses-permission android:name="com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="com.sec.chaton.TOKEN_74e548bcd7dc013c8f8b585ba11ad16b271ceebb0acbe6c001c0aecdae65f37b366963990139710b4b5c3238053d25b7940d90c9f30e04a119c6c3dd94c276d32ec19cc4a4906ccbae88b80158ce08440ba5b1d7e14b864a076e31fa3e478f51ff186b2e995cc4d9503987cc3b80efdc331d7626ae145ce1810604514abd5fd9"/>
+    <uses-permission android:name="com.samsung.helphub.permission.HELP"/>
+    <uses-permission android:name="com.samsung.android.provider.filterprovider.permission.READ_FILTER"/>
+    <uses-permission android:name="com.samsung.android.provider.filterprovider.permission.WRITE_FILTER"/>
+    <uses-permission android:name="com.samsung.android.provider.shootingmodeprovider.permission.READ_SHOOTINGMODE"/>
+    <uses-permission android:name="com.samsung.android.provider.shootingmodeprovider.permission.WRITE_SHOOTINGMODE"/>
+    <uses-permission android:name="com.samsung.android.provider.shootingmodeprovider.permission.RECEIVE_UPDATE"/>
+    <uses-permission android:name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"/>
+    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.samsung.android.app.assistantmenu.permission.ADVERTISE_ASSISTANTMENU"/>
+    <permission android:description="@string/permission_shooting_mode_descr" android:label="@string/permission_shooting_mode" android:name="com.sec.android.app.camera.permission.SHOOTING_MODE" android:permissionGroup="android.permission-group.CAMERA" android:protectionLevel="dangerous"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <supports-screens android:anyDensity="true" android:normalScreens="true"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="false" android:icon="@drawable/tw30_icon_camera" android:label="@string/app_name" android:largeHeap="true">
+        <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <receiver android:name="CameraButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="BootCamera">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="SharingChatOnResponseReceiver">
+            <intent-filter>
+                <action android:name="com.sec.chaton.chat.background.MESSAGE_SEND_RESULT"/>
+                <data android:scheme="com.sec.android.app.camera"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:icon="@drawable/tw30_icon_camera" android:label="@string/camera_label" android:launchMode="standard" android:name=".Camera" android:taskAffinity="android.task.camera" android:theme="@style/TransparentTheme">
+            <meta-data android:name="assistant" android:resource="@xml/assistant"/>
+            <intent-filter android:label="@string/camera_label">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/camera_label">
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/camera_label">
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.shoot.userchanged"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.contextaware.HEADSET_PLUG"/>
+            </intent-filter>
+            <meta-data android:name="com.android.keyguard.layout" android:resource="@layout/keyguard_widget"/>
+        </activity>
+        <activity-alias android:icon="@drawable/ic_launcher_camera_record" android:label="@string/camcorder_label" android:name=".Camcorder" android:targetActivity=".Camera">
+            <intent-filter android:label="@string/camcorder_label">
+                <action android:name="android.media.action.VIDEO_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/camcorder_label">
+                <action android:name="android.media.action.VIDEO_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.shoot.userchanged"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|uiMode|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="" android:name="QuickShot" android:screenOrientation="landscape" android:theme="@style/TransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|uiMode|screenSize" android:excludeFromRecents="true" android:label="" android:name=".DummyActivity" android:theme="@style/TransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:exported="false" android:label="" android:name="CropImage" android:process=":CropImage" android:theme="@style/TransparentTheme">
+            <intent-filter android:label="@string/crop_label">
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name=".DirectShareService">
+            <intent-filter>
+                <action android:name="com.sec.android.app.camera.DirectShareService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name=".service.PlugInShootingModesService">
+            <intent-filter>
+                <action android:name="com.sec.android.app.camera.service.ACTION_SEARCH_SHOOTING_MODES"/>
+                <action android:name="com.sec.android.app.camera.service.ACTION_CLEAN_DEX_FOLDER"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/shootingmode_manager_name" android:name="com.sec.android.app.shootingmodemanager.ManageShootingModeActivity" android:theme="@style/ShootingModeManagerTheme"/>
+        <uses-library android:name="seccamera"/>
+        <uses-library android:name="sec_feature"/>
+        <uses-library android:name="sechardware"/>
+        <uses-library android:name="secmediarecorder"/>
+        <uses-library android:name="secvision"/>
+    </application>
+</manifest>

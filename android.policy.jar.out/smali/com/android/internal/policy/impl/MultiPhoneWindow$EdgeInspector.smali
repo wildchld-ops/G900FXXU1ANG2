@@ -39,10 +39,12 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 1
+    .param p1    # Landroid/graphics/Rect;
+    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$EdgeInspector;->mDir:I
 
@@ -57,6 +59,8 @@
 # virtual methods
 .method public check(II)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -303,6 +307,7 @@
 
 .method public isEdge(I)Z
     .locals 1
+    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$EdgeInspector;->mDir:I
 
@@ -323,6 +328,8 @@
 
 .method public set(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 1
+    .param p1    # Landroid/graphics/Rect;
+    .param p2    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$EdgeInspector;->mBound:Landroid/graphics/Rect;
 

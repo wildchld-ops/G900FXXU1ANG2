@@ -15,6 +15,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/protocol/HttpContext;)V
     .locals 2
+    .param p1    # Lorg/apache/http/protocol/HttpContext;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,6 +42,7 @@
 # virtual methods
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lorg/apache/http/protocol/DefaultedHttpContext;->local:Lorg/apache/http/protocol/HttpContext;
 
@@ -69,6 +72,7 @@
 
 .method public removeAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/protocol/DefaultedHttpContext;->local:Lorg/apache/http/protocol/HttpContext;
 
@@ -81,6 +85,8 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lorg/apache/http/protocol/DefaultedHttpContext;->local:Lorg/apache/http/protocol/HttpContext;
 

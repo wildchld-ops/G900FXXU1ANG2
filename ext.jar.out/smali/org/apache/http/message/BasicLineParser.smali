@@ -39,6 +39,7 @@
 
 .method public constructor <init>(Lorg/apache/http/ProtocolVersion;)V
     .locals 0
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,6 +55,8 @@
 
 .method public static final parseHeader(Ljava/lang/String;Lorg/apache/http/message/LineParser;)Lorg/apache/http/Header;
     .locals 3
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/LineParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -95,6 +98,8 @@
 
 .method public static final parseProtocolVersion(Ljava/lang/String;Lorg/apache/http/message/LineParser;)Lorg/apache/http/ProtocolVersion;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/LineParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -146,6 +151,8 @@
 
 .method public static final parseRequestLine(Ljava/lang/String;Lorg/apache/http/message/LineParser;)Lorg/apache/http/RequestLine;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/LineParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -197,6 +204,8 @@
 
 .method public static final parseStatusLine(Ljava/lang/String;Lorg/apache/http/message/LineParser;)Lorg/apache/http/StatusLine;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lorg/apache/http/message/LineParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -250,6 +259,8 @@
 # virtual methods
 .method protected createProtocolVersion(II)Lorg/apache/http/ProtocolVersion;
     .locals 1
+    .param p1    # I
+    .param p2    # I
 
     iget-object v0, p0, Lorg/apache/http/message/BasicLineParser;->protocol:Lorg/apache/http/ProtocolVersion;
 
@@ -262,6 +273,9 @@
 
 .method protected createRequestLine(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/RequestLine;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Lorg/apache/http/ProtocolVersion;
 
     new-instance v0, Lorg/apache/http/message/BasicRequestLine;
 
@@ -272,6 +286,9 @@
 
 .method protected createStatusLine(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)Lorg/apache/http/StatusLine;
     .locals 1
+    .param p1    # Lorg/apache/http/ProtocolVersion;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/http/message/BasicStatusLine;
 
@@ -282,6 +299,8 @@
 
 .method public hasProtocolVersion(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Z
     .locals 9
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     const/4 v5, 0x1
 
@@ -443,6 +462,7 @@
 
 .method public parseHeader(Lorg/apache/http/util/CharArrayBuffer;)Lorg/apache/http/Header;
     .locals 1
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -458,6 +478,8 @@
 
 .method public parseProtocolVersion(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/ProtocolVersion;
     .locals 16
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -812,6 +834,8 @@
 
 .method public parseRequestLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/RequestLine;
     .locals 11
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -1033,6 +1057,8 @@
 
 .method public parseStatusLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/StatusLine;
     .locals 11
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -1200,6 +1226,8 @@
 
 .method protected skipWhitespace(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)V
     .locals 3
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/message/ParserCursor;
 
     invoke-virtual {p2}, Lorg/apache/http/message/ParserCursor;->getPos()I
 

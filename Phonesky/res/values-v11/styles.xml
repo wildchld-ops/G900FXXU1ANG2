@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PlayPopupSelector" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/PlayPopupSelectorAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+    </style>
+    <style name="AddInstrumentBodyTextPrimary">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+    </style>
+    <style name="AddInstrumentBodyTextSecondary">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+    </style>
+    <style name="AddInstrumentBodyTextAddressSnippet" parent="@style/AddInstrumentBodyTextPrimary">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SetupWizardProgressBar" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FinskyProgressSmallInverse" parent="@android:style/Widget.Holo.Light.ProgressBar.Small.Inverse" />
+    <style name="ButtonBarDefaultStyle" parent="@android:style/ButtonBar" />
+    <style name="RedeemCodeEditText" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="FinskyTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@color/play_main_background</item>
+        <item name="android:ratingBarStyleSmall">@style/PlayRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/FinskyActionBarTabStyle</item>
+        <item name="android:actionMenuTextColor">@color/action_bar_menu_color</item>
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="InstrumentTheme" parent="@android:style/Theme.Holo" />
+    <style name="FinskyBaseDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog" />
+    <style name="FinskyDialogTheme" parent="@style/FinskyBaseDialogTheme">
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="FinskyDarkDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="FinskyLightDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="SettingsTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/play_main_background</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="android:actionMenuTextColor">@color/action_bar_menu_color</item>
+    </style>
+    <style name="DialogWhenLarge" parent="@style/FinskyTheme" />
+    <style name="DialogWithTitleWhenLarge" parent="@style/FinskyTheme" />
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyTheme" />
+    <style name="Fullscreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+    <style name="LightWidgetTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="TrampolineTheme" parent="@android:style/Theme.Holo.Panel" />
+    <style name="FinskyActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:icon">@mipmap/ic_menu_play_store</item>
+        <item name="android:background">@drawable/action_bar_bg_home</item>
+        <item name="android:titleTextStyle">@style/FinskyActionBarTitleTextStyle</item>
+    </style>
+    <style name="FinskyActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/action_bar_tab</item>
+    </style>
+    <style name="FinskyActionBarTitleTextStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/action_bar_font_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ExternalAddCreditCardTheme" parent="@android:style/Theme.Holo.NoActionBar" />
+</resources>

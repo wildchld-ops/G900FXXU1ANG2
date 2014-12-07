@@ -14,6 +14,7 @@
 
 .method protected static getDefaultDomain(Lorg/apache/http/cookie/CookieOrigin;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/cookie/CookieOrigin;
 
     invoke-virtual {p0}, Lorg/apache/http/cookie/CookieOrigin;->getHost()Ljava/lang/String;
 
@@ -24,6 +25,7 @@
 
 .method protected static getDefaultPath(Lorg/apache/http/cookie/CookieOrigin;)Ljava/lang/String;
     .locals 3
+    .param p0    # Lorg/apache/http/cookie/CookieOrigin;
 
     invoke-virtual {p0}, Lorg/apache/http/cookie/CookieOrigin;->getPath()Ljava/lang/String;
 
@@ -56,6 +58,8 @@
 # virtual methods
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 4
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     if-nez p1, :cond_0
 
@@ -79,7 +83,7 @@
     throw v2
 
     :cond_1
-    invoke-virtual {p0}, Lorg/apache/http/impl/cookie/CookieSpecBase;->getAttribHandlers()Ljava/util/Collection;
+    invoke-virtual {p0}, Lorg/apache/http/impl/cookie/AbstractCookieSpec;->getAttribHandlers()Ljava/util/Collection;
 
     move-result-object v2
 
@@ -119,6 +123,8 @@
 
 .method protected parse([Lorg/apache/http/HeaderElement;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
     .locals 16
+    .param p1    # [Lorg/apache/http/HeaderElement;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -230,7 +236,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lorg/apache/http/impl/cookie/CookieSpecBase;->findAttribHandler(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;
+    invoke-virtual {v0, v12}, Lorg/apache/http/impl/cookie/AbstractCookieSpec;->findAttribHandler(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;
 
     move-result-object v6
 
@@ -260,6 +266,8 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 4
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;
@@ -288,7 +296,7 @@
     throw v2
 
     :cond_1
-    invoke-virtual {p0}, Lorg/apache/http/impl/cookie/CookieSpecBase;->getAttribHandlers()Ljava/util/Collection;
+    invoke-virtual {p0}, Lorg/apache/http/impl/cookie/AbstractCookieSpec;->getAttribHandlers()Ljava/util/Collection;
 
     move-result-object v2
 

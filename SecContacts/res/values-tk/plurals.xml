@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="listNumberOfTotalContacts">
+        <item quantity="other">%d sany kontakty görkezýär</item>
+        <item quantity="one">1 kontakt görkezilýär</item>
+    </plurals>
+    <plurals name="listNumberOfTotalPhoneContacts">
+        <item quantity="other">Telefon belgisi bolan %d kontakt görkezilip bilýär</item>
+        <item quantity="one">Telefon belgisi bolan 1 kontakt görkezilip bilýär</item>
+    </plurals>
+    <plurals name="listTotalPhoneContacts">
+        <item quantity="other">Telefon belgili %d kontakt bar</item>
+        <item quantity="one">telefon belgili 1 kontakt</item>
+    </plurals>
+    <plurals name="listTotalAllContacts">
+        <item quantity="other">%d kontakt</item>
+        <item quantity="one">1 baglanma</item>
+    </plurals>
+    <plurals name="listFoundAllContacts">
+        <item quantity="other">%d tapyldy</item>
+        <item quantity="one">1 tapyldy</item>
+    </plurals>
+    <plurals name="searchFoundContacts">
+        <item quantity="other">%d tapyldy</item>
+        <item quantity="one">1 tapyldy</item>
+    </plurals>
+    <plurals name="num_groups_in_account">
+        <item quantity="other">%0$d toparlar</item>
+        <item quantity="one">1 topar</item>
+    </plurals>
+    <plurals name="num_contacts_in_group">
+        <item quantity="other">%2$s toparda %1$d adam</item>
+        <item quantity="one">%2$s toparda %1$d adam</item>
+    </plurals>
+    <plurals name="group_list_num_contacts_in_group">
+        <item quantity="other">%d adam</item>
+        <item quantity="one">%1$d person</item>
+    </plurals>
+    <plurals name="notification_voicemail_title">
+        <item quantity="other">%d audio poçtalar</item>
+        <item quantity="one">Ses poçtasy</item>
+    </plurals>
+    <plurals name="copied_N">
+        <item quantity="other">%d kontaktlar nusgalandy.</item>
+        <item quantity="one">%d kontakt nusgalandy.</item>
+    </plurals>
+</resources>

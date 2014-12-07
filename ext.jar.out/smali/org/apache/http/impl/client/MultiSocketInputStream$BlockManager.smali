@@ -107,6 +107,7 @@
 
 .method static synthetic access$5000(Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;)[J
     .locals 1
+    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->socketSpeed:[J
 
@@ -115,12 +116,14 @@
 
 .method private getBlockForWithID(II)[J
     .locals 4
+    .param p1    # I
+    .param p2    # I
 
     const/4 v3, 0x0
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -138,7 +141,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -149,7 +152,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -162,7 +165,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -187,7 +190,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -207,7 +210,7 @@
     :cond_1
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -218,7 +221,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -236,7 +239,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -247,7 +250,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -299,7 +302,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -352,6 +355,7 @@
 
 .method private getContinuousChunk(I)[J
     .locals 17
+    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -379,7 +383,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mReadBlockNumber:Ljava/lang/Integer;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mReadBlockNumber:Ljava/lang/Integer;
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$4800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/lang/Integer;
 
     move-result-object v7
@@ -405,7 +409,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mReadBlockNumber:Ljava/lang/Integer;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mReadBlockNumber:Ljava/lang/Integer;
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$4800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/lang/Integer;
 
     move-result-object v7
@@ -425,7 +429,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -462,7 +466,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v7
@@ -490,7 +494,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -528,7 +532,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v2
@@ -541,7 +545,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v15
@@ -555,7 +559,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -570,7 +574,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v7
@@ -596,7 +600,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v7
@@ -609,7 +613,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v15
@@ -640,7 +644,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -665,7 +669,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -692,7 +696,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -707,7 +711,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v7
@@ -733,7 +737,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v7
@@ -746,7 +750,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v15
@@ -777,7 +781,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -799,7 +803,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v7
@@ -812,7 +816,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v15
@@ -834,7 +838,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -856,7 +860,7 @@
 
     iget-object v7, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v7}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v7
@@ -869,7 +873,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v15
@@ -919,7 +923,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -936,7 +940,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -972,7 +976,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -995,7 +999,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1021,7 +1025,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v2
@@ -1036,7 +1040,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v2
@@ -1090,7 +1094,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1105,7 +1109,7 @@
 
     iget-object v2, v0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -1161,6 +1165,7 @@
 
 .method private getMinNotReadBlock(I)[J
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1168,7 +1173,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1186,7 +1191,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1197,7 +1202,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1210,7 +1215,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1235,7 +1240,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1263,7 +1268,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1325,7 +1330,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1341,7 +1346,7 @@
     :cond_0
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1354,7 +1359,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1379,7 +1384,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v2
@@ -1410,6 +1415,8 @@
 
 .method private getNewBuf(II)[J
     .locals 13
+    .param p1    # I
+    .param p2    # I
 
     const/4 v1, 0x4
 
@@ -1417,7 +1424,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v12
@@ -1427,7 +1434,7 @@
     :try_start_0
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1440,7 +1447,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -1488,7 +1495,7 @@
     :cond_0
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -1548,7 +1555,7 @@
     :goto_0
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1562,15 +1569,15 @@
     :try_start_1
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :goto_1
     :try_start_2
@@ -1582,7 +1589,7 @@
     :cond_1
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v1
@@ -1593,7 +1600,7 @@
 
     iget-object v3, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
     invoke-static {v3}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v3
@@ -1618,7 +1625,7 @@
 
     iget-object v5, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v5}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v5
@@ -1663,7 +1670,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v4
@@ -1708,7 +1715,7 @@
     :try_start_3
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v1
@@ -1727,7 +1734,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v4
@@ -1840,7 +1847,7 @@
 
     iget-object v1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static {v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -1858,7 +1865,7 @@
 
     iget-object v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
     invoke-static {v2}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v2
@@ -1875,7 +1882,7 @@
 
     iget-object v6, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
     invoke-static {v6}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
 
     move-result-wide v6
@@ -1908,6 +1915,7 @@
 
 .method private statusToStr(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1961,12 +1969,14 @@
 # virtual methods
 .method public block(II)V
     .locals 2
+    .param p1    # I
+    .param p2    # I
 
     const/4 v1, -0x1
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v0}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v0
@@ -1999,7 +2009,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v4
@@ -2013,7 +2023,7 @@
     :goto_0
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v4
@@ -2024,7 +2034,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v4
@@ -2048,7 +2058,7 @@
 
     iget-object v5, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v5}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v5
@@ -2063,7 +2073,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v4
@@ -2077,7 +2087,7 @@
 
     iget-object v4, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v4}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v4
@@ -2090,7 +2100,7 @@
 
     iget-object v5, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v5}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v5
@@ -2121,7 +2131,7 @@
 
     iget-object v5, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->this$0:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static {v5}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v5
@@ -2186,6 +2196,8 @@
 
 .method public getNextHTTPBlock(ILorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;)[J
     .locals 30
+    .param p1    # I
+    .param p2    # Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
 
     move-object/from16 v0, p0
 
@@ -2197,7 +2209,7 @@
 
     move/from16 v1, p1
 
-    #calls: Lorg/apache/http/impl/client/MultiSocketInputStream;->getOtherSocketID(I)I
+    # invokes: Lorg/apache/http/impl/client/MultiSocketInputStream;->getOtherSocketID(I)I
     invoke-static {v0, v1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$4900(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
 
     move-result v16
@@ -2260,7 +2272,7 @@
 
     move-object/from16 v27, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v27 .. v27}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v27
@@ -2289,7 +2301,7 @@
 
     move-object/from16 v27, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v27 .. v27}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v27
@@ -2319,7 +2331,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v26
@@ -2364,7 +2376,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v26
@@ -2411,7 +2423,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v26
@@ -2434,7 +2446,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v26
@@ -2588,7 +2600,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v26
@@ -2625,7 +2637,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v26
@@ -2640,7 +2652,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
     move-result-object v26
@@ -2661,7 +2673,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockManager:Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockManager:Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
 
     move-result-object v27
@@ -2675,7 +2687,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockManager:Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockManager:Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
 
     move-result-object v26
@@ -2688,8 +2700,8 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/Object;->wait(J)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :goto_2
     :try_start_2
@@ -2789,7 +2801,7 @@
 
     move-object/from16 v27, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static/range {v27 .. v27}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v27
@@ -2812,7 +2824,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v26
@@ -2855,7 +2867,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
 
     move-result-object v26
@@ -3059,7 +3071,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v27
@@ -3073,7 +3085,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v26
@@ -3334,7 +3346,7 @@
     goto/16 :goto_4
 
     :cond_1a
-    const-wide/high16 v26, 0x4000
+    const-wide/high16 v26, 0x4000000000000000L
 
     cmpl-double v26, v5, v26
 
@@ -3507,7 +3519,7 @@
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/CustomHttpClient;->log(Ljava/lang/String;)V
 
     :cond_20
-    const-wide/high16 v26, 0x3ff8
+    const-wide/high16 v26, 0x3ff8000000000000L
 
     cmpg-double v26, v5, v26
 
@@ -3585,7 +3597,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v27
@@ -3599,7 +3611,7 @@
 
     move-object/from16 v26, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
     invoke-static/range {v26 .. v26}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
 
     move-result-object v26
@@ -3614,7 +3626,7 @@
 
     move-object/from16 v28, v0
 
-    #getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mMaxBlockNumber:I
+    # getter for: Lorg/apache/http/impl/client/MultiSocketInputStream;->mMaxBlockNumber:I
     invoke-static/range {v28 .. v28}, Lorg/apache/http/impl/client/MultiSocketInputStream;->access$3200(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
 
     move-result v28
@@ -3749,6 +3761,8 @@
 
 .method public setSpeed(IJ)V
     .locals 1
+    .param p1    # I
+    .param p2    # J
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->socketSpeed:[J
 

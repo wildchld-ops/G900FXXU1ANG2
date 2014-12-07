@@ -103,6 +103,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;
 
@@ -120,7 +121,7 @@
 
     sget-object v0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;->$VALUES:[Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;
 
-    invoke-virtual {v0}, [Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

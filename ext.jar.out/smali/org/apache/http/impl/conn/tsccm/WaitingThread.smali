@@ -16,6 +16,8 @@
 # direct methods
 .method public constructor <init>(Ljava/util/concurrent/locks/Condition;Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;)V
     .locals 2
+    .param p1    # Ljava/util/concurrent/locks/Condition;
+    .param p2    # Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,6 +43,7 @@
 # virtual methods
 .method public await(Ljava/util/Date;)Z
     .locals 4
+    .param p1    # Ljava/util/Date;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;

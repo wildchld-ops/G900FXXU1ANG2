@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">បាន​ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី %1$d</item>
+        <item quantity="one">បាន​ធ្វើ​បច្ចុប្បន្នភាព​​កម្មវិធី %1$d</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">មាន​បច្ចុប្បន្នភាព %1$d</item>
+        <item quantity="one">មាន​បច្ចុប្បន្នភាព %1$d</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">បច្ចុប្បន្នភាព​ %1$d តម្រូវ​ឲ្យ​យល់​ព្រម</item>
+        <item quantity="one">បច្ចុប្បន្នភាព​%1$d តម្រូវ​ឲ្យ​​យល់ព្រម</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">លទ្ធផល %1$d</item>
+        <item quantity="one">លទ្ធផល %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">បច្ចុប្បន្នភាព​ថ្មី %1$d</item>
+        <item quantity="one">បច្ចុប្បន្នភាព​ថ្មី %1$d</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">"មនុស្ស %1$s នាក់ +1'd នេះ។"</item>
+        <item quantity="one">"មនុស្ស %1$s នាក់ +1'd នេះ។"</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">"%1$s និង %2$s ផ្សេងទៀត +1'd នេះ។"</item>
+        <item quantity="one">"%1$s និង %2$s ផ្សេង​ទៀត +1'd នេះ។"</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s ផ្សេង​ទៀត</item>
+        <item quantity="one">+%1$d ផ្សេង​ទៀត</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">បាន​ជ្រើស %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">មាន​បច្ចុប្បន្នភាព</item>
+        <item quantity="one">មាន​​បច្ចុប្បន្នភាព</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">អ្នក​មាន​បច្ចុប្បន្នភាព %1$d ។ តើ​អ្នក​ចង់​ដំឡើង​វា​ដែរ​ឬ​ទេ?</item>
+        <item quantity="one">អ្នក​មាន​បច្ចុប្បន្នភាព %1$d ។ តើ​អ្នក​ចង់​ដំឡើង​វា​ដែរ​ឬ​ទេ?</item>
+    </plurals>
+</resources>

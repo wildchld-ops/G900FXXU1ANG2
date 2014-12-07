@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="24.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.FifeImageView android:id="@id/badge_icon" android:layout_width="@dimen/badge_container_icon_size" android:layout_height="@dimen/badge_container_icon_size" android:layout_marginRight="4.0dip" />
+    <TextView android:ellipsize="end" android:id="@id/badge_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/DetailsPage_BylineText" />
+</LinearLayout>

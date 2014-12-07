@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Broj ažuriranih aplikacija: %1$d</item>
+        <item quantity="one">Ažurirana je %1$d aplikacija</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Broj dostupnih ažuriranja: %1$d</item>
+        <item quantity="one">Dostupno je %1$d ažuriranje</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Br. ažuriranja za odobrenje: %1$d</item>
+        <item quantity="one">%1$d ažuriranje čeka odobrenje</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Broj rezultata: %1$d</item>
+        <item quantity="one">Broj rezultata: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Broj novih ažuriranja: %1$d</item>
+        <item quantity="one">%1$d novo ažuriranje</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Broj zvjezdica kojim ste ocijenili: %1$s</item>
+        <item quantity="one">Vaša ocjena: %1$s zvjezdica</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Osobe koje su ovome dale +1: %1$s</item>
+        <item quantity="one">Osoba %1$s ovome je dala +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s i još %2$s ovome je dodalo +1.</item>
+        <item quantity="one">%1$s i još %2$s ovome dodalo je +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">i još %1$s</item>
+        <item quantity="one">i još %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Odabrano: %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Dostupna su ažuriranja</item>
+        <item quantity="one">Dostupno je ažuriranje</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Dostupan vam je sljedeći broj ažuriranja: %1$d. Želite li ih instalirati?</item>
+        <item quantity="one">Dostupno vam je %1$d ažuriranje. Želite li ga instalirati?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">Broj krugova: %1$s</item>
+        <item quantity="one">%1$s krug</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">zvjezdice</item>
+        <item quantity="one">zvjezdica</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvj. – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvjezdica – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvj. – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvjezdica – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s zvj.&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s zvjezdica&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvj.</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s zvjezdica</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Ocijenjeno &amp;lt;b>%1$s zvj.&amp;lt;/b></item>
+        <item quantity="one">Ocijenjeno &amp;lt;b>%1$s zvjezdicom&amp;lt;/b></item>
+    </plurals>
+</resources>

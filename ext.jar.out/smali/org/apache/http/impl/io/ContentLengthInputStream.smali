@@ -20,6 +20,8 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;J)V
     .locals 3
+    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
+    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -163,6 +165,7 @@
 
 .method public read([B)I
     .locals 2
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -182,6 +185,9 @@
 
 .method public read([BII)I
     .locals 5
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -255,6 +261,7 @@
 
 .method public skip(J)J
     .locals 12
+    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

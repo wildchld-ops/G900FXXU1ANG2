@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpRequest;)V
     .locals 5
+    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -46,7 +47,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lorg/apache/http/impl/client/RequestWrapper;->setParams(Lorg/apache/http/params/HttpParams;)V
+    invoke-virtual {p0, v2}, Lorg/apache/http/message/AbstractHttpMessage;->setParams(Lorg/apache/http/params/HttpParams;)V
 
     instance-of v2, p1, Lorg/apache/http/client/methods/HttpUriRequest;
 
@@ -199,7 +200,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/RequestWrapper;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/message/AbstractHttpMessage;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v0
 
@@ -292,7 +293,7 @@
 .method public resetHeaders()V
     .locals 1
 
-    iget-object v0, p0, Lorg/apache/http/impl/client/RequestWrapper;->headergroup:Lorg/apache/http/message/HeaderGroup;
+    iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
     invoke-virtual {v0}, Lorg/apache/http/message/HeaderGroup;->clear()V
 
@@ -302,13 +303,14 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/RequestWrapper;->setHeaders([Lorg/apache/http/Header;)V
+    invoke-virtual {p0, v0}, Lorg/apache/http/message/AbstractHttpMessage;->setHeaders([Lorg/apache/http/Header;)V
 
     return-void
 .end method
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -328,6 +330,7 @@
 
 .method public setProtocolVersion(Lorg/apache/http/ProtocolVersion;)V
     .locals 0
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/RequestWrapper;->version:Lorg/apache/http/ProtocolVersion;
 
@@ -336,6 +339,7 @@
 
 .method public setURI(Ljava/net/URI;)V
     .locals 0
+    .param p1    # Ljava/net/URI;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/RequestWrapper;->uri:Ljava/net/URI;
 

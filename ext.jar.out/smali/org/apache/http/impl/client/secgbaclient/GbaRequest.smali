@@ -14,7 +14,7 @@
 
 .field public static final HEADER_USER_AGENT:Ljava/lang/String; = "User-Agent"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "GbaRequest"
 
@@ -74,6 +74,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,6 +147,7 @@
 
 .method protected static setCipherSuite(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 
@@ -158,6 +160,7 @@
 
 .method public static setDomain(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -181,6 +184,7 @@
 
 .method public static setImpi(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 
@@ -193,6 +197,7 @@
 
 .method public static setimei(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 

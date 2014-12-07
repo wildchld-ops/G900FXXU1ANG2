@@ -47,7 +47,7 @@
 
     iget-object v1, p0, Lgov/nist/core/HostPort;->host:Lgov/nist/core/Host;
 
-    invoke-virtual {v1}, Lgov/nist/core/Host;->clone()Ljava/lang/Object;
+    invoke-virtual {v1}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -79,6 +79,7 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
+    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/core/HostPort;->host:Lgov/nist/core/Host;
 
@@ -106,6 +107,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -232,6 +234,7 @@
 
 .method public merge(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObject;->merge(Ljava/lang/Object;)V
 
@@ -263,6 +266,7 @@
 
 .method public setHost(Lgov/nist/core/Host;)V
     .locals 0
+    .param p1    # Lgov/nist/core/Host;
 
     iput-object p1, p0, Lgov/nist/core/HostPort;->host:Lgov/nist/core/Host;
 
@@ -271,6 +275,7 @@
 
 .method public setPort(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lgov/nist/core/HostPort;->port:I
 

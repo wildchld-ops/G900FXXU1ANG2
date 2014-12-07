@@ -14,6 +14,7 @@
 
 .method public static handleException(Ljava/lang/Exception;)V
     .locals 3
+    .param p0    # Ljava/lang/Exception;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/RuntimeException;
@@ -32,7 +33,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -46,7 +47,7 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -60,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -79,6 +80,8 @@
 
 .method public static handleException(Ljava/lang/Exception;Lgov/nist/core/StackLogger;)V
     .locals 3
+    .param p0    # Ljava/lang/Exception;
+    .param p1    # Lgov/nist/core/StackLogger;
 
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
@@ -92,7 +95,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -116,7 +119,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -130,7 +133,7 @@
 
     invoke-interface {p1, v0}, Lgov/nist/core/StackLogger;->logError(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     invoke-interface {p1, p0}, Lgov/nist/core/StackLogger;->logException(Ljava/lang/Throwable;)V
 
@@ -146,7 +149,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -165,12 +168,13 @@
 
 .method public static handleException(Ljava/lang/String;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Exception;
 
     invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
@@ -191,6 +195,8 @@
 
 .method public static handleException(Ljava/lang/String;Lgov/nist/core/StackLogger;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Lgov/nist/core/StackLogger;
 
     invoke-interface {p1}, Lgov/nist/core/StackLogger;->logStackTrace()V
 

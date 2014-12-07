@@ -30,7 +30,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/header/SIPHeader;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -90,6 +90,7 @@
 
 .method public setDate(Lgov/nist/javax/sip/header/SIPDate;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/header/SIPDate;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/SIPDateHeader;->date:Lgov/nist/javax/sip/header/SIPDate;
 
@@ -98,6 +99,7 @@
 
 .method public setDate(Ljava/util/Calendar;)V
     .locals 3
+    .param p1    # Ljava/util/Calendar;
 
     if-eqz p1, :cond_0
 

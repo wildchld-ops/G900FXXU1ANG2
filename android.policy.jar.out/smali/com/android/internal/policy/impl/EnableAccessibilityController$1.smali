@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
+    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -48,7 +49,7 @@
     :pswitch_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$000(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/content/Context;
 
     move-result-object v1
@@ -61,7 +62,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$100(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/speech/tts/TextToSpeech;
 
     move-result-object v1
@@ -73,7 +74,7 @@
     :pswitch_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$000(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/content/Context;
 
     move-result-object v1
@@ -86,7 +87,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$100(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/speech/tts/TextToSpeech;
 
     move-result-object v1
@@ -98,12 +99,12 @@
     :pswitch_2
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #calls: Lcom/android/internal/policy/impl/EnableAccessibilityController;->enableAccessibility()V
+    # invokes: Lcom/android/internal/policy/impl/EnableAccessibilityController;->enableAccessibility()V
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$200(Lcom/android/internal/policy/impl/EnableAccessibilityController;)V
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTone:Landroid/media/Ringtone;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTone:Landroid/media/Ringtone;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$300(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/media/Ringtone;
 
     move-result-object v1
@@ -112,14 +113,14 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
     invoke-static {v1}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$100(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/speech/tts/TextToSpeech;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController$1;->this$0:Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
-    #getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->access$000(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/content/Context;
 
     move-result-object v2

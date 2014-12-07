@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -42,7 +44,7 @@
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
-    #getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->EnableLinuxCOMMONAPI4:Ljava/lang/String;
+    # getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->EnableLinuxCOMMONAPI4:Ljava/lang/String;
     invoke-static {v3}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->access$1400(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)Ljava/lang/String;
 
     move-result-object v3
@@ -112,7 +114,7 @@
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
-    #getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
+    # getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
     invoke-static {v4}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->access$1500(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)I
 
     move-result v4
@@ -130,7 +132,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
-    #getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
+    # getter for: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
     invoke-static {v2}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->access$1500(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)I
 
     move-result v2
@@ -139,7 +141,7 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
-    #calls: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->setUvsOrieatation(I)V
+    # invokes: Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->setUvsOrieatation(I)V
     invoke-static {v2, v1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->access$1600(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;I)V
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;

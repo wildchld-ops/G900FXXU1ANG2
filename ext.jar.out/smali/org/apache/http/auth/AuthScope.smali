@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final ANY:Lorg/apache/http/auth/AuthScope; = null
+.field public static final ANY:Lorg/apache/http/auth/AuthScope;
 
-.field public static final ANY_HOST:Ljava/lang/String; = null
+.field public static final ANY_HOST:Ljava/lang/String;
 
 .field public static final ANY_PORT:I = -0x1
 
@@ -56,6 +56,8 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     sget-object v0, Lorg/apache/http/auth/AuthScope;->ANY_REALM:Ljava/lang/String;
 
@@ -68,6 +70,9 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/http/auth/AuthScope;->ANY_SCHEME:Ljava/lang/String;
 
@@ -78,6 +83,10 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -132,6 +141,7 @@
 
 .method public constructor <init>(Lorg/apache/http/auth/AuthScope;)V
     .locals 2
+    .param p1    # Lorg/apache/http/auth/AuthScope;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -177,6 +187,7 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -316,6 +327,7 @@
 
 .method public match(Lorg/apache/http/auth/AuthScope;)I
     .locals 4
+    .param p1    # Lorg/apache/http/auth/AuthScope;
 
     const/4 v1, -0x1
 

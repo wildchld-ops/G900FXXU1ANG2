@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="48.0dip">
+        <LinearLayout android:id="@id/revert_menu_item" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/wifi_ap_menu_delete">
+            <TextView android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:gravity="center" android:id="@id/revert_menu_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wifi_cancel" android:singleLine="true" style="?android:attr/actionButtonStyle" />
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="?android:actionBarDivider" android:layout_width="@dimen/custom_actionbar_divider_width" android:layout_height="26.0dip" />
+        <LinearLayout android:id="@id/save_menu_item" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/wifi_ap_allowed_device_add_button" style="?android:attr/actionButtonStyle">
+            <TextView android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:gravity="center" android:id="@id/save_menu_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/motion_tutorial_done_btn" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

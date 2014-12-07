@@ -48,13 +48,13 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$ProvisionalResponseTask;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->isTerminated()Z
+    invoke-virtual {v0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isTerminated()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPServerTransaction$ProvisionalResponseTask;->cancel()Z
+    invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
 
     :cond_0
     :goto_0
@@ -73,7 +73,7 @@
 
     if-ne v1, v2, :cond_0
 
-    #calls: Lgov/nist/javax/sip/stack/SIPServerTransaction;->fireReliableResponseRetransmissionTimer()V
+    # invokes: Lgov/nist/javax/sip/stack/SIPServerTransaction;->fireReliableResponseRetransmissionTimer()V
     invoke-static {v0}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->access$000(Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
 
     iget v1, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$ProvisionalResponseTask;->ticks:I
@@ -92,7 +92,7 @@
 
     if-lt v1, v2, :cond_0
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPServerTransaction$ProvisionalResponseTask;->cancel()Z
+    invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$ProvisionalResponseTask;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 

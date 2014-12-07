@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="use_dynamic_button_on_details">true</bool>
+    <bool name="play_dynamic_column_count">true</bool>
+    <bool name="play_merch_banner_compact">false</bool>
+    <bool name="play_can_use_mini_cards">false</bool>
+    <bool name="play_follow_person_cluster_vertical_stack">false</bool>
+</resources>

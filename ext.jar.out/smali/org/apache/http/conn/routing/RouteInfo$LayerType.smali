@@ -87,6 +87,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/apache/http/conn/routing/RouteInfo$LayerType;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
@@ -104,7 +105,7 @@
 
     sget-object v0, Lorg/apache/http/conn/routing/RouteInfo$LayerType;->$VALUES:[Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
-    invoke-virtual {v0}, [Lorg/apache/http/conn/routing/RouteInfo$LayerType;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

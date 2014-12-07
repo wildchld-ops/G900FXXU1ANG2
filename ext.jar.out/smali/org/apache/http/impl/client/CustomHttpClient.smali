@@ -132,6 +132,7 @@
 
 .method public constructor <init>(I)V
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -164,6 +165,7 @@
 
 .method public static bBothInfAvail(I)Z
     .locals 5
+    .param p0    # I
 
     const/4 v2, 0x1
 
@@ -240,6 +242,9 @@
 
 .method public static getAddrsByHost(JLjava/lang/String;I)[Ljava/net/InetAddress;
     .locals 14
+    .param p0    # J
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;
@@ -361,8 +366,8 @@
     :try_start_2
     invoke-virtual {v7, v2, v3}, Ljava/lang/Object;->wait(J)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :goto_1
     :try_start_3
@@ -543,6 +548,8 @@
 
 .method public static getIPStyle(Ljava/net/InetAddress;I)I
     .locals 5
+    .param p0    # Ljava/net/InetAddress;
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -606,6 +613,8 @@
 
 .method protected static getLocalAddrEx(II)Ljava/net/InetAddress;
     .locals 1
+    .param p0    # I
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -651,7 +660,7 @@
 
     invoke-direct {v3, v4}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v3, v0}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -739,6 +748,8 @@
 
 .method private static getSBInterface(II)Ljava/net/InetAddress;
     .locals 9
+    .param p0    # I
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1025,6 +1036,7 @@
 
 .method private static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 4
+    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -1106,6 +1118,8 @@
 
 .method private isExcluded(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1360,6 +1374,7 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1403,6 +1418,7 @@
 
 .method public static log(Ljava/lang/Throwable;)V
     .locals 3
+    .param p0    # Ljava/lang/Throwable;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1450,6 +1466,7 @@
 
 .method private static logToFile(Ljava/lang/String;)V
     .locals 7
+    .param p0    # Ljava/lang/String;
 
     sget-object v4, Lorg/apache/http/impl/client/CustomHttpClient;->logFileLocker:Ljava/lang/Object;
 
@@ -1545,14 +1562,14 @@
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
+    invoke-virtual {v3, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     sget-object v3, Lorg/apache/http/impl/client/CustomHttpClient;->fHttpFileLog:Ljava/io/BufferedWriter;
 
     invoke-virtual {v3}, Ljava/io/BufferedWriter;->newLine()V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_0
     :goto_0
@@ -1567,7 +1584,7 @@
 
     invoke-direct {v5}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v3, v5}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v3, v5}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1603,14 +1620,14 @@
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
+    invoke-virtual {v3, v5}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     sget-object v3, Lorg/apache/http/impl/client/CustomHttpClient;->fHttpFileLog:Ljava/io/BufferedWriter;
 
     invoke-virtual {v3}, Ljava/io/BufferedWriter;->newLine()V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :goto_1
     :try_start_3
@@ -1674,6 +1691,8 @@
 
 .method public static reportSBUsage(J[J)V
     .locals 9
+    .param p0    # J
+    .param p2    # [J
 
     :try_start_0
     invoke-static {}, Lorg/apache/http/impl/client/CustomHttpClient;->getService()V
@@ -1802,6 +1821,8 @@
 
 .method public static submitMultiSocketData([J[J)V
     .locals 10
+    .param p0    # [J
+    .param p1    # [J
 
     const-wide/16 v8, 0x0
 
@@ -1997,6 +2018,8 @@
 # virtual methods
 .method protected autoEnableMultiRAT(ZI)I
     .locals 9
+    .param p1    # Z
+    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -2177,7 +2200,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v5
 
@@ -2260,7 +2283,7 @@
 
     new-instance v7, Ljava/lang/IllegalAccessError;
 
-    invoke-virtual {v3}, Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -2273,7 +2296,7 @@
 
     new-instance v7, Ljava/lang/InstantiationError;
 
-    invoke-virtual {v3}, Ljava/lang/InstantiationException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -2284,7 +2307,7 @@
     :cond_1
     new-instance v2, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v7
 
@@ -2295,28 +2318,29 @@
 
 .method public createClientRequestDirector(Lorg/apache/http/HttpRequest;)Lorg/apache/http/impl/client/DefaultRequestDirector;
     .locals 14
+    .param p1    # Lorg/apache/http/HttpRequest;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getRequestExecutor()Lorg/apache/http/protocol/HttpRequestExecutor;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getRequestExecutor()Lorg/apache/http/protocol/HttpRequestExecutor;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getConnectionReuseStrategy()Lorg/apache/http/ConnectionReuseStrategy;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getConnectionReuseStrategy()Lorg/apache/http/ConnectionReuseStrategy;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getConnectionKeepAliveStrategy()Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getConnectionKeepAliveStrategy()Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getRoutePlanner()Lorg/apache/http/conn/routing/HttpRoutePlanner;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getRoutePlanner()Lorg/apache/http/conn/routing/HttpRoutePlanner;
 
     move-result-object v5
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getHttpProcessor()Lorg/apache/http/protocol/BasicHttpProcessor;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getHttpProcessor()Lorg/apache/http/protocol/BasicHttpProcessor;
 
     move-result-object v0
 
@@ -2324,23 +2348,23 @@
 
     move-result-object v6
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getHttpRequestRetryHandler()Lorg/apache/http/client/HttpRequestRetryHandler;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getHttpRequestRetryHandler()Lorg/apache/http/client/HttpRequestRetryHandler;
 
     move-result-object v7
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getRedirectHandler()Lorg/apache/http/client/RedirectHandler;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getRedirectHandler()Lorg/apache/http/client/RedirectHandler;
 
     move-result-object v8
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getTargetAuthenticationHandler()Lorg/apache/http/client/AuthenticationHandler;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getTargetAuthenticationHandler()Lorg/apache/http/client/AuthenticationHandler;
 
     move-result-object v9
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getProxyAuthenticationHandler()Lorg/apache/http/client/AuthenticationHandler;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getProxyAuthenticationHandler()Lorg/apache/http/client/AuthenticationHandler;
 
     move-result-object v10
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getUserTokenHandler()Lorg/apache/http/client/UserTokenHandler;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getUserTokenHandler()Lorg/apache/http/client/UserTokenHandler;
 
     move-result-object v11
 
@@ -2350,7 +2374,7 @@
 
     move-object v0, p0
 
-    invoke-virtual/range {v0 .. v12}, Lorg/apache/http/impl/client/CustomHttpClient;->createClientRequestDirector(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/client/RequestDirector;
+    invoke-virtual/range {v0 .. v12}, Lorg/apache/http/impl/client/AbstractHttpClient;->createClientRequestDirector(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/client/RequestDirector;
 
     move-result-object v13
 
@@ -2458,7 +2482,7 @@
 
     const-string v1, "http.authscheme-registry"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getAuthSchemes()Lorg/apache/http/auth/AuthSchemeRegistry;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getAuthSchemes()Lorg/apache/http/auth/AuthSchemeRegistry;
 
     move-result-object v2
 
@@ -2466,7 +2490,7 @@
 
     const-string v1, "http.cookiespec-registry"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getCookieSpecs()Lorg/apache/http/cookie/CookieSpecRegistry;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCookieSpecs()Lorg/apache/http/cookie/CookieSpecRegistry;
 
     move-result-object v2
 
@@ -2474,7 +2498,7 @@
 
     const-string v1, "http.cookie-store"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getCookieStore()Lorg/apache/http/client/CookieStore;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCookieStore()Lorg/apache/http/client/CookieStore;
 
     move-result-object v2
 
@@ -2482,7 +2506,7 @@
 
     const-string v1, "http.auth.credentials-provider"
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getCredentialsProvider()Lorg/apache/http/client/CredentialsProvider;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getCredentialsProvider()Lorg/apache/http/client/CredentialsProvider;
 
     move-result-object v2
 
@@ -2650,7 +2674,7 @@
 
     new-instance v0, Lorg/apache/http/impl/conn/ProxySelectorRoutePlanner;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
 
     move-result-object v1
 
@@ -2717,6 +2741,7 @@
 
 .method protected getHttpProxy(I)[Ljava/lang/String;
     .locals 9
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2811,6 +2836,8 @@
 
 .method protected getProxy(ILorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
     .locals 6
+    .param p1    # I
+    .param p2    # Lorg/apache/http/HttpHost;
 
     const/4 v1, 0x0
 
@@ -3042,6 +3069,7 @@
 
 .method protected getSBUsageStatus(J)I
     .locals 8
+    .param p1    # J
 
     const/4 v2, 0x2
 
@@ -3134,6 +3162,7 @@
 
 .method protected getSmartBondingData(I)[J
     .locals 14
+    .param p1    # I
 
     const-wide/16 v12, -0x1
 
@@ -3292,6 +3321,7 @@
 
 .method protected mydetermineParams(Lorg/apache/http/HttpRequest;)Lorg/apache/http/params/HttpParams;
     .locals 7
+    .param p1    # Lorg/apache/http/HttpRequest;
 
     const/4 v2, 0x0
 
@@ -3403,7 +3433,7 @@
     :cond_4
     new-instance v1, Lorg/apache/http/impl/client/ClientParamsStack;
 
-    invoke-virtual {p0}, Lorg/apache/http/impl/client/CustomHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
+    invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
     move-result-object v3
 
@@ -3418,6 +3448,10 @@
 
 .method protected startSBDirectUsage(JJJLjava/lang/String;)Z
     .locals 8
+    .param p1    # J
+    .param p3    # J
+    .param p5    # J
+    .param p7    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3572,6 +3606,9 @@
 
 .method protected startSBUsageURL(JJLjava/lang/String;)Z
     .locals 8
+    .param p1    # J
+    .param p3    # J
+    .param p5    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3712,6 +3749,7 @@
 
 .method protected stopSBUsage(J)I
     .locals 8
+    .param p1    # J
 
     const/4 v1, 0x2
 
@@ -3828,6 +3866,8 @@
 
 .method protected stopSBUsageWithReason(JI)I
     .locals 8
+    .param p1    # J
+    .param p3    # I
 
     const/4 v1, 0x2
 

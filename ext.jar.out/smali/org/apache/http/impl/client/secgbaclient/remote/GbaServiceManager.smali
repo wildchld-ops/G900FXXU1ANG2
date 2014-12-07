@@ -6,7 +6,7 @@
 # static fields
 .field private static final INTENT_ACTION:Ljava/lang/String; = "com.samsung.authentication.gba.action.GET_SERVICE"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final MAX_ATTEMPTS:I = 0x5
 
@@ -181,8 +181,8 @@
     :try_start_1
     invoke-static {v10, v11}, Ljava/lang/Thread;->sleep(J)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_0
     :goto_1
@@ -194,7 +194,7 @@
     move-exception v2
 
     :try_start_2
-    invoke-virtual {v2}, Ljava/lang/InterruptedException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 

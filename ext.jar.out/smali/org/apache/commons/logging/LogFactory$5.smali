@@ -88,7 +88,7 @@
 
     move-result-object v3
 
-    #calls: Lorg/apache/commons/logging/LogFactory;->logDiagnostic(Ljava/lang/String;)V
+    # invokes: Lorg/apache/commons/logging/LogFactory;->logDiagnostic(Ljava/lang/String;)V
     invoke-static {v3}, Lorg/apache/commons/logging/LogFactory;->access$000(Ljava/lang/String;)V
 
     :cond_0

@@ -12,6 +12,7 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,6 +36,7 @@
 
 .method private expand(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -65,6 +67,7 @@
 # virtual methods
 .method public append(C)V
     .locals 3
+    .param p1    # C
 
     iget v1, p0, Lorg/apache/http/util/CharArrayBuffer;->len:I
 
@@ -92,6 +95,7 @@
 
 .method public append(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -104,6 +108,7 @@
 
 .method public append(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -142,6 +147,9 @@
 
 .method public append(Lorg/apache/http/util/ByteArrayBuffer;II)V
     .locals 1
+    .param p1    # Lorg/apache/http/util/ByteArrayBuffer;
+    .param p2    # I
+    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -160,6 +168,7 @@
 
 .method public append(Lorg/apache/http/util/CharArrayBuffer;)V
     .locals 3
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
 
     if-nez p1, :cond_0
 
@@ -180,6 +189,9 @@
 
 .method public append(Lorg/apache/http/util/CharArrayBuffer;II)V
     .locals 1
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # I
+    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -196,6 +208,9 @@
 
 .method public append([BII)V
     .locals 7
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -279,6 +294,9 @@
 
 .method public append([CII)V
     .locals 3
+    .param p1    # [C
+    .param p2    # I
+    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -359,6 +377,7 @@
 
 .method public charAt(I)C
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/util/CharArrayBuffer;->buffer:[C
 
@@ -379,6 +398,7 @@
 
 .method public ensureCapacity(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v1, p0, Lorg/apache/http/util/CharArrayBuffer;->buffer:[C
 
@@ -402,6 +422,7 @@
 
 .method public indexOf(I)I
     .locals 2
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -416,6 +437,9 @@
 
 .method public indexOf(III)I
     .locals 3
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -511,6 +535,7 @@
 
 .method public setLength(I)V
     .locals 1
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -535,6 +560,8 @@
 
 .method public substring(II)Ljava/lang/String;
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     if-gez p1, :cond_0
 
@@ -578,6 +605,8 @@
 
 .method public substringTrimmed(II)Ljava/lang/String;
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     if-gez p1, :cond_0
 

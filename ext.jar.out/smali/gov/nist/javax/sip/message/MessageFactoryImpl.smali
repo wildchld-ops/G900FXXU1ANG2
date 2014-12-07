@@ -50,6 +50,7 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/message/MessageFactoryImpl;)Z
     .locals 1
+    .param p0    # Lgov/nist/javax/sip/message/MessageFactoryImpl;
 
     iget-boolean v0, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->testing:Z
 
@@ -84,6 +85,10 @@
 # virtual methods
 .method public createMultipartMimeContent(Ljavax/sip/header/ContentTypeHeader;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Lgov/nist/javax/sip/message/MultipartMimeContent;
     .locals 7
+    .param p1    # Ljavax/sip/header/ContentTypeHeader;
+    .param p2    # [Ljava/lang/String;
+    .param p3    # [Ljava/lang/String;
+    .param p4    # [Ljava/lang/String;
 
     const-string v5, "boundary"
 
@@ -130,6 +135,7 @@
 
 .method public createRequest(Ljava/lang/String;)Ljavax/sip/message/Request;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -151,7 +157,7 @@
 
     invoke-direct {v1}, Lgov/nist/javax/sip/message/SIPRequest;-><init>()V
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPRequest;->setNullRequest()V
+    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPMessage;->setNullRequest()V
 
     move-object v2, v1
 
@@ -202,6 +208,14 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;)Ljavax/sip/message/Request;
     .locals 4
+    .param p1    # Ljavax/sip/address/URI;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljavax/sip/header/CallIdHeader;
+    .param p4    # Ljavax/sip/header/CSeqHeader;
+    .param p5    # Ljavax/sip/header/FromHeader;
+    .param p6    # Ljavax/sip/header/ToHeader;
+    .param p7    # Ljava/util/List;
+    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -244,17 +258,17 @@
 
     invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPRequest;->setMethod(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPRequest;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPRequest;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPRequest;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPRequest;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPRequest;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPRequest;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -262,7 +276,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPRequest;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -270,6 +284,16 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Request;
     .locals 3
+    .param p1    # Ljavax/sip/address/URI;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljavax/sip/header/CallIdHeader;
+    .param p4    # Ljavax/sip/header/CSeqHeader;
+    .param p5    # Ljavax/sip/header/FromHeader;
+    .param p6    # Ljavax/sip/header/ToHeader;
+    .param p7    # Ljava/util/List;
+    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p9    # Ljavax/sip/header/ContentTypeHeader;
+    .param p10    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -314,19 +338,19 @@
 
     invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPRequest;->setMethod(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPRequest;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPRequest;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPRequest;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPRequest;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPRequest;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPRequest;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
-    invoke-virtual {v0, p10, p9}, Lgov/nist/javax/sip/message/SIPRequest;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v0, p10, p9}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -334,7 +358,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPRequest;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -342,6 +366,16 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Request;
     .locals 3
+    .param p1    # Ljavax/sip/address/URI;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljavax/sip/header/CallIdHeader;
+    .param p4    # Ljavax/sip/header/CSeqHeader;
+    .param p5    # Ljavax/sip/header/FromHeader;
+    .param p6    # Ljavax/sip/header/ToHeader;
+    .param p7    # Ljava/util/List;
+    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p9    # Ljavax/sip/header/ContentTypeHeader;
+    .param p10    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -386,19 +420,19 @@
 
     invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPRequest;->setMethod(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPRequest;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPRequest;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPRequest;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPRequest;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPRequest;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPRequest;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
-    invoke-virtual {v0, p10, p9}, Lgov/nist/javax/sip/message/SIPRequest;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v0, p10, p9}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -406,7 +440,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPRequest;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -414,6 +448,16 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;[BLjavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Request;
     .locals 4
+    .param p1    # Ljavax/sip/address/URI;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljavax/sip/header/CallIdHeader;
+    .param p4    # Ljavax/sip/header/CSeqHeader;
+    .param p5    # Ljavax/sip/header/FromHeader;
+    .param p6    # Ljavax/sip/header/ToHeader;
+    .param p7    # Ljava/util/List;
+    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p9    # [B
+    .param p10    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -460,23 +504,23 @@
 
     invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPRequest;->setMethod(Ljava/lang/String;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPRequest;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPRequest;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPRequest;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPRequest;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPRequest;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPRequest;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
     check-cast p10, Lgov/nist/javax/sip/header/ContentType;
 
-    invoke-virtual {v0, p10}, Lgov/nist/javax/sip/message/SIPRequest;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, p10}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
-    invoke-virtual {v0, p9}, Lgov/nist/javax/sip/message/SIPRequest;->setMessageContent([B)V
+    invoke-virtual {v0, p9}, Lgov/nist/javax/sip/message/SIPMessage;->setMessageContent([B)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -484,7 +528,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPRequest;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -492,6 +536,13 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;)Ljavax/sip/message/Response;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljavax/sip/header/CallIdHeader;
+    .param p3    # Ljavax/sip/header/CSeqHeader;
+    .param p4    # Ljavax/sip/header/FromHeader;
+    .param p5    # Ljavax/sip/header/ToHeader;
+    .param p6    # Ljava/util/List;
+    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -528,17 +579,17 @@
 
     invoke-virtual {v0, p1}, Lgov/nist/javax/sip/message/SIPResponse;->setStatusCode(I)V
 
-    invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPResponse;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPResponse;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPResponse;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPResponse;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -546,7 +597,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -554,6 +605,15 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Response;
     .locals 5
+    .param p1    # I
+    .param p2    # Ljavax/sip/header/CallIdHeader;
+    .param p3    # Ljavax/sip/header/CSeqHeader;
+    .param p4    # Ljavax/sip/header/FromHeader;
+    .param p5    # Ljavax/sip/header/ToHeader;
+    .param p6    # Ljava/util/List;
+    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p8    # Ljava/lang/Object;
+    .param p9    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -604,19 +664,19 @@
 
     invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setStatusLine(Lgov/nist/javax/sip/header/StatusLine;)V
 
-    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPResponse;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPResponse;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPResponse;->setVia(Ljava/util/List;)V
+    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v1, p7}, Lgov/nist/javax/sip/message/SIPResponse;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v1, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
-    invoke-virtual {v1, p8, p9}, Lgov/nist/javax/sip/message/SIPResponse;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v1, p8, p9}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -624,7 +684,7 @@
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v1
@@ -632,6 +692,15 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Response;
     .locals 6
+    .param p1    # I
+    .param p2    # Ljavax/sip/header/CallIdHeader;
+    .param p3    # Ljavax/sip/header/CSeqHeader;
+    .param p4    # Ljavax/sip/header/FromHeader;
+    .param p5    # Ljavax/sip/header/ToHeader;
+    .param p6    # Ljava/util/List;
+    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p8    # Ljavax/sip/header/ContentTypeHeader;
+    .param p9    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -711,17 +780,17 @@
 
     invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setStatusLine(Lgov/nist/javax/sip/header/StatusLine;)V
 
-    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPResponse;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPResponse;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPResponse;->setVia(Ljava/util/List;)V
+    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v1, p9, p8}, Lgov/nist/javax/sip/message/SIPResponse;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v1, p9, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -729,7 +798,7 @@
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_3
     return-object v1
@@ -737,6 +806,15 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Response;
     .locals 6
+    .param p1    # I
+    .param p2    # Ljavax/sip/header/CallIdHeader;
+    .param p3    # Ljavax/sip/header/CSeqHeader;
+    .param p4    # Ljavax/sip/header/FromHeader;
+    .param p5    # Ljavax/sip/header/ToHeader;
+    .param p6    # Ljava/util/List;
+    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p8    # Ljavax/sip/header/ContentTypeHeader;
+    .param p9    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -816,17 +894,17 @@
 
     invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setStatusLine(Lgov/nist/javax/sip/header/StatusLine;)V
 
-    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPResponse;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v1, p2}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPResponse;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v1, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPResponse;->setVia(Ljava/util/List;)V
+    invoke-virtual {v1, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v1, p9, p8}, Lgov/nist/javax/sip/message/SIPResponse;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v1, p9, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -834,7 +912,7 @@
 
     sget-object v3, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v3}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_3
     return-object v1
@@ -842,6 +920,15 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;[BLjavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Response;
     .locals 3
+    .param p1    # I
+    .param p2    # Ljavax/sip/header/CallIdHeader;
+    .param p3    # Ljavax/sip/header/CSeqHeader;
+    .param p4    # Ljavax/sip/header/FromHeader;
+    .param p5    # Ljavax/sip/header/ToHeader;
+    .param p6    # Ljava/util/List;
+    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
+    .param p8    # [B
+    .param p9    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -880,23 +967,23 @@
 
     invoke-virtual {v0, p1}, Lgov/nist/javax/sip/message/SIPResponse;->setStatusCode(I)V
 
-    invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPResponse;->setCallId(Ljavax/sip/header/CallIdHeader;)V
+    invoke-virtual {v0, p2}, Lgov/nist/javax/sip/message/SIPMessage;->setCallId(Ljavax/sip/header/CallIdHeader;)V
 
-    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
+    invoke-virtual {v0, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setCSeq(Ljavax/sip/header/CSeqHeader;)V
 
-    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setFrom(Ljavax/sip/header/FromHeader;)V
+    invoke-virtual {v0, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setFrom(Ljavax/sip/header/FromHeader;)V
 
-    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPResponse;->setTo(Ljavax/sip/header/ToHeader;)V
+    invoke-virtual {v0, p5}, Lgov/nist/javax/sip/message/SIPMessage;->setTo(Ljavax/sip/header/ToHeader;)V
 
-    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPResponse;->setVia(Ljava/util/List;)V
+    invoke-virtual {v0, p6}, Lgov/nist/javax/sip/message/SIPMessage;->setVia(Ljava/util/List;)V
 
-    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPResponse;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
+    invoke-virtual {v0, p7}, Lgov/nist/javax/sip/message/SIPMessage;->setMaxForwards(Ljavax/sip/header/MaxForwardsHeader;)V
 
     check-cast p9, Lgov/nist/javax/sip/header/ContentType;
 
-    invoke-virtual {v0, p9}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, p9}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
-    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPResponse;->setMessageContent([B)V
+    invoke-virtual {v0, p8}, Lgov/nist/javax/sip/message/SIPMessage;->setMessageContent([B)V
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -904,7 +991,7 @@
 
     sget-object v1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
-    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v0, v1}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v0
@@ -912,6 +999,8 @@
 
 .method public createResponse(ILjavax/sip/message/Request;)Ljavax/sip/message/Response;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -937,11 +1026,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPResponse;->removeContent()V
+    invoke-virtual {v1}, Lgov/nist/javax/sip/message/SIPMessage;->removeContent()V
 
     const-string v2, "Content-Type"
 
-    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->removeHeader(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPMessage;->removeHeader(Ljava/lang/String;)V
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
@@ -949,7 +1038,7 @@
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
-    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_1
     return-object v1
@@ -957,6 +1046,10 @@
 
 .method public createResponse(ILjavax/sip/message/Request;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Response;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljavax/sip/message/Request;
+    .param p3    # Ljavax/sip/header/ContentTypeHeader;
+    .param p4    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -987,7 +1080,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, p4, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
+    invoke-virtual {v1, p4, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setContent(Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)V
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
@@ -995,7 +1088,7 @@
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
-    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v1
@@ -1003,6 +1096,10 @@
 
 .method public createResponse(ILjavax/sip/message/Request;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Response;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljavax/sip/message/Request;
+    .param p3    # Ljavax/sip/header/ContentTypeHeader;
+    .param p4    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1035,9 +1132,9 @@
 
     check-cast p3, Lgov/nist/javax/sip/header/ContentType;
 
-    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, p3}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
-    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPResponse;->setMessageContent([B)V
+    invoke-virtual {v1, p4}, Lgov/nist/javax/sip/message/SIPMessage;->setMessageContent([B)V
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
@@ -1045,7 +1142,7 @@
 
     sget-object v2, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
-    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual {v1, v2}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     :cond_2
     return-object v1
@@ -1053,6 +1150,7 @@
 
 .method public createResponse(Ljava/lang/String;)Ljavax/sip/message/Response;
     .locals 4
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1097,6 +1195,7 @@
 
 .method public setDefaultContentEncodingCharset(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;,
@@ -1122,6 +1221,7 @@
 
 .method public setDefaultServerHeader(Ljavax/sip/header/ServerHeader;)V
     .locals 0
+    .param p1    # Ljavax/sip/header/ServerHeader;
 
     sput-object p1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
@@ -1130,6 +1230,7 @@
 
 .method public setDefaultUserAgentHeader(Ljavax/sip/header/UserAgentHeader;)V
     .locals 0
+    .param p1    # Ljavax/sip/header/UserAgentHeader;
 
     sput-object p1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -1138,6 +1239,7 @@
 
 .method public setStrict(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->strict:Z
 
@@ -1146,6 +1248,7 @@
 
 .method public setTest(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->testing:Z
 

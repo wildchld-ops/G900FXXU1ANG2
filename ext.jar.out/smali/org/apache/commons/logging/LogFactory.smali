@@ -89,6 +89,7 @@
 
 .method static synthetic access$000(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lorg/apache/commons/logging/LogFactory;->logDiagnostic(Ljava/lang/String;)V
 
@@ -97,6 +98,8 @@
 
 .method private static cacheFactory(Ljava/lang/ClassLoader;Lorg/apache/commons/logging/LogFactory;)V
     .locals 1
+    .param p0    # Ljava/lang/ClassLoader;
+    .param p1    # Lorg/apache/commons/logging/LogFactory;
 
     if-eqz p1, :cond_0
 
@@ -118,6 +121,8 @@
 
 .method protected static createFactory(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 7
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/ClassLoader;
 
     const/4 v3, 0x0
 
@@ -826,6 +831,7 @@
 
 .method private static getCachedFactory(Ljava/lang/ClassLoader;)Lorg/apache/commons/logging/LogFactory;
     .locals 2
+    .param p0    # Ljava/lang/ClassLoader;
 
     const/4 v0, 0x0
 
@@ -850,6 +856,7 @@
 
 .method protected static getClassLoader(Ljava/lang/Class;)Ljava/lang/ClassLoader;
     .locals 3
+    .param p0    # Ljava/lang/Class;
 
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -889,7 +896,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -909,6 +916,8 @@
 
 .method private static final getConfigurationFile(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Properties;
     .locals 14
+    .param p0    # Ljava/lang/ClassLoader;
+    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1768,7 +1777,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v4}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -1813,7 +1822,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v4}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -1892,7 +1901,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v5}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -1952,6 +1961,7 @@
 
 .method public static getLog(Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
     .locals 1
+    .param p0    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -1971,6 +1981,7 @@
 
 .method public static getLog(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 1
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -1986,6 +1997,7 @@
 
 .method private static getProperties(Ljava/net/URL;)Ljava/util/Properties;
     .locals 2
+    .param p0    # Ljava/net/URL;
 
     new-instance v0, Lorg/apache/commons/logging/LogFactory$5;
 
@@ -2002,6 +2014,8 @@
 
 .method private static getResourceAsStream(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/io/InputStream;
     .locals 1
+    .param p0    # Ljava/lang/ClassLoader;
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/logging/LogFactory$3;
 
@@ -2018,6 +2032,8 @@
 
 .method private static getResources(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Enumeration;
     .locals 2
+    .param p0    # Ljava/lang/ClassLoader;
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/logging/LogFactory$4;
 
@@ -2034,6 +2050,7 @@
 
 .method private static implementsLogFactory(Ljava/lang/Class;)Z
     .locals 6
+    .param p0    # Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -2122,7 +2139,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2189,7 +2206,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Ljava/lang/LinkageError;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2367,6 +2384,7 @@
 
 .method private static logClassLoaderEnvironment(Ljava/lang/Class;)V
     .locals 5
+    .param p0    # Ljava/lang/Class;
 
     invoke-static {}, Lorg/apache/commons/logging/LogFactory;->isDiagnosticsEnabled()Z
 
@@ -2544,6 +2562,7 @@
 
 .method private static final logDiagnostic(Ljava/lang/String;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/logging/LogFactory;->diagnosticsStream:Ljava/io/PrintStream;
 
@@ -2569,6 +2588,8 @@
 
 .method private static logHierarchy(Ljava/lang/String;Ljava/lang/ClassLoader;)V
     .locals 6
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-static {}, Lorg/apache/commons/logging/LogFactory;->isDiagnosticsEnabled()Z
 
@@ -2734,6 +2755,7 @@
 
 .method protected static final logRawDiagnostic(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/logging/LogFactory;->diagnosticsStream:Ljava/io/PrintStream;
 
@@ -2753,6 +2775,8 @@
 
 .method protected static newFactory(Ljava/lang/String;Ljava/lang/ClassLoader;)Lorg/apache/commons/logging/LogFactory;
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/ClassLoader;
 
     const/4 v0, 0x0
 
@@ -2765,6 +2789,9 @@
 
 .method protected static newFactory(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Lorg/apache/commons/logging/LogFactory;
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/ClassLoader;
+    .param p2    # Ljava/lang/ClassLoader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -2803,7 +2830,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lorg/apache/commons/logging/LogConfigurationException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -2873,6 +2900,7 @@
 
 .method public static objectId(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -2921,6 +2949,7 @@
 
 .method public static release(Ljava/lang/ClassLoader;)V
     .locals 3
+    .param p0    # Ljava/lang/ClassLoader;
 
     invoke-static {}, Lorg/apache/commons/logging/LogFactory;->isDiagnosticsEnabled()Z
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Atjauninātas %1$d lietojumprogrammas</item>
+        <item quantity="one">Atjaunināta %1$d lietojumprogramma</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Pieejami %1$d atjauninājumi</item>
+        <item quantity="one">Pieejams %1$d atjauninājums</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Jāapstiprina %1$d atjauninājumi.</item>
+        <item quantity="one">Jāapstiprina %1$d atjauninājums.</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d rezultāti</item>
+        <item quantity="one">%1$d rezultāts</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d jauni atjauninājumi</item>
+        <item quantity="one">%1$d jauns atjauninājums</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Jūsu vērtējums: %1$s zvaigznītes</item>
+        <item quantity="one">Jūsu vērtējums: %1$s zvaigznīte</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s personas atzīmēja šo ar +1.</item>
+        <item quantity="one">%1$s persona atzīmēja šo ar +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s un vēl %2$s pers. atz. šo ar +1.</item>
+        <item quantity="one">%1$s un vēl %2$s pers. atz. šo ar +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">Un vēl %1$s</item>
+        <item quantity="one">Un vēl %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Atlasīts: %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Ir pieejami atjauninājumi</item>
+        <item quantity="one">Ir pieejams atjauninājums</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Ir pieejami %1$d atjauninājumi. Vai vēlaties tos instalēt?</item>
+        <item quantity="one">Ir pieejams %1$d atjauninājums. Vai vēlaties to instalēt?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s loki</item>
+        <item quantity="one">%1$s loks</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">zvaigznītes</item>
+        <item quantity="one">zvaigznīte</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznītes: %3$s, %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznīte: %3$s, %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznītes: %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznīte: %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s zvaigznītes&amp;lt;/b>: %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s zvaigznīte&amp;lt;/b>: %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznītes</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, %2$s zvaigznīte</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Vērtējums: &amp;lt;b>%1$s zvaigznītes&amp;lt;/b></item>
+        <item quantity="one">Vērtējums: &amp;lt;b>%1$s zvaigznīte&amp;lt;/b></item>
+    </plurals>
+</resources>

@@ -14,6 +14,12 @@
 
 .method public static createURI(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/URI;
     .locals 3
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -98,6 +104,8 @@
 
 .method public static resolve(Ljava/net/URI;Ljava/lang/String;)Ljava/net/URI;
     .locals 1
+    .param p0    # Ljava/net/URI;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
 
@@ -112,6 +120,8 @@
 
 .method public static resolve(Ljava/net/URI;Ljava/net/URI;)Ljava/net/URI;
     .locals 5
+    .param p0    # Ljava/net/URI;
+    .param p1    # Ljava/net/URI;
 
     const/4 v3, 0x0
 
@@ -194,6 +204,8 @@
 
 .method public static rewriteURI(Ljava/net/URI;Lorg/apache/http/HttpHost;)Ljava/net/URI;
     .locals 1
+    .param p0    # Ljava/net/URI;
+    .param p1    # Lorg/apache/http/HttpHost;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -211,6 +223,9 @@
 
 .method public static rewriteURI(Ljava/net/URI;Lorg/apache/http/HttpHost;Z)Ljava/net/URI;
     .locals 7
+    .param p0    # Ljava/net/URI;
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;

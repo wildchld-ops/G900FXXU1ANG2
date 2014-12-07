@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Хушбахт</item>
+        <item>Sad</item>
+        <item>Чашмакзанӣ</item>
+        <item>Забон</item>
+        <item>Ҳайрон</item>
+        <item>Бӯса кардан</item>
+        <item>Йеллинг</item>
+        <item>Аъло</item>
+        <item>Баднафс</item>
+        <item>Пойҳо дар даҳон</item>
+        <item>Шармгин</item>
+        <item>Фаришта</item>
+        <item>Ҳалнашуда</item>
+        <item>Гирякунӣ</item>
+        <item>Ҳеҷ кас нафаҳмад</item>
+        <item>Хандидан</item>
+        <item>Ҳайрон</item>
+        <item>Дил</item>
+        <item>Хашмгин</item>
+        <item>Писханд</item>
+        <item>Симои мангин</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Истифодаи андозаҳои ҳуруфи дастгоҳ</item>
+        <item>Хеле хурд</item>
+        <item>Хурд</item>
+        <item>Муқаррарӣ</item>
+        <item>Калон</item>
+        <item>Бузург</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Истифодаи андозаҳои ҳуруфи дастгоҳ</item>
+        <item>Хурдакак</item>
+        <item>Хело хурд</item>
+        <item>Хурд</item>
+        <item>Миёна</item>
+        <item>Калон</item>
+        <item>Хело калон</item>
+        <item>Азим</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>Ҳамаи каналҳо</item>
+        <item>Каналҳои ман</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>Алифбои GSM</item>
+        <item>Юникод</item>
+        <item>Худкор</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 рӯз</item>
+        <item>1 рӯз</item>
+        <item>2 рӯз</item>
+        <item>3 рӯз</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Маҳдуд</item>
+        <item>Диққат</item>
+        <item>Ройгон</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Ҳамеша</item>
+        <item>Дархост</item>
+        <item>Ҳеҷ гоҳ</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Оригами</item>
+        <item>Барчасп</item>
+        <item>Поп</item>
+        <item>Ҳозиразамон</item>
+        <item>Гулобӣ</item>
+        <item>Стандартӣ</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>Як бор</item>
+        <item>Ҳар 2 дақиқа</item>
+        <item>Ҳар 15 дақиқа</item>
+        <item>Ғайрифаъол</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Ҳеҷ гоҳ</item>
+        <item>Ҳар 2 дақиқа</item>
+        <item>Ҳар 10 дақиқа</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array_values">
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>Ватанӣ</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 соат</item>
+        <item>6 соат</item>
+        <item>24 соат</item>
+        <item>2 рӯз</item>
+        <item>Пешфарзи шабака</item>
+        <item>Ҷойи зиёдтарин</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>Баланд</item>
+        <item>Одатӣ</item>
+        <item>Паст</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Фавран</item>
+        <item>1 соат</item>
+        <item>6 соат</item>
+        <item>24 соат</item>
+        <item>1 ҳафта</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 сония</item>
+        <item>5 сония</item>
+        <item>10 сония</item>
+        <item>20 сония</item>
+        <item>30 сония</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Хомӯш</item>
+        <item>Мамнӯъ кардани ҳамаи паёмҳо</item>
+        <item>Мамнӯъ кардани рақамҳо ва ибораҳои қайдшуда</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Айнан ранги</item>
+        <item>Оғоз бо</item>
+        <item>Бо ин ҳарф хотима меёбад</item>
+        <item>Дар бар мегирад</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>Сабтҳо</item>
+        <item>Алоқаҳо</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Мамнӯъкунии зангҳо</item>
+        <item>Мамнӯияти паём</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Мамнӯияти занги овозӣ</item>
+        <item>Мамнӯияти занги видеоӣ</item>
+        <item>Мамнӯияти паём</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Узр мепурсам, ба занги шумо ҷавоб дода натавонистам.</item>
+        <item>Ман дер мекунам, аммо ба наздикӣ мерасам.</item>
+        <item>Корҳо чӣ хел?</item>
+        <item>Тинҷӣ?</item>
+        <item>Дар куҷоед?</item>
+        <item>Лутфан, баъди гирифтани ин паём, ба ман занг занед.</item>
+        <item>Кай вохӯрда метавонем?</item>
+        <item>Ба наздикӣ сӯҳбат мекунем.</item>
+        <item>Вохӯрӣ дар куҷост?</item>
+        <item>Рақам чанд аст?</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Португалии бразилиягӣ</item>
+        <item>Англисӣ (Британияи Кабир)</item>
+        <item>Англисӣ (ИМА)</item>
+        <item>Фаронсавӣ</item>
+        <item>Олмонӣ</item>
+        <item>Итолиёвӣ</item>
+        <item>Ҷопонӣ</item>
+        <item>Кореягӣ</item>
+        <item>Чинии соддакардашуда</item>
+        <item>Русӣ</item>
+        <item>Испанӣ</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Хурдакак</item>
+        <item>Хурд</item>
+        <item>Муқаррарӣ</item>
+        <item>Калон</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>Ҳама</item>
+        <item>Фиристанда</item>
+        <item>Мӯҳтаво</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 сония</item>
+        <item>2 сония</item>
+        <item>3 сония</item>
+        <item>4 сония</item>
+        <item>5 сония</item>
+        <item>6 сония</item>
+        <item>7 seconds</item>
+        <item>8 сония</item>
+        <item>9 seconds</item>
+        <item>10 сония</item>
+        <item>Дигар…</item>
+    </string-array>
+    <string-array name="pref_entries_message_skin">
+        <item>Кабуд</item>
+        <item>Қаҳваранг</item>
+        <item>Ҳамешасабз</item>
+        <item>Моно</item>
+        <item>Ҷойпоп</item>
+    </string-array>
+    <string-array name="pref_entries_background_style">
+        <item>Тасвири пасзамина 1</item>
+        <item>Тасвири пасзамина 2</item>
+        <item>Тасвири пасзамина 3</item>
+        <item>Тасвири пасзамина 4</item>
+        <item>Тасвири пасзамина 5</item>
+        <item>Тасвири пасзамина 6</item>
+    </string-array>
+    <string-array name="pref_entries_text_field_color">
+        <item>Сиёҳ</item>
+        <item>Сафед</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Ҳамеша</item>
+        <item>Танҳо дар реҷаи Бесадо</item>
+        <item>Ҳеҷ гоҳ</item>
+    </string-array>
+</resources>

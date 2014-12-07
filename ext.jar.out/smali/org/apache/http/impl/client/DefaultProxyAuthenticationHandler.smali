@@ -16,6 +16,8 @@
 # virtual methods
 .method public getChallenges(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/util/Map;
     .locals 3
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,7 +55,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/DefaultProxyAuthenticationHandler;->parseChallenges([Lorg/apache/http/Header;)Ljava/util/Map;
+    invoke-virtual {p0, v0}, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->parseChallenges([Lorg/apache/http/Header;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -62,6 +64,8 @@
 
 .method public isAuthenticationRequested(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z
     .locals 3
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 

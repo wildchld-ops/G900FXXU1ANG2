@@ -37,6 +37,8 @@
 # virtual methods
 .method public getLocationURI(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;
     .locals 15
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -419,6 +421,8 @@
 
 .method public isRedirectRequested(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z
     .locals 3
+    .param p1    # Lorg/apache/http/HttpResponse;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 

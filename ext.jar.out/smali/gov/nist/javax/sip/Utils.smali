@@ -103,23 +103,23 @@
     nop
 
     :array_0
-    .array-data 0x2
-        0x30t 0x0t
-        0x31t 0x0t
-        0x32t 0x0t
-        0x33t 0x0t
-        0x34t 0x0t
-        0x35t 0x0t
-        0x36t 0x0t
-        0x37t 0x0t
-        0x38t 0x0t
-        0x39t 0x0t
-        0x61t 0x0t
-        0x62t 0x0t
-        0x63t 0x0t
-        0x64t 0x0t
-        0x65t 0x0t
-        0x66t 0x0t
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x61s
+        0x62s
+        0x63s
+        0x64s
+        0x65s
+        0x66s
     .end array-data
 .end method
 
@@ -141,6 +141,7 @@
 
 .method public static getQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -185,6 +186,7 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 5
+    .param p0    # [Ljava/lang/String;
 
     new-instance v2, Ljava/util/HashSet;
 
@@ -238,6 +240,7 @@
 
 .method protected static reduceString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -305,6 +308,7 @@
 
 .method public static toHexString([B)Ljava/lang/String;
     .locals 6
+    .param p0    # [B
 
     const/4 v2, 0x0
 
@@ -447,6 +451,7 @@
 
 .method public declared-synchronized generateCallIdentifier(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -559,8 +564,9 @@
 
 .method public responseBelongsToUs(Lgov/nist/javax/sip/message/SIPResponse;)Z
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPResponse;->getTopmostVia()Lgov/nist/javax/sip/header/Via;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTopmostVia()Lgov/nist/javax/sip/header/Via;
 
     move-result-object v1
 

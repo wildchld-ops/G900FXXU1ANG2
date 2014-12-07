@@ -15,8 +15,9 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/IInformativeScreenService;)V
     .locals 1
+    .param p1    # Lcom/android/internal/policy/IInformativeScreenService;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "InformativeScreenServiceWrapper"
 
@@ -68,6 +69,7 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 3
+    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/InformativeScreenServiceWrapper;->mService:Lcom/android/internal/policy/IInformativeScreenService;
@@ -93,6 +95,7 @@
 
 .method public onScreenTurnedOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 3
+    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/InformativeScreenServiceWrapper;->mService:Lcom/android/internal/policy/IInformativeScreenService;

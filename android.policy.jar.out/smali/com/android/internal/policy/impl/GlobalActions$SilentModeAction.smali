@@ -3,8 +3,8 @@
 .source "GlobalActions.java"
 
 # interfaces
-.implements Lcom/android/internal/policy/impl/GlobalActions$Action;
 .implements Landroid/view/View$OnClickListener;
+.implements Lcom/android/internal/policy/impl/GlobalActions$Action;
 
 
 # annotations
@@ -31,6 +31,8 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioManager;Landroid/os/Handler;)V
     .locals 1
+    .param p1    # Landroid/media/AudioManager;
+    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,21 +51,23 @@
     return-void
 
     :array_0
-    .array-data 0x4
-        0x11t 0x3t 0x2t 0x1t
-        0x12t 0x3t 0x2t 0x1t
-        0x14t 0x3t 0x2t 0x1t
+    .array-data 4
+        0x1020311
+        0x1020312
+        0x1020314
     .end array-data
 .end method
 
 .method private indexToRingerMode(I)I
     .locals 0
+    .param p1    # I
 
     return p1
 .end method
 
 .method private ringerModeToIndex(I)I
     .locals 0
+    .param p1    # I
 
     return p1
 .end method
@@ -72,6 +76,10 @@
 # virtual methods
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
     .locals 9
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
+    .param p4    # Landroid/view/LayoutInflater;
 
     const/16 v8, 0x8
 
@@ -129,6 +137,7 @@
 
     if-ne v0, v6, :cond_0
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHasVibrator:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$4100()Z
 
     move-result v5
@@ -179,6 +188,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
+    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

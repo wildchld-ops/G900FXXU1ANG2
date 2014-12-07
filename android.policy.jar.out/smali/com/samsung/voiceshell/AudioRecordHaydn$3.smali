@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRunning_all:Z
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRunning_all:Z
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$200(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
 
     move-result v1
@@ -55,7 +55,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$300(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
 
     move-result v1
@@ -77,7 +77,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -135,7 +135,7 @@
 
     iget-object v5, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readSize:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readSize:I
     invoke-static {v5}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$500(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v5
@@ -144,14 +144,14 @@
 
     move-result v2
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v1, v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$402(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
 
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -170,7 +170,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -189,13 +189,14 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->weHaveNoModel:Z
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->weHaveNoModel:Z
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$600(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
 
     move-result v1
 
     if-eqz v1, :cond_6
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$700()I
 
     move-result v1
@@ -208,7 +209,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$800(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -223,7 +224,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$800(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -274,7 +275,7 @@
 
     iget-object v5, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v5}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v5
@@ -285,7 +286,7 @@
 
     iget-object v7, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
     invoke-static {v7}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$900(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v7
@@ -304,7 +305,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -345,7 +346,7 @@
 
     iget-object v2, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
     invoke-static {v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1100(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v2
@@ -354,14 +355,14 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
 
     add-int/2addr v2, v3
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
     invoke-static {v1, v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1102(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
 
     move-object/from16 v0, p0
@@ -380,7 +381,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -389,7 +390,7 @@
 
     iget-object v4, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
     invoke-static {v4}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$900(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v4
@@ -416,7 +417,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1200(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -437,7 +438,7 @@
 
     iget-object v5, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
     invoke-static {v5}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1200(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v5
@@ -457,14 +458,14 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
     invoke-static {v1, v12}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1202(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
 
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -487,7 +488,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -500,6 +501,7 @@
 
     iget-object v1, v1, Lcom/samsung/voiceshell/AudioRecordHaydn;->recordBuffer:[S
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->temp:[S
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1300()[S
 
     move-result-object v2
@@ -519,10 +521,12 @@
 
     iget-object v1, v1, Lcom/samsung/voiceshell/AudioRecordHaydn;->VElib:Lcom/samsung/voiceshell/VoiceEngine;
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->temp:[S
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1300()[S
 
     move-result-object v2
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->stats:[I
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1400()[I
 
     move-result-object v3
@@ -538,6 +542,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->stats:[I
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1400()[I
 
     move-result-object v2
@@ -548,7 +553,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readSize:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readSize:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$500(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -568,6 +573,7 @@
 
     if-eqz v1, :cond_8
 
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$700()I
 
     move-result v1
@@ -590,7 +596,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -603,7 +609,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -644,7 +650,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -656,6 +662,7 @@
     goto/16 :goto_1
 
     :cond_7
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
     invoke-static {}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$700()I
 
     move-result v1
@@ -668,7 +675,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$800(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -693,7 +700,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -720,7 +727,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -784,7 +791,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -819,7 +826,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -871,7 +878,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$800(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v1
@@ -884,7 +891,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isCustomVoiceTalkEnable:Z
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isCustomVoiceTalkEnable:Z
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
 
     move-result v1
@@ -927,7 +934,7 @@
 
     iget-object v5, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v5}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v5
@@ -938,7 +945,7 @@
 
     iget-object v7, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
     invoke-static {v7}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$900(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v7
@@ -957,7 +964,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -1007,7 +1014,7 @@
 
     iget-object v3, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
     invoke-static {v3}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v3
@@ -1020,7 +1027,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
 
     move-result-object v1
@@ -1048,7 +1055,7 @@
     goto/16 :goto_2
 
     :cond_b
-    const-wide/high16 v1, 0x3fd0
+    const-wide/high16 v1, 0x3fd0000000000000L
 
     int-to-float v3, v12
 
@@ -1056,13 +1063,13 @@
 
     mul-double/2addr v1, v3
 
-    const-wide/high16 v3, 0x3fe8
+    const-wide/high16 v3, 0x3fe8000000000000L
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
     invoke-static {v5}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$1200(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
 
     move-result v5
@@ -1144,7 +1151,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$100(Lcom/samsung/voiceshell/AudioRecordHaydn;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     move-result-object v1
@@ -1166,7 +1173,7 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
     invoke-static {v1, v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$302(Lcom/samsung/voiceshell/AudioRecordHaydn;Z)Z
 
     goto/16 :goto_0
@@ -1178,6 +1185,7 @@
 
     const/4 v1, 0x2
 
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$702(I)I
 
     move-object/from16 v0, p0
@@ -1190,7 +1198,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$100(Lcom/samsung/voiceshell/AudioRecordHaydn;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     move-result-object v1
@@ -1216,7 +1224,7 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
     invoke-static {v1, v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$302(Lcom/samsung/voiceshell/AudioRecordHaydn;Z)Z
 
     goto/16 :goto_0
@@ -1228,13 +1236,14 @@
 
     const/4 v1, 0x2
 
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$702(I)I
 
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$100(Lcom/samsung/voiceshell/AudioRecordHaydn;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     move-result-object v1
@@ -1260,7 +1269,7 @@
 
     const/4 v2, 0x0
 
-    #setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
+    # setter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
     invoke-static {v1, v2}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$302(Lcom/samsung/voiceshell/AudioRecordHaydn;Z)Z
 
     goto/16 :goto_0
@@ -1274,7 +1283,7 @@
 
     iget-object v1, v0, Lcom/samsung/voiceshell/AudioRecordHaydn$3;->this$0:Lcom/samsung/voiceshell/AudioRecordHaydn;
 
-    #getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
+    # getter for: Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
     invoke-static {v1}, Lcom/samsung/voiceshell/AudioRecordHaydn;->access$100(Lcom/samsung/voiceshell/AudioRecordHaydn;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     move-result-object v1

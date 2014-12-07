@@ -43,6 +43,7 @@
 
 .method private logMessage(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/ServerLog;->checkLogFile()V
 
@@ -75,6 +76,16 @@
 
 .method private logMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJ)V
     .locals 13
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Z
+    .param p5    # Ljava/lang/String;
+    .param p6    # Ljava/lang/String;
+    .param p7    # Ljava/lang/String;
+    .param p8    # Ljava/lang/String;
+    .param p9    # J
+    .param p11    # J
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/ServerLog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -116,6 +127,7 @@
 
 .method private setProperties(Ljava/util/Properties;)V
     .locals 8
+    .param p1    # Ljava/util/Properties;
 
     const/4 v5, 0x0
 
@@ -996,6 +1008,7 @@
 
 .method public logException(Ljava/lang/Exception;)V
     .locals 2
+    .param p1    # Ljava/lang/Exception;
 
     iget v0, p0, Lgov/nist/javax/sip/stack/ServerLog;->traceLevel:I
 
@@ -1005,7 +1018,7 @@
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/ServerLog;->checkLogFile()V
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/ServerLog;->printWriter:Ljava/io/PrintWriter;
 
@@ -1013,7 +1026,7 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/ServerLog;->printWriter:Ljava/io/PrintWriter;
 
-    invoke-virtual {p1, v0}, Ljava/lang/Exception;->printStackTrace(Ljava/io/PrintWriter;)V
+    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
     :cond_0
     return-void
@@ -1021,6 +1034,11 @@
 
 .method public logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 8
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1045,6 +1063,12 @@
 
 .method public logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZJ)V
     .locals 16
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Z
+    .param p6    # J
 
     invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/ServerLog;->checkLogFile()V
 
@@ -1134,6 +1158,11 @@
 
 .method public logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/String;Ljava/lang/String;ZJ)V
     .locals 16
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Z
+    .param p5    # J
 
     invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/ServerLog;->checkLogFile()V
 
@@ -1251,6 +1280,7 @@
 
 .method public setAuxInfo(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/ServerLog;->auxInfo:Ljava/lang/String;
 
@@ -1259,12 +1289,14 @@
 
 .method public setLevel(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
 
 .method public setLogFileName(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/ServerLog;->logFileName:Ljava/lang/String;
 
@@ -1273,6 +1305,7 @@
 
 .method public setSipStack(Ljavax/sip/SipStack;)V
     .locals 2
+    .param p1    # Ljavax/sip/SipStack;
 
     instance-of v0, p1, Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -1304,6 +1337,7 @@
 
 .method public setStackIpAddress(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/ServerLog;->stackIpAddress:Ljava/lang/String;
 
@@ -1312,6 +1346,7 @@
 
 .method public setStackProperties(Ljava/util/Properties;)V
     .locals 0
+    .param p1    # Ljava/util/Properties;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/stack/ServerLog;->setProperties(Ljava/util/Properties;)V
 
@@ -1320,6 +1355,7 @@
 
 .method public setTraceLevel(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/stack/ServerLog;->traceLevel:I
 

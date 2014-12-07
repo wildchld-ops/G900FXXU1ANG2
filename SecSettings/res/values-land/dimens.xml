@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pattern_lock_header_text_marginTop">39.0dip</dimen>
+    <dimen name="captioning_preview_height">100.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_left">16.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_right">16.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_top">11.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_bottom">0.0dip</dimen>
+    <dimen name="custom_splitcolorview_layoutHeight">32.0dip</dimen>
+    <dimen name="pendetach_panel_width">64.0dip</dimen>
+    <dimen name="pendetach_text_size">11.0dip</dimen>
+    <dimen name="fingerprint_layout_marginTop">15.0dip</dimen>
+    <dimen name="fingerprint_layout_marginLeft">25.0dip</dimen>
+    <dimen name="fingerprint_layout_marginRight">10.0dip</dimen>
+    <dimen name="nfc_help_touchable_switch_width">100.0dip</dimen>
+    <dimen name="nfc_help_touchable_switch_height">50.0dip</dimen>
+    <dimen name="nfc_help_touchable_switch_margin_top">352.0dip</dimen>
+    <dimen name="nfc_help_touchable_switch_margin_left">254.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_bubble_margin_top">4.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_bubble_body_margin_top">10.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_bubble_body_margin_left">-7.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_bubble_picker_margin_top">-20.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_img_width">50.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_img_height">50.0dip</dimen>
+    <dimen name="nfc_help_dialog_tap_img_margin_left">312.0dip</dimen>
+    <dimen name="sbeam_help_touchable_switch_margin_top">410.0dip</dimen>
+    <dimen name="appwidget_width">421.0dip</dimen>
+    <dimen name="appwidget_height">68.0dip</dimen>
+</resources>

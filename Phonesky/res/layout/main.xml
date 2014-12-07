@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_bar" />
+    <com.google.android.finsky.layout.play.PlayDrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/placeholder_loading" android:visibility="gone" layout="@layout/page_loading_indicator" />
+            <include android:id="@id/placeholder_error" android:visibility="gone" layout="@layout/page_error_indicator" />
+        </FrameLayout>
+        <com.google.android.finsky.layout.play.PlayDrawerSideContentLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/drawer_side_content" android:layout_width="240.0dip" android:layout_height="fill_parent">
+            <include android:id="@id/current_profile_info" layout="@layout/drawer_profile_info" />
+            <FrameLayout android:id="@id/side_drawer_lists" android:background="@color/play_main_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ListView android:id="@id/side_drawer_destinations_list" android:background="@color/side_drawer_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/side_drawer_list_selector" android:cacheColorHint="@color/side_drawer_background" android:divider="@color/translucent_separator_line" android:dividerHeight="1.0px" android:choiceMode="singleChoice" />
+                <ListView android:id="@id/side_drawer_accounts_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/side_drawer_background" android:divider="@color/translucent_separator_line" android:dividerHeight="1.0px" />
+            </FrameLayout>
+        </com.google.android.finsky.layout.play.PlayDrawerSideContentLayout>
+    </com.google.android.finsky.layout.play.PlayDrawerLayout>
+</LinearLayout>

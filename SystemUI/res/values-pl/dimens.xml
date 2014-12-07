@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tw_status_bar_recent_panel_button_text_size">16.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_00e5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ea">false</item>
+</resources>

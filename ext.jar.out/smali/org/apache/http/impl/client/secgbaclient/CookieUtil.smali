@@ -6,11 +6,11 @@
 # static fields
 .field private static final DEFAULT_COOKIE2:Ljava/lang/String; = "$Version=1"
 
-.field private static final HEADER_COOKIE_LIST:[Ljava/lang/String; = null
+.field private static final HEADER_COOKIE_LIST:[Ljava/lang/String;
 
 .field private static final HEADER_SET_COOKIE:Ljava/lang/String; = "Set-Cookie"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final PARAM_SEPARATOR:Ljava/lang/String; = ";"
 
@@ -72,6 +72,7 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpResponse;)V
     .locals 0
+    .param p1    # Lorg/apache/http/HttpResponse;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,6 +83,7 @@
 # virtual methods
 .method public parse(Lorg/apache/http/HttpResponse;)Ljava/util/ArrayList;
     .locals 10
+    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -184,6 +186,7 @@
 
 .method public setCookies(Lorg/apache/http/HttpRequest;Ljava/util/ArrayList;)V
     .locals 8
+    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/UDPMessageChannel;Ljava/lang/String;I)V
     .locals 3
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel$PingBackTimerTask;->this$0:Lgov/nist/javax/sip/stack/UDPMessageChannel;
 
@@ -34,7 +36,7 @@
 
     iput p3, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel$PingBackTimerTask;->port:I
 
-    #getter for: Lgov/nist/javax/sip/stack/UDPMessageChannel;->pingBackRecord:Ljava/util/Hashtable;
+    # getter for: Lgov/nist/javax/sip/stack/UDPMessageChannel;->pingBackRecord:Ljava/util/Hashtable;
     invoke-static {p1}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->access$000(Lgov/nist/javax/sip/stack/UDPMessageChannel;)Ljava/util/Hashtable;
 
     move-result-object v0
@@ -109,7 +111,7 @@
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel$PingBackTimerTask;->this$0:Lgov/nist/javax/sip/stack/UDPMessageChannel;
 
-    #getter for: Lgov/nist/javax/sip/stack/UDPMessageChannel;->pingBackRecord:Ljava/util/Hashtable;
+    # getter for: Lgov/nist/javax/sip/stack/UDPMessageChannel;->pingBackRecord:Ljava/util/Hashtable;
     invoke-static {v0}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->access$000(Lgov/nist/javax/sip/stack/UDPMessageChannel;)Ljava/util/Hashtable;
 
     move-result-object v0

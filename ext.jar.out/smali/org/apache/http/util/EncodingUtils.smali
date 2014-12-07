@@ -14,6 +14,7 @@
 
 .method public static getAsciiBytes(Ljava/lang/String;)[B
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -51,6 +52,7 @@
 
 .method public static getAsciiString([B)Ljava/lang/String;
     .locals 2
+    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -76,6 +78,9 @@
 
 .method public static getAsciiString([BII)Ljava/lang/String;
     .locals 3
+    .param p0    # [B
+    .param p1    # I
+    .param p2    # I
 
     if-nez p0, :cond_0
 
@@ -113,6 +118,8 @@
 
 .method public static getBytes(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 3
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -165,6 +172,10 @@
 
 .method public static getString([BIILjava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p0    # [B
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -217,6 +228,8 @@
 
 .method public static getString([BLjava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p0    # [B
+    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.play.DrawerProfileInfoView android:background="@color/play_main_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.FifeImageView android:id="@id/cover_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" finsky:fixed_bounds="true" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.finsky.layout.FifeImageView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitStart" android:layout_centerVertical="true" finsky:fixed_bounds="true" finsky:circle_cut="true" />
+        <ImageButton android:id="@id/toggle_account_list_button" android:background="@drawable/highlight_overlay_dark" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentRight="true" />
+        <View android:id="@id/account_list_button_divider" android:background="#33ffffff" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toLeftOf="@id/toggle_account_list_button" android:layout_alignWithParentIfMissing="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/account_list_button_divider" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="@dimen/side_drawer_primary_size" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/side_drawer_secondary_size" android:textColor="@color/white" android:ellipsize="end" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.finsky.layout.play.DrawerProfileInfoView>

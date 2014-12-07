@@ -42,8 +42,13 @@
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     sget-object v0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->Off:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
@@ -70,6 +75,7 @@
 # virtual methods
 .method protected changeStateFromPress(Z)V
     .locals 3
+    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -110,6 +116,10 @@
 
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
     .locals 9
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
+    .param p4    # Landroid/view/LayoutInflater;
 
     const/4 v7, 0x0
 
@@ -191,7 +201,7 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     :cond_2
     if-eqz v4, :cond_3
@@ -203,7 +213,7 @@
     :goto_2
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
-    invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v4, v7}, Landroid/view/View;->setVisibility(I)V
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setEnabled(Z)V
 
@@ -439,6 +449,7 @@
 
 .method public updateState(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)V
     .locals 0
+    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 

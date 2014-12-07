@@ -73,6 +73,7 @@
 # virtual methods
 .method public addProductToken(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/UserAgent;->productTokens:Ljava/util/List;
 
@@ -84,7 +85,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 3
 
-    invoke-super {p0}, Lgov/nist/javax/sip/header/SIPHeader;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -149,6 +150,7 @@
 
 .method public setProduct(Ljava/util/List;)V
     .locals 2
+    .param p1    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

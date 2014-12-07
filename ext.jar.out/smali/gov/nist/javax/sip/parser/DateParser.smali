@@ -6,6 +6,7 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Lgov/nist/javax/sip/parser/Lexer;)V
 
@@ -14,6 +15,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Ljava/lang/String;)V
 
@@ -36,47 +38,47 @@
 
     const-string v3, "DateParser.parse"
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/DateParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     const/16 v3, 0x820
 
     :try_start_0
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/DateParser;->headerName(I)V
+    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/HeaderParser;->headerName(I)V
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/DateParser;->wkday()I
+    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/HeaderParser;->wkday()I
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x2c
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/DateParser;->date()Ljava/util/Calendar;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/HeaderParser;->date()Ljava/util/Calendar;
 
     move-result-object v0
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/parser/DateParser;->time(Ljava/util/Calendar;)V
+    invoke-virtual {p0, v0}, Lgov/nist/javax/sip/parser/HeaderParser;->time(Ljava/util/Calendar;)V
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0x20
 
     invoke-virtual {v3, v4}, Lgov/nist/core/LexerCore;->match(I)Lgov/nist/core/Token;
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v3}, Lgov/nist/core/LexerCore;->ttoken()Ljava/lang/String;
 
@@ -112,7 +114,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/DateParser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
+    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/Parser;->createParseException(Ljava/lang/String;)Ljava/text/ParseException;
 
     move-result-object v3
 
@@ -129,14 +131,14 @@
 
     const-string v4, "DateParser.parse"
 
-    invoke-virtual {p0, v4}, Lgov/nist/javax/sip/parser/DateParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     throw v3
 
     :cond_2
     :try_start_1
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/DateParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const/16 v4, 0xa
 
@@ -156,7 +158,7 @@
 
     const-string v3, "DateParser.parse"
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/DateParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_3
     return-object v1

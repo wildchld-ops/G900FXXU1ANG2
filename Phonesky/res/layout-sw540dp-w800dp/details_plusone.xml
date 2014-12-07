@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.DetailsPlusOne android:gravity="center_vertical" android:orientation="vertical" android:id="@id/details_plusone" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="4.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/details_special_row_min_height" finsky:restrict_avatars_to_button_width="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_plusone_main" />
+    <include android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_plusone_avatars" />
+</com.google.android.finsky.layout.DetailsPlusOne>

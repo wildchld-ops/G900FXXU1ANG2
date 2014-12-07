@@ -78,6 +78,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljavax/sip/Timeout;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Ljavax/sip/Timeout;
 
@@ -95,7 +96,7 @@
 
     sget-object v0, Ljavax/sip/Timeout;->$VALUES:[Ljavax/sip/Timeout;
 
-    invoke-virtual {v0}, [Ljavax/sip/Timeout;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

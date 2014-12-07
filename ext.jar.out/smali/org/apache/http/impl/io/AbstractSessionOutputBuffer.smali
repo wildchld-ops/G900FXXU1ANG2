@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final CRLF:[B = null
+.field private static final CRLF:[B
 
 .field private static final MAX_CHUNK:I = 0x100
 
@@ -41,7 +41,7 @@
     nop
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0xdt
         0xat
     .end array-data
@@ -134,6 +134,9 @@
 
 .method protected init(Ljava/io/OutputStream;ILorg/apache/http/params/HttpParams;)V
     .locals 2
+    .param p1    # Ljava/io/OutputStream;
+    .param p2    # I
+    .param p3    # Lorg/apache/http/params/HttpParams;
 
     if-nez p1, :cond_0
 
@@ -224,6 +227,7 @@
 
 .method public write(I)V
     .locals 1
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -250,6 +254,7 @@
 
 .method public write([B)V
     .locals 2
+    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -273,6 +278,9 @@
 
 .method public write([BII)V
     .locals 4
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -341,6 +349,7 @@
 
 .method public writeLine(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -377,6 +386,7 @@
 
 .method public writeLine(Lorg/apache/http/util/CharArrayBuffer;)V
     .locals 6
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

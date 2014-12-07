@@ -10,6 +10,7 @@
 # direct methods
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 2
+    .param p1    # [Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/http/impl/cookie/AbstractCookieAttributeHandler;-><init>()V
 
@@ -33,6 +34,8 @@
 # virtual methods
 .method public parse(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V
     .locals 4
+    .param p1    # Lorg/apache/http/cookie/SetCookie;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

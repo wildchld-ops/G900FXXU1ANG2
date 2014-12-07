@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">Оновлено програм: %1$d</item>
+        <item quantity="one">Оновлено програм: %1$d</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">Доступно оновлень: %1$d</item>
+        <item quantity="one">Доступно оновлень: %1$d</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">Оновлень, які треба схвалити: %1$d</item>
+        <item quantity="one">Оновлень, які треба схвалити: %1$d</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">Результатів: %1$d</item>
+        <item quantity="one">Результатів: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">Нових оновлень: %1$d</item>
+        <item quantity="one">Нових оновлень: %1$d</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Ви поставили: %1$s</item>
+        <item quantity="one">Ви поставили: %1$s</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">Поставили +1: %1$s.</item>
+        <item quantity="one">%1$s особа поставила +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s та ще %2$s поставили +1.</item>
+        <item quantity="one">%1$s і ще %2$s поставили +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+ ще %1$s</item>
+        <item quantity="one">+ ще %1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">Вибрано %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Доступні оновлення</item>
+        <item quantity="one">Доступне оновлення</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Доступно оновлень: %1$d. Установити?</item>
+        <item quantity="one">Доступно оновлень: %1$d. Установити?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">Кіл: %1$s</item>
+        <item quantity="one">Кіл: %1$s</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">зірочки(-чок)</item>
+        <item quantity="one">зірочка</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, зірочок %2$s – %3$s – %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, зірочок %2$s – %3$s – %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, зірочок: %2$s – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, зірочок: %2$s – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>Зірочок: %1$s&amp;lt;/b>, %2$s</item>
+        <item quantity="one">&amp;lt;b>Зірочок: %1$s&amp;lt;/b>, %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>, зірочок: %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>, зірочок: %2$s</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Оцінка зірочками: &amp;lt;b>%1$s&amp;lt;/b></item>
+        <item quantity="one">Оцінка зірочками: &amp;lt;b>%1$s&amp;lt;/b></item>
+    </plurals>
+</resources>

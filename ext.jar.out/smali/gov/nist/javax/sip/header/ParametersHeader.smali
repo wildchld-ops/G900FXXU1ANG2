@@ -36,6 +36,7 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/SIPHeader;-><init>(Ljava/lang/String;)V
 
@@ -56,6 +57,8 @@
 
 .method protected constructor <init>(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/SIPHeader;-><init>(Ljava/lang/String;)V
 
@@ -79,7 +82,7 @@
 .method public clone()Ljava/lang/Object;
     .locals 2
 
-    invoke-super {p0}, Lgov/nist/javax/sip/header/SIPHeader;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Lgov/nist/core/GenericObject;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -108,6 +111,7 @@
 
 .method protected final equalParameters(Ljavax/sip/header/Parameters;)Z
     .locals 8
+    .param p1    # Ljavax/sip/header/Parameters;
 
     const/4 v4, 0x1
 
@@ -256,6 +260,7 @@
 
 .method public getMultiParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->duplicates:Lgov/nist/core/DuplicateNameValueList;
 
@@ -289,6 +294,7 @@
 
 .method public getMultiParameterValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->duplicates:Lgov/nist/core/DuplicateNameValueList;
 
@@ -309,6 +315,7 @@
 
 .method public getNameValue(Ljava/lang/String;)Lgov/nist/core/NameValue;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -321,6 +328,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -333,6 +341,7 @@
 
 .method protected getParameterAsBoolean(Ljava/lang/String;)Z
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -379,8 +388,9 @@
 
 .method protected getParameterAsFloat(Ljava/lang/String;)F
     .locals 3
+    .param p1    # Ljava/lang/String;
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     invoke-virtual {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameterValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -438,6 +448,7 @@
 
 .method protected getParameterAsHexInt(Ljava/lang/String;)I
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -499,6 +510,7 @@
 
 .method protected getParameterAsInt(Ljava/lang/String;)I
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -558,6 +570,7 @@
 
 .method protected getParameterAsLong(Ljava/lang/String;)J
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const-wide/16 v2, -0x1
 
@@ -617,6 +630,7 @@
 
 .method protected getParameterAsURI(Ljava/lang/String;)Lgov/nist/javax/sip/address/GenericURI;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;->getParameterValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -676,6 +690,7 @@
 
 .method public getParameterValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -696,6 +711,7 @@
 
 .method public hasMultiParameter(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->duplicates:Lgov/nist/core/DuplicateNameValueList;
 
@@ -734,6 +750,7 @@
 
 .method public hasParameter(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -772,6 +789,7 @@
 
 .method public removeMultiParameter(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->duplicates:Lgov/nist/core/DuplicateNameValueList;
 
@@ -794,6 +812,7 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -816,6 +835,7 @@
 
 .method public setMultiParameter(Lgov/nist/core/NameValue;)V
     .locals 1
+    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->duplicates:Lgov/nist/core/DuplicateNameValueList;
 
@@ -826,6 +846,8 @@
 
 .method public setMultiParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -844,6 +866,7 @@
 
 .method public setParameter(Lgov/nist/core/NameValue;)V
     .locals 1
+    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -854,6 +877,8 @@
 
 .method protected setParameter(Ljava/lang/String;F)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # F
 
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -886,6 +911,8 @@
 
 .method protected setParameter(Ljava/lang/String;I)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -900,6 +927,8 @@
 
 .method protected setParameter(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -910,6 +939,8 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -943,6 +974,8 @@
 
 .method protected setParameter(Ljava/lang/String;Z)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -957,6 +990,7 @@
 
 .method public setParameters(Lgov/nist/core/NameValueList;)V
     .locals 0
+    .param p1    # Lgov/nist/core/NameValueList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -965,6 +999,8 @@
 
 .method public setQuotedParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -6,7 +6,7 @@
 # static fields
 .field private static final AUTN_SIZE:I = 0x10
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final RAND_SIZE:I = 0x10
 
@@ -92,6 +92,7 @@
 
 .method public parseNonce(Ljava/lang/String;)V
     .locals 13
+    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -303,6 +304,7 @@
 
 .method public setAutn([B)V
     .locals 0
+    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/Nonce;->autn:[B
 
@@ -311,6 +313,7 @@
 
 .method public setAutnRand([B)V
     .locals 0
+    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/Nonce;->randAutn:[B
 
@@ -319,6 +322,7 @@
 
 .method public setRand([B)V
     .locals 0
+    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/Nonce;->rand:[B
 
@@ -327,6 +331,7 @@
 
 .method public setServerData([B)V
     .locals 0
+    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/Nonce;->serverData:[B
 
@@ -335,6 +340,7 @@
 
 .method public setStrNonce(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/Nonce;->strNonce:Ljava/lang/String;
 

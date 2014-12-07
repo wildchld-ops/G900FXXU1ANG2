@@ -16,6 +16,7 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -44,6 +45,7 @@
 
 .method public setSIPHeader(Lgov/nist/javax/sip/header/SIPHeader;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/header/SIPHeader;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPDuplicateHeaderException;->sipHeader:Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -52,6 +54,7 @@
 
 .method public setSIPMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 0
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPDuplicateHeaderException;->sipMessage:Lgov/nist/javax/sip/message/SIPMessage;
 

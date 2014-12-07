@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Бактылуу</item>
+        <item>Капалуу</item>
+        <item>Көз кысуу</item>
+        <item>Тилин сунган</item>
+        <item>Таң калган</item>
+        <item>Өбүшүү</item>
+        <item>Кыйкырууда</item>
+        <item>Салкын</item>
+        <item>Акча ооз</item>
+        <item>Тилинен жаңылуу</item>
+        <item>Сүрдөгөн</item>
+        <item>Периште</item>
+        <item>Чечкиндүү эмес</item>
+        <item>Ыйлоо</item>
+        <item>Оозу байланган</item>
+        <item>Күлүү</item>
+        <item>Чаташып калды</item>
+        <item>Жүрөк</item>
+        <item>Жинди</item>
+        <item>Күлүмсүрөө</item>
+        <item>Камаарабай</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Түзмөктүн шрифт өлчөмдөрүн колдонуу</item>
+        <item>Кенедей</item>
+        <item>Кичинекей</item>
+        <item>Кадимки</item>
+        <item>Чоң</item>
+        <item>Ири</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Түзмөктүн шрифт өлчөмдөрүн колдонуу</item>
+        <item>Кенедей</item>
+        <item>Аябай кичине</item>
+        <item>Кичинекей</item>
+        <item>Орто</item>
+        <item>Чоң</item>
+        <item>Аябай чоң</item>
+        <item>Ири</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>Бардык каналдар</item>
+        <item>Каналдарым</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>GSM алфавит</item>
+        <item>Unicode</item>
+        <item>Автоматтык</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 күн</item>
+        <item>1 күн</item>
+        <item>2 күн</item>
+        <item>3 күн</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Чектелген</item>
+        <item>Эскертүү</item>
+        <item>Бош</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Ар дайым</item>
+        <item>Тез</item>
+        <item>Эч качан</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Оригами</item>
+        <item>Жарлык</item>
+        <item>Поп</item>
+        <item>Заманбап</item>
+        <item>Кызгылт</item>
+        <item>Айласыз</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>Бир жолу</item>
+        <item>2 минут сайын</item>
+        <item>15 мүнөт сайын</item>
+        <item>Өчүк</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Эч качан</item>
+        <item>2 минут сайын</item>
+        <item>10 минут сайын</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array_values">
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>Үйдөгү</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 саат</item>
+        <item>6 саат</item>
+        <item>24 саат</item>
+        <item>2 күн</item>
+        <item>Тармак баштапкысы</item>
+        <item>Максимум</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>Жогору</item>
+        <item>Нормалдуу</item>
+        <item>Төмөн</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Дароо</item>
+        <item>1 саат</item>
+        <item>6 саат</item>
+        <item>24 саат</item>
+        <item>1 жума</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 секунда</item>
+        <item>5 секунда</item>
+        <item>10 секунда</item>
+        <item>20 секунда</item>
+        <item>30 секунда</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Жок</item>
+        <item>Бардык кабарларды камоо</item>
+        <item>Катталган номерлер менен сүйлөмдөрдү камоо</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Дал өзүндөй</item>
+        <item>Муну менен баштайт</item>
+        <item>Төмөнкү менен бүтүрүү</item>
+        <item>Камтыйт</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>Журналдар</item>
+        <item>Катыштар</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Чалууну камоо</item>
+        <item>Кабарды камоо</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Үн чалууларын камоо</item>
+        <item>Видео чалууну камоо</item>
+        <item>Кабарды камоо</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Кечирип кой, чалууңду өткөрүп ийиптирмин.</item>
+        <item>Мен кечигип жатам, бирок жакында болом.</item>
+        <item>Иштер кандай?</item>
+        <item>Эмне болду?</item>
+        <item>Сен кайдасың?</item>
+        <item>Бул кабарды алганыңызда мага чалып коюңуз.</item>
+        <item>Качан жолуга алабыз?</item>
+        <item>Сен меен кийин сүйлөшөм.</item>
+        <item>Жолугушуу кайда болуп жатат?</item>
+        <item>Номери кандай?</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Бразилиялык португал тили</item>
+        <item>Англисче (UK)</item>
+        <item>Англисче (АКШ)</item>
+        <item>Француз</item>
+        <item>Немис</item>
+        <item>Италиялык</item>
+        <item>Жапон</item>
+        <item>Кореялык</item>
+        <item>Жөнөкөйлөтүлгөн кытай тили</item>
+        <item>Орусча</item>
+        <item>Испан</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Кенедей</item>
+        <item>Кичинекей</item>
+        <item>Кадимки</item>
+        <item>Чоң</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>Баары</item>
+        <item>Жөнөтүүчү</item>
+        <item>Мазмун</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>1 секунда</item>
+        <item>2 секунда</item>
+        <item>3 секунда</item>
+        <item>4 секунда</item>
+        <item>5 секунда</item>
+        <item>6 секунда</item>
+        <item>7 seconds</item>
+        <item>8 секунда</item>
+        <item>9 seconds</item>
+        <item>10 секунда</item>
+        <item>Башка…</item>
+    </string-array>
+    <string-array name="pref_entries_message_skin">
+        <item>Көк</item>
+        <item>Күрөң</item>
+        <item>Өзгөрбөгөн жашы</item>
+        <item>Моно</item>
+        <item>Ырахат</item>
+    </string-array>
+    <string-array name="pref_entries_background_style">
+        <item>Фон 1</item>
+        <item>Фон 2</item>
+        <item>Фон 3</item>
+        <item>Фон 4</item>
+        <item>Фон 5</item>
+        <item>Фон 6</item>
+    </string-array>
+    <string-array name="pref_entries_text_field_color">
+        <item>Кара</item>
+        <item>Ак</item>
+    </string-array>
+    <string-array name="prefEntries_vibrateWhen">
+        <item>Ар дайым</item>
+        <item>Үнсүз режимде гана</item>
+        <item>Эч качан</item>
+    </string-array>
+</resources>

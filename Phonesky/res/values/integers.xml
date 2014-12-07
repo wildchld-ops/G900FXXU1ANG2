@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="related_items_per_row">3</integer>
+    <integer name="related_item_rows">1</integer>
+    <integer name="creator_moreby_items_per_row">3</integer>
+    <integer name="creator_moreby_item_rows">1</integer>
+    <integer name="creator_related_items_per_row">1</integer>
+    <integer name="creator_related_item_rows">2</integer>
+    <integer name="music_items_per_row">2</integer>
+    <integer name="music_item_rows">2</integer>
+    <integer name="antenna_num_items_per_row">3</integer>
+    <integer name="antenna_num_item_rows">1</integer>
+    <integer name="num_items_per_list_column">6</integer>
+    <integer name="play_featured_grid_width">2</integer>
+    <integer name="play_regular_grid_width">1</integer>
+    <integer name="search_bucket_rows">2</integer>
+    <integer name="editorial_bucket_columns">1</integer>
+    <integer name="description_default_lines">6</integer>
+    <integer name="description_creator_default_lines">2</integer>
+    <integer name="description_album_default_lines">2</integer>
+    <integer name="max_review_length">512</integer>
+    <integer name="category_tab_width_in_percent">100</integer>
+    <integer name="recommendations_flip_interval">300000</integer>
+    <integer name="max_library_widget_backends">2</integer>
+    <integer name="play_card_text_compact">0</integer>
+</resources>

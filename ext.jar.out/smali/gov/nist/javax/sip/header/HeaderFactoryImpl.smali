@@ -36,6 +36,7 @@
 # virtual methods
 .method public createAcceptEncodingHeader(Ljava/lang/String;)Ljavax/sip/header/AcceptEncodingHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -64,6 +65,8 @@
 
 .method public createAcceptHeader(Ljava/lang/String;Ljava/lang/String;)Ljavax/sip/header/AcceptHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -97,6 +100,7 @@
 
 .method public createAcceptLanguageHeader(Ljava/util/Locale;)Ljavax/sip/header/AcceptLanguageHeader;
     .locals 3
+    .param p1    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -120,6 +124,7 @@
 
 .method public createAlertInfoHeader(Ljavax/sip/address/URI;)Ljavax/sip/header/AlertInfoHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/URI;
 
     if-nez p1, :cond_0
 
@@ -143,6 +148,7 @@
 
 .method public createAllowEventsHeader(Ljava/lang/String;)Ljavax/sip/header/AllowEventsHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -171,6 +177,7 @@
 
 .method public createAllowHeader(Ljava/lang/String;)Ljavax/sip/header/AllowHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -199,6 +206,7 @@
 
 .method public createAuthenticationInfoHeader(Ljava/lang/String;)Ljavax/sip/header/AuthenticationInfoHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -227,6 +235,7 @@
 
 .method public createAuthorizationHeader(Ljava/lang/String;)Ljavax/sip/header/AuthorizationHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -248,13 +257,15 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/Authorization;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/Authorization;->setScheme(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AuthenticationHeader;->setScheme(Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public createCSeqHeader(ILjava/lang/String;)Ljavax/sip/header/CSeqHeader;
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;,
@@ -273,6 +284,8 @@
 
 .method public createCSeqHeader(JLjava/lang/String;)Ljavax/sip/header/CSeqHeader;
     .locals 4
+    .param p1    # J
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;,
@@ -335,6 +348,7 @@
 
 .method public createCallIdHeader(Ljava/lang/String;)Ljavax/sip/header/CallIdHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -363,6 +377,7 @@
 
 .method public createCallInfoHeader(Ljavax/sip/address/URI;)Ljavax/sip/header/CallInfoHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/URI;
 
     if-nez p1, :cond_0
 
@@ -386,6 +401,7 @@
 
 .method public createChargingVectorHeader(Ljava/lang/String;)Lgov/nist/javax/sip/header/ims/PChargingVectorHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -432,6 +448,7 @@
 
 .method public createContactHeader(Ljavax/sip/address/Address;)Ljavax/sip/header/ContactHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -455,6 +472,7 @@
 
 .method public createContentDispositionHeader(Ljava/lang/String;)Ljavax/sip/header/ContentDispositionHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -483,6 +501,7 @@
 
 .method public createContentEncodingHeader(Ljava/lang/String;)Ljavax/sip/header/ContentEncodingHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -511,6 +530,7 @@
 
 .method public createContentLanguageHeader(Ljava/util/Locale;)Ljavax/sip/header/ContentLanguageHeader;
     .locals 3
+    .param p1    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -534,6 +554,7 @@
 
 .method public createContentLengthHeader(I)Ljavax/sip/header/ContentLengthHeader;
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -562,6 +583,8 @@
 
 .method public createContentTypeHeader(Ljava/lang/String;Ljava/lang/String;)Ljavax/sip/header/ContentTypeHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -595,6 +618,7 @@
 
 .method public createDateHeader(Ljava/util/Calendar;)Ljavax/sip/header/DateHeader;
     .locals 3
+    .param p1    # Ljava/util/Calendar;
 
     new-instance v0, Lgov/nist/javax/sip/header/SIPDateHeader;
 
@@ -618,6 +642,7 @@
 
 .method public createErrorInfoHeader(Ljavax/sip/address/URI;)Ljavax/sip/header/ErrorInfoHeader;
     .locals 2
+    .param p1    # Ljavax/sip/address/URI;
 
     if-nez p1, :cond_0
 
@@ -641,6 +666,7 @@
 
 .method public createEventHeader(Ljava/lang/String;)Ljavax/sip/header/EventHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -669,6 +695,7 @@
 
 .method public createExpiresHeader(I)Ljavax/sip/header/ExpiresHeader;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -713,6 +740,8 @@
 
 .method public createExtensionHeader(Ljava/lang/String;Ljava/lang/String;)Ljavax/sip/header/ExtensionHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -743,6 +772,8 @@
 
 .method public createFromHeader(Ljavax/sip/address/Address;Ljava/lang/String;)Ljavax/sip/header/FromHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -776,6 +807,7 @@
 
 .method public createHeader(Ljava/lang/String;)Ljavax/sip/header/Header;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -871,7 +903,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/InstantiationException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     move-object v3, v4
 
@@ -880,7 +912,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     move-object v3, v4
 
@@ -903,6 +935,8 @@
 
 .method public createHeader(Ljava/lang/String;Ljava/lang/String;)Ljavax/sip/header/Header;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -951,6 +985,7 @@
 
 .method public createHeaders(Ljava/lang/String;)Ljava/util/List;
     .locals 5
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -998,6 +1033,7 @@
 
 .method public createInReplyToHeader(Ljava/lang/String;)Ljavax/sip/header/InReplyToHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1026,6 +1062,9 @@
 
 .method public createJoinHeader(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nist/javax/sip/header/extensions/JoinHeader;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1047,6 +1086,7 @@
 
 .method public createMaxForwardsHeader(I)Ljavax/sip/header/MaxForwardsHeader;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1096,6 +1136,8 @@
 
 .method public createMimeVersionHeader(II)Ljavax/sip/header/MimeVersionHeader;
     .locals 3
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1129,6 +1171,7 @@
 
 .method public createMinExpiresHeader(I)Ljavax/sip/header/MinExpiresHeader;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1173,6 +1216,7 @@
 
 .method public createMinSEHeader(I)Ljavax/sip/header/ExtensionHeader;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1217,6 +1261,7 @@
 
 .method public createOrganizationHeader(Ljava/lang/String;)Ljavax/sip/header/OrganizationHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1255,6 +1300,7 @@
 
 .method public createPAssertedIdentityHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PAssertedIdentityHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;,
@@ -1277,7 +1323,7 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PAssertedIdentity;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PAssertedIdentity;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
@@ -1294,6 +1340,7 @@
 
 .method public createPAssociatedURIHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PAssociatedURIHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1310,13 +1357,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PAssociatedURI;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PAssociatedURI;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createPCalledPartyIDHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PCalledPartyIDHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1333,7 +1381,7 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PCalledPartyID;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PCalledPartyID;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
@@ -1350,6 +1398,7 @@
 
 .method public createPMediaAuthorizationHeader(Ljava/lang/String;)Lgov/nist/javax/sip/header/ims/PMediaAuthorizationHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -1384,6 +1433,7 @@
 
 .method public createPPreferredIdentityHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PPreferredIdentityHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1400,7 +1450,7 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PPreferredIdentity;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PPreferredIdentity;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
@@ -1417,6 +1467,7 @@
 
 .method public createPProfileKeyHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PProfileKeyHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1433,13 +1484,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PProfileKey;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PProfileKey;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createPServedUserHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PServedUserHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1456,13 +1508,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/PServedUser;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/PServedUser;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createPUserDatabaseHeader(Ljava/lang/String;)Lgov/nist/javax/sip/header/ims/PUserDatabaseHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1505,6 +1558,7 @@
 
 .method public createPathHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/PathHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1521,13 +1575,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/Path;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/Path;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createPriorityHeader(Ljava/lang/String;)Ljavax/sip/header/PriorityHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1556,6 +1611,7 @@
 
 .method public createPrivacyHeader(Ljava/lang/String;)Lgov/nist/javax/sip/header/ims/PrivacyHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1577,6 +1633,7 @@
 
 .method public createProxyAuthenticateHeader(Ljava/lang/String;)Ljavax/sip/header/ProxyAuthenticateHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1598,13 +1655,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ProxyAuthenticate;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ProxyAuthenticate;->setScheme(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AuthenticationHeader;->setScheme(Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public createProxyAuthorizationHeader(Ljava/lang/String;)Ljavax/sip/header/ProxyAuthorizationHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1626,13 +1684,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ProxyAuthorization;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ProxyAuthorization;->setScheme(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AuthenticationHeader;->setScheme(Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public createProxyRequireHeader(Ljava/lang/String;)Ljavax/sip/header/ProxyRequireHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1661,6 +1720,9 @@
 
 .method public createRAckHeader(IILjava/lang/String;)Ljavax/sip/header/RAckHeader;
     .locals 6
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -1685,6 +1747,9 @@
 
 .method public createRAckHeader(JJLjava/lang/String;)Ljavax/sip/header/RAckHeader;
     .locals 4
+    .param p1    # J
+    .param p3    # J
+    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -1738,6 +1803,7 @@
 
 .method public createRSeqHeader(I)Ljavax/sip/header/RSeqHeader;
     .locals 2
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1755,6 +1821,7 @@
 
 .method public createRSeqHeader(J)Ljavax/sip/header/RSeqHeader;
     .locals 4
+    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -1803,6 +1870,9 @@
 
 .method public createReasonHeader(Ljava/lang/String;ILjava/lang/String;)Ljavax/sip/header/ReasonHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -1847,6 +1917,7 @@
 
 .method public createRecordRouteHeader(Ljavax/sip/address/Address;)Ljavax/sip/header/RecordRouteHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1863,13 +1934,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/RecordRoute;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/RecordRoute;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createReferToHeader(Ljavax/sip/address/Address;)Ljavax/sip/header/ReferToHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1886,13 +1958,15 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ReferTo;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ReferTo;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createReferencesHeader(Ljava/lang/String;Ljava/lang/String;)Lgov/nist/javax/sip/header/extensions/ReferencesHeader;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1912,6 +1986,7 @@
 
 .method public createReferredByHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/extensions/ReferredByHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1928,13 +2003,16 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/extensions/ReferredBy;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/extensions/ReferredBy;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createReplacesHeader(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nist/javax/sip/header/extensions/ReplacesHeader;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1956,6 +2034,7 @@
 
 .method public createReplyToHeader(Ljavax/sip/address/Address;)Ljavax/sip/header/ReplyToHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -1972,13 +2051,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ReplyTo;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ReplyTo;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createRequestLine(Ljava/lang/String;)Lgov/nist/javax/sip/header/SipRequestLine;
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1998,6 +2078,7 @@
 
 .method public createRequireHeader(Ljava/lang/String;)Ljavax/sip/header/RequireHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2026,6 +2107,7 @@
 
 .method public createRetryAfterHeader(I)Ljavax/sip/header/RetryAfterHeader;
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -2054,6 +2136,7 @@
 
 .method public createRouteHeader(Ljavax/sip/address/Address;)Ljavax/sip/header/RouteHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -2070,13 +2153,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/Route;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/Route;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createSIPETagHeader(Ljava/lang/String;)Ljavax/sip/header/SIPETagHeader;
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2092,6 +2176,7 @@
 
 .method public createSIPIfMatchHeader(Ljava/lang/String;)Ljavax/sip/header/SIPIfMatchHeader;
     .locals 1
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2137,6 +2222,7 @@
 
 .method public createServerHeader(Ljava/util/List;)Ljavax/sip/header/ServerHeader;
     .locals 3
+    .param p1    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2165,6 +2251,7 @@
 
 .method public createServiceRouteHeader(Ljavax/sip/address/Address;)Lgov/nist/javax/sip/header/ims/ServiceRouteHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -2181,13 +2268,14 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/ims/ServiceRoute;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/ims/ServiceRoute;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     return-object v0
 .end method
 
 .method public createSessionExpiresHeader(I)Lgov/nist/javax/sip/header/extensions/SessionExpiresHeader;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -2232,6 +2320,7 @@
 
 .method public createStatusLine(Ljava/lang/String;)Lgov/nist/javax/sip/header/SipStatusLine;
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2251,6 +2340,7 @@
 
 .method public createSubjectHeader(Ljava/lang/String;)Ljavax/sip/header/SubjectHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2279,6 +2369,7 @@
 
 .method public createSubscriptionStateHeader(Ljava/lang/String;)Ljavax/sip/header/SubscriptionStateHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2307,6 +2398,7 @@
 
 .method public createSupportedHeader(Ljava/lang/String;)Ljavax/sip/header/SupportedHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2335,6 +2427,7 @@
 
 .method public createTimeStampHeader(F)Ljavax/sip/header/TimeStampHeader;
     .locals 3
+    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -2367,6 +2460,8 @@
 
 .method public createToHeader(Ljavax/sip/address/Address;Ljava/lang/String;)Ljavax/sip/header/ToHeader;
     .locals 3
+    .param p1    # Ljavax/sip/address/Address;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2388,7 +2483,7 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/To;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/To;->setAddress(Ljavax/sip/address/Address;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AddressParametersHeader;->setAddress(Ljavax/sip/address/Address;)V
 
     if-eqz p2, :cond_1
 
@@ -2400,6 +2495,7 @@
 
 .method public createUnsupportedHeader(Ljava/lang/String;)Ljavax/sip/header/UnsupportedHeader;
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2426,6 +2522,7 @@
 
 .method public createUserAgentHeader(Ljava/util/List;)Ljavax/sip/header/UserAgentHeader;
     .locals 3
+    .param p1    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2454,6 +2551,10 @@
 
 .method public createViaHeader(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljavax/sip/header/ViaHeader;
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;,
@@ -2555,6 +2656,7 @@
 
 .method public createWWWAuthenticateHeader(Ljava/lang/String;)Ljavax/sip/header/WWWAuthenticateHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2576,13 +2678,16 @@
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/WWWAuthenticate;-><init>()V
 
-    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/WWWAuthenticate;->setScheme(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lgov/nist/javax/sip/header/AuthenticationHeader;->setScheme(Ljava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public createWarningHeader(Ljava/lang/String;ILjava/lang/String;)Ljavax/sip/header/WarningHeader;
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;,
@@ -2616,6 +2721,7 @@
 
 .method public setPrettyEncoding(Z)V
     .locals 0
+    .param p1    # Z
 
     invoke-static {p1}, Lgov/nist/javax/sip/header/SIPHeaderList;->setPrettyEncode(Z)V
 

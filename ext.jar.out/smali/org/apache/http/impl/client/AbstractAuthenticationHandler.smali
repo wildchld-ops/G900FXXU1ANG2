@@ -97,6 +97,7 @@
 
 .method protected parseChallenges([Lorg/apache/http/Header;)Ljava/util/Map;
     .locals 12
+    .param p1    # [Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -253,6 +254,8 @@
 
 .method public selectScheme(Ljava/util/Map;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/auth/AuthScheme;
     .locals 10
+    .param p2    # Lorg/apache/http/HttpResponse;
+    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

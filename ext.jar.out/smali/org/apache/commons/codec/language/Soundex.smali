@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static final US_ENGLISH:Lorg/apache/commons/codec/language/Soundex; = null
+.field public static final US_ENGLISH:Lorg/apache/commons/codec/language/Soundex;
 
-.field public static final US_ENGLISH_MAPPING:[C = null
+.field public static final US_ENGLISH_MAPPING:[C
 
 .field public static final US_ENGLISH_MAPPING_STRING:Ljava/lang/String; = "01230120022455012623010202"
 
@@ -53,6 +53,7 @@
 
 .method public constructor <init>([C)V
     .locals 1
+    .param p1    # [C
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,6 +68,8 @@
 
 .method private getMappingCode(Ljava/lang/String;I)C
     .locals 7
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     const/16 v6, 0x57
 
@@ -132,6 +135,7 @@
 
 .method private map(C)C
     .locals 4
+    .param p1    # C
 
     add-int/lit8 v0, p1, -0x41
 
@@ -182,6 +186,7 @@
 
 .method private setSoundexMapping([C)V
     .locals 0
+    .param p1    # [C
 
     iput-object p1, p0, Lorg/apache/commons/codec/language/Soundex;->soundexMapping:[C
 
@@ -192,6 +197,8 @@
 # virtual methods
 .method public difference(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -207,6 +214,7 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -237,6 +245,7 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/Soundex;->soundex(Ljava/lang/String;)Ljava/lang/String;
 
@@ -255,6 +264,7 @@
 
 .method public setMaxLength(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lorg/apache/commons/codec/language/Soundex;->maxLength:I
 
@@ -263,6 +273,7 @@
 
 .method public soundex(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -360,10 +371,10 @@
     goto :goto_1
 
     :array_0
-    .array-data 0x2
-        0x30t 0x0t
-        0x30t 0x0t
-        0x30t 0x0t
-        0x30t 0x0t
+    .array-data 2
+        0x30s
+        0x30s
+        0x30s
+        0x30s
     .end array-data
 .end method

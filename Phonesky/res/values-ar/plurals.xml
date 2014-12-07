@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">تم تحديث %1$d من التطبيقات</item>
+        <item quantity="one">تم تحديث %1$d من التطبيقات</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d من التحديثات متوفرة</item>
+        <item quantity="one">%1$d من التحديثات متوفرة</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d من التحديثات تحتاج إلى موافقة</item>
+        <item quantity="one">%1$d تحديث يحتاج إلى موافقة</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">عدد النتائج: %1$d</item>
+        <item quantity="one">عدد النتائج: %1$d</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d من التحديثات الجديدة</item>
+        <item quantity="one">%1$d من التحديثات الجديدة</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">تقييمك: %1$s نجوم</item>
+        <item quantity="one">تقييمك: %1$s نجمة</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">أجرى %1$s من الأشخاص 1+ لهذا.</item>
+        <item quantity="one">أجرى %1$s من الأشخاص 1+ لهذا.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">أجرى %1$s و%2$s آخرون 1+ لهذا.</item>
+        <item quantity="one">أجرى %1$s و%2$s آخرون 1+ لهذا.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s آخرين</item>
+        <item quantity="one">+%1$d آخر</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">تم تحديد %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">التحديثات المتاحة</item>
+        <item quantity="one">التحديث المتوفر</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">لديك %1$d من التحديثات المتاحة. فهل ترغب في تثبيتها؟</item>
+        <item quantity="one">لديك %1$d تحديث متاح. فهل ترغب في تثبيته؟</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">عدد الدوائر: %1$s</item>
+        <item quantity="one">عدد الدوائر: %1$s</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">من النجوم</item>
+        <item quantity="one">نجمة</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s من النجوم - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s نجمة - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s من النجوم - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s نجمة - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s من النجوم&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s نجمة&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s من النجوم</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s نجمة</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">تم تقييمه بـ &amp;lt;b>%1$s من النجوم&amp;lt;/b></item>
+        <item quantity="one">تم تقييمه بـ &amp;lt;b>%1$s نجمة&amp;lt;/b></item>
+    </plurals>
+</resources>

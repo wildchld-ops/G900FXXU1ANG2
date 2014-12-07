@@ -14,6 +14,7 @@
 
 .method public static getContentCharSet(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
     .locals 5
+    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -73,6 +74,7 @@
 
 .method public static toByteArray(Lorg/apache/http/HttpEntity;)[B
     .locals 9
+    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -179,6 +181,7 @@
 
 .method public static toString(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -197,6 +200,8 @@
 
 .method public static toString(Lorg/apache/http/HttpEntity;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
+    .param p0    # Lorg/apache/http/HttpEntity;
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -304,12 +309,12 @@
     :catchall_0
     move-exception v7
 
-    invoke-virtual {v5}, Ljava/io/Reader;->close()V
+    invoke-virtual {v5}, Ljava/io/InputStreamReader;->close()V
 
     throw v7
 
     :cond_6
-    invoke-virtual {v5}, Ljava/io/Reader;->close()V
+    invoke-virtual {v5}, Ljava/io/InputStreamReader;->close()V
 
     invoke-virtual {v0}, Lorg/apache/http/util/CharArrayBuffer;->toString()Ljava/lang/String;
 

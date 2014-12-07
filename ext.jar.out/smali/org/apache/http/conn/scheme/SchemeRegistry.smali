@@ -36,6 +36,7 @@
 # virtual methods
 .method public final declared-synchronized get(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -78,6 +79,7 @@
 
 .method public final declared-synchronized getScheme(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -135,6 +137,7 @@
 
 .method public final declared-synchronized getScheme(Lorg/apache/http/HttpHost;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 2
+    .param p1    # Lorg/apache/http/HttpHost;
 
     monitor-enter p0
 
@@ -216,6 +219,7 @@
 
 .method public final declared-synchronized register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 3
+    .param p1    # Lorg/apache/http/conn/scheme/Scheme;
 
     monitor-enter p0
 
@@ -306,6 +310,7 @@
 
 .method public final declared-synchronized unregister(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

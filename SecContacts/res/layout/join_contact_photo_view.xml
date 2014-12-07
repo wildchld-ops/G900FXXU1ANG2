@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/photo_container" android:background="@color/contact_photo_view_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:cp="http://schemas.android.com/apk/res/com.android.contacts">
+    <com.samsung.contacts.widget.ContactPhotoView android:id="@id/photo" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" cp:frameSize="@dimen/join_contact_photo_selector_view_photo_size" cp:framePositionTop="@dimen/join_contact_photo_selector_view_framePositionTop" cp:setTextAlphaBackground="true" cp:textAlphaBackgroundTop="@dimen/join_contact_textAlphaBackgroundTop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/display_name_container" android:paddingBottom="@dimen/join_contact_photo_selector_view_textside_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="@dimen/detail_photo_selector_view_textside_side_padding" android:paddingEnd="@dimen/detail_photo_selector_view_textside_side_padding">
+        <com.samsung.contacts.widget.StrokeTextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/detail_display_name_text" />
+        <View android:id="@id/name_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_name_empty_view_height" />
+        <com.samsung.contacts.widget.StrokeTextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/company" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/detail_company_text" />
+    </LinearLayout>
+</RelativeLayout>

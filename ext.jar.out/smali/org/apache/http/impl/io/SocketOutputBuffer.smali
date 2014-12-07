@@ -6,6 +6,9 @@
 # direct methods
 .method public constructor <init>(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)V
     .locals 2
+    .param p1    # Ljava/net/Socket;
+    .param p2    # I
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -31,7 +34,7 @@
 
     const/16 v1, 0x2000
 
-    invoke-virtual {p0, v0, v1, p3}, Lorg/apache/http/impl/io/SocketOutputBuffer;->init(Ljava/io/OutputStream;ILorg/apache/http/params/HttpParams;)V
+    invoke-virtual {p0, v0, v1, p3}, Lorg/apache/http/impl/io/AbstractSessionOutputBuffer;->init(Ljava/io/OutputStream;ILorg/apache/http/params/HttpParams;)V
 
     return-void
 .end method

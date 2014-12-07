@@ -10,6 +10,7 @@
 # direct methods
 .method public constructor <init>(Ljava/security/KeyStore;)V
     .locals 5
+    .param p1    # Ljava/security/KeyStore;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -66,7 +67,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljavax/net/ssl/SSLSocketFactory;->createSocket()Ljava/net/Socket;
+    invoke-virtual {v0}, Ljavax/net/SocketFactory;->createSocket()Ljava/net/Socket;
 
     move-result-object v0
 
@@ -75,6 +76,10 @@
 
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 1
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

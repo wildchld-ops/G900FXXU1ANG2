@@ -163,6 +163,9 @@
 
 .method private createLogFromClass(Ljava/lang/String;Ljava/lang/String;Z)Lorg/apache/commons/logging/Log;
     .locals 20
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -658,7 +661,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v6}, Ljava/lang/NoClassDefFoundError;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -742,7 +745,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v11}, Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v11}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -842,7 +845,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v14}, Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v14}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -916,7 +919,7 @@
 
     move-result-object v17
 
-    invoke-virtual {v6}, Ljava/lang/ExceptionInInitializerError;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 
@@ -1092,6 +1095,7 @@
 
 .method private discoverLogImplementation(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 8
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -1379,7 +1383,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1414,7 +1418,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1525,6 +1529,8 @@
 
 .method private getBooleanConfiguration(Ljava/lang/String;Z)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1}, Lorg/apache/commons/logging/impl/LogFactoryImpl;->getConfigurationValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1549,6 +1555,7 @@
 
 .method protected static getClassLoader(Ljava/lang/Class;)Ljava/lang/ClassLoader;
     .locals 1
+    .param p0    # Ljava/lang/Class;
 
     invoke-static {p0}, Lorg/apache/commons/logging/LogFactory;->getClassLoader(Ljava/lang/Class;)Ljava/lang/ClassLoader;
 
@@ -1559,6 +1566,7 @@
 
 .method private getConfigurationValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lorg/apache/commons/logging/impl/LogFactoryImpl;->isDiagnosticsEnabled()Z
 
@@ -1825,6 +1833,8 @@
 
 .method private getLowestClassLoader(Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
     .locals 1
+    .param p1    # Ljava/lang/ClassLoader;
+    .param p2    # Ljava/lang/ClassLoader;
 
     if-nez p1, :cond_1
 
@@ -1880,6 +1890,9 @@
 
 .method private handleFlawedDiscovery(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/Throwable;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/ClassLoader;
+    .param p3    # Ljava/lang/Throwable;
 
     invoke-static {}, Lorg/apache/commons/logging/impl/LogFactoryImpl;->isDiagnosticsEnabled()Z
 
@@ -1956,6 +1969,8 @@
 
 .method private handleFlawedHierarchy(Ljava/lang/ClassLoader;Ljava/lang/Class;)V
     .locals 9
+    .param p1    # Ljava/lang/ClassLoader;
+    .param p2    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -2291,6 +2306,9 @@
 
 .method private informUponSimilarName(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
+    .param p1    # Ljava/lang/StringBuffer;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2459,6 +2477,8 @@
 
 .method private isLogLibraryAvailable(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2630,6 +2650,7 @@
 # virtual methods
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/commons/logging/impl/LogFactoryImpl;->attributes:Ljava/util/Hashtable;
 
@@ -2702,6 +2723,7 @@
 
 .method public getInstance(Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
     .locals 1
+    .param p1    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -2721,6 +2743,7 @@
 
 .method public getInstance(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 2
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -2844,6 +2867,7 @@
 
 .method protected logDiagnostic(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lorg/apache/commons/logging/impl/LogFactoryImpl;->isDiagnosticsEnabled()Z
 
@@ -2877,6 +2901,7 @@
 
 .method protected newInstance(Ljava/lang/String;)Lorg/apache/commons/logging/Log;
     .locals 8
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/logging/LogConfigurationException;
@@ -2994,6 +3019,7 @@
 
 .method public removeAttribute(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/commons/logging/impl/LogFactoryImpl;->attributes:Ljava/util/Hashtable;
 
@@ -3004,6 +3030,8 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lorg/apache/commons/logging/impl/LogFactoryImpl;->logConstructor:Ljava/lang/reflect/Constructor;
 

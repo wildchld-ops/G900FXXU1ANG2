@@ -51,6 +51,9 @@
 
 .method private binarySearch(IIJ)I
     .locals 5
+    .param p1    # I
+    .param p2    # I
+    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -124,6 +127,7 @@
 
 .method private static getSizeOfAreaCodeMapStorage(Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;Ljava/util/SortedMap;)I
     .locals 3
+    .param p0    # Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -223,7 +227,7 @@
 
     sget-object v5, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMap;->LOGGER:Ljava/util/logging/Logger;
 
-    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -238,6 +242,7 @@
 
 .method lookup(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
     .locals 12
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v11, 0x0
 
@@ -392,6 +397,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 2
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -441,6 +447,7 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 1
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

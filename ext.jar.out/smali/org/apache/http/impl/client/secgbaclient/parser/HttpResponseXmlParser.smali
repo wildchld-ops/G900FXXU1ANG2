@@ -16,6 +16,7 @@
 # virtual methods
 .method public getDoc(Ljava/lang/String;)Lorg/w3c/dom/Document;
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -50,27 +51,28 @@
     :catch_0
     move-exception v2
 
-    invoke-virtual {v2}, Ljavax/xml/parsers/ParserConfigurationException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v2
 
-    invoke-virtual {v2}, Lorg/xml/sax/SAXException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
 
 .method public getDoc(Lorg/apache/http/HttpResponse;)Lorg/w3c/dom/Document;
     .locals 4
+    .param p1    # Lorg/apache/http/HttpResponse;
 
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
 
@@ -103,7 +105,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_0
     const/4 v3, 0x0

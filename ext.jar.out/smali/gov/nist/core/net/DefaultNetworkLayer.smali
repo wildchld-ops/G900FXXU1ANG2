@@ -72,6 +72,8 @@
 
 .method public createDatagramSocket(ILjava/net/InetAddress;)Ljava/net/DatagramSocket;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -101,7 +103,7 @@
 
     new-instance v2, Ljava/net/SocketException;
 
-    invoke-virtual {v1}, Ljava/io/IOException;->getLocalizedMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -119,6 +121,9 @@
 
 .method public createSSLServerSocket(IILjava/net/InetAddress;)Ljavax/net/ssl/SSLServerSocket;
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -127,7 +132,7 @@
 
     iget-object v0, p0, Lgov/nist/core/net/DefaultNetworkLayer;->sslServerSocketFactory:Ljavax/net/ssl/SSLServerSocketFactory;
 
-    invoke-virtual {v0, p1, p2, p3}, Ljavax/net/ssl/SSLServerSocketFactory;->createServerSocket(IILjava/net/InetAddress;)Ljava/net/ServerSocket;
+    invoke-virtual {v0, p1, p2, p3}, Ljavax/net/ServerSocketFactory;->createServerSocket(IILjava/net/InetAddress;)Ljava/net/ServerSocket;
 
     move-result-object v0
 
@@ -138,6 +143,8 @@
 
 .method public createSSLSocket(Ljava/net/InetAddress;I)Ljavax/net/ssl/SSLSocket;
     .locals 1
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -146,7 +153,7 @@
 
     iget-object v0, p0, Lgov/nist/core/net/DefaultNetworkLayer;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-virtual {v0, p1, p2}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
 
     move-result-object v0
 
@@ -157,6 +164,9 @@
 
 .method public createSSLSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;)Ljavax/net/ssl/SSLSocket;
     .locals 2
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -167,7 +177,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p1, p2, p3, v1}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
+    invoke-virtual {v0, p1, p2, p3, v1}, Ljavax/net/SocketFactory;->createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
 
     move-result-object v0
 
@@ -178,6 +188,9 @@
 
 .method public createServerSocket(IILjava/net/InetAddress;)Ljava/net/ServerSocket;
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -193,6 +206,8 @@
 
 .method public createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
     .locals 1
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -208,6 +223,9 @@
 
 .method public createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;)Ljava/net/Socket;
     .locals 2
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -235,6 +253,10 @@
 
 .method public createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
     .locals 2
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Ljava/net/InetAddress;
+    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

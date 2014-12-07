@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d aplikasi dikemas kini</item>
+        <item quantity="one">%1$d aplikasi dikemas kini</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d kemas kini tersedia</item>
+        <item quantity="one">%1$d kemas kini tersedia</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d kemas kini memerlukan kelulusan</item>
+        <item quantity="one">%1$d kemas kini memerlukan kelulusan</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d hasil</item>
+        <item quantity="one">%1$d hasil</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d kemas kini baharu</item>
+        <item quantity="one">%1$d kemas kini baharu</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Penilaian anda: %1$s bintang</item>
+        <item quantity="one">Penilaian anda: %1$s bintang</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s orang telah +1 yang ini.</item>
+        <item quantity="one">%1$s orang telah +1 yang ini.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s dan %2$s yang lain +1 yang ini.</item>
+        <item quantity="one">%1$s dan %2$s yang lain telah +1 ini.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s yang lain</item>
+        <item quantity="one">+%1$d yang lain</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d dipilih</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Kemas kini tersedia</item>
+        <item quantity="one">Kemas kini tersedia</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">Anda mempunyai %1$d kemas kini tersedia. Adakah anda ingin memasang kemas kini itu?</item>
+        <item quantity="one">Anda mempunyai %1$d kemas kini tersedia. Adakah anda ingin memasang kemas kini itu?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s kalangan</item>
+        <item quantity="one">%1$s kalangan</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">bintang</item>
+        <item quantity="one">bintang</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang - %3$s - %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang - %3$s - %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang - %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang - %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s bintang&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s bintang&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s bintang</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">Nilaikan &amp;lt;b>%1$s bintang&amp;lt;/b></item>
+        <item quantity="one">Nilaikan &amp;lt;b>%1$s bintang&amp;lt;/b></item>
+    </plurals>
+</resources>

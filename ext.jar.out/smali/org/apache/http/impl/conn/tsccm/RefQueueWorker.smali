@@ -26,6 +26,7 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/ReferenceQueue;Lorg/apache/http/impl/conn/tsccm/RefQueueHandler;)V
     .locals 2
+    .param p2    # Lorg/apache/http/impl/conn/tsccm/RefQueueHandler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

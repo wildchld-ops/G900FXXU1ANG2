@@ -57,6 +57,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -152,6 +154,9 @@
 # virtual methods
 .method public getIntent(Landroid/view/KeyCharacterMap;II)Landroid/content/Intent;
     .locals 3
+    .param p1    # Landroid/view/KeyCharacterMap;
+    .param p2    # I
+    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -230,6 +235,7 @@
 
 .method public onChange(Z)V
     .locals 0
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/ShortcutManager;->updateShortcuts()V
 

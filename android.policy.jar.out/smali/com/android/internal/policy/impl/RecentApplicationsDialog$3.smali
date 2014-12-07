@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -62,7 +64,7 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/RecentApplicationsDialog$3;->this$0:Lcom/android/internal/policy/impl/RecentApplicationsDialog;
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/impl/RecentApplicationsDialog;->dismiss()V
+    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
 
     :cond_0
     return-void

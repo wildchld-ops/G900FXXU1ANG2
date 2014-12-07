@@ -35,6 +35,7 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,6 +46,10 @@
 
 .method protected constructor <init>(Ljava/net/InetAddress;ILjava/lang/String;Lgov/nist/javax/sip/stack/SIPTransactionStack;)V
     .locals 0
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
+    .param p4    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     invoke-direct {p0, p3}, Lgov/nist/javax/sip/stack/MessageProcessor;-><init>(Ljava/lang/String;)V
 
@@ -55,6 +60,7 @@
 
 .method public static getDefaultPort(Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "TLS"
 
@@ -280,7 +286,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/text/ParseException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     move-object v2, v3
 
@@ -289,7 +295,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljavax/sip/InvalidArgumentException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     move-object v2, v3
 
@@ -301,6 +307,9 @@
 
 .method public final initialize(Ljava/net/InetAddress;ILgov/nist/javax/sip/stack/SIPTransactionStack;)V
     .locals 3
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     iput-object p3, p0, Lgov/nist/javax/sip/stack/MessageProcessor;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -355,6 +364,7 @@
 
 .method protected setIpAddress(Ljava/net/InetAddress;)V
     .locals 3
+    .param p1    # Ljava/net/InetAddress;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/MessageProcessor;->sentByHostPort:Lgov/nist/core/HostPort;
 
@@ -375,6 +385,7 @@
 
 .method public setListeningPoint(Lgov/nist/javax/sip/ListeningPointImpl;)V
     .locals 3
+    .param p1    # Lgov/nist/javax/sip/ListeningPointImpl;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageProcessor;->getSIPStack()Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -455,6 +466,7 @@
 
 .method public setSentBy(Ljava/lang/String;)V
     .locals 7
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

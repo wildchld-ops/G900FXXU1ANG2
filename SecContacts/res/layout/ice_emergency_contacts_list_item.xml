@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/emergency_list_item_photo" android:focusable="false" android:clickable="false" android:layout_width="@dimen/contact_browser_list_item_photo_size" android:layout_height="@dimen/contact_browser_list_item_photo_size" android:src="@drawable/emergency" android:layout_marginStart="?contact_browser_list_padding_left" android:layout_marginEnd="?list_item_gap_between_image_and_text" />
+    <TextView android:gravity="center_vertical" android:id="@id/emergency_list_item_text" android:layout_width="wrap_content" android:layout_height="@dimen/contact_browser_list_item_photo_size" android:text="@string/emergency_contacts" android:paddingEnd="@dimen/tw_list_item_right_padding" style="@style/textAppearanceListPrimary" />
+</LinearLayout>

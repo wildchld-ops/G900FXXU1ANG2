@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.MenuView android:id="@id/menu_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/menu_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <FrameLayout android:layout_gravity="top" android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_tabMarginLeft" android:layout_marginRight="@dimen/menu_tabMarginRight" android:splitMotionEvents="false">
+            <FrameLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/tw_tab_unselected_bar_holo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+                    <com.android.launcher2.FocusOnlyTabWidget android:id="@android:id/tabs" android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="@drawable/title_bar_divider" android:layout_weight="2.0" android:tabStripEnabled="false" android:splitMotionEvents="false" />
+                    <include android:id="@id/menu_tab_space_divider" layout="@layout/menu_title_bar_divider" />
+                    <Space android:id="@id/menu_tab_gap" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/menu_title_downloaded_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:splitMotionEvents="false">
+                        <include layout="@layout/menu_title_bar_divider" />
+                        <include android:id="@id/downloaded_button_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/menu_title_downloaded_button" />
+                    </LinearLayout>
+                    <include android:id="@id/popup_icon_divider" layout="@layout/menu_title_bar_divider" />
+                </LinearLayout>
+                <include android:layout_gravity="right" android:orientation="horizontal" android:id="@id/popup_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/popup_icon" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_gravity="top" android:id="@id/menu_edit_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_titleMarginLeft" android:layout_marginRight="@dimen/menu_titleMarginRight" layout="@layout/menu_edit_title_bar" />
+        <include android:layout_gravity="top" android:id="@id/menu_uninstall_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_titleMarginLeft" android:layout_marginRight="@dimen/menu_titleMarginRight" layout="@layout/menu_uninstall_apps_title_bar" />
+        <ViewStub android:layout_gravity="top" android:id="@id/menu_downloaded_apps_title_bar_stub" android:layout="@layout/menu_downloaded_apps_title_bar" android:inflatedId="@id/menu_downloaded_apps_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_titleMarginLeft" android:layout_marginRight="@dimen/menu_titleMarginRight" />
+        <ViewStub android:layout_gravity="top" android:id="@id/menu_widgets_search_title_bar_stub" android:layout="@layout/menu_widgets_search_title_bar" android:inflatedId="@id/menu_widgets_search_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_titleMarginLeft" android:layout_marginRight="@dimen/menu_titleMarginRight" />
+        <ViewStub android:layout_gravity="top" android:id="@id/menu_selected_title_bar_stub" android:layout="@layout/menu_selected_title_bar" android:inflatedId="@id/menu_selected_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginLeft="@dimen/menu_titleMarginLeft" android:layout_marginRight="@dimen/menu_titleMarginRight" />
+        <FrameLayout android:layout_gravity="top" android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/menu_titleHeight" />
+        <ViewStub android:layout_gravity="center" android:id="@id/menu_page_edit_stub" android:layout="@layout/menu_page_edit" android:inflatedId="@id/menu_page_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:visibility="gone" layout="@layout/menu_edit_drag_bar" />
+        <com.android.launcher2.BlendedDarkenView android:id="@id/menu_darken_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </FrameLayout>
+</com.android.launcher2.MenuView>

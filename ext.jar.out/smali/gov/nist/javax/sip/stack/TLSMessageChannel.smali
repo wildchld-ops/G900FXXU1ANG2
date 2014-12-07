@@ -43,6 +43,10 @@
 # direct methods
 .method protected constructor <init>(Ljava/net/InetAddress;ILgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/TLSMessageProcessor;)V
     .locals 3
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p4    # Lgov/nist/javax/sip/stack/TLSMessageProcessor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -76,7 +80,7 @@
 
     iput p2, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->peerPort:I
 
-    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/TLSMessageProcessor;->getPort()I
+    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/MessageProcessor;->getPort()I
 
     move-result v0
 
@@ -90,7 +94,7 @@
 
     iput-object p4, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->tlsMessageProcessor:Lgov/nist/javax/sip/stack/TLSMessageProcessor;
 
-    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/TLSMessageProcessor;->getIpAddress()Ljava/net/InetAddress;
+    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
     move-result-object v0
 
@@ -119,6 +123,9 @@
 
 .method protected constructor <init>(Ljava/net/Socket;Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/TLSMessageProcessor;)V
     .locals 4
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p3    # Lgov/nist/javax/sip/stack/TLSMessageProcessor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -187,7 +194,7 @@
 
     iput-object v1, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->peerAddress:Ljava/net/InetAddress;
 
-    invoke-virtual {p3}, Lgov/nist/javax/sip/stack/TLSMessageProcessor;->getIpAddress()Ljava/net/InetAddress;
+    invoke-virtual {p3}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
     move-result-object v1
 
@@ -227,7 +234,7 @@
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->tlsMessageProcessor:Lgov/nist/javax/sip/stack/TLSMessageProcessor;
 
-    invoke-virtual {v1}, Lgov/nist/javax/sip/stack/TLSMessageProcessor;->getPort()I
+    invoke-virtual {v1}, Lgov/nist/javax/sip/stack/MessageProcessor;->getPort()I
 
     move-result v1
 
@@ -252,6 +259,8 @@
 
 .method private sendMessage([BZ)V
     .locals 10
+    .param p1    # [B
+    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -262,7 +271,7 @@
 
     iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->ioHandler:Lgov/nist/javax/sip/stack/IOHandler;
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->getMessageProcessor()Lgov/nist/javax/sip/stack/MessageProcessor;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getMessageProcessor()Lgov/nist/javax/sip/stack/MessageProcessor;
 
     move-result-object v1
 
@@ -435,6 +444,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -529,7 +539,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->getHost()Ljava/lang/String;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getHost()Ljava/lang/String;
 
     move-result-object v0
 
@@ -610,6 +620,11 @@
 
 .method public handleException(Ljava/text/ParseException;Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
+    .param p1    # Ljava/text/ParseException;
+    .param p2    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p3    # Ljava/lang/Class;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -747,7 +762,7 @@
 
     if-nez v3, :cond_4
 
-    invoke-virtual {p0, v2, p1}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->createBadReqRes(Ljava/lang/String;Ljava/text/ParseException;)Ljava/lang/String;
+    invoke-virtual {p0, v2, p1}, Lgov/nist/javax/sip/stack/MessageChannel;->createBadReqRes(Ljava/lang/String;Ljava/text/ParseException;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -861,6 +876,7 @@
 
 .method public processMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 24
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -968,7 +984,7 @@
 
     if-eqz v3, :cond_5
 
-    invoke-virtual/range {v23 .. v23}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual/range {v23 .. v23}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v22
 
@@ -1015,7 +1031,7 @@
 
     move-object/from16 v0, v22
 
-    invoke-virtual {v0, v3}, Lgov/nist/javax/sip/header/Via;->hasParameter(Ljava/lang/String;)Z
+    invoke-virtual {v0, v3}, Lgov/nist/javax/sip/header/ParametersHeader;->hasParameter(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -1052,7 +1068,7 @@
 
     move-object/from16 v0, v22
 
-    invoke-virtual {v0, v3, v4}, Lgov/nist/javax/sip/header/Via;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v4}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
     const-string v3, "rport"
@@ -1067,10 +1083,10 @@
 
     move-object/from16 v0, v22
 
-    invoke-virtual {v0, v3, v4}, Lgov/nist/javax/sip/header/Via;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v4}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/text/ParseException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :goto_1
     :try_start_2
@@ -1082,7 +1098,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v3, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v3, Lgov/nist/javax/sip/stack/TLSMessageProcessor;
 
@@ -1186,7 +1202,7 @@
 
     iget-object v3, v3, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverLogger:Lgov/nist/core/ServerLogger;
 
-    invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->getPeerHostPort()Lgov/nist/core/HostPort;
+    invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getPeerHostPort()Lgov/nist/core/HostPort;
 
     move-result-object v4
 
@@ -1200,7 +1216,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v6, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     invoke-virtual {v6}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
@@ -1222,7 +1238,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v6, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     invoke-virtual {v6}, Lgov/nist/javax/sip/stack/MessageProcessor;->getPort()I
 
@@ -1253,11 +1269,11 @@
 
     if-lez v3, :cond_9
 
-    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPRequest;->getSize()I
+    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPMessage;->getSize()I
 
     move-result v4
 
-    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPRequest;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
+    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPMessage;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
 
     move-result-object v3
 
@@ -1326,7 +1342,7 @@
     goto/16 :goto_1
 
     :cond_8
-    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPRequest;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
+    invoke-virtual/range {v17 .. v17}, Lgov/nist/javax/sip/message/SIPMessage;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
 
     move-result-object v3
 
@@ -1377,7 +1393,7 @@
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->passToListener()Z
+    invoke-virtual/range {v21 .. v21}, Lgov/nist/javax/sip/stack/SIPTransaction;->passToListener()Z
 
     move-result v3
 
@@ -1404,7 +1420,7 @@
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->passToListener()Z
+    invoke-virtual/range {v21 .. v21}, Lgov/nist/javax/sip/stack/SIPTransaction;->passToListener()Z
 
     move-result v4
 
@@ -1432,7 +1448,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    const-wide/high16 v3, 0x4024
+    const-wide/high16 v3, 0x4024000000000000L
 
     :try_start_6
     invoke-static {}, Ljava/lang/Math;->random()D
@@ -1447,14 +1463,14 @@
 
     invoke-virtual {v0, v3}, Lgov/nist/javax/sip/header/RetryAfter;->setRetryAfter(I)V
 
-    invoke-virtual/range {v15 .. v16}, Lgov/nist/javax/sip/message/SIPResponse;->setHeader(Ljavax/sip/header/Header;)V
+    invoke-virtual/range {v15 .. v16}, Lgov/nist/javax/sip/message/SIPMessage;->setHeader(Ljavax/sip/header/Header;)V
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v15}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     :goto_3
     :try_start_7
@@ -1494,8 +1510,8 @@
     :try_start_8
     invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPResponse;->checkHeaders()V
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
     .catch Ljava/text/ParseException; {:try_start_8 .. :try_end_8} :catch_1
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     :try_start_9
     move-object/from16 v0, p0
@@ -1508,11 +1524,11 @@
 
     if-lez v3, :cond_e
 
-    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPResponse;->getSize()I
+    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPMessage;->getSize()I
 
     move-result v4
 
-    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPResponse;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
+    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPMessage;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
 
     move-result-object v3
 
@@ -1603,7 +1619,7 @@
     goto/16 :goto_0
 
     :cond_d
-    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPResponse;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
+    invoke-virtual/range {v18 .. v18}, Lgov/nist/javax/sip/message/SIPMessage;->getContentLength()Ljavax/sip/header/ContentLengthHeader;
 
     move-result-object v3
 
@@ -1890,9 +1906,9 @@
 
     invoke-virtual {v2, v5}, Lgov/nist/javax/sip/parser/Pipeline;->write([B)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
     iget-object v5, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
@@ -1905,9 +1921,9 @@
 
     monitor-enter v6
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     :try_start_2
     iget-object v5, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->tlsMessageProcessor:Lgov/nist/javax/sip/stack/TLSMessageProcessor;
@@ -1934,9 +1950,9 @@
 
     invoke-virtual {v5}, Ljava/net/Socket;->close()V
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     :goto_1
     iput-boolean v8, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->isRunning:Z
@@ -1971,9 +1987,9 @@
     :try_start_5
     throw v5
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
     :catch_0
     move-exception v5
@@ -1986,9 +2002,9 @@
     :try_start_6
     invoke-virtual {v2, v3, v5, v4}, Lgov/nist/javax/sip/parser/Pipeline;->write([BII)V
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     goto :goto_0
 
@@ -2006,8 +2022,8 @@
 
     invoke-virtual {v2, v5}, Lgov/nist/javax/sip/parser/Pipeline;->write([B)V
     :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_5
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
     :goto_3
     :try_start_8
@@ -2045,8 +2061,8 @@
 
     invoke-interface {v5, v6}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_2
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_4
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     :cond_2
     :try_start_9
@@ -2060,9 +2076,9 @@
 
     monitor-enter v6
     :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_2
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_2
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_4
+    .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
     :try_start_a
     iget-object v5, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->tlsMessageProcessor:Lgov/nist/javax/sip/stack/TLSMessageProcessor;
@@ -2089,9 +2105,9 @@
 
     invoke-virtual {v2}, Lgov/nist/javax/sip/parser/Pipeline;->close()V
     :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_2
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_2
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_4
+    .catchall {:try_start_b .. :try_end_b} :catchall_2
 
     :goto_4
     iput-boolean v8, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->isRunning:Z
@@ -2123,9 +2139,9 @@
     :try_start_d
     throw v5
     :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_2
     .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_2
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_4
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
 
     :catch_2
     move-exception v5
@@ -2178,6 +2194,7 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 7
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2222,7 +2239,7 @@
 
     move-object v1, p1
 
-    invoke-virtual/range {v0 .. v5}, Lgov/nist/javax/sip/stack/TLSMessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
+    invoke-virtual/range {v0 .. v5}, Lgov/nist/javax/sip/stack/MessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
 
     :cond_0
     return-void
@@ -2230,6 +2247,10 @@
 
 .method public sendMessage([BLjava/net/InetAddress;IZ)V
     .locals 10
+    .param p1    # [B
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2254,7 +2275,7 @@
 
     iget-object v0, v0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->ioHandler:Lgov/nist/javax/sip/stack/IOHandler;
 
-    iget-object v1, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v1, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     invoke-virtual {v1}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
@@ -2330,6 +2351,7 @@
 
 .method public setHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
     .locals 0
+    .param p1    # Ljavax/net/ssl/HandshakeCompletedListener;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->handshakeCompletedListener:Ljavax/net/ssl/HandshakeCompletedListener;
 

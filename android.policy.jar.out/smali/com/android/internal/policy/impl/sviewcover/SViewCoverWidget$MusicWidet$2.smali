@@ -33,6 +33,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -136,7 +138,7 @@
 
     iget-object v5, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet$2;->this$0:Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;
 
-    #getter for: Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mMusicHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mMusicHandler:Landroid/os/Handler;
     invoke-static {v5}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->access$700(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;)Landroid/os/Handler;
 
     move-result-object v5
@@ -149,7 +151,7 @@
 
     iget-object v5, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet$2;->this$0:Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;
 
-    #getter for: Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mMusicHandler:Landroid/os/Handler;
+    # getter for: Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mMusicHandler:Landroid/os/Handler;
     invoke-static {v5}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->access$700(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;)Landroid/os/Handler;
 
     move-result-object v5

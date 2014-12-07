@@ -41,6 +41,7 @@
 # virtual methods
 .method protected findAttribHandler(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/impl/cookie/AbstractCookieSpec;->attribHandlerMap:Ljava/util/Map;
 
@@ -55,6 +56,7 @@
 
 .method protected getAttribHandler(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/impl/cookie/AbstractCookieSpec;->findAttribHandler(Ljava/lang/String;)Lorg/apache/http/cookie/CookieAttributeHandler;
 
@@ -119,6 +121,8 @@
 
 .method public registerAttribHandler(Ljava/lang/String;Lorg/apache/http/cookie/CookieAttributeHandler;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lorg/apache/http/cookie/CookieAttributeHandler;
 
     if-nez p1, :cond_0
 

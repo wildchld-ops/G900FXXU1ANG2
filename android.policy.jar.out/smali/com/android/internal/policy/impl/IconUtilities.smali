@@ -52,15 +52,16 @@
     nop
 
     :array_0
-    .array-data 0x4
-        0x0t 0x0t 0xfft 0xfft
-        0x0t 0xfft 0x0t 0xfft
-        0xfft 0x0t 0x0t 0xfft
+    .array-data 4
+        -0x10000
+        -0xff0100
+        -0xffff01
     .end array-data
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
+    .param p1    # Landroid/content/Context;
 
     const/16 v11, 0x1e
 
@@ -70,7 +71,7 @@
 
     const/4 v6, -0x1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput v6, p0, Lcom/android/internal/policy/impl/IconUtilities;->mIconWidth:I
 
@@ -130,11 +131,11 @@
 
     iget v2, v3, Landroid/util/DisplayMetrics;->density:F
 
-    const/high16 v6, 0x40a0
+    const/high16 v6, 0x40a00000
 
     mul-float v0, v6, v2
 
-    const/high16 v6, 0x105
+    const/high16 v6, 0x1050000
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -148,7 +149,7 @@
 
     iget v6, p0, Lcom/android/internal/policy/impl/IconUtilities;->mIconWidth:I
 
-    const/high16 v7, 0x4000
+    const/high16 v7, 0x40000000
 
     mul-float/2addr v7, v0
 
@@ -263,6 +264,7 @@
 
 .method private createIconBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 16
+    .param p1    # Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v0, p0
 
@@ -282,9 +284,9 @@
 
     check-cast v6, Landroid/graphics/drawable/PaintDrawable;
 
-    invoke-virtual {v6, v13}, Landroid/graphics/drawable/PaintDrawable;->setIntrinsicWidth(I)V
+    invoke-virtual {v6, v13}, Landroid/graphics/drawable/ShapeDrawable;->setIntrinsicWidth(I)V
 
-    invoke-virtual {v6, v4}, Landroid/graphics/drawable/PaintDrawable;->setIntrinsicHeight(I)V
+    invoke-virtual {v6, v4}, Landroid/graphics/drawable/ShapeDrawable;->setIntrinsicHeight(I)V
 
     :cond_0
     :goto_0
@@ -435,6 +437,8 @@
 
 .method private createSelectedBitmap(Landroid/graphics/Bitmap;Z)Landroid/graphics/Bitmap;
     .locals 9
+    .param p1    # Landroid/graphics/Bitmap;
+    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -507,6 +511,7 @@
 # virtual methods
 .method public createIconDrawable(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 7
+    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v6, 0x1
 
@@ -564,7 +569,7 @@
 
     iget v3, p0, Lcom/android/internal/policy/impl/IconUtilities;->mIconTextureHeight:I
 
-    invoke-virtual {v0, v5, v5, v2, v3}, Landroid/graphics/drawable/StateListDrawable;->setBounds(IIII)V
+    invoke-virtual {v0, v5, v5, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     return-object v0
 .end method

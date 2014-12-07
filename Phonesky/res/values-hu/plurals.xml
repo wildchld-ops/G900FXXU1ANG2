@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d alkalmazás frissítve</item>
+        <item quantity="one">%1$d alkalmazás frissítve</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">%1$d frissítés áll rendelkezésre</item>
+        <item quantity="one">%1$d frissítés áll rendelkezésre</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d frissítés vár jóváhagyásra</item>
+        <item quantity="one">%1$d frissítés vár jóváhagyásra</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d találat</item>
+        <item quantity="one">%1$d találat</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d új frissítés</item>
+        <item quantity="one">%1$d új frissítés</item>
+    </plurals>
+    <plurals name="content_description_rated">
+        <item quantity="other">Az Ön értékelése: %1$s csillag</item>
+        <item quantity="one">Az Ön értékelése: %1$s csillag</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s személy +1-ezte ezt.</item>
+        <item quantity="one">%1$s személy +1-ezte ezt.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s és %2$s másik személy +1-ezte ezt</item>
+        <item quantity="one">%1$s és %2$s másik személy +1-ezte ezt</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s személy</item>
+        <item quantity="one">+%1$d személy</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">%1$d kiválasztva</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">Frissítések érhetők el</item>
+        <item quantity="one">Frissítés érhető el</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">%1$d frissítés érhető el. Szeretné telepíteni őket?</item>
+        <item quantity="one">%1$d frissítés érhető el. Szeretné telepíteni?</item>
+    </plurals>
+    <plurals name="circles_multiple">
+        <item quantity="other">%1$s kör</item>
+        <item quantity="one">%1$s kör</item>
+    </plurals>
+    <plurals name="stars_without_numbers">
+        <item quantity="other">csillag</item>
+        <item quantity="one">csillag</item>
+    </plurals>
+    <plurals name="review_author_stars_title_comment">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag – %3$s | %4$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag – %3$s | %4$s</item>
+    </plurals>
+    <plurals name="review_author_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag – %3$s</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag – %3$s</item>
+    </plurals>
+    <plurals name="review_stars_title">
+        <item quantity="other">&amp;lt;b>%1$s csillag&amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;lt;b>%1$s csillag&amp;lt;/b> %2$s</item>
+    </plurals>
+    <plurals name="review_author_stars">
+        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag</item>
+        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s csillag</item>
+    </plurals>
+    <plurals name="review_just_stars">
+        <item quantity="other">&amp;lt;b>%1$s csillaggal&amp;lt;/b> értékelte</item>
+        <item quantity="one">&amp;lt;b>%1$s csillaggal&amp;lt;/b> értékelte</item>
+    </plurals>
+</resources>

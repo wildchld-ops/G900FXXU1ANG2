@@ -19,6 +19,8 @@
 # virtual methods
 .method public domainMatch(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -54,6 +56,8 @@
 
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 6
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     const/4 v3, 0x0
 
@@ -135,6 +139,8 @@
 
 .method public parse(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Lorg/apache/http/cookie/SetCookie;
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;
@@ -222,6 +228,8 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 8
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

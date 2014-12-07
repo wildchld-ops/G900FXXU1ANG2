@@ -38,6 +38,8 @@
 
 .method private injectHostname(Ljava/net/Socket;Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-class v2, Ljava/net/InetAddress;
@@ -50,7 +52,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     invoke-virtual {p1}, Ljava/net/Socket;->getInetAddress()Ljava/net/InetAddress;
 
@@ -67,14 +69,14 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/NoSuchFieldException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -83,6 +85,12 @@
 # virtual methods
 .method public connectSocket(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;
     .locals 7
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Ljava/net/InetAddress;
+    .param p5    # I
+    .param p6    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -129,6 +137,10 @@
 
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 1
+    .param p1    # Ljava/net/Socket;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,6 +160,7 @@
 
 .method public isSecure(Ljava/net/Socket;)Z
     .locals 1
+    .param p1    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

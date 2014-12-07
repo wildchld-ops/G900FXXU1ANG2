@@ -68,6 +68,10 @@
 # virtual methods
 .method public attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/ccil/cowan/tagsoup/Schema;->getElementType(Ljava/lang/String;)Lorg/ccil/cowan/tagsoup/ElementType;
 
@@ -117,6 +121,10 @@
 
 .method public elementType(Ljava/lang/String;III)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     new-instance v0, Lorg/ccil/cowan/tagsoup/ElementType;
 
@@ -140,7 +148,7 @@
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/high16 v1, -0x8000
+    const/high16 v1, -0x80000000
 
     if-ne p3, v1, :cond_0
 
@@ -152,6 +160,8 @@
 
 .method public entity(Ljava/lang/String;I)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/Schema;->theEntities:Ljava/util/HashMap;
 
@@ -166,6 +176,7 @@
 
 .method public getElementType(Ljava/lang/String;)Lorg/ccil/cowan/tagsoup/ElementType;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/Schema;->theElementTypes:Ljava/util/HashMap;
 
@@ -186,6 +197,7 @@
 
 .method public getEntity(Ljava/lang/String;)I
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lorg/ccil/cowan/tagsoup/Schema;->theEntities:Ljava/util/HashMap;
 
@@ -228,6 +240,8 @@
 
 .method public parent(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/ccil/cowan/tagsoup/Schema;->getElementType(Ljava/lang/String;)Lorg/ccil/cowan/tagsoup/ElementType;
 
@@ -326,6 +340,7 @@
 
 .method public setPrefix(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/Schema;->thePrefix:Ljava/lang/String;
 
@@ -334,6 +349,7 @@
 
 .method public setURI(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/Schema;->theURI:Ljava/lang/String;
 

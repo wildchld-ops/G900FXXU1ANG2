@@ -31,6 +31,7 @@
 
 .method public constructor <init>(Lorg/xml/sax/Attributes;)V
     .locals 0
+    .param p1    # Lorg/xml/sax/Attributes;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,6 +42,7 @@
 
 .method private badIndex(I)V
     .locals 3
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ArrayIndexOutOfBoundsException;
@@ -74,6 +76,7 @@
 
 .method private ensureCapacity(I)V
     .locals 5
+    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -146,6 +149,11 @@
 # virtual methods
 .method public addAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
 
     iget v0, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -246,6 +254,7 @@
 
 .method public getIndex(Ljava/lang/String;)I
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -286,6 +295,8 @@
 
 .method public getIndex(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -344,6 +355,7 @@
 
 .method public getLocalName(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -370,6 +382,7 @@
 
 .method public getQName(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -396,6 +409,7 @@
 
 .method public getType(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -422,6 +436,7 @@
 
 .method public getType(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -466,6 +481,8 @@
 
 .method public getType(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -520,6 +537,7 @@
 
 .method public getURI(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -544,6 +562,7 @@
 
 .method public getValue(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -570,6 +589,7 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -614,6 +634,8 @@
 
 .method public getValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     iget v2, p0, Lorg/ccil/cowan/tagsoup/AttributesImpl;->length:I
 
@@ -668,6 +690,7 @@
 
 .method public removeAttribute(I)V
     .locals 7
+    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -755,6 +778,12 @@
 
 .method public setAttribute(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
+    .param p6    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 
@@ -811,6 +840,7 @@
 
 .method public setAttributes(Lorg/xml/sax/Attributes;)V
     .locals 4
+    .param p1    # Lorg/xml/sax/Attributes;
 
     invoke-virtual {p0}, Lorg/ccil/cowan/tagsoup/AttributesImpl;->clear()V
 
@@ -907,6 +937,8 @@
 
 .method public setLocalName(ILjava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 
@@ -933,6 +965,8 @@
 
 .method public setQName(ILjava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 
@@ -959,6 +993,8 @@
 
 .method public setType(ILjava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 
@@ -985,6 +1021,8 @@
 
 .method public setURI(ILjava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 
@@ -1009,6 +1047,8 @@
 
 .method public setValue(ILjava/lang/String;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     if-ltz p1, :cond_0
 

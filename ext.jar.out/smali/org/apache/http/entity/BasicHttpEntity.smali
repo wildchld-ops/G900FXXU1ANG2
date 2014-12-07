@@ -129,6 +129,7 @@
 
 .method public setContent(Ljava/io/InputStream;)V
     .locals 1
+    .param p1    # Ljava/io/InputStream;
 
     iput-object p1, p0, Lorg/apache/http/entity/BasicHttpEntity;->content:Ljava/io/InputStream;
 
@@ -141,6 +142,7 @@
 
 .method public setContentLength(J)V
     .locals 0
+    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/entity/BasicHttpEntity;->length:J
 
@@ -149,6 +151,7 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 5
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

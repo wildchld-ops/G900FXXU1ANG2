@@ -10,6 +10,8 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/impl/conn/AbstractPoolEntry;)V
     .locals 1
+    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
+    .param p2    # Lorg/apache/http/impl/conn/AbstractPoolEntry;
 
     iget-object v0, p2, Lorg/apache/http/impl/conn/AbstractPoolEntry;->connection:Lorg/apache/http/conn/OperatedClientConnection;
 
@@ -58,7 +60,7 @@
     invoke-virtual {v1}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->shutdownEntry()V
 
     :cond_0
-    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractPooledConnAdapter;->getWrappedConnection()Lorg/apache/http/conn/OperatedClientConnection;
+    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractClientConnAdapter;->getWrappedConnection()Lorg/apache/http/conn/OperatedClientConnection;
 
     move-result-object v0
 
@@ -156,6 +158,8 @@
 
 .method public layerProtocol(Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 1
+    .param p1    # Lorg/apache/http/protocol/HttpContext;
+    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -173,6 +177,9 @@
 
 .method public open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 1
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -190,6 +197,10 @@
 
 .method public open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;Ljava/net/InetAddress;)V
     .locals 1
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Lorg/apache/http/protocol/HttpContext;
+    .param p3    # Lorg/apache/http/params/HttpParams;
+    .param p4    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -207,6 +218,7 @@
 
 .method public setState(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractPooledConnAdapter;->assertAttached()V
 
@@ -234,7 +246,7 @@
     invoke-virtual {v1}, Lorg/apache/http/impl/conn/AbstractPoolEntry;->shutdownEntry()V
 
     :cond_0
-    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractPooledConnAdapter;->getWrappedConnection()Lorg/apache/http/conn/OperatedClientConnection;
+    invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractClientConnAdapter;->getWrappedConnection()Lorg/apache/http/conn/OperatedClientConnection;
 
     move-result-object v0
 
@@ -248,6 +260,9 @@
 
 .method public tunnelProxy(Lorg/apache/http/HttpHost;ZLorg/apache/http/params/HttpParams;)V
     .locals 1
+    .param p1    # Lorg/apache/http/HttpHost;
+    .param p2    # Z
+    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -265,6 +280,8 @@
 
 .method public tunnelTarget(ZLorg/apache/http/params/HttpParams;)V
     .locals 1
+    .param p1    # Z
+    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

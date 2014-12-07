@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.play.PlayListView android:id="@id/bucket_list_view" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/play_main_background" android:divider="@null" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_results_view" />
+</FrameLayout>

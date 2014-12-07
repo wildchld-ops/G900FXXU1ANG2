@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d აპლიკაცია განახლდა</item>
+        <item quantity="one">%1$d აპლიკაცია განახლდა</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">ხელმისაწვდომია %1$d განახლება</item>
+        <item quantity="one">ხელმისაწვდომია %1$d განახლება</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d განახლებას დასტური ჭირდება</item>
+        <item quantity="one">%1$d განახლებას დასტური ჭირდება</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d შედეგი</item>
+        <item quantity="one">%1$d შედეგი</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d ახალი განახლება</item>
+        <item quantity="one">%1$d ახალი განახლება</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">ამას %1$s ადამიანმა დაამატა +1.</item>
+        <item quantity="one">ამას %1$s ადამიანმა დაამატა +1.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">ამას %1$s-მა და სხვა %2$s-მა დაამატა +1.</item>
+        <item quantity="one">ამას %1$s-მა და სხვა %2$s-მა დაამატა +1.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">+%1$s სხვა</item>
+        <item quantity="one">+%1$d სხვა</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">მონიშნულია %1$d</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">ხელმისაწვდომია განახლებები</item>
+        <item quantity="one">ხელმისაწვდომია განახლება</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">თქვენთვის ხელმისაწვდომია %1$d განახლება. გსურთ ინსტალაცია?</item>
+        <item quantity="one">თქვენთვის ხელმისაწვდომია %1$d განახლება. გსურთ ინსტალაცია?</item>
+    </plurals>
+</resources>

@@ -109,6 +109,7 @@
 # virtual methods
 .method public addLeadingDigitsPattern(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -158,6 +159,7 @@
 
 .method public getLeadingDigitsPattern(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;->leadingDigitsPattern_:Ljava/util/List;
 
@@ -265,6 +267,7 @@
 
 .method public mergeFrom(Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 3
+    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;->hasPattern()Z
 
@@ -349,6 +352,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 4
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -426,6 +430,7 @@
 
 .method public setDomesticCarrierCodeFormattingRule(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -438,6 +443,7 @@
 
 .method public setFormat(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -450,6 +456,7 @@
 
 .method public setNationalPrefixFormattingRule(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -462,6 +469,7 @@
 
 .method public setNationalPrefixOptionalWhenFormatting(Z)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -474,6 +482,7 @@
 
 .method public setPattern(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -486,6 +495,7 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 3
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

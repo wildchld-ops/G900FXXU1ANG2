@@ -50,12 +50,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIIII)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # I
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     new-instance v0, Ljava/lang/Object;
 
-    invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/BarController;->mServiceAquireLock:Ljava/lang/Object;
 
@@ -104,6 +110,7 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/BarController;)Lcom/android/internal/statusbar/IStatusBarService;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/BarController;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/BarController;->getStatusBarService()Lcom/android/internal/statusbar/IStatusBarService;
 
@@ -114,6 +121,7 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/BarController;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/BarController;
 
     iget v0, p0, Lcom/android/internal/policy/impl/BarController;->mStatusBarManagerId:I
 
@@ -122,6 +130,8 @@
 
 .method static synthetic access$202(Lcom/android/internal/policy/impl/BarController;Lcom/android/internal/statusbar/IStatusBarService;)Lcom/android/internal/statusbar/IStatusBarService;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/BarController;
+    .param p1    # Lcom/android/internal/statusbar/IStatusBarService;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/BarController;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
@@ -130,6 +140,10 @@
 
 .method private computeStateLw(ZZLandroid/view/WindowManagerPolicy$WindowState;Z)I
     .locals 6
+    .param p1    # Z
+    .param p2    # Z
+    .param p3    # Landroid/view/WindowManagerPolicy$WindowState;
+    .param p4    # Z
 
     const/4 v2, 0x2
 
@@ -242,6 +256,7 @@
 
 .method private setTransientBarState(I)V
     .locals 2
+    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -275,6 +290,7 @@
 
 .method private static transientBarStateToString(I)Ljava/lang/String;
     .locals 3
+    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -338,6 +354,7 @@
 
 .method private updateStateLw(I)Z
     .locals 2
+    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/BarController;->mState:I
 
@@ -368,6 +385,8 @@
 # virtual methods
 .method public adjustSystemUiVisibilityLw(II)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -444,6 +463,9 @@
 
 .method public applyTranslucentFlagLw(Landroid/view/WindowManagerPolicy$WindowState;II)I
     .locals 2
+    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
+    .param p2    # I
+    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/BarController;->mWin:Landroid/view/WindowManagerPolicy$WindowState;
 
@@ -621,6 +643,8 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/io/PrintWriter;
+    .param p2    # Ljava/lang/String;
 
     const/16 v1, 0x3d
 
@@ -718,6 +742,7 @@
 
 .method public setBarShowingLw(Z)Z
     .locals 9
+    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -797,6 +822,7 @@
 
 .method public setWindow(Landroid/view/WindowManagerPolicy$WindowState;)V
     .locals 0
+    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/BarController;->mWin:Landroid/view/WindowManagerPolicy$WindowState;
 
@@ -820,6 +846,9 @@
 
 .method public updateVisibilityLw(ZII)I
     .locals 3
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # I
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/BarController;->mWin:Landroid/view/WindowManagerPolicy$WindowState;
 

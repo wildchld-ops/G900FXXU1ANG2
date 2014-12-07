@@ -22,6 +22,9 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;II)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,6 +89,7 @@
 
 .method public compareToVersion(Lorg/apache/http/ProtocolVersion;)I
     .locals 4
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     if-nez p1, :cond_0
 
@@ -171,6 +175,7 @@
 
 .method public final equals(Ljava/lang/Object;)Z
     .locals 5
+    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -226,6 +231,8 @@
 
 .method public forVersion(II)Lorg/apache/http/ProtocolVersion;
     .locals 2
+    .param p1    # I
+    .param p2    # I
 
     iget v0, p0, Lorg/apache/http/ProtocolVersion;->major:I
 
@@ -276,6 +283,7 @@
 
 .method public final greaterEquals(Lorg/apache/http/ProtocolVersion;)Z
     .locals 1
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/ProtocolVersion;->isComparable(Lorg/apache/http/ProtocolVersion;)Z
 
@@ -326,6 +334,7 @@
 
 .method public isComparable(Lorg/apache/http/ProtocolVersion;)Z
     .locals 2
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     if-eqz p1, :cond_0
 
@@ -352,6 +361,7 @@
 
 .method public final lessEquals(Lorg/apache/http/ProtocolVersion;)Z
     .locals 1
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/ProtocolVersion;->isComparable(Lorg/apache/http/ProtocolVersion;)Z
 

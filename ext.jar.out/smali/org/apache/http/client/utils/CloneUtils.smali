@@ -14,6 +14,7 @@
 
 .method public static clone(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
+    .param p0    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/CloneNotSupportedException;
@@ -68,7 +69,7 @@
 
     new-instance v4, Ljava/lang/NoSuchMethodError;
 
-    invoke-virtual {v2}, Ljava/lang/NoSuchMethodException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -105,7 +106,7 @@
 
     new-instance v4, Ljava/lang/IllegalAccessError;
 
-    invoke-virtual {v2}, Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 

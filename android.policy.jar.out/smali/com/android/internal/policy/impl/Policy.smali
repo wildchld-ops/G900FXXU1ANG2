@@ -119,7 +119,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -128,6 +128,7 @@
 # virtual methods
 .method public makeNewFallbackEventHandler(Landroid/content/Context;)Landroid/view/FallbackEventHandler;
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneFallbackEventHandler;
 
@@ -138,6 +139,7 @@
 
 .method public makeNewLayoutInflater(Landroid/content/Context;)Landroid/view/LayoutInflater;
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneLayoutInflater;
 
@@ -148,6 +150,7 @@
 
 .method public makeNewWindow(Landroid/content/Context;)Landroid/view/Window;
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -158,6 +161,8 @@
 
 .method public makeNewWindow(Landroid/content/Context;Z)Landroid/view/Window;
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -173,13 +178,13 @@
 
     invoke-direct {v0, p1}, Lcom/android/internal/policy/impl/PhoneWindow;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/android/internal/policy/impl/PhoneWindow;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v1
 
     iget v2, v1, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    const/high16 v3, 0x40
+    const/high16 v3, 0x400000
 
     or-int/2addr v2, v3
 

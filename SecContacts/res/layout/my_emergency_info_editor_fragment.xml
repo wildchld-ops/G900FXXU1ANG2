@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/name_container" layout="@layout/my_emergency_info_editor_item" />
+        <include android:id="@id/health_record_container" layout="@layout/my_emergency_info_editor_item" />
+        <include android:id="@id/allergies_container" layout="@layout/my_emergency_info_editor_item" />
+        <include android:id="@id/current_medications_container" layout="@layout/my_emergency_info_editor_item" />
+        <include android:id="@id/other_container" layout="@layout/my_emergency_info_editor_item" />
+    </LinearLayout>
+</ScrollView>

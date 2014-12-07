@@ -20,6 +20,9 @@
 
 .method private static final copyHeader(Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuffer;)Z
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/StringBuffer;
 
     const/4 v3, -0x1
 
@@ -58,6 +61,8 @@
 
 .method private static final copyViaHeaders(Ljava/lang/String;Ljava/lang/StringBuffer;)Z
     .locals 5
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v4, -0x1
 
@@ -107,6 +112,8 @@
 
 .method public static getKey(Lgov/nist/core/HostPort;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p0    # Lgov/nist/core/HostPort;
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -161,6 +168,9 @@
 
 .method public static getKey(Ljava/net/InetAddress;ILjava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/net/InetAddress;
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -212,6 +222,8 @@
 
 .method protected final createBadReqRes(Ljava/lang/String;Ljava/text/ParseException;)Ljava/lang/String;
     .locals 10
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/text/ParseException;
 
     const/4 v9, -0x1
 
@@ -233,7 +245,7 @@
 
     move-result-object v7
 
-    invoke-virtual {p2}, Ljava/text/ParseException;->getLocalizedMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -409,7 +421,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lgov/nist/javax/sip/header/SIPHeader;->toString()Ljava/lang/String;
 
     move-result-object v7
 
@@ -437,7 +449,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v2}, Lgov/nist/javax/sip/header/ContentLength;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lgov/nist/javax/sip/header/SIPHeader;->toString()Ljava/lang/String;
 
     move-result-object v7
 
@@ -495,7 +507,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v2}, Lgov/nist/javax/sip/header/ContentLength;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lgov/nist/javax/sip/header/SIPHeader;->toString()Ljava/lang/String;
 
     move-result-object v7
 
@@ -741,6 +753,10 @@
 
 .method protected logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
     .locals 7
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
+    .param p4    # J
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getSIPStack()Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -848,6 +864,9 @@
 
 .method public logResponse(Lgov/nist/javax/sip/message/SIPResponse;JLjava/lang/String;)V
     .locals 10
+    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
+    .param p2    # J
+    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getPeerPort()I
 
@@ -855,17 +874,17 @@
 
     if-nez v9, :cond_0
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPResponse;->getContactHeaders()Lgov/nist/javax/sip/header/ContactList;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getContactHeaders()Lgov/nist/javax/sip/header/ContactList;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPResponse;->getContactHeaders()Lgov/nist/javax/sip/header/ContactList;
+    invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getContactHeaders()Lgov/nist/javax/sip/header/ContactList;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lgov/nist/javax/sip/header/ContactList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual {v0}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v8
 
@@ -971,6 +990,9 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;I)V
     .locals 7
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1008,6 +1030,8 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljavax/sip/address/Hop;)V
     .locals 16
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p2    # Ljavax/sip/address/Hop;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1118,9 +1142,9 @@
 
     invoke-interface {v1, v2}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
     invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getSIPStack()Lgov/nist/javax/sip/stack/SIPTransactionStack;
@@ -1182,9 +1206,9 @@
 
     invoke-virtual {v0, v14, v3, v1, v2}, Lgov/nist/javax/sip/stack/MessageChannel;->sendMessage([BLjava/net/InetAddress;IZ)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     invoke-virtual/range {p0 .. p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getSIPStack()Lgov/nist/javax/sip/stack/SIPTransactionStack;
 

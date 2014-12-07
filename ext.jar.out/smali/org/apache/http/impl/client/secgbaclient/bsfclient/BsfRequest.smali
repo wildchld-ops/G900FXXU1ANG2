@@ -20,7 +20,7 @@
 
 .field private static final HEADER_TMUS_IMEI:Ljava/lang/String; = "X-TMUS-IMEI"
 
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "BsfRequest"
 
@@ -60,6 +60,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lorg/apache/http/impl/client/secgbaclient/GbaRequest;-><init>(Ljava/lang/String;)V
 
@@ -72,6 +73,10 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/http/impl/client/secgbaclient/GbaRequest;-><init>()V
 
@@ -409,6 +414,7 @@
 
 .method public setAccept(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->accept:Ljava/lang/String;
 
@@ -417,6 +423,7 @@
 
 .method public setBsfAuthorizationHeaderValue(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->bsfAuthorizationHeaderValue:Ljava/lang/String;
 
@@ -425,6 +432,7 @@
 
 .method public setBsfHost(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->bsfHost:Ljava/lang/String;
 
@@ -433,6 +441,7 @@
 
 .method public setBsfRequest(Lorg/apache/http/HttpRequest;)V
     .locals 0
+    .param p1    # Lorg/apache/http/HttpRequest;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->bsfRequest:Lorg/apache/http/HttpRequest;
 
@@ -441,6 +450,7 @@
 
 .method public setBsfuri(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->bsfuri:Ljava/lang/String;
 
@@ -449,6 +459,7 @@
 
 .method public setConnection(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->connection:Ljava/lang/String;
 
@@ -457,6 +468,7 @@
 
 .method public setImei(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->imei:Ljava/lang/String;
 
@@ -465,6 +477,7 @@
 
 .method public setUserAgent(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfRequest;->userAgent:Ljava/lang/String;
 

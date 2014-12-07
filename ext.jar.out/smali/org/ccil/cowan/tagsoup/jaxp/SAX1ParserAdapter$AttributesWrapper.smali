@@ -46,6 +46,7 @@
 
 .method public getName(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     iget-object v1, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 
@@ -67,6 +68,7 @@
 
 .method public getType(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 
@@ -79,6 +81,7 @@
 
 .method public getType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 
@@ -91,6 +94,7 @@
 
 .method public getValue(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 
@@ -103,6 +107,7 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 
@@ -115,6 +120,7 @@
 
 .method public setAttributes(Lorg/xml/sax/Attributes;)V
     .locals 0
+    .param p1    # Lorg/xml/sax/Attributes;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter$AttributesWrapper;->attrs:Lorg/xml/sax/Attributes;
 

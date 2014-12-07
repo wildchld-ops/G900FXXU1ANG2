@@ -26,6 +26,7 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -92,6 +93,7 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
+    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v3, 0x0
 
@@ -107,6 +109,7 @@
 
     move-result-object v1
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
 
     move-result-object v2
@@ -121,6 +124,7 @@
 
     move-result-object v1
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$200()Z
 
     move-result v2
@@ -135,12 +139,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$000()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -150,6 +156,7 @@
     const/4 v0, 0x0
 
     :try_start_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
     invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$202(Z)Z
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;->restoreQuickpanelBackgroundInternal()V
@@ -169,6 +176,7 @@
     throw v0
 
     :cond_0
+    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$002(Z)Z
 
     goto :goto_0
@@ -176,6 +184,8 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;->dialog:Landroid/app/AlertDialog;
 
@@ -183,7 +193,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;->dialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     :cond_0
     return-void

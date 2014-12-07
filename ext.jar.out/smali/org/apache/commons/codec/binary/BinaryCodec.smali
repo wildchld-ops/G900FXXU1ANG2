@@ -8,7 +8,7 @@
 
 
 # static fields
-.field private static final BITS:[I = null
+.field private static final BITS:[I
 
 .field private static final BIT_0:I = 0x1
 
@@ -58,15 +58,15 @@
     nop
 
     :array_0
-    .array-data 0x4
-        0x1t 0x0t 0x0t 0x0t
-        0x2t 0x0t 0x0t 0x0t
-        0x4t 0x0t 0x0t 0x0t
-        0x8t 0x0t 0x0t 0x0t
-        0x10t 0x0t 0x0t 0x0t
-        0x20t 0x0t 0x0t 0x0t
-        0x40t 0x0t 0x0t 0x0t
-        0x80t 0x0t 0x0t 0x0t
+    .array-data 4
+        0x1
+        0x2
+        0x4
+        0x8
+        0x10
+        0x20
+        0x40
+        0x80
     .end array-data
 .end method
 
@@ -80,6 +80,7 @@
 
 .method public static fromAscii([B)[B
     .locals 6
+    .param p0    # [B
 
     if-eqz p0, :cond_0
 
@@ -155,6 +156,7 @@
 
 .method public static fromAscii([C)[B
     .locals 6
+    .param p0    # [C
 
     if-eqz p0, :cond_0
 
@@ -230,6 +232,7 @@
 
 .method public static toAsciiBytes([B)[B
     .locals 6
+    .param p0    # [B
 
     if-eqz p0, :cond_0
 
@@ -310,6 +313,7 @@
 
 .method public static toAsciiChars([B)[C
     .locals 6
+    .param p0    # [B
 
     if-eqz p0, :cond_0
 
@@ -390,6 +394,7 @@
 
 .method public static toAsciiString([B)Ljava/lang/String;
     .locals 2
+    .param p0    # [B
 
     new-instance v0, Ljava/lang/String;
 
@@ -406,6 +411,7 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -478,6 +484,7 @@
 
 .method public decode([B)[B
     .locals 1
+    .param p1    # [B
 
     invoke-static {p1}, Lorg/apache/commons/codec/binary/BinaryCodec;->fromAscii([B)[B
 
@@ -488,6 +495,7 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -520,6 +528,7 @@
 
 .method public encode([B)[B
     .locals 1
+    .param p1    # [B
 
     invoke-static {p1}, Lorg/apache/commons/codec/binary/BinaryCodec;->toAsciiBytes([B)[B
 
@@ -530,6 +539,7 @@
 
 .method public toByteArray(Ljava/lang/String;)[B
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

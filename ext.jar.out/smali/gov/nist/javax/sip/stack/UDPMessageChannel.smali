@@ -55,6 +55,8 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/UDPMessageProcessor;)V
     .locals 2
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p2    # Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/MessageChannel;-><init>()V
 
@@ -72,7 +74,7 @@
 
     invoke-direct {v0, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    invoke-virtual {p2}, Lgov/nist/javax/sip/stack/UDPMessageProcessor;->getIpAddress()Ljava/net/InetAddress;
+    invoke-virtual {p2}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
     move-result-object v1
 
@@ -103,6 +105,9 @@
 
 .method protected constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/UDPMessageProcessor;Ljava/net/DatagramPacket;)V
     .locals 2
+    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p2    # Lgov/nist/javax/sip/stack/UDPMessageProcessor;
+    .param p3    # Ljava/net/DatagramPacket;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/MessageChannel;-><init>()V
 
@@ -118,7 +123,7 @@
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
-    invoke-virtual {p2}, Lgov/nist/javax/sip/stack/UDPMessageProcessor;->getIpAddress()Ljava/net/InetAddress;
+    invoke-virtual {p2}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
     move-result-object v1
 
@@ -153,6 +158,10 @@
 
 .method protected constructor <init>(Ljava/net/InetAddress;ILgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/UDPMessageProcessor;)V
     .locals 3
+    .param p1    # Ljava/net/InetAddress;
+    .param p2    # I
+    .param p3    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
+    .param p4    # Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/MessageChannel;-><init>()V
 
@@ -172,7 +181,7 @@
 
     iput-object p4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
-    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/UDPMessageProcessor;->getIpAddress()Ljava/net/InetAddress;
+    invoke-virtual {p4}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
     move-result-object v0
 
@@ -242,6 +251,7 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/stack/UDPMessageChannel;)Ljava/util/Hashtable;
     .locals 1
+    .param p0    # Lgov/nist/javax/sip/stack/UDPMessageChannel;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->pingBackRecord:Ljava/util/Hashtable;
 
@@ -250,6 +260,7 @@
 
 .method private processIncomingDataPacket(Ljava/net/DatagramPacket;)V
     .locals 23
+    .param p1    # Ljava/net/DatagramPacket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -483,7 +494,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v5, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v5, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -596,7 +607,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v13}, Ljava/text/ParseException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v13}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v7
 
@@ -657,7 +668,7 @@
 
     move-object/from16 v1, v18
 
-    invoke-virtual {v0, v1, v13}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->createBadReqRes(Ljava/lang/String;Ljava/text/ParseException;)Ljava/lang/String;
+    invoke-virtual {v0, v1, v13}, Lgov/nist/javax/sip/stack/MessageChannel;->createBadReqRes(Ljava/lang/String;Ljava/text/ParseException;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -938,7 +949,7 @@
 
     if-eqz v5, :cond_c
 
-    invoke-virtual/range {v22 .. v22}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual/range {v22 .. v22}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v21
 
@@ -1003,7 +1014,7 @@
 
     move-object/from16 v0, v21
 
-    invoke-virtual {v0, v5}, Lgov/nist/javax/sip/header/Via;->hasParameter(Ljava/lang/String;)Z
+    invoke-virtual {v0, v5}, Lgov/nist/javax/sip/header/ParametersHeader;->hasParameter(Ljava/lang/String;)Z
 
     move-result v15
 
@@ -1040,7 +1051,7 @@
 
     move-object/from16 v0, v21
 
-    invoke-virtual {v0, v5, v6}, Lgov/nist/javax/sip/header/Via;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v5, v6}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_a
     if-eqz v15, :cond_b
@@ -1057,7 +1068,7 @@
 
     move-object/from16 v0, v21
 
-    invoke-virtual {v0, v5, v6}, Lgov/nist/javax/sip/header/Via;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v5, v6}, Lgov/nist/javax/sip/header/ParametersHeader;->setParameter(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/text/ParseException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -1111,7 +1122,7 @@
 
     iput v5, v0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->peerPort:I
 
-    invoke-virtual/range {v22 .. v22}, Lgov/nist/javax/sip/header/ViaList;->getFirst()Ljavax/sip/header/Header;
+    invoke-virtual/range {v22 .. v22}, Lgov/nist/javax/sip/header/SIPHeaderList;->getFirst()Ljavax/sip/header/Header;
 
     move-result-object v5
 
@@ -1138,6 +1149,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1188,7 +1200,7 @@
 .method public getHost()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v0, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     invoke-virtual {v0}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
@@ -1284,7 +1296,7 @@
 .method public getPort()I
     .locals 1
 
-    iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v0, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v0, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -1329,6 +1341,11 @@
 
 .method public handleException(Ljava/text/ParseException;Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/text/ParseException;
+    .param p2    # Lgov/nist/javax/sip/message/SIPMessage;
+    .param p3    # Ljava/lang/Class;
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1464,6 +1481,7 @@
 
 .method public processMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 14
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
 
     instance-of v1, p1, Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -1491,7 +1509,7 @@
 
     iget-object v1, v1, Lgov/nist/javax/sip/stack/SIPTransactionStack;->serverLogger:Lgov/nist/core/ServerLogger;
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->getPeerHostPort()Lgov/nist/core/HostPort;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/stack/MessageChannel;->getPeerHostPort()Lgov/nist/core/HostPort;
 
     move-result-object v2
 
@@ -1629,7 +1647,7 @@
 
     check-cast v13, Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {v13}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->passToListener()Z
+    invoke-virtual {v13}, Lgov/nist/javax/sip/stack/SIPTransaction;->passToListener()Z
 
     move-result v1
 
@@ -1703,7 +1721,7 @@
 
     check-cast v13, Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
-    invoke-virtual {v13}, Lgov/nist/javax/sip/stack/SIPServerTransaction;->passToListener()Z
+    invoke-virtual {v13}, Lgov/nist/javax/sip/stack/SIPTransaction;->passToListener()Z
 
     move-result v2
 
@@ -1949,7 +1967,7 @@
 
     if-eq v4, v8, :cond_6
 
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -1960,19 +1978,19 @@
     :cond_2
     :goto_0
     :try_start_0
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
     iget-object v4, v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;->messageQueue:Ljava/util/LinkedList;
 
-    invoke-virtual {v4}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {v4}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_5
 
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -2004,7 +2022,7 @@
     :cond_4
     invoke-virtual {v3}, Lgov/nist/core/ThreadAuditor$ThreadHandle;->ping()V
 
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -2016,8 +2034,8 @@
 
     invoke-virtual {v4, v6, v7}, Ljava/lang/Object;->wait(J)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
@@ -2025,7 +2043,7 @@
     move-exception v1
 
     :try_start_2
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -2048,7 +2066,7 @@
 
     :cond_5
     :try_start_3
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -2104,6 +2122,7 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 14
+    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2238,9 +2257,9 @@
 
     invoke-interface {v0, v2}, Lgov/nist/core/StackLogger;->logDebug(Ljava/lang/String;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
     iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
@@ -2272,7 +2291,7 @@
 
     move-object v3, p1
 
-    invoke-virtual/range {v2 .. v7}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
+    invoke-virtual/range {v2 .. v7}, Lgov/nist/javax/sip/stack/MessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
 
     :cond_2
     :goto_3
@@ -2318,9 +2337,9 @@
 
     invoke-virtual/range {v0 .. v5}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->sendMessage([BLjava/net/InetAddress;ILjava/lang/String;Z)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -2387,7 +2406,7 @@
 
     move-object v3, p1
 
-    invoke-virtual/range {v2 .. v7}, Lgov/nist/javax/sip/stack/UDPMessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
+    invoke-virtual/range {v2 .. v7}, Lgov/nist/javax/sip/stack/MessageChannel;->logMessage(Lgov/nist/javax/sip/message/SIPMessage;Ljava/net/InetAddress;IJ)V
 
     :cond_6
     :goto_4
@@ -2500,6 +2519,11 @@
 
 .method protected sendMessage([BLjava/net/InetAddress;ILjava/lang/String;Z)V
     .locals 16
+    .param p1    # [B
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
+    .param p4    # Ljava/lang/String;
+    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2678,7 +2702,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v3, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v3, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 
@@ -2811,7 +2835,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, v0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     invoke-virtual {v4}, Lgov/nist/javax/sip/stack/MessageProcessor;->getIpAddress()Ljava/net/InetAddress;
 
@@ -2854,6 +2878,10 @@
 
 .method protected sendMessage([BLjava/net/InetAddress;IZ)V
     .locals 7
+    .param p1    # [B
+    .param p2    # Ljava/net/InetAddress;
+    .param p3    # I
+    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3049,7 +3077,7 @@
 
     if-eqz v4, :cond_5
 
-    iget-object v4, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
+    iget-object v4, p0, Lgov/nist/javax/sip/stack/MessageChannel;->messageProcessor:Lgov/nist/javax/sip/stack/MessageProcessor;
 
     check-cast v4, Lgov/nist/javax/sip/stack/UDPMessageProcessor;
 

@@ -57,7 +57,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
@@ -76,6 +76,7 @@
 
 .method public static SetDataPath(Ljava/lang/String;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "VoiceEngine"
 
@@ -177,7 +178,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/UnsatisfiedLinkError;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -208,7 +209,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -323,6 +324,11 @@
 
 .method public processBuffer([SILjava/lang/String;[S[S)I
     .locals 8
+    .param p1    # [S
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
+    .param p4    # [S
+    .param p5    # [S
 
     const/4 v7, 0x0
 
@@ -383,6 +389,7 @@
 
 .method public setAdaptationModelPath(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -429,6 +436,7 @@
 
 .method public setIsRunningAdaptation(Z)V
     .locals 3
+    .param p1    # Z
 
     monitor-enter p0
 
@@ -473,6 +481,7 @@
 
 .method public setIsRunningVoiceEngine(Z)V
     .locals 3
+    .param p1    # Z
 
     monitor-enter p0
 
@@ -517,6 +526,7 @@
 
 .method public setMode(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/VoiceEngine;->m_engineMode:I
 

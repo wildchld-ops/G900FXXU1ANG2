@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final DEFAULT_CONN_PER_ROUTE:Lorg/apache/http/conn/params/ConnPerRoute; = null
+.field private static final DEFAULT_CONN_PER_ROUTE:Lorg/apache/http/conn/params/ConnPerRoute;
 
 .field public static final DEFAULT_MAX_TOTAL_CONNECTIONS:I = 0x14
 
@@ -35,6 +35,7 @@
 
 .method public static getMaxConnectionsPerRoute(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/conn/params/ConnPerRoute;
     .locals 3
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -65,6 +66,7 @@
 
 .method public static getMaxTotalConnections(Lorg/apache/http/params/HttpParams;)I
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -90,6 +92,7 @@
 
 .method public static getTimeout(Lorg/apache/http/params/HttpParams;)J
     .locals 3
+    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -115,6 +118,8 @@
 
 .method public static setMaxConnectionsPerRoute(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/params/ConnPerRoute;)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # Lorg/apache/http/conn/params/ConnPerRoute;
 
     if-nez p0, :cond_0
 
@@ -136,6 +141,8 @@
 
 .method public static setMaxTotalConnections(Lorg/apache/http/params/HttpParams;I)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -157,6 +164,8 @@
 
 .method public static setTimeout(Lorg/apache/http/params/HttpParams;J)V
     .locals 2
+    .param p0    # Lorg/apache/http/params/HttpParams;
+    .param p1    # J
 
     if-nez p0, :cond_0
 

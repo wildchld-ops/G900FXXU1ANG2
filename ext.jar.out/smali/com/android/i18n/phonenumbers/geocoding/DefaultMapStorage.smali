@@ -22,6 +22,7 @@
 # virtual methods
 .method public getDescription(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->descriptions:[Ljava/lang/String;
 
@@ -32,6 +33,7 @@
 
 .method public getPrefix(I)I
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->phoneNumberPrefixes:[I
 
@@ -42,6 +44,7 @@
 
 .method public readExternal(Ljava/io/ObjectInput;)V
     .locals 4
+    .param p1    # Ljava/io/ObjectInput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -52,7 +55,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iput v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     iget-object v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->phoneNumberPrefixes:[I
 
@@ -62,12 +65,12 @@
 
     array-length v2, v2
 
-    iget v3, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v3, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v2, v3, :cond_1
 
     :cond_0
-    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     new-array v2, v2, [I
 
@@ -82,12 +85,12 @@
 
     array-length v2, v2
 
-    iget v3, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v3, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v2, v3, :cond_3
 
     :cond_2
-    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     new-array v2, v2, [Ljava/lang/String;
 
@@ -97,7 +100,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v0, v2, :cond_4
 
@@ -126,7 +129,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v2}, Ljava/util/TreeSet;->clear()V
 
@@ -135,7 +138,7 @@
     :goto_1
     if-ge v0, v1, :cond_5
 
-    iget-object v2, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v2, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-interface {p1}, Ljava/io/ObjectInput;->readInt()I
 
@@ -172,15 +175,15 @@
 
     move-result v4
 
-    iput v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iput v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
-    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     new-array v4, v4, [I
 
     iput-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->phoneNumberPrefixes:[I
 
-    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     new-array v4, v4, [Ljava/lang/String;
 
@@ -219,7 +222,7 @@
 
     aput v3, v4, v1
 
-    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     int-to-double v5, v3
 
@@ -255,20 +258,21 @@
 
 .method public writeExternal(Ljava/io/ObjectOutput;)V
     .locals 5
+    .param p1    # Ljava/io/ObjectOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     invoke-interface {p1, v4}, Ljava/io/ObjectOutput;->writeInt(I)V
 
     const/4 v0, 0x0
 
     :goto_0
-    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->numOfEntries:I
+    iget v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->numOfEntries:I
 
     if-ge v0, v4, :cond_0
 
@@ -289,7 +293,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v4}, Ljava/util/TreeSet;->size()I
 
@@ -297,7 +301,7 @@
 
     invoke-interface {p1, v3}, Ljava/io/ObjectOutput;->writeInt(I)V
 
-    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/DefaultMapStorage;->possibleLengths:Ljava/util/TreeSet;
+    iget-object v4, p0, Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMapStorageStrategy;->possibleLengths:Ljava/util/TreeSet;
 
     invoke-virtual {v4}, Ljava/util/TreeSet;->iterator()Ljava/util/Iterator;
 

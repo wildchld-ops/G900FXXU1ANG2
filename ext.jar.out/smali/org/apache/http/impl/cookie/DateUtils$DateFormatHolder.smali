@@ -55,6 +55,7 @@
 
 .method public static formatFor(Ljava/lang/String;)Ljava/text/SimpleDateFormat;
     .locals 5
+    .param p0    # Ljava/lang/String;
 
     sget-object v3, Lorg/apache/http/impl/cookie/DateUtils$DateFormatHolder;->THREADLOCAL_FORMATS:Ljava/lang/ThreadLocal;
 
@@ -64,7 +65,7 @@
 
     check-cast v2, Ljava/lang/ref/SoftReference;
 
-    invoke-virtual {v2}, Ljava/lang/ref/SoftReference;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -105,7 +106,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v3}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v0, v3}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     invoke-interface {v1, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

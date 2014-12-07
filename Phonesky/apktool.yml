@@ -1,0 +1,21 @@
+version: 2.0.0-RC2
+apkFileName: Phonesky.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '14'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '80250010'
+  versionName: 4.5.10
+compressionType: false
+unknownFiles:
+  org/keyczar/i18n/COPYING: '8'
+  org/keyczar/i18n/messages.properties: '8'
+  org/keyczar/i18n/messages_hi.properties: '8'
+  org/keyczar/i18n/messages_jp.properties: '8'
+  org/keyczar/i18n/messages_pt.properties: '8'

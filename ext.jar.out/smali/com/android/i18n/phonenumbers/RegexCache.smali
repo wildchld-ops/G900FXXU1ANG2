@@ -28,6 +28,7 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,6 +45,7 @@
 # virtual methods
 .method containsRegex(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/RegexCache;->cache:Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;
 
@@ -56,6 +58,7 @@
 
 .method public getPatternForRegex(Ljava/lang/String;)Ljava/util/regex/Pattern;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/RegexCache;->cache:Lcom/android/i18n/phonenumbers/RegexCache$LRUCache;
 

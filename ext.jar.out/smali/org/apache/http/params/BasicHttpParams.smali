@@ -69,6 +69,7 @@
 
 .method protected copyParams(Lorg/apache/http/params/HttpParams;)V
     .locals 4
+    .param p1    # Lorg/apache/http/params/HttpParams;
 
     iget-object v2, p0, Lorg/apache/http/params/BasicHttpParams;->parameters:Ljava/util/HashMap;
 
@@ -127,6 +128,7 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -146,6 +148,7 @@
 
 .method public isParameterSet(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/params/BasicHttpParams;->getParameter(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -166,6 +169,7 @@
 
 .method public isParameterSetLocally(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/params/BasicHttpParams;->parameters:Ljava/util/HashMap;
 
@@ -192,6 +196,7 @@
 
 .method public removeParameter(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -223,6 +228,8 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams;
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lorg/apache/http/params/BasicHttpParams;->parameters:Ljava/util/HashMap;
 
@@ -244,6 +251,8 @@
 
 .method public setParameters([Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
+    .param p1    # [Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 

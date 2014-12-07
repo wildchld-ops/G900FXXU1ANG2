@@ -30,6 +30,7 @@
 # virtual methods
 .method public getMaxForRoute(Lorg/apache/http/conn/routing/HttpRoute;)I
     .locals 1
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     const/4 v0, 0x2
 

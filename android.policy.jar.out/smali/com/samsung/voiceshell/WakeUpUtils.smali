@@ -11,7 +11,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -26,6 +26,7 @@
 
 .method public static IsFileExist(Ljava/lang/String;)Z
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 

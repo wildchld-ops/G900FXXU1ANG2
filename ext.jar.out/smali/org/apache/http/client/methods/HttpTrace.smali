@@ -18,6 +18,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/http/client/methods/HttpRequestBase;-><init>()V
 
@@ -25,17 +26,18 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/client/methods/HttpTrace;->setURI(Ljava/net/URI;)V
+    invoke-virtual {p0, v0}, Lorg/apache/http/client/methods/HttpRequestBase;->setURI(Ljava/net/URI;)V
 
     return-void
 .end method
 
 .method public constructor <init>(Ljava/net/URI;)V
     .locals 0
+    .param p1    # Ljava/net/URI;
 
     invoke-direct {p0}, Lorg/apache/http/client/methods/HttpRequestBase;-><init>()V
 
-    invoke-virtual {p0, p1}, Lorg/apache/http/client/methods/HttpTrace;->setURI(Ljava/net/URI;)V
+    invoke-virtual {p0, p1}, Lorg/apache/http/client/methods/HttpRequestBase;->setURI(Ljava/net/URI;)V
 
     return-void
 .end method

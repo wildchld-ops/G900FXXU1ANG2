@@ -375,6 +375,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 17
+    .param p1    # Landroid/content/Context;
 
     invoke-direct/range {p0 .. p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -1003,7 +1004,7 @@
 
     iget-object v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadIntent:Landroid/content/Intent;
 
-    const/high16 v13, 0x1400
+    const/high16 v13, 0x14000000
 
     invoke-virtual {v12, v13}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1107,7 +1108,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->setFocusableInTouchMode(Z)V
+    invoke-virtual {v0, v12}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     move-object/from16 v0, p0
 
@@ -1309,37 +1310,37 @@
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstStartPointY:I
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointX:F
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointY:F
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mEndPointX:F
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mEndPointY:F
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
-    const/high16 v12, -0x4080
+    const/high16 v12, -0x40800000
 
     move-object/from16 v0, p0
 
@@ -1531,7 +1532,7 @@
 
     iget-object v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathPaintWhite:Landroid/graphics/Paint;
 
-    const/high16 v13, 0x4000
+    const/high16 v13, 0x40000000
 
     invoke-virtual {v12, v13}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
@@ -1545,13 +1546,13 @@
 
     iget-object v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathPaintWhite:Landroid/graphics/Paint;
 
-    const/high16 v13, 0x3f80
+    const/high16 v13, 0x3f800000
 
     const/4 v14, 0x0
 
-    const/high16 v15, 0x3f80
+    const/high16 v15, 0x3f800000
 
-    const/high16 v16, -0x100
+    const/high16 v16, -0x1000000
 
     invoke-virtual/range {v12 .. v16}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
@@ -1597,7 +1598,7 @@
 
     iget-object v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintWhite:Landroid/graphics/Paint;
 
-    const/high16 v13, 0x4040
+    const/high16 v13, 0x40400000
 
     invoke-virtual {v12, v13}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
@@ -1605,13 +1606,13 @@
 
     iget-object v12, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintWhite:Landroid/graphics/Paint;
 
-    const/high16 v13, 0x3f80
+    const/high16 v13, 0x3f800000
 
     const/4 v14, 0x0
 
-    const/high16 v15, 0x3f80
+    const/high16 v15, 0x3f800000
 
-    const/high16 v16, -0x100
+    const/high16 v16, -0x1000000
 
     invoke-virtual/range {v12 .. v16}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
@@ -1730,16 +1731,16 @@
     nop
 
     :array_0
-    .array-data 0x4
-        0x0t 0x0t 0xa0t 0x40t
-        0x0t 0x0t 0x0t 0x40t
+    .array-data 4
+        0x40a00000
+        0x40000000
     .end array-data
 .end method
 
 .method private GetDefaultDisplayBimap()Landroid/graphics/Bitmap;
     .locals 14
 
-    const/high16 v13, 0x4000
+    const/high16 v13, 0x40000000
 
     const/4 v6, 0x0
 
@@ -1988,7 +1989,7 @@
 
     invoke-direct {v10, v5, v6}, Ljava/util/Date;-><init>(J)V
 
-    invoke-virtual {v9, v10}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v9, v10}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2126,7 +2127,7 @@
 
     invoke-virtual {v9, v10, v11, v7}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->flush()V
+    invoke-virtual {v7}, Ljava/io/OutputStream;->flush()V
 
     invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
     :try_end_0
@@ -2194,7 +2195,7 @@
 
     invoke-virtual {v9, v10, v11, v7}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->flush()V
+    invoke-virtual {v7}, Ljava/io/OutputStream;->flush()V
 
     invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
     :try_end_1
@@ -2234,7 +2235,7 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 
@@ -2263,13 +2264,14 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_2
 .end method
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
 
@@ -2278,6 +2280,8 @@
 
 .method static synthetic access$002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsFirstMediaScan:Z
 
@@ -2286,6 +2290,7 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
 
@@ -2294,6 +2299,8 @@
 
 .method static synthetic access$1002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsClosedCurve:Z
 
@@ -2302,6 +2309,8 @@
 
 .method static synthetic access$102(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsSendingBootMsg:Z
 
@@ -2310,6 +2319,7 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPointers:Ljava/util/ArrayList;
 
@@ -2318,6 +2328,7 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isLockScreenShowing()Z
 
@@ -2328,6 +2339,8 @@
 
 .method static synthetic access$1300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Ljava/lang/String;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isTopActivity(Ljava/lang/String;)Z
 
@@ -2338,6 +2351,8 @@
 
 .method static synthetic access$1402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mDisplayRoateChanged:Z
 
@@ -2346,6 +2361,8 @@
 
 .method static synthetic access$1502(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsLiveScreencapture:Z
 
@@ -2354,6 +2371,7 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mLongPressIntent:Landroid/content/Intent;
 
@@ -2362,6 +2380,7 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsKeyguardOn:Z
 
@@ -2370,6 +2389,7 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnableDoubleTapOnLockscreen:Z
 
@@ -2378,6 +2398,7 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsLiveGlanceView:Z
 
@@ -2386,6 +2407,7 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
 
@@ -2394,6 +2416,7 @@
 
 .method static synthetic access$2000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPenMemoActionIntent:Landroid/content/Intent;
 
@@ -2402,6 +2425,8 @@
 
 .method static synthetic access$2002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPenMemoActionIntent:Landroid/content/Intent;
 
@@ -2410,6 +2435,7 @@
 
 .method static synthetic access$2100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/telephony/TelephonyManager;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -2418,6 +2444,7 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/telephony/TelephonyManager;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mTelephonyManager2:Landroid/telephony/TelephonyManager;
 
@@ -2426,6 +2453,7 @@
 
 .method static synthetic access$2300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mDoubleTapIntent:Landroid/content/Intent;
 
@@ -2434,6 +2462,7 @@
 
 .method static synthetic access$2400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadBlockTaskList:Ljava/util/ArrayList;
 
@@ -2442,6 +2471,8 @@
 
 .method static synthetic access$2500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Ljava/util/ArrayList;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isTopActivity(Ljava/util/ArrayList;)Z
 
@@ -2452,6 +2483,7 @@
 
 .method static synthetic access$2600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGesturePadIntent:Landroid/content/Intent;
 
@@ -2460,6 +2492,9 @@
 
 .method static synthetic access$2700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;II)V
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->sendKeyDownUpSync(II)V
 
@@ -2468,6 +2503,7 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnabledHapticFeedback:Z
 
@@ -2476,6 +2512,7 @@
 
 .method static synthetic access$3400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsUsablePath:Z
 
@@ -2484,6 +2521,8 @@
 
 .method static synthetic access$3402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsUsablePath:Z
 
@@ -2492,6 +2531,7 @@
 
 .method static synthetic access$3500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurve:Landroid/graphics/Path;
 
@@ -2500,6 +2540,7 @@
 
 .method static synthetic access$3600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordX:I
 
@@ -2508,6 +2549,8 @@
 
 .method static synthetic access$3602(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordX:I
 
@@ -2516,6 +2559,7 @@
 
 .method static synthetic access$3700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordX:I
 
@@ -2524,6 +2568,8 @@
 
 .method static synthetic access$3702(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordX:I
 
@@ -2532,6 +2578,7 @@
 
 .method static synthetic access$3800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordY:I
 
@@ -2540,6 +2587,8 @@
 
 .method static synthetic access$3802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordY:I
 
@@ -2548,6 +2597,7 @@
 
 .method static synthetic access$3900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordY:I
 
@@ -2556,6 +2606,8 @@
 
 .method static synthetic access$3902(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordY:I
 
@@ -2564,6 +2616,7 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mOutofVerticalThresholdToUp:Z
 
@@ -2572,6 +2625,7 @@
 
 .method static synthetic access$4000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsUsableSecondPath:Z
 
@@ -2580,6 +2634,8 @@
 
 .method static synthetic access$4002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsUsableSecondPath:Z
 
@@ -2588,6 +2644,8 @@
 
 .method static synthetic access$402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mOutofVerticalThresholdToUp:Z
 
@@ -2596,6 +2654,7 @@
 
 .method static synthetic access$4100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondPathOfCurve:Landroid/graphics/Path;
 
@@ -2604,6 +2663,7 @@
 
 .method static synthetic access$4200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropImageWidth:I
 
@@ -2612,6 +2672,8 @@
 
 .method static synthetic access$4202(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropImageWidth:I
 
@@ -2620,6 +2682,7 @@
 
 .method static synthetic access$4300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropImageHeight:I
 
@@ -2628,6 +2691,8 @@
 
 .method static synthetic access$4302(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropImageHeight:I
 
@@ -2636,6 +2701,7 @@
 
 .method static synthetic access$4400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->GetDefaultDisplayBimap()Landroid/graphics/Bitmap;
 
@@ -2646,6 +2712,7 @@
 
 .method static synthetic access$4500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropTempBitmap:Landroid/graphics/Bitmap;
 
@@ -2654,6 +2721,8 @@
 
 .method static synthetic access$4502(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropTempBitmap:Landroid/graphics/Bitmap;
 
@@ -2662,6 +2731,7 @@
 
 .method static synthetic access$4600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCurrentDisplayWidth:I
 
@@ -2670,6 +2740,7 @@
 
 .method static synthetic access$4700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCurrentDisplayHeight:I
 
@@ -2678,6 +2749,7 @@
 
 .method static synthetic access$4800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropTempBitmapForAnimation:Landroid/graphics/Bitmap;
 
@@ -2686,6 +2758,8 @@
 
 .method static synthetic access$4802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropTempBitmapForAnimation:Landroid/graphics/Bitmap;
 
@@ -2694,6 +2768,7 @@
 
 .method static synthetic access$4900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mScreenBitmap:Landroid/graphics/Bitmap;
 
@@ -2702,6 +2777,7 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mVerticalMovingSlop:I
 
@@ -2710,6 +2786,7 @@
 
 .method static synthetic access$5000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropBitmap:Landroid/graphics/Bitmap;
 
@@ -2718,6 +2795,8 @@
 
 .method static synthetic access$5002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropBitmap:Landroid/graphics/Bitmap;
 
@@ -2726,6 +2805,7 @@
 
 .method static synthetic access$5100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Paint;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathPaintWhite:Landroid/graphics/Paint;
 
@@ -2734,6 +2814,7 @@
 
 .method static synthetic access$5200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mNumColsedCurves:I
 
@@ -2742,6 +2823,8 @@
 
 .method static synthetic access$5202(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mNumColsedCurves:I
 
@@ -2750,6 +2833,7 @@
 
 .method static synthetic access$5300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)F
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
@@ -2758,6 +2842,8 @@
 
 .method static synthetic access$5302(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;F)F
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
@@ -2766,6 +2852,7 @@
 
 .method static synthetic access$5400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)F
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointYForCircle:F
 
@@ -2774,6 +2861,8 @@
 
 .method static synthetic access$5402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;F)F
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointYForCircle:F
 
@@ -2782,6 +2871,7 @@
 
 .method static synthetic access$5500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Paint;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintWhite:Landroid/graphics/Paint;
 
@@ -2790,6 +2880,7 @@
 
 .method static synthetic access$5600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Paint;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintBlackWithoutStroke:Landroid/graphics/Paint;
 
@@ -2798,6 +2889,7 @@
 
 .method static synthetic access$5700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointX:I
 
@@ -2806,6 +2898,8 @@
 
 .method static synthetic access$5702(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointX:I
 
@@ -2814,6 +2908,7 @@
 
 .method static synthetic access$5800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointY:I
 
@@ -2822,6 +2917,8 @@
 
 .method static synthetic access$5802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointY:I
 
@@ -2830,6 +2927,7 @@
 
 .method static synthetic access$5900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointX:I
 
@@ -2838,6 +2936,8 @@
 
 .method static synthetic access$5902(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointX:I
 
@@ -2846,6 +2946,9 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;IZ)V
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->startEffectForGesture(IZ)V
 
@@ -2854,6 +2957,7 @@
 
 .method static synthetic access$6000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointY:I
 
@@ -2862,6 +2966,8 @@
 
 .method static synthetic access$6002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointY:I
 
@@ -2870,6 +2976,7 @@
 
 .method static synthetic access$6100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropBitmapForAnimation:Landroid/graphics/Bitmap;
 
@@ -2878,6 +2985,8 @@
 
 .method static synthetic access$6102(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropBitmapForAnimation:Landroid/graphics/Bitmap;
 
@@ -2886,6 +2995,7 @@
 
 .method static synthetic access$6200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordXForIntent:I
 
@@ -2894,6 +3004,8 @@
 
 .method static synthetic access$6202(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordXForIntent:I
 
@@ -2902,6 +3014,7 @@
 
 .method static synthetic access$6300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordXForIntent:I
 
@@ -2910,6 +3023,8 @@
 
 .method static synthetic access$6302(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordXForIntent:I
 
@@ -2918,6 +3033,7 @@
 
 .method static synthetic access$6400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordYForIntent:I
 
@@ -2926,6 +3042,8 @@
 
 .method static synthetic access$6402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMaxCoordYForIntent:I
 
@@ -2934,6 +3052,7 @@
 
 .method static synthetic access$6500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordYForIntent:I
 
@@ -2942,6 +3061,8 @@
 
 .method static synthetic access$6502(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mMinCoordYForIntent:I
 
@@ -2950,6 +3071,7 @@
 
 .method static synthetic access$6600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCroppingMatrix:Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;
 
@@ -2958,6 +3080,8 @@
 
 .method static synthetic access$6702(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointPrev:I
 
@@ -2966,6 +3090,8 @@
 
 .method static synthetic access$6802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFirstIntersectionPointLast:I
 
@@ -2974,6 +3100,8 @@
 
 .method static synthetic access$6902(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointPrev:I
 
@@ -2982,6 +3110,7 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)V
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->startAniForLoadingService()V
 
@@ -2990,6 +3119,8 @@
 
 .method static synthetic access$7002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)I
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointLast:I
 
@@ -2998,6 +3129,7 @@
 
 .method static synthetic access$7100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->SaveImage()Z
 
@@ -3008,6 +3140,7 @@
 
 .method static synthetic access$7200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePath:Ljava/lang/String;
 
@@ -3016,6 +3149,7 @@
 
 .method static synthetic access$7300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mImageFilePathForAnimation:Ljava/lang/String;
 
@@ -3024,6 +3158,7 @@
 
 .method static synthetic access$7400(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
 
@@ -3032,6 +3167,8 @@
 
 .method static synthetic access$7402(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsStartingSuggestionService:Z
 
@@ -3040,6 +3177,7 @@
 
 .method static synthetic access$7500(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/graphics/Path;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mPathOfCurveForDrawing:Landroid/graphics/Path;
 
@@ -3048,6 +3186,7 @@
 
 .method static synthetic access$7600(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCropHandler:Landroid/os/Handler;
 
@@ -3056,6 +3195,7 @@
 
 .method static synthetic access$7700(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mFinishSaveImg:Z
 
@@ -3064,6 +3204,7 @@
 
 .method static synthetic access$7800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSPenVibrator:Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;
 
@@ -3072,6 +3213,7 @@
 
 .method static synthetic access$7900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/widget/ImageView;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
@@ -3080,6 +3222,7 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/widget/ImageView;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mLoadingAniImgView:Landroid/widget/ImageView;
 
@@ -3088,6 +3231,7 @@
 
 .method static synthetic access$8000(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Landroid/view/Display;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mDisplay:Landroid/view/Display;
 
@@ -3096,6 +3240,7 @@
 
 .method static synthetic access$8100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
@@ -3104,6 +3249,8 @@
 
 .method static synthetic access$8200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;I)V
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->injectionKeyEvent(I)V
 
@@ -3112,6 +3259,7 @@
 
 .method static synthetic access$8300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsShowingGestureEffect:Z
 
@@ -3120,6 +3268,8 @@
 
 .method static synthetic access$8302(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsShowingGestureEffect:Z
 
@@ -3128,6 +3278,8 @@
 
 .method static synthetic access$902(Lcom/android/internal/policy/impl/spengesture/SPenGestureView;Z)Z
     .locals 0
+    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsLiveCropThread:Z
 
@@ -3136,6 +3288,9 @@
 
 .method private checkClosedCurve(III)V
     .locals 7
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -3500,7 +3655,7 @@
 
     move-wide/from16 v25, v0
 
-    const-wide/high16 v27, 0x4000
+    const-wide/high16 v27, 0x4000000000000000L
 
     invoke-static/range {v25 .. v28}, Ljava/lang/Math;->pow(DD)D
 
@@ -3542,7 +3697,7 @@
 
     move-wide/from16 v26, v0
 
-    const-wide/high16 v28, 0x4000
+    const-wide/high16 v28, 0x4000000000000000L
 
     invoke-static/range {v26 .. v29}, Ljava/lang/Math;->pow(DD)D
 
@@ -3653,7 +3808,7 @@
 
     check-cast v15, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
     invoke-static {v15}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)I
 
     move-result v20
@@ -3665,14 +3820,14 @@
 
     if-ge v8, v0, :cond_3
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
     invoke-static {v15}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v25
 
     aget v23, v25, v8
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
     invoke-static {v15}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v25
@@ -3681,7 +3836,7 @@
 
     mul-float v25, v18, v23
 
-    const/high16 v26, -0x4080
+    const/high16 v26, -0x40800000
 
     mul-float v26, v26, v24
 
@@ -3699,15 +3854,15 @@
 
     move-wide/from16 v25, v0
 
-    const-wide/high16 v27, 0x4000
+    const-wide/high16 v27, 0x4000000000000000L
 
     invoke-static/range {v25 .. v28}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v25
 
-    const-wide/high16 v27, -0x4010
+    const-wide/high16 v27, -0x4010000000000000L
 
-    const-wide/high16 v29, 0x4000
+    const-wide/high16 v29, 0x4000000000000000L
 
     invoke-static/range {v27 .. v30}, Ljava/lang/Math;->pow(DD)D
 
@@ -3889,13 +4044,13 @@
 
     if-ge v7, v0, :cond_5
 
-    const/high16 v25, 0x3f80
+    const/high16 v25, 0x3f800000
 
     cmpg-float v25, v18, v25
 
     if-gtz v25, :cond_c
 
-    const/high16 v25, -0x4080
+    const/high16 v25, -0x40800000
 
     cmpl-float v25, v18, v25
 
@@ -4135,7 +4290,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4420
+    const/high16 v18, 0x44200000
 
     cmpl-float v17, v17, v18
 
@@ -4147,7 +4302,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x44a0
+    const/high16 v18, 0x44a00000
 
     cmpg-float v17, v17, v18
 
@@ -4159,7 +4314,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4420
+    const/high16 v18, 0x44200000
 
     cmpl-float v17, v17, v18
 
@@ -4171,7 +4326,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x44a0
+    const/high16 v18, 0x44a00000
 
     cmpg-float v17, v17, v18
 
@@ -4241,7 +4396,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4396
+    const/high16 v18, 0x43960000
 
     cmpg-float v17, v17, v18
 
@@ -4265,7 +4420,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4396
+    const/high16 v18, 0x43960000
 
     cmpg-float v17, v17, v18
 
@@ -4294,7 +4449,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x43fa
+    const/high16 v18, 0x43fa0000
 
     cmpl-float v17, v17, v18
 
@@ -4306,7 +4461,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4448
+    const/high16 v18, 0x44480000
 
     cmpg-float v17, v17, v18
 
@@ -4318,7 +4473,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x43fa
+    const/high16 v18, 0x43fa0000
 
     cmpl-float v17, v17, v18
 
@@ -4330,7 +4485,7 @@
 
     move/from16 v17, v0
 
-    const/high16 v18, 0x4448
+    const/high16 v18, 0x44480000
 
     cmpg-float v17, v17, v18
 
@@ -4353,6 +4508,7 @@
 
 .method private getDegreesForRotation(I)F
     .locals 1
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -4362,17 +4518,17 @@
     return v0
 
     :pswitch_0
-    const/high16 v0, 0x4387
+    const/high16 v0, 0x43870000
 
     goto :goto_0
 
     :pswitch_1
-    const/high16 v0, 0x4334
+    const/high16 v0, 0x43340000
 
     goto :goto_0
 
     :pswitch_2
-    const/high16 v0, 0x42b4
+    const/high16 v0, 0x42b40000
 
     goto :goto_0
 
@@ -4420,6 +4576,7 @@
 
 .method private injectionKeyEvent(I)V
     .locals 2
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSPenGestureEventDispatchThread:Ljava/lang/Thread;
 
@@ -4618,7 +4775,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -4659,6 +4816,7 @@
 
 .method private isTopActivity(Ljava/lang/String;)Z
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getTopActivityComponentName()Landroid/content/ComponentName;
 
@@ -4784,6 +4942,11 @@
 
 .method private markMatrixForCropping(FFFFI)V
     .locals 14
+    .param p1    # F
+    .param p2    # F
+    .param p3    # F
+    .param p4    # F
+    .param p5    # I
 
     const/4 v8, 0x0
 
@@ -4839,13 +5002,13 @@
 
     add-float v11, p3, p1
 
-    const/high16 v12, 0x4000
+    const/high16 v12, 0x40000000
 
     div-float/2addr v11, v12
 
     add-float v12, p4, p2
 
-    const/high16 v13, 0x4000
+    const/high16 v13, 0x40000000
 
     div-float/2addr v12, v13
 
@@ -4929,7 +5092,7 @@
 
     sub-float v10, v6, v10
 
-    const/high16 v11, 0x3f80
+    const/high16 v11, 0x3f800000
 
     cmpl-float v10, v10, v11
 
@@ -5009,7 +5172,7 @@
 
     sub-float v10, v6, v10
 
-    const/high16 v11, -0x4080
+    const/high16 v11, -0x40800000
 
     cmpg-float v10, v10, v11
 
@@ -5113,7 +5276,7 @@
     invoke-virtual {v10, v11, v12, v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;->mark(III)V
 
     :cond_9
-    const/high16 v10, 0x3f80
+    const/high16 v10, 0x3f800000
 
     add-float/2addr v8, v10
 
@@ -5155,7 +5318,7 @@
     invoke-virtual {v10, v11, v12, v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;->mark(III)V
 
     :cond_b
-    const/high16 v10, 0x3f80
+    const/high16 v10, 0x3f800000
 
     sub-float/2addr v8, v10
 
@@ -5195,7 +5358,7 @@
 
     sub-float v10, v6, v10
 
-    const/high16 v11, 0x3f80
+    const/high16 v11, 0x3f800000
 
     cmpl-float v10, v10, v11
 
@@ -5270,7 +5433,7 @@
 
     sub-float v10, v6, v10
 
-    const/high16 v11, -0x4080
+    const/high16 v11, -0x40800000
 
     cmpg-float v10, v10, v11
 
@@ -5344,6 +5507,8 @@
 
 .method private sendKeyDownUpSync(II)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -5578,7 +5743,7 @@
 
     if-eqz v4, :cond_0
 
-    const/high16 v4, 0x4334
+    const/high16 v4, 0x43340000
 
     cmpl-float v4, v1, v4
 
@@ -5653,6 +5818,7 @@
 
 .method private showToast(I)V
     .locals 2
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mContext:Landroid/content/Context;
 
@@ -5672,17 +5838,17 @@
 
     const/4 v3, 0x1
 
-    const/high16 v4, 0x3f00
+    const/high16 v4, 0x3f000000
 
     const/4 v6, 0x0
 
-    invoke-virtual {p0, v6}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->setVisibility(I)V
+    invoke-virtual {p0, v6}, Landroid/view/View;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mLoadingAniImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->clearAnimation()V
+    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -5746,7 +5912,7 @@
 
     const/4 v1, 0x0
 
-    const/high16 v2, 0x43b4
+    const/high16 v2, 0x43b40000
 
     move v5, v3
 
@@ -5772,7 +5938,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mLoadingAniImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSPenVibrator:Lcom/android/internal/policy/impl/spengesture/SPenGestureView$SPenVibrator;
 
@@ -5783,14 +5949,16 @@
 
 .method private startEffectForGesture(IZ)V
     .locals 8
+    .param p1    # I
+    .param p2    # Z
 
     const-wide/16 v6, 0xc8
 
-    const/high16 v5, 0x4110
+    const/high16 v5, 0x41100000
 
     const/4 v4, 0x0
 
-    const/high16 v3, 0x4000
+    const/high16 v3, 0x40000000
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->isLockScreenShowing()Z
 
@@ -5836,31 +6004,31 @@
 
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsShowingGestureEffect:Z
 
-    invoke-virtual {p0, v4}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->setVisibility(I)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
+    invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
-    const/high16 v1, 0x3f80
+    const/high16 v1, 0x3f800000
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
@@ -5904,11 +6072,11 @@
 
     sub-float/2addr v1, v2
 
-    const/high16 v2, 0x4204
+    const/high16 v2, 0x42040000
 
     sub-float/2addr v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setY(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setY(F)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -5919,7 +6087,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
@@ -5931,7 +6099,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v0
 
@@ -5960,7 +6128,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setX(F)V
+    invoke-virtual {v0, v5}, Landroid/view/View;->setX(F)V
 
     goto :goto_1
 
@@ -5991,7 +6159,7 @@
 
     sub-float/2addr v1, v5
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setX(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setX(F)V
 
     goto :goto_1
 
@@ -6038,7 +6206,7 @@
 
     sub-float/2addr v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setX(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setX(F)V
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
@@ -6068,7 +6236,7 @@
 
     sub-float/2addr v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setY(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setY(F)V
 
     goto/16 :goto_1
 
@@ -6094,6 +6262,9 @@
 # virtual methods
 .method public addSPenEvent(Landroid/view/MotionEvent;ZZ)V
     .locals 26
+    .param p1    # Landroid/view/MotionEvent;
+    .param p2    # Z
+    .param p3    # Z
 
     move/from16 v0, p2
 
@@ -6190,7 +6361,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->resetVariable(I)V
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->postInvalidate()V
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->postInvalidate()V
 
     monitor-exit v25
 
@@ -6291,7 +6462,7 @@
 
     move-object/from16 v0, v19
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;Z)Z
 
     add-int/lit8 v18, v18, 0x1
@@ -6395,7 +6566,7 @@
 
     check-cast v2, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
     invoke-static {v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)Z
 
     move-result v2
@@ -6422,7 +6593,7 @@
 
     move-object/from16 v0, v19
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;Z)Z
 
     const/4 v2, 0x1
@@ -6523,7 +6694,7 @@
     :goto_5
     if-eqz v19, :cond_12
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
     invoke-static/range {v19 .. v19}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)Landroid/view/MotionEvent$PointerCoords;
 
     move-result-object v9
@@ -6547,7 +6718,7 @@
 
     iget v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointX:F
 
-    const/high16 v3, -0x4080
+    const/high16 v3, -0x40800000
 
     cmpl-float v2, v2, v3
 
@@ -6557,7 +6728,7 @@
 
     iget v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointY:F
 
-    const/high16 v3, -0x4080
+    const/high16 v3, -0x40800000
 
     cmpl-float v2, v2, v3
 
@@ -6688,7 +6859,7 @@
     :goto_8
     if-eqz v19, :cond_19
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
     invoke-static/range {v19 .. v19}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)Landroid/view/MotionEvent$PointerCoords;
 
     move-result-object v9
@@ -6712,7 +6883,7 @@
 
     iget v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointX:F
 
-    const/high16 v3, -0x4080
+    const/high16 v3, -0x40800000
 
     cmpl-float v2, v2, v3
 
@@ -6722,7 +6893,7 @@
 
     iget v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointY:F
 
-    const/high16 v3, -0x4080
+    const/high16 v3, -0x40800000
 
     cmpl-float v2, v2, v3
 
@@ -6806,7 +6977,7 @@
 
     add-float/2addr v5, v6
 
-    const/high16 v6, 0x4000
+    const/high16 v6, 0x40000000
 
     div-float/2addr v5, v6
 
@@ -6818,7 +6989,7 @@
 
     add-float/2addr v6, v7
 
-    const/high16 v7, 0x4000
+    const/high16 v7, 0x40000000
 
     div-float/2addr v6, v7
 
@@ -6844,7 +7015,7 @@
 
     move-object/from16 v0, v19
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mToolType:I
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mToolType:I
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;I)I
 
     :cond_17
@@ -6942,7 +7113,7 @@
 
     check-cast v19, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
     invoke-static/range {v19 .. v19}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)I
 
     move-result v22
@@ -6954,14 +7125,14 @@
 
     if-ge v13, v0, :cond_1e
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
     invoke-static/range {v19 .. v19}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v2
 
     aget v23, v2, v13
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
     invoke-static/range {v19 .. v19}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v2
@@ -7160,13 +7331,13 @@
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointY:I
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
@@ -7282,13 +7453,13 @@
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointY:I
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
@@ -7355,7 +7526,7 @@
     invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->resetVariable(I)V
 
     :cond_26
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->postInvalidate()V
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->postInvalidate()V
 
     move-object/from16 v0, p0
 
@@ -7451,13 +7622,13 @@
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mSecondIntersectionPointY:I
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointXForCircle:F
 
-    const/high16 v2, -0x4080
+    const/high16 v2, -0x40800000
 
     move-object/from16 v0, p0
 
@@ -7769,6 +7940,9 @@
 
 .method public makePathForClosedCurve(IIZ)Z
     .locals 21
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -7811,7 +7985,7 @@
 
     check-cast v12, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
     invoke-static {v12}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)I
 
     move-result v14
@@ -7821,14 +7995,14 @@
     :goto_1
     if-ge v5, v14, :cond_4
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
     invoke-static {v12}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v17
 
     aget v15, v17, v5
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
     invoke-static {v12}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
 
     move-result-object v17
@@ -7970,13 +8144,13 @@
 
     add-float v18, v6, v9
 
-    const/high16 v19, 0x4000
+    const/high16 v19, 0x40000000
 
     div-float v18, v18, v19
 
     add-float v19, v7, v10
 
-    const/high16 v20, 0x4000
+    const/high16 v20, 0x40000000
 
     div-float v19, v19, v20
 
@@ -8004,13 +8178,13 @@
 
     add-float v18, v6, v9
 
-    const/high16 v19, 0x4000
+    const/high16 v19, 0x40000000
 
     div-float v18, v18, v19
 
     add-float v19, v7, v10
 
-    const/high16 v20, 0x4000
+    const/high16 v20, 0x40000000
 
     div-float v19, v19, v20
 
@@ -8067,7 +8241,7 @@
 
     sub-float v17, v17, v18
 
-    const/high16 v18, 0x4220
+    const/high16 v18, 0x42200000
 
     cmpg-float v17, v17, v18
 
@@ -8083,7 +8257,7 @@
 
     sub-float v17, v17, v18
 
-    const/high16 v18, 0x4220
+    const/high16 v18, 0x42200000
 
     cmpg-float v17, v17, v18
 
@@ -8126,7 +8300,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8140,7 +8314,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8154,7 +8328,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8168,7 +8342,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8182,7 +8356,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8196,7 +8370,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImageList:Ljava/util/ArrayList;
 
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -8222,7 +8396,7 @@
 
     invoke-direct {v2, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
@@ -8230,7 +8404,7 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mGestureEffectImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {p0, v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->addView(Landroid/view/View;)V
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     new-instance v1, Landroid/widget/ImageView;
 
@@ -8254,15 +8428,16 @@
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mLoadingAniImgView:Landroid/widget/ImageView;
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
+    .param p1    # Landroid/graphics/Canvas;
 
-    const/high16 v4, -0x4080
+    const/high16 v4, -0x40800000
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointX:F
 
@@ -8280,7 +8455,7 @@
 
     iget v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mStartPointY:F
 
-    const/high16 v2, 0x4100
+    const/high16 v2, 0x41000000
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintWhite:Landroid/graphics/Paint;
 
@@ -8309,7 +8484,7 @@
 
     iget v1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mEndPointY:F
 
-    const/high16 v2, 0x4080
+    const/high16 v2, 0x40800000
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mCirclePaintBlackWithoutStroke:Landroid/graphics/Paint;
 
@@ -8321,6 +8496,8 @@
 
 .method protected onMeasure(II)V
     .locals 2
+    .param p1    # I
+    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -8345,12 +8522,13 @@
 
 .method public resetVariable(I)V
     .locals 7
+    .param p1    # I
 
     const/4 v6, -0x1
 
     const/4 v5, 0x0
 
-    const/high16 v4, -0x4080
+    const/high16 v4, -0x40800000
 
     const/4 v3, 0x0
 
@@ -8369,7 +8547,7 @@
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->clearTrace()V
 
-    #setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
+    # setter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
     invoke-static {v1, v3}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$2802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;Z)Z
 
     add-int/lit8 v0, v0, 0x1
@@ -8443,6 +8621,7 @@
 
 .method public setDoubleTapStateBySettingMenu(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnableDoubleTapOnLockscreen:Z
 
@@ -8451,6 +8630,7 @@
 
 .method public setFocusedWindow(Landroid/view/WindowManagerPolicy$WindowState;)V
     .locals 2
+    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
 
     const-string v0, "SPenGesture"
 
@@ -8465,6 +8645,7 @@
 
 .method public setHapticEnabled(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsEnabledHapticFeedback:Z
 
@@ -8473,6 +8654,7 @@
 
 .method public setPhoneWindowMangerFlag(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView;->mIsShowingGestureEffect:Z
 
@@ -8503,7 +8685,7 @@
 
     check-cast v0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
-    #getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
+    # getter for: Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
     invoke-static {v0}, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->access$3100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)I
 
     move-result v2

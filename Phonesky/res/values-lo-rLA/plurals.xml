@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_update_success_message">
+        <item quantity="other">%1$d ແອັບພລິເຄຊັນໄດ້ຮັບການອັບເດດແລ້ວ</item>
+        <item quantity="one">%1$d ແອັບພລິເຄຊັນໄດ້ຮັບການອັບເດດແລ້ວ</item>
+    </plurals>
+    <plurals name="notification_outstanding_updates_message">
+        <item quantity="other">ມີ %1$d ອັບເດດສຳລັບທ່ານ</item>
+        <item quantity="one">ມີ %1$d ອັບເດດສຳລັບທ່ານ</item>
+    </plurals>
+    <plurals name="notification_need_approval_message">
+        <item quantity="other">%1$d ອັບເດດຕ້ອງການການອະນຸມັດ</item>
+        <item quantity="one">%1$d ອັບເດດຕ້ອງການການອະນຸມັດ</item>
+    </plurals>
+    <plurals name="search_results_estimated_in_bucket">
+        <item quantity="other">%1$d ຜົນການຊອກຫາ</item>
+        <item quantity="one">%1$d ຜົນການຊອກຫາ</item>
+    </plurals>
+    <plurals name="notification_new_updates_available_message">
+        <item quantity="other">%1$d ອັບເດດໃໝ່</item>
+        <item quantity="one">%1$d ອັບເດດໃໝ່</item>
+    </plurals>
+    <plurals name="plus_one_multiple_global">
+        <item quantity="other">%1$s ຄົນ +1 ສິ່ງນີ້.</item>
+        <item quantity="one">%1$s ຄົນ +1 ສິ່ງນີ້.</item>
+    </plurals>
+    <plurals name="plus_one_multiple_friends">
+        <item quantity="other">%1$s ແລະອີກ %2$s ຄົນ +1 ສິ່ງນີ້.</item>
+        <item quantity="one">%1$s ແລະອີກ %2$s ຄົນອື່ນໆ +1 ສິ່ງນີ້.</item>
+    </plurals>
+    <plurals name="plus_one_circles_listing_dialog_more">
+        <item quantity="other">ອີກ +%1$s</item>
+        <item quantity="one">ອີກ +%1$d</item>
+    </plurals>
+    <plurals name="my_apps_selected">
+        <item quantity="other">ເລືອກ %1$d ລາຍການແລ້ວ</item>
+    </plurals>
+    <plurals name="update_all_prompt_title">
+        <item quantity="other">ມີອັບເດດມາໃໝ່</item>
+        <item quantity="one">ມີອັບເດດມາໃໝ່</item>
+    </plurals>
+    <plurals name="update_all_prompt">
+        <item quantity="other">ທ່ານມີ %1$d ອັບເດດ. ທ່ານຕ້ອງການຕິດຕັ້ງພວກມັນບໍ່?</item>
+        <item quantity="one">ທ່ານມີ %1$d ອັບເດດ. ທ່ານຕ້ອງການຕິດຕັ້ງພວກມັນບໍ່?</item>
+    </plurals>
+</resources>

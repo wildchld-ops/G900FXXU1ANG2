@@ -225,6 +225,7 @@
 
 .method public static getClassFromName(Ljava/lang/String;)Ljava/lang/Class;
     .locals 2
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -276,6 +277,7 @@
 
 .method public static makeClone(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
+    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -326,7 +328,7 @@
 
     check-cast p0, [Ljava/lang/Object;
 
-    invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -347,7 +349,7 @@
 
     check-cast v5, [C
 
-    invoke-virtual {v5}, [C->clone()Ljava/lang/Object;
+    invoke-virtual {v5}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -361,7 +363,7 @@
 
     check-cast p0, [B
 
-    invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -378,7 +380,7 @@
 
     check-cast v5, [Z
 
-    invoke-virtual {v5}, [Z->clone()Ljava/lang/Object;
+    invoke-virtual {v5}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -393,7 +395,7 @@
 
     check-cast p0, [S
 
-    invoke-virtual {p0}, [S->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -408,7 +410,7 @@
 
     check-cast p0, [I
 
-    invoke-virtual {p0}, [I->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -423,7 +425,7 @@
 
     check-cast p0, [J
 
-    invoke-virtual {p0}, [J->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -438,7 +440,7 @@
 
     check-cast p0, [F
 
-    invoke-virtual {p0}, [F->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -453,7 +455,7 @@
 
     check-cast p0, [D
 
-    invoke-virtual {p0}, [D->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -597,6 +599,7 @@
 
 .method protected dbgPrint(Ljava/lang/String;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lgov/nist/core/Debug;->println(Ljava/lang/String;)V
 
@@ -1219,6 +1222,7 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     iput p1, p0, Lgov/nist/core/GenericObject;->indentation:I
 
@@ -1238,6 +1242,7 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
+    .param p1    # Ljava/lang/StringBuffer;
 
     invoke-virtual {p0}, Lgov/nist/core/GenericObject;->encode()Ljava/lang/String;
 
@@ -1252,6 +1257,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 17
+    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1705,6 +1711,7 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 21
+    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -2197,6 +2204,7 @@
 
 .method public merge(Ljava/lang/Object;)V
     .locals 25
+    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -2320,7 +2328,7 @@
     :catch_0
     move-exception v7
 
-    invoke-virtual {v7}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+    invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_2
 
@@ -2546,6 +2554,7 @@
 
 .method public setMatcher(Lgov/nist/core/Match;)V
     .locals 2
+    .param p1    # Lgov/nist/core/Match;
 
     if-nez p1, :cond_0
 
@@ -2565,6 +2574,7 @@
 
 .method protected sprint(C)V
     .locals 1
+    .param p1    # C
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
@@ -2577,6 +2587,7 @@
 
 .method protected sprint(D)V
     .locals 1
+    .param p1    # D
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
@@ -2589,6 +2600,7 @@
 
 .method protected sprint(F)V
     .locals 1
+    .param p1    # F
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
@@ -2601,6 +2613,7 @@
 
 .method protected sprint(I)V
     .locals 1
+    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -2613,6 +2626,7 @@
 
 .method protected sprint(J)V
     .locals 1
+    .param p1    # J
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -2625,6 +2639,7 @@
 
 .method protected sprint(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -2637,6 +2652,7 @@
 
 .method protected sprint(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2809,6 +2825,7 @@
 
 .method protected sprint(S)V
     .locals 1
+    .param p1    # S
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -2821,6 +2838,7 @@
 
 .method protected sprint(Z)V
     .locals 1
+    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
 

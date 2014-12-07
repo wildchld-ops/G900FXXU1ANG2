@@ -34,6 +34,7 @@
 
 .method public setURI(Ljavax/sip/address/URI;)V
     .locals 0
+    .param p1    # Ljavax/sip/address/URI;
 
     return-void
 .end method

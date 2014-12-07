@@ -119,6 +119,9 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/android/i18n/phonenumbers/PhoneNumberUtil$1;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;-><init>(Ljava/lang/String;I)V
 
@@ -127,6 +130,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;
 
@@ -144,7 +148,7 @@
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;->$VALUES:[Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;
 
-    invoke-virtual {v0}, [Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$1;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -36,6 +36,7 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 20
+    .param p1    # Landroid/view/View;
 
     const/16 v17, 0x2
 
@@ -61,7 +62,7 @@
 
     move-object/from16 v17, v0
 
-    invoke-virtual/range {v17 .. v17}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->getContext()Landroid/content/Context;
+    invoke-virtual/range {v17 .. v17}, Landroid/view/Window;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -117,7 +118,7 @@
 
     iget v5, v0, Landroid/util/DisplayMetrics;->density:F
 
-    const/high16 v17, 0x4220
+    const/high16 v17, 0x42200000
 
     mul-float v17, v17, v5
 
@@ -164,7 +165,7 @@
 
     move-object/from16 v17, v0
 
-    #getter for: Lcom/android/internal/policy/impl/MultiPhoneWindow;->mContext:Landroid/content/Context;
+    # getter for: Lcom/android/internal/policy/impl/MultiPhoneWindow;->mContext:Landroid/content/Context;
     invoke-static/range {v17 .. v17}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->access$000(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/content/Context;
 
     move-result-object v17

@@ -85,6 +85,7 @@
 # virtual methods
 .method protected closeConnection(Lorg/apache/http/conn/OperatedClientConnection;)V
     .locals 3
+    .param p1    # Lorg/apache/http/conn/OperatedClientConnection;
 
     if-eqz p1, :cond_0
 
@@ -141,6 +142,8 @@
 
 .method public closeIdleConnections(JLjava/util/concurrent/TimeUnit;)V
     .locals 3
+    .param p1    # J
+    .param p3    # Ljava/util/concurrent/TimeUnit;
 
     if-nez p3, :cond_0
 
@@ -295,6 +298,10 @@
 
 .method public final getEntry(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 1
+    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
+    .param p2    # Ljava/lang/Object;
+    .param p3    # J
+    .param p5    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/conn/ConnectionPoolTimeoutException;,
@@ -318,6 +325,7 @@
 
 .method public handleReference(Ljava/lang/ref/Reference;)V
     .locals 5
+    .param p1    # Ljava/lang/ref/Reference;
 
     iget-object v2, p0, Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;->poolLock:Ljava/util/concurrent/locks/Lock;
 
@@ -451,7 +459,7 @@
 
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
-    invoke-virtual {v2}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntryRef;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 

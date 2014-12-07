@@ -56,6 +56,9 @@
 # virtual methods
 .method public add(Lorg/apache/http/HttpConnection;JLjava/util/concurrent/TimeUnit;)V
     .locals 8
+    .param p1    # Lorg/apache/http/HttpConnection;
+    .param p2    # J
+    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -185,7 +188,7 @@
 
     check-cast v5, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;
 
-    #getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
+    # getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
     invoke-static {v5}, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->access$000(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
 
     move-result-wide v6
@@ -214,7 +217,7 @@
 
     move-result-object v7
 
-    #getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
+    # getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
     invoke-static {v5}, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->access$000(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
 
     move-result-wide v8
@@ -256,6 +259,7 @@
 
 .method public closeIdleConnections(J)V
     .locals 10
+    .param p1    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -326,7 +330,7 @@
 
     check-cast v6, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;
 
-    #getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeAdded:J
+    # getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeAdded:J
     invoke-static {v6}, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->access$100(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
 
     move-result-wide v7
@@ -400,6 +404,7 @@
 
 .method public remove(Lorg/apache/http/HttpConnection;)Z
     .locals 6
+    .param p1    # Lorg/apache/http/HttpConnection;
 
     const/4 v1, 0x1
 
@@ -428,7 +433,7 @@
 
     move-result-wide v2
 
-    #getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
+    # getter for: Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
     invoke-static {v0}, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->access$000(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
 
     move-result-wide v4

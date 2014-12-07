@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.SeparatorLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" style="@style/BillingProfile_Disabled_Entry" />
+    <TextView android:id="@id/byline" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BillingProfile_Disabled_Entry_Byline" />
+</com.google.android.finsky.layout.SeparatorLinearLayout>

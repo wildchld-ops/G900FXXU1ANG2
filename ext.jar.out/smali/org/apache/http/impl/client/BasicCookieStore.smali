@@ -55,6 +55,7 @@
 # virtual methods
 .method public declared-synchronized addCookie(Lorg/apache/http/cookie/Cookie;)V
     .locals 3
+    .param p1    # Lorg/apache/http/cookie/Cookie;
 
     monitor-enter p0
 
@@ -120,6 +121,7 @@
 
 .method public declared-synchronized addCookies([Lorg/apache/http/cookie/Cookie;)V
     .locals 5
+    .param p1    # [Lorg/apache/http/cookie/Cookie;
 
     monitor-enter p0
 
@@ -184,6 +186,7 @@
 
 .method public declared-synchronized clearExpired(Ljava/util/Date;)Z
     .locals 3
+    .param p1    # Ljava/util/Date;
 
     monitor-enter p0
 
@@ -282,7 +285,7 @@
 
     iget-object v0, p0, Lorg/apache/http/impl/client/BasicCookieStore;->cookies:Ljava/util/ArrayList;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->toString()Ljava/lang/String;
 
     move-result-object v0
 

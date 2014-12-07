@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.DocumentViewSummary android:id="@id/my_downloads_item_header" android:background="@drawable/highlight_overlay_light" android:padding="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/screenshots_height">
+        <com.google.android.finsky.layout.DocImageView android:id="@id/thumbnail" android:clickable="false" android:layout_width="@dimen/my_apps_thumbnail_size" android:layout_height="@dimen/my_apps_thumbnail_size" android:layout_marginRight="24.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <com.google.android.play.layout.PlayTextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_toRightOf="@id/thumbnail" android:layout_alignParentTop="true" finsky:allowsCompactLineSpacing="true" style="@style/Play_DetailsPage_Title" />
+        <com.google.android.finsky.layout.DecoratedTextView android:id="@id/creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/thumbnail" android:layout_below="@id/title" style="@style/Play_DetailsPage_Subtitle" />
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/thumbnail" android:layout_below="@id/creator" android:layout_alignParentRight="true">
+            <com.google.android.play.layout.PlayActionButton android:id="@id/launch_button" android:text="@string/open" finsky:ignore_corpus_color="true" style="@style/Play_DocumentView_ActionButton" />
+            <com.google.android.play.layout.PlayActionButton android:id="@id/update_button" android:text="@string/update" finsky:ignore_corpus_color="true" style="@style/Play_DocumentView_ActionButton" />
+            <com.google.android.play.layout.PlayActionButton android:id="@id/uninstall_button" android:text="@string/uninstall" finsky:ignore_corpus_color="true" style="@style/Play_DocumentView_ActionButton" />
+            <com.google.android.play.layout.PlayActionButton android:id="@id/refund_button" android:text="@string/refund" finsky:ignore_corpus_color="true" style="@style/Play_DocumentView_ActionButton" />
+            <com.google.android.play.layout.PlayActionButton android:id="@id/install_button" android:text="@string/install" finsky:ignore_corpus_color="true" style="@style/Play_DocumentView_ActionButton" />
+        </LinearLayout>
+    </com.google.android.finsky.layout.DocumentViewSummary>
+    <View android:id="@id/leading_strip" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <com.google.android.finsky.layout.ObservableScrollView android:id="@id/details_scroller_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/subscriptions_section" layout="@layout/subscriptions_section" />
+            <include android:id="@id/warning_message_panel" layout="@layout/details_warning_message" />
+            <FrameLayout android:id="@id/document_view_loading_indicator" android:padding="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <include android:layout_marginLeft="4.0dip" layout="@layout/auto_update_checkbox" />
+            <com.google.android.finsky.layout.AppSecurityPermissions android:orientation="vertical" android:id="@id/my_downloads_permissions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </com.google.android.finsky.layout.ObservableScrollView>
+</LinearLayout>

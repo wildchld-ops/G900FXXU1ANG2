@@ -37,6 +37,8 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lorg/apache/http/cookie/Cookie;
 
@@ -51,6 +53,8 @@
 
 .method public compare(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/Cookie;)I
     .locals 5
+    .param p1    # Lorg/apache/http/cookie/Cookie;
+    .param p2    # Lorg/apache/http/cookie/Cookie;
 
     invoke-interface {p1}, Lorg/apache/http/cookie/Cookie;->getName()Ljava/lang/String;
 

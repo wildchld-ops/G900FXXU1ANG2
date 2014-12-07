@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger; = null
+.field private static final Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
 .field private static final TAG:Ljava/lang/String; = "CipherSuiteMapper"
 
@@ -111,6 +111,7 @@
 # virtual methods
 .method public getCipherSuiteId(Ljava/lang/String;)[B
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -191,7 +192,7 @@
     nop
 
     :array_0
-    .array-data 0x1
+    .array-data 1
         0x0t
         0x0t
     .end array-data

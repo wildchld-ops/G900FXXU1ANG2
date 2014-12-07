@@ -33,6 +33,8 @@
 
 .method public static final formatHeader(Lorg/apache/http/Header;Lorg/apache/http/message/LineFormatter;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/Header;
+    .param p1    # Lorg/apache/http/message/LineFormatter;
 
     if-nez p1, :cond_0
 
@@ -54,6 +56,8 @@
 
 .method public static final formatProtocolVersion(Lorg/apache/http/ProtocolVersion;Lorg/apache/http/message/LineFormatter;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/ProtocolVersion;
+    .param p1    # Lorg/apache/http/message/LineFormatter;
 
     if-nez p1, :cond_0
 
@@ -75,6 +79,8 @@
 
 .method public static final formatRequestLine(Lorg/apache/http/RequestLine;Lorg/apache/http/message/LineFormatter;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/RequestLine;
+    .param p1    # Lorg/apache/http/message/LineFormatter;
 
     if-nez p1, :cond_0
 
@@ -96,6 +102,8 @@
 
 .method public static final formatStatusLine(Lorg/apache/http/StatusLine;Lorg/apache/http/message/LineFormatter;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lorg/apache/http/StatusLine;
+    .param p1    # Lorg/apache/http/message/LineFormatter;
 
     if-nez p1, :cond_0
 
@@ -119,6 +127,8 @@
 # virtual methods
 .method public appendProtocolVersion(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/util/CharArrayBuffer;
     .locals 4
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/ProtocolVersion;
 
     if-nez p2, :cond_0
 
@@ -188,6 +198,8 @@
 
 .method protected doFormatHeader(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/Header;)V
     .locals 4
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/Header;
 
     invoke-interface {p2}, Lorg/apache/http/Header;->getName()Ljava/lang/String;
 
@@ -230,6 +242,8 @@
 
 .method protected doFormatRequestLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/RequestLine;)V
     .locals 6
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/RequestLine;
 
     const/16 v5, 0x20
 
@@ -286,6 +300,8 @@
 
 .method protected doFormatStatusLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/StatusLine;)V
     .locals 4
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/StatusLine;
 
     const/16 v3, 0x20
 
@@ -348,6 +364,7 @@
 
 .method protected estimateProtocolVersionLen(Lorg/apache/http/ProtocolVersion;)I
     .locals 1
+    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     invoke-virtual {p1}, Lorg/apache/http/ProtocolVersion;->getProtocol()Ljava/lang/String;
 
@@ -364,6 +381,8 @@
 
 .method public formatHeader(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/Header;)Lorg/apache/http/util/CharArrayBuffer;
     .locals 3
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/Header;
 
     if-nez p2, :cond_0
 
@@ -403,6 +422,8 @@
 
 .method public formatRequestLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/RequestLine;)Lorg/apache/http/util/CharArrayBuffer;
     .locals 3
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/RequestLine;
 
     if-nez p2, :cond_0
 
@@ -426,6 +447,8 @@
 
 .method public formatStatusLine(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/StatusLine;)Lorg/apache/http/util/CharArrayBuffer;
     .locals 3
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # Lorg/apache/http/StatusLine;
 
     if-nez p2, :cond_0
 
@@ -449,6 +472,7 @@
 
 .method protected initBuffer(Lorg/apache/http/util/CharArrayBuffer;)Lorg/apache/http/util/CharArrayBuffer;
     .locals 1
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
 
     if-eqz p1, :cond_0
 

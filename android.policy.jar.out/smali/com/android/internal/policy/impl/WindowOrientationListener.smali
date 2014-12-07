@@ -14,8 +14,7 @@
 
 
 # static fields
-#the value of this static final field might be set in the static constructor
-.field private static final LOG:Z = false
+.field private static final LOG:Z
 
 .field private static final TAG:Ljava/lang/String; = "WindowOrientationListener"
 
@@ -89,6 +88,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/os/Handler;
 
     const/4 v0, -0x1
 
@@ -99,6 +100,9 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/os/Handler;I)V
     .locals 7
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/os/Handler;
+    .param p3    # I
 
     const/4 v6, -0x1
 
@@ -322,6 +326,7 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/WindowOrientationListener;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mContext:Landroid/content/Context;
 
@@ -338,6 +343,7 @@
 
 .method static synthetic access$502(I)I
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppAngle:I
 
@@ -346,6 +352,7 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/WindowOrientationListener;)I
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     iget v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mCurrentRotation:I
 
@@ -362,6 +369,7 @@
 
 .method static synthetic access$702(Lcom/sec/android/smartface/SmartFaceManager;)Lcom/sec/android/smartface/SmartFaceManager;
     .locals 0
+    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
 
     sput-object p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->msfforSContextRotation:Lcom/sec/android/smartface/SmartFaceManager;
 
@@ -378,6 +386,7 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/WindowOrientationListener;)Ljava/lang/Object;
     .locals 1
+    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mLock:Ljava/lang/Object;
 
@@ -394,6 +403,9 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const-string v2, "TRUE"
 
@@ -449,6 +461,7 @@
 
 .method public static setCurrentAppOrientation(I)V
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->sCurrentAppOrientation:I
 
@@ -525,7 +538,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mSContextAutoRotationListener:Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;
 
-    #calls: Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->resetRotation()V
+    # invokes: Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->resetRotation()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->access$200(Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;)V
 
     :cond_0
@@ -588,7 +601,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mSOSensorEventListener:Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;
 
-    #calls: Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->resetLocked()V
+    # invokes: Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->resetLocked()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->access$100(Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;)V
 
     :cond_3
@@ -688,7 +701,7 @@
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mSensorEventListener:Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;
 
-    #calls: Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->resetLocked()V
+    # invokes: Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->resetLocked()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->access$000(Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;)V
 
     :goto_2
@@ -718,7 +731,7 @@
     :cond_4
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mSOSensorEventListener:Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;
 
-    #calls: Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->resetLocked()V
+    # invokes: Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->resetLocked()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->access$100(Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;)V
 
     goto :goto_2
@@ -843,6 +856,7 @@
 
 .method public setCurrentRotation(I)V
     .locals 2
+    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/WindowOrientationListener;->mLock:Ljava/lang/Object;
 
@@ -869,6 +883,7 @@
 
 .method public setFaceDetectionResult(Z)V
     .locals 0
+    .param p1    # Z
 
     sput-boolean p1, Lcom/android/internal/policy/impl/WindowOrientationListener;->mbResultFaceDectection:Z
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/details_summary_dynamic" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/download_progress_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_download_progress" />
+    <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/play_fg_details_secondary" android:gravity="center" android:id="@id/summary_dynamic_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/PlayLightText" />
+</FrameLayout>

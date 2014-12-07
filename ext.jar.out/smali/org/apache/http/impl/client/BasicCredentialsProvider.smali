@@ -37,6 +37,7 @@
 
 .method private static matchCredentials(Ljava/util/HashMap;Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;
     .locals 7
+    .param p1    # Lorg/apache/http/auth/AuthScope;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,6 +139,7 @@
 
 .method public declared-synchronized getCredentials(Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;
     .locals 2
+    .param p1    # Lorg/apache/http/auth/AuthScope;
 
     monitor-enter p0
 
@@ -178,6 +180,8 @@
 
 .method public declared-synchronized setCredentials(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V
     .locals 2
+    .param p1    # Lorg/apache/http/auth/AuthScope;
+    .param p2    # Lorg/apache/http/auth/Credentials;
 
     monitor-enter p0
 
@@ -219,7 +223,7 @@
 
     iget-object v0, p0, Lorg/apache/http/impl/client/BasicCredentialsProvider;->credMap:Ljava/util/HashMap;
 
-    invoke-virtual {v0}, Ljava/util/HashMap;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->toString()Ljava/lang/String;
 
     move-result-object v0
 

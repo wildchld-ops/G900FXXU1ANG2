@@ -6,12 +6,13 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 2
+    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
-    iput-object p1, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object p1, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     const-string v1, "status_lineLexer"
 
@@ -22,6 +23,7 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -31,7 +33,7 @@
 
     invoke-direct {v0, v1, p1}, Lgov/nist/javax/sip/parser/Lexer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iput-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     return-void
 .end method
@@ -53,20 +55,20 @@
 
     const-string v4, "parse"
 
-    invoke-virtual {p0, v4}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     new-instance v0, Lgov/nist/javax/sip/header/StatusLine;
 
     invoke-direct {v0}, Lgov/nist/javax/sip/header/StatusLine;-><init>()V
 
-    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/StatusLineParser;->sipVersion()Ljava/lang/String;
+    invoke-virtual {p0}, Lgov/nist/javax/sip/parser/Parser;->sipVersion()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lgov/nist/javax/sip/header/StatusLine;->setSipVersion(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -76,7 +78,7 @@
 
     invoke-virtual {v0, v2}, Lgov/nist/javax/sip/header/StatusLine;->setStatusCode(I)V
 
-    iget-object v4, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
 
@@ -86,7 +88,7 @@
 
     invoke-virtual {v0, v1}, Lgov/nist/javax/sip/header/StatusLine;->setReasonPhrase(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v4, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v4}, Lgov/nist/core/LexerCore;->SPorHT()V
     :try_end_0
@@ -98,7 +100,7 @@
 
     const-string v4, "parse"
 
-    invoke-virtual {p0, v4}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     return-object v0
@@ -112,7 +114,7 @@
 
     const-string v5, "parse"
 
-    invoke-virtual {p0, v5}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v5}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_2
     throw v4
@@ -126,7 +128,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v0, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v0}, Lgov/nist/core/LexerCore;->getRest()Ljava/lang/String;
 
@@ -147,7 +149,7 @@
         }
     .end annotation
 
-    iget-object v3, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v3, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v3}, Lgov/nist/core/LexerCore;->number()Ljava/lang/String;
 
@@ -159,14 +161,14 @@
 
     const-string v3, "statusCode"
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_enter(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_enter(Ljava/lang/String;)V
 
     :cond_0
     :try_start_0
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v1
 
@@ -176,7 +178,7 @@
 
     const-string v3, "statusCode"
 
-    invoke-virtual {p0, v3}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_1
     return v1
@@ -191,7 +193,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->getBuffer()Ljava/lang/String;
 
@@ -207,7 +209,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -219,7 +221,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lgov/nist/javax/sip/parser/StatusLineParser;->lexer:Lgov/nist/core/LexerCore;
+    iget-object v5, p0, Lgov/nist/core/ParserCore;->lexer:Lgov/nist/core/LexerCore;
 
     invoke-virtual {v5}, Lgov/nist/core/LexerCore;->getPtr()I
 
@@ -240,7 +242,7 @@
 
     const-string v4, "statusCode"
 
-    invoke-virtual {p0, v4}, Lgov/nist/javax/sip/parser/StatusLineParser;->dbg_leave(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lgov/nist/core/ParserCore;->dbg_leave(Ljava/lang/String;)V
 
     :cond_2
     throw v3

@@ -30,6 +30,7 @@
 # virtual methods
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -112,6 +113,9 @@
 
 .method protected parseChallenge(Lorg/apache/http/util/CharArrayBuffer;II)V
     .locals 10
+    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
+    .param p2    # I
+    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;
